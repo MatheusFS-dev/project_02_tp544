@@ -1,0 +1,9 @@
+# Agent workspace template
+docs/superpowers/specs/
+docs/superpowers/plans/
+.venv/
+__pycache__/
+.pytest_cache/
+*.egg-info/
+runs/
+.verification/

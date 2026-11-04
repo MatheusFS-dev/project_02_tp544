@@ -1,0 +1,13 @@
+# Data paths are relative to this TOML. Output paths are relative to the working directory.
+data = "../../data/example.npz"
+device = "cuda:0"
+epochs = 50
+candidates = 100
+seed = 42
+patience = 8
+min_delta = 0.0001
+batch_size = 32
+learning_rate = 0.001
+weight_decay = 0.0001
+threads = 1
+output = "runs"
