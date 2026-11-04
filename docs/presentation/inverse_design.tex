@@ -1,0 +1,121 @@
+\documentclass[aspectratio=169,11pt]{beamer}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage{amsmath,amssymb,tikz}
+\usetikzlibrary{arrows.meta,positioning,calc}
+\definecolor{navy}{RGB}{20,40,69}
+\definecolor{teal}{RGB}{0,130,138}
+\definecolor{gold}{RGB}{218,160,49}
+\definecolor{paper}{RGB}{247,249,250}
+\setbeamercolor{background canvas}{bg=paper}
+\setbeamercolor{normal text}{fg=navy}
+\setbeamercolor{frametitle}{fg=navy,bg=paper}
+\setbeamerfont{frametitle}{size=\Large,series=\bfseries}
+\setbeamertemplate{frametitle}{\vspace{3mm}\insertframetitle\par\vspace{2mm}{\color{teal}\rule{\textwidth}{1.2pt}}}
+\setbeamertemplate{navigation symbols}{}
+\setbeamertemplate{footline}{\hfill\color{navy}\footnotesize\insertframenumber\hspace{5mm}\vspace{2mm}}
+\newcommand{\source}[1]{\vfill{\tiny\color{navy!65}#1}}
+\newcommand{\keyphrase}[1]{{\color{teal}\bfseries #1}}
+\begin{document}
+\begin{frame}{Da meta óptica à estrutura}
+\vspace{4mm}{\LARGE\bfseries Uma faixa de comprimentos de onda.\par Uma meta mínima de absorção.}\par\vspace{8mm}
+\begin{center}\begin{tikzpicture}[>=Latex,card/.style={draw=navy!25,fill=white,rounded corners=5pt,minimum width=48mm,minimum height=19mm,align=center,font=\large}]
+\node[card] (a) {Pedido óptico\\$[A,B]$ e $X$};\node[card,right=20mm of a] (b) {Candidata\\metassuperfície de ouro};\draw[->,teal,ultra thick] (a) -- (b);\end{tikzpicture}\end{center}
+\vspace{6mm}\keyphrase{Objetivo:} propor uma estrutura cuja resposta possa ser verificada por simulação óptica.
+\source{Molesky et al., Nature Photonics 12, 659--670 (2018), doi:10.1038/s41566-018-0246-9.}
+\end{frame}
+\begin{frame}{O que entra e o que sai}
+\begin{columns}[T,onlytextwidth]\column{0.42\textwidth}\keyphrase{PEDIDO}\par\vspace{5mm}
+{\Large $A$} início da faixa (nm)\par\vspace{3mm}{\Large $B$} fim da faixa (nm)\par\vspace{3mm}{\Large $X$} absorção mínima desejada\par\vspace{7mm}
+{\small $450\leq A<B\leq1600$ nm\quad $0\leq X\leq1$}
+\column{0.55\textwidth}\keyphrase{PROJETO PREVISTO}\par\vspace{5mm}
+Geometria: disco, quadrado, anel circular ou anel quadrado\par\vspace{4mm}
+Substrato: ar ou SiO$_2$\par\vspace{4mm}
+Dimensões externa e interna\par\vspace{5mm}
+{\small $0\leq D_{\mathrm{in}}\leq D_{\mathrm{out}}\leq320$ nm}\par
+{\small $D_{\mathrm{in}}=0$ para disco e quadrado}
+\end{columns}
+\end{frame}
+\begin{frame}{Por que o problema inverso é difícil?}
+\vspace{1mm}\begin{center}\begin{tikzpicture}[>=Latex,card/.style={draw=navy!25,fill=white,rounded corners=5pt,align=center,minimum height=16mm,minimum width=42mm,font=\large}]
+\node[card] (r) {Mesmo pedido\\óptico};\node[card,right=28mm of r,yshift=15mm] (a) {Estrutura candidata A};\node[card,right=28mm of r,yshift=-15mm] (b) {Estrutura candidata B};
+\draw[->,teal,very thick] (r.east)--(a.west);\draw[->,teal,very thick] (r.east)--(b.west);\end{tikzpicture}\end{center}
+{\large Estruturas diferentes podem atender ao mesmo pedido.}\par\vspace{2mm}
+A previsão é uma \textbf{candidata} a verificar.
+\source{Molesky et al. (2018), doi:10.1038/s41566-018-0246-9.}
+\end{frame}
+\begin{frame}{Uma rede compartilhada, três decisões}
+\vspace{2mm}\begin{center}\resizebox{0.92\textwidth}{!}{\input{figures/model.tikz}}\end{center}
+\vspace{1mm}\begin{center}{\large $w$: largura da rede\qquad $d$: número de blocos do tronco}\end{center}
+\end{frame}
+\begin{frame}{Dentro de um bloco residual}
+\vspace{4mm}
+\begin{center}
+\resizebox{\textwidth}{!}{\begin{tikzpicture}[>=Latex,font=\small,
+ box/.style={draw=navy!30,fill=white,rounded corners=3pt,minimum height=10mm,minimum width=22mm,align=center}]
+\node[box] (h) at (0,0) {$h$};
+\node[box] (n) at (2.6,0) {Normali-\\zação};
+\node[box] (l1) at (5.2,0) {Linear\\$w\to w$};
+\node[box] (act) at (7.8,0) {Ativação\\+ dropout};
+\node[box] (l2) at (10.4,0) {Linear\\$w\to w$};
+\node[draw=teal,fill=teal!10,circle] (sum) at (13,0) {$+$};
+\node[box] (out) at (15.1,0) {$h+F(h)$};
+\foreach \x/\y in {h/n,n/l1,l1/act,act/l2,l2/sum,sum/out}{\draw[->,teal,thick] (\x)--(\y);}
+\draw[->,gold,very thick] (h.south)--++(0,-1.1)-|(sum.south);
+\node[text=gold!70!black] at (6.8,-1.38) {atalho residual};
+\end{tikzpicture}}
+\end{center}
+\vspace{4mm}
+\begin{columns}[T,onlytextwidth]
+\column{0.46\textwidth}\keyphrase{ROTA 1: REFERÊNCIA}\par\vspace{3mm}
+$3$ blocos residuais\par largura $w=256$\par ativação SiLU
+\column{0.5\textwidth}\keyphrase{POR QUE O ATALHO?}\par\vspace{3mm}
+O bloco aprende uma correção $F(h)$ enquanto $h$ segue diretamente para a saída.
+\end{columns}
+\source{He et al., CVPR (2016), doi:10.1109/CVPR.2016.90.}
+\end{frame}
+\begin{frame}{As quatro arquiteturas em comparação}
+\vspace{2mm}
+\begin{tikzpicture}[>=Latex,font=\small,
+ label/.style={anchor=west,text=navy,font=\small\bfseries},
+ block/.style={draw=teal,fill=teal!8,rounded corners=3pt,minimum height=8mm,align=center},
+ output/.style={draw=gold!90!black,fill=gold!12,rounded corners=3pt,minimum height=8mm,align=center}]
+\foreach \y/\name/\middle in {0/{Fixa}/{3 blocos residuais, $w=256$},-1.12/{Optuna}/{1--6 blocos residuais},-2.24/{AutoKeras}/{1--6 blocos densos ou residuais},-3.36/{Ray Tune}/{1--6 blocos residuais}} {
+\node[label] at (0,\y) {\name};
+\node[block,minimum width=21mm] (i) at (3.2,\y) {3 entradas};
+\node[block,minimum width=42mm] (m) at (7.2,\y) {\middle};
+\node[output,minimum width=33mm] (o) at (11.7,\y) {3 cabeças de saída};
+\draw[->,teal,thick] (i)--(m);\draw[->,teal,thick] (m)--(o);
+}
+\end{tikzpicture}
+\vspace{5mm}
+\keyphrase{Parâmetros buscados:} largura $64/128/256/512$, ativação ReLU/SiLU/GELU e dropout $0$--$0{,}3$.
+\end{frame}
+\begin{frame}{Como cada busca escolhe a rede}
+\vspace{2mm}
+\begin{columns}[T,onlytextwidth]
+\column{0.31\textwidth}
+\colorbox{teal!10}{\parbox{0.95\linewidth}{\centering\bfseries Optuna}}\par\vspace{5mm}
+Busca guiada por TPE entre variantes residuais.
+\column{0.31\textwidth}
+\colorbox{teal!10}{\parbox{0.95\linewidth}{\centering\bfseries AutoKeras}}\par\vspace{5mm}
+Explora também a escolha entre troncos densos e residuais.
+\column{0.31\textwidth}
+\colorbox{teal!10}{\parbox{0.95\linewidth}{\centering\bfseries Ray Tune}}\par\vspace{5mm}
+Amostragem aleatória com interrupção antecipada por ASHA.
+\end{columns}
+\vspace{12mm}
+\begin{center}{\large As cabeças de geometria, substrato e dimensões permanecem iguais.}\end{center}
+\source{Akiba et al., KDD (2019); Jin et al., KDD (2019); Liaw et al., arXiv:1807.05118; Li et al., MLSys (2020).}
+\end{frame}
+\begin{frame}{O que mostrará se a proposta funciona?}
+\vspace{5mm}\begin{enumerate}\setlength{\itemsep}{8mm}
+\item Comparar as quatro rotas sob os mesmos pedidos ópticos.
+\item Obter geometria, substrato e dimensões para cada previsão.
+\item Simular cada estrutura prevista e verificar se a absorção atinge $X$ em toda a faixa $[A,B]$.
+\end{enumerate}\vspace{8mm}
+\begin{center}\colorbox{teal!10}{\parbox{0.83\textwidth}{\centering\large\bfseries As quatro rotas são propostas de comparação. O desempenho óptico ainda precisa ser demonstrado.}}\end{center}
+\source{Molesky et al. (2018), doi:10.1038/s41566-018-0246-9.}
+\end{frame}
+\end{document}

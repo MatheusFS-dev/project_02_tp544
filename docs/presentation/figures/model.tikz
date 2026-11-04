@@ -1,0 +1,20 @@
+\definecolor{navy}{RGB}{20,40,69}
+\definecolor{teal}{RGB}{0,130,138}
+\definecolor{gold}{RGB}{218,160,49}
+\begin{tikzpicture}[>=Latex,font=\sffamily\small,
+ input/.style={draw=navy!35,fill=white,rounded corners=3pt,align=center,minimum height=13mm,minimum width=22mm},
+ trunk/.style={draw=teal,fill=teal!8,rounded corners=3pt,align=center,minimum height=13mm,minimum width=28mm},
+ head/.style={draw=gold!90!black,fill=gold!12,rounded corners=3pt,align=center,minimum height=12mm,minimum width=34mm}]
+\node[input] (i) at (0,0) {$A,B,X$\\3 entradas};
+\node[trunk] (p) at (3.1,0) {Projeção\\$3\to w$};
+\node[trunk,minimum width=36mm] (b) at (7,0) {Tronco compartilhado\\$d$ blocos, largura $w$};
+\node[head] (g) at (11.7,1.65) {Geometria\\4 classes};
+\node[head] (s) at (11.7,0) {Substrato\\2 classes};
+\node[head] (z) at (11.7,-1.65) {Dimensões\\2 valores};
+\draw[->,teal,very thick] (i)--(p);
+\draw[->,teal,very thick] (p)--(b);
+\draw[->,teal,thick] (b.east)--(g.west);
+\draw[->,teal,thick] (b.east)--(s.west);
+\draw[->,teal,thick] (b.east)--(z.west);
+\node[font=\sffamily\scriptsize,text=navy] at (11.7,-2.55) {cabeças fixas nas quatro rotas};
+\end{tikzpicture}
