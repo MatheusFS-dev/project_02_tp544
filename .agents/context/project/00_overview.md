@@ -1,14 +1,17 @@
 # Project context
 
-Generated interpretation of local sources, ingested 2026-11-03. Canonical root: `/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544`. No Git repository was present. Source documents remain authoritative. Read this overview, then 00_map.md, then only the relevant unit.
+Generated interpretation of local sources. Original document ingestion: 2026-11-03. Repository implementation refresh: 2026-11-06. Canonical root: `/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544`. Git HEAD at refresh: `e50d270415be53dd55d1b880cde2913956fcaf6b`. Working tree was clean before this context refresh. Source documents remain authoritative. Read this overview, then 00_map.md, then only the relevant unit.
 
-Scope: all 13 existing files, including six PDFs, two CSV examples, project instructions and ignore configuration. This is a planning-stage Au plasmonic metasurface inverse-design project. No executable application, notebooks, dependency specification, build system, tests, lint or type-check configuration exists. No measured HFSS absorption results or trained model is supplied.
-
+Scope: executable Python 3.12 inverse-design package, four runner TOMLs, tests, documentation, and previously ingested reference documents. PyTorch baseline plus independent Optuna, AutoKeras and Ray searches now exist. See sections/implementation.md for current behavior. Earlier sections describe source proposals and must not override executable code. HFSS processing and CSV-to-training-label conversion remain unimplemented. Synthetic examples do not establish physical performance.
 Terminology: Au = gold, SiO2 = silica, HFSS = electromagnetic solver used in the design proposal, TM = p polarization, outer/inner dimensions are diameters for circles and side lengths for squares. A = absorption in spectra, but A/B in idea.md denote band endpoints.
 
-Can answer: assignment requirements, original geometries, proposed inverse architecture and training, data schemas, simulation-budget assumptions and conflicting specifications. Cannot establish feasibility, achieved accuracy, runtime or which conflicting proposal has been approved. No external references were retrieved.
+Can answer: current architecture, runners, configuration, data validation, recovery, exports and validation commands, as well as assignment requirements and source-proposal conflicts. Cannot establish feasibility, achieved accuracy, runtime or which conflicting proposal has been approved. No external references were retrieved.
 
 Material conflicts: professor asks at least two models, while the technical PDF mandates one. CSV examples contain 200 geometries / 400 environmental configurations, the technical note assumes 80 / 160 plus 8 checks, and the grid-planning PDF recommends 88 / 176. idea.md uses separate geometry/substrate heads, while the PDF combines them into eight classes. CSV wavelength spacing is 5 nm, versus the PDF's proposed 1 nm export. Do not silently resolve these differences. Some cited companion PDFs and problem.pdf are absent.
+
+## Original document provenance
+
+Hashes below describe the original ingestion, not a fresh verification of every document. Current implementation provenance is recorded in sections/implementation.md.
 
 ## Exact source provenance
 

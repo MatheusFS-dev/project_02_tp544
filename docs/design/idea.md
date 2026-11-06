@@ -10,7 +10,7 @@ $$
 | ----------------------- | ------------------------------------------------------------- |
 | $A$                 | Starting wavelength (nm)                                      |
 | $B$                 | Ending wavelength (nm)                                        |
-| $X$                 | Minimum desired absorption                                    |
+| $X$                 | Desired constant absorption level                                    |
 | $t$                 | Geometry type: disk, square, circular ring, square ring       |
 | $s$                 | Substrate: air or SiO₂                                        |
 | $D_{\mathrm{out}}$ | Outer diameter or side length (nm)                            |
@@ -58,10 +58,21 @@ The dimensions will be constrained to valid configurations within 0–320 nm.
 
 Because multiple geometries and substrates may satisfy the same absorption target, we need consistent supervised labels.
 
-I recommend evaluating the available HFSS spectra offline and selecting the best-performing geometry-substrate combination for each target interval. The network will learn these selections and predict directly at inference, without running an optimization algorithm.
+Evaluate the received HFSS spectra offline for each request [A,B,X]. Select
+the geometry/substrate combination minimizing the largest absolute deviation
+from X across sampled wavelengths in [A,B]. Break ties using average absolute
+error and then a stable simulation ID. Train the existing inverse network on
+that selected design, while retaining scored alternatives separately.
 
+The goal is a response close to a horizontal line at X. Values above and
+below X both count as error. A flat response at the wrong level is not the
+preferred answer. The neural loss remains the sum of classification losses
+and coordinate regression loss.
 This approach also allows air and SiO₂ to compete fairly instead of assuming one substrate is preferable.
 
 The main limitation remains that the initial 400 simulated configurations provide sparse coverage of the design space. We will need to evaluate the predicted geometries in HFSS to establish their actual accuracy.
 
-The next decision is how to define the optimal absorption behavior: achieving at least $X$ throughout the interval, achieving an average of $X$, or producing a resonance with peak absorption $X$. My proposed default is at least $X$ throughout $[A,B]$.
+The objective is absorption as flat and close to X as possible throughout
+[A,B]. Report worst and average absolute target error and band ripple.
+Sampled spectra do not certify behavior between wavelengths. Newly predicted
+dimensions need their own physical evaluation.

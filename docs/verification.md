@@ -1,6 +1,17 @@
 # Implementation verification
 
-## Current checks (2026-11-04)
+## Flat-target data handling (2026-11-06)
+
+- All 51 tests passed, including spectrum scoring, deterministic label selection,
+  invalid CSV rejection, provenance checks, exact-match physical evaluation,
+  interactive preparation and CSV-to-training integration.
+- Source compilation and whitespace checks passed.
+- The neural architecture, supervised loss, training runners and recovery code
+  were preserved. Tests use temporary fixtures with explicit CPU training.
+- Physical evaluation marks dimensions without an exact received spectrum as
+  requiring simulation. No real-data accuracy or new GPU execution claim is made.
+
+## Previous checks (2026-11-04)
 
 - Plain `uv sync` installed the shared environment successfully.
 - All 25 tests passed, including automatic complete TOMLs, relative data paths,

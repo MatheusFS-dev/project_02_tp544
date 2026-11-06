@@ -64,3 +64,12 @@ def test_default_device_requires_gpu_zero(monkeypatch):
     assert str(device_for(Config(device='cpu'))) == 'cpu'
     with pytest.raises(ValueError, match='GPU 0'):
         Config(device='cuda:1')
+
+
+def test_flat_target_labels_preserve_supervised_loss():
+    from torch.nn import functional as F
+    from inverse_design.training import loss
+    outputs = (torch.tensor([[1., -1., .5, 0.]]), torch.tensor([[.2, .8]]), torch.tensor([[.4, .2]]))
+    targets = (torch.tensor([2]), torch.tensor([1]), torch.tensor([[.3, .1]]))
+    expected = F.cross_entropy(outputs[0], targets[0]) + F.cross_entropy(outputs[1], targets[1]) + F.huber_loss(outputs[2], targets[2])
+    assert torch.equal(loss(outputs, targets), expected)

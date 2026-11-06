@@ -6,7 +6,8 @@ AutoKeras, and Ray Tune searches. The runners receive data from an NPZ file
 specified in their TOML configuration.
 Existing CSV examples need conversion to the documented array schema.
 Synthetic example results do not establish
-physical feasibility or absorption accuracy. HFSS processing is unimplemented.
+physical feasibility or absorption accuracy. Received HFSS spectra can be
+converted into flat-target training labels using the explicit tools below.
 
 ## Setup
 
@@ -44,6 +45,67 @@ python3 data/fake_generator.py
 
 This writes `data/example.npz`, the default input named in all four configs.
 The generator is independent of training and is never called automatically.
+
+## Prepare flat-target training labels
+
+The goal is absorption as close as possible to a constant target X across
+[A,B], allowing deviations above and below X. Keep the received geometry and
+HFSS CSV columns shown in `data/examples/`.
+
+Create a requests CSV with the columns below. This is the request format,
+not simulated response data:
+
+```csv
+band_start_nm,band_end_nm,target_absorption,split
+500,600,0.75,train
+500,600,0.80,validation
+500,600,0.85,test
+```
+
+Use your intended bands and levels. Each request must be unique, all three
+splits must be nonempty, and both endpoints must appear on the received grid.
+All catalogue spectra must have the same complete wavelength grid. Blank
+absorption values in the HFSS template are rejected.
+
+After setup and activation, run:
+
+```bash
+python3 data/prepare_flatness.py
+```
+
+The script prompts for geometry CSV, HFSS CSV, requests CSV and output
+directory. It selects the design with the smallest maximum absolute deviation
+from X across each sampled band. Ties use wavelength-averaged absolute error,
+then simulation ID. It writes `dataset.npz`, `selection.json` (all scores and
+selected labels) and `preparation.json` (source and output hashes). Existing
+preparation artifacts are never overwritten.
+
+Set `data` in each training TOML to the resulting NPZ, relative to that TOML,
+and use a fresh run output root. The model, input scaling, bounded dimensions,
+and training loss remain unchanged: two classification cross-entropies plus
+coordinate Huber loss. These labels describe new requests over a known
+catalogue, not an unseen-geometry evaluation.
+
+## Evaluate flat-target predictions
+
+After training a baseline or selecting a search winner, run:
+
+```bash
+python3 data/evaluate_flatness.py
+```
+
+The script prompts for the model directory containing `best.ckpt`, prepared
+NPZ, original geometry/HFSS CSVs and a new output JSON path. It validates
+preparation hashes and evaluates only NPZ test requests, with inference on
+`cuda:0`. It does not change training losses or search selection.
+
+Exact catalogue matches receive worst target error, wavelength-averaged
+absolute error, ripple and excess worst error over the catalogue winner.
+Other predicted dimensions are marked `requires_simulation` with null physical
+scores. No nearby spectrum is substituted. Summary errors cover verified
+predictions only, alongside verified/unverified counts. Sampled scores do not
+guarantee performance between wavelength samples. No success tolerance is
+assumed.
 
 ## Run each case
 
