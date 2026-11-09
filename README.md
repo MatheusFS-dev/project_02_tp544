@@ -2,6 +2,33 @@
 
 See [RUN.md](RUN.md) for full-training commands, GPU selection, progress logs and recovery.
 
+For flat absorption matching, use the four independent cases in `src/flat/cases/`:
+baseline, Optuna, AutoKeras and Ray. Each exports its own final model under
+`runs/flat/<case>/final/` and has its own design command. See
+[RUN.md](RUN.md#flat-absorption-matching-four-independent-cases) and
+[the architecture](docs/flat_architecture.md).
+
+```bash
+python3 src/flat/prepare.py
+python3 src/flat/cases/baseline/train.py
+python3 src/flat/cases/optuna/train.py
+python3 src/flat/cases/autokeras/train.py
+python3 src/flat/cases/ray/train.py
+```
+
+Use only the matching design command after training:
+
+```bash
+python3 src/flat/cases/baseline/optimize.py
+python3 src/flat/cases/optuna/optimize.py
+python3 src/flat/cases/autokeras/optimize.py
+python3 src/flat/cases/ray/optimize.py
+```
+
+Short GPU pipeline verification: `python3 src/flat/smoke.py`. Design commands ask
+only for band start, band end and target absorption. Predicted spectra require
+HFSS verification. No method is automatically selected across cases.
+
 Three-head inverse model predicting geometry, substrate, and outer/inner size
 in nanometers. Includes a residual PyTorch baseline and independent Optuna,
 AutoKeras, and Ray Tune searches. The runners receive data from an NPZ file
@@ -260,3 +287,64 @@ Agent instruction entry points remain at the root. Reusable agent context
 remains under `.agents/context/`.
 
 The validated full-training baseline is stored in `results/baseline/`. `metrics.json` contains its training history and validation/test metrics, `best.ckpt` contains the best-validation model, and `training.log` contains the training log. The original `runs/treinar_full/baseline` and baseline-log paths are compatibility symlinks, preserving checkpoint/configuration identity. Validation reports and HFSS artifacts remain in `src/validation/baseline/`.
+
+Optuna best-trial validation (reads `results/optuna/complete.json` and validates only the selected winner):
+
+```bash
+python3 src/validation/optuna/optuna_results.py
+python3 src/validation/optuna/hfss_cases.py
+python3 src/validation/optuna/hfss_report.py
+```
+
+Reports, figures, projects and logs are under `src/validation/optuna/`.
+
+Ray best-trial validation (reads `results/ray/complete.json` and validates only the selected winner):
+
+```bash
+python3 src/validation/ray/ray_results.py
+python3 src/validation/ray/hfss_cases.py
+python3 src/validation/ray/hfss_report.py
+```
+
+Reports, figures, projects and logs are under `src/validation/ray/`.
+
+Bandwidth analysis of retained test requests and existing HFSS spectra:
+
+```bash
+python3 src/validation/baseline/bandwidth_analysis.py
+python3 src/validation/optuna/bandwidth_analysis.py
+python3 src/validation/ray/bandwidth_analysis.py
+```
+
+Each command saves `bandwidth_analysis.md`, numerical tables and plots inside its case directory. It performs no retraining or new HFSS solves.
+
+AutoKeras best-trial validation, including bandwidth analysis:
+
+```bash
+python3 src/validation/inverse_design/autokeras/autokeras_results.py
+python3 src/validation/inverse_design/autokeras/hfss_cases.py
+python3 src/validation/inverse_design/autokeras/hfss_report.py
+python3 src/validation/inverse_design/autokeras/bandwidth_analysis.py
+```
+
+AutoKeras validation reports, figures, scripts and logs are under `src/validation/inverse_design/autokeras/`. Selected training artifacts are under `results/autokeras/`, with original Downloads provenance recorded in the validation directory.
+
+## Trained flat baseline validation
+
+The completed flat baseline is retained in `results/flat/baseline/`, including
+`final/best.ckpt`, metrics, training state/logs and a checksummed dataset snapshot.
+`runs/flat/baseline` is a compatibility symlink, so its independent training and
+design commands keep working without changing configuration fingerprints.
+
+```bash
+python3 src/validation/flat/baseline/baseline_results.py
+python3 src/validation/flat/baseline/hfss_cases.py
+python3 src/validation/flat/baseline/hfss_report.py
+```
+
+All scripts, logs, plots, reports, optimized candidates and five AEDT projects
+are under `src/validation/flat/baseline/`. The first command verifies all 289
+held-out spectra and optimizes the same five targets used by the earlier inverse
+baseline. The second performs actual GUI HFSS simulations. The third refreshes
+the physical comparison report without rerunning the solver. Existing optimized
+cases and completed simulations are reused after their provenance is checked.

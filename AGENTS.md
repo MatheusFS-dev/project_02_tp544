@@ -8,6 +8,16 @@ Global task gates and reusable skills are installed at user scope. Codex and Ant
 - Do not modify installed skills unless the user explicitly requests a skill change.
 - Do not commit datasets, model weights, credentials, environment files, generated logs, or large artifacts unless explicitly requested.
 
+## Flat absorption workflow
+
+- `src/flat/` is the spectrum-surrogate plus constrained minimax geometry workflow. It remains separate from inverse family-label training.
+- Every runner loads its own complete `src/configs/flat_<case>.toml` for case runners, or the matching prepare/smoke TOML. Default GPU is physical 0, logical `cuda:0`. This PC's RTX 4070 smoke test explicitly selects physical GPU 1 through `CUDA_VISIBLE_DEVICES=1` before imports.
+- Prepare all 2,000 received spectra, group duplicate geometries, preserve all source IDs and retain family-stratified 1,348/289/289 unique-design splits. Do not create inverse winner labels for forward training.
+- Surrogate output is full-grid T/R/A, softmax-normalized per wavelength. Training/search validation measures spectrum fit. Geometry optimization ranks worst in-band absolute absorption-target error first, then wavelength-weighted mean error. Include interpolated band endpoints.
+- Fit geometry bounds and choose optimization starts from training geometries only. Preserve inactive masks, local trust bounds and positive ring holes. Export predicted spectra and explicitly distinguish them from actual HFSS results.
+- The four independent cases live under `src/flat/cases/{baseline,optuna,autokeras,ray}/`, each with `train.py` and `optimize.py`. Each publishes only its own final model at `runs/flat/<case>/final/best.ckpt`, with case-local logs and designs. No cross-case model selection or method prompt is allowed. Shared numerical/library code is permitted. All four preserve resumable epoch/optimizer/RNG state. Changing dataset/config requires a new run root. The selected search model is evaluated on test spectra only after validation-based selection.
+- `python3 src/flat/smoke.py` runs short real-data GPU checks and removes temporary checkpoints/logs. Its report lives under `src/validation/flat/smoke/`. Commands and settings are documented in `RUN.md`; architecture-only documentation is `docs/flat_architecture.md`.
+
 Add only durable repository-specific information below, such as non-obvious architecture constraints, canonical commands, protected paths, and required validation.
 
 ## Python environment and execution
@@ -43,3 +53,13 @@ Full-training entry points mirror stdout/stderr into append-only logs through ru
 Baseline post-training validation uses `python3 src/validation/baseline/baseline_results.py`, then `python3 src/validation/baseline/hfss_cases.py`. Keep the original AEDT projects untouched. Five cases are selected deterministically from test requests for predicted-family diversity without correctness filtering. Reuse received geometry/material/boundary/sweep functions without executing their batch driver. Physical claims require actual exported solver spectra, not classification metrics or nearest catalogue matches. Validation scripts, logs, artifacts and reports must be grouped by training case under `src/validation/<case>/`, for example `src/validation/baseline/`. This user-requested location overrides the general documentation directory rule for validation reports.
 
 Canonical trained baseline artifacts live in `results/baseline/`. The old run and log paths are compatibility symlinks. Preserve them and the original manifest/config fingerprints for compatible resume. Baseline validation loads `results/baseline/` directly.
+
+Optuna validation lives entirely under `src/validation/optuna/`. `optuna_results.py` reads the selected trial identity from `results/optuna/complete.json`, loads `winner/best.ckpt`, verifies equality with that trial checkpoint, and uses the search-root retained dataset. Plot history comes from the selected trial, not winner summary metrics. Never choose a trial by test performance.
+
+Ray validation lives entirely under `src/validation/ray/`. `ray_results.py` resolves the selected trial using the basename of the original identity under `results/ray/experiment/`, because results may come from another PC. Training history and checkpoint verification use that candidate’s `training/` directory. Inference uses `results/ray/winner/` and the retained search-root dataset.
+
+Bandwidth analyses stay within each validation case. Separate family-label accuracy from absorption feasibility. Controlled bandwidth comparisons must keep the target and wavelength center fixed, use nested wavelength intervals with interpolated endpoints, and verify monotonic worst error. Catalogue results describe received spectra, never the unsimulated predicted geometry.
+
+The trained flat baseline is canonical at `results/flat/baseline/`, including its retained dataset snapshot. Preserve the `runs/flat/baseline` compatibility symlink and unchanged configuration fingerprints. Full-spectrum test evaluation, fixed five-request optimization and actual HFSS validation scripts/artifacts/reports live entirely under `src/validation/flat/baseline/`. Match the earlier inverse baseline target bands/levels for paired physical comparison, but never describe forward fidelity as flat-target success.
+
+Ray flat-spectrum mutable epoch state belongs under `runs/flat/ray/training/<trial-id>/`, outside the experiment artifact tree. Ray asynchronously copies driver artifacts while the trainer prunes old epoch generations, so placing mutable `training/` files under `get_trial_dir()` causes synchronization FileNotFoundError. Publish checkpoints through `tune.report`, and export the winner from its committed Ray checkpoint. Preserve existing experiments and manifests when resuming.

@@ -1,0 +1,52 @@
+[
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/complete.json",
+    "destination": "results/autokeras/complete.json",
+    "sha256": "f0f3ecaed8e6b77b707c676d20f9a201acdcb5a116b50708536ad155c60c2cdc"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/data.npz",
+    "destination": "results/autokeras/data.npz",
+    "sha256": "da3fba6a76c7651ee7dd6d7b2e55a8f417c9e32abf1112e9442c5c4b668c983e"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/manifest.json",
+    "destination": "results/autokeras/manifest.json",
+    "sha256": "977a4d17da53a50e121e5fcda7c9da9dedcf0614ea78a4919daed59d45e61009"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/winner/metrics.json",
+    "destination": "results/autokeras/winner/metrics.json",
+    "sha256": "f0f3ecaed8e6b77b707c676d20f9a201acdcb5a116b50708536ad155c60c2cdc"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/winner/best.keras",
+    "destination": "results/autokeras/winner/best.keras",
+    "sha256": "37a66e45cc952c82067e0baca54dcca4a2ee4ae8ecfcea2fc20bddac60359717"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/winner/config.json",
+    "destination": "results/autokeras/winner/config.json",
+    "sha256": "031cee9b611ef8b2e0d6e9b30a14762eb03c3007c627a8c28f8f9c169d0a26b9"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/winner/best.ckpt",
+    "destination": "results/autokeras/winner/best.ckpt",
+    "sha256": "e10fcd9f5a30d4194de9766aafa61745c23625182bd54dad41f3f115a417c638"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/winner/architecture.json",
+    "destination": "results/autokeras/winner/architecture.json",
+    "sha256": "0a36a8566d14fa0ced890c9467ed5ce71ed174eb115ef2b024e294187f51d222"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/trial-020/best.ckpt",
+    "destination": "results/autokeras/trial-020/best.ckpt",
+    "sha256": "e10fcd9f5a30d4194de9766aafa61745c23625182bd54dad41f3f115a417c638"
+  },
+  {
+    "source": "/home/matheus.f@local.inatel.br/Downloads/autokeras/trial-020/metrics.json",
+    "destination": "results/autokeras/trial-020/metrics.json",
+    "sha256": "990ff9fc70275a473000de7c0bb55086074c67251f3413f264dcd98a05327695"
+  }
+]

@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/inverse_design"]
+packages = ["src/inverse_design", "src/flat"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]

@@ -1,0 +1,67 @@
+{
+  "ray_01": {
+    "stage": "solved",
+    "project": "src/validation/ray/ray_01/ray_01.aedt",
+    "family": "F07",
+    "result": {
+      "worst_error": 0.32942660424665177,
+      "average_error": 0.18142653493146899,
+      "ripple": 0.21215873925161938,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.04388232857329666,
+      "solve_seconds": 201.71675346100164
+    }
+  },
+  "ray_02": {
+    "stage": "solved",
+    "project": "src/validation/ray/ray_02/ray_02.aedt",
+    "family": "F10",
+    "result": {
+      "worst_error": 0.7173525758691434,
+      "average_error": 0.6216666036545603,
+      "ripple": 0.23422785320217554,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.10104412475497077,
+      "solve_seconds": 325.9931154469996
+    }
+  },
+  "ray_03": {
+    "stage": "solved",
+    "project": "src/validation/ray/ray_03/ray_03.aedt",
+    "family": "F05",
+    "result": {
+      "worst_error": 0.7534311394250873,
+      "average_error": 0.6752357784455821,
+      "ripple": 0.169216647269111,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.02687761128927546,
+      "solve_seconds": 260.9980858509989
+    }
+  },
+  "ray_04": {
+    "stage": "solved",
+    "project": "src/validation/ray/ray_04/ray_04.aedt",
+    "family": "F09",
+    "result": {
+      "worst_error": 0.2492416992548857,
+      "average_error": 0.23824521258310397,
+      "ripple": 0.021672536017037447,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.11173553375836143,
+      "solve_seconds": 295.82305792400075
+    }
+  },
+  "ray_05": {
+    "stage": "solved",
+    "project": "src/validation/ray/ray_05/ray_05.aedt",
+    "family": "F08",
+    "result": {
+      "worst_error": 0.029069078697887052,
+      "average_error": 0.01968576169335453,
+      "ripple": 0.01862445551173289,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.011094847395270002,
+      "solve_seconds": 176.39879271700192
+    }
+  }
+}

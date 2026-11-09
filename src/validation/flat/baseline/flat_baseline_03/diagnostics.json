@@ -1,0 +1,81 @@
+{
+  "case": "flat_baseline_03",
+  "change_from_previous_inverse_baseline_pp": -10.667675402945271,
+  "family": "F09",
+  "final_adaptive_delta_s": 0.00684595,
+  "mesh_converged": true,
+  "physical_scores": {
+    "average_error": 0.0039202960216692204,
+    "polarization_T_max_difference": 0.04970820134543752,
+    "ripple": 0.010764803880584206,
+    "solve_seconds": 205.6297863180007,
+    "wavelength_samples": 401,
+    "worst_error": 0.006274746449177748
+  },
+  "predicted_average_error_pp": 0.3279425436630845,
+  "predicted_worst_error_pp": 0.863298773765564,
+  "prediction": {
+    "family": "F09",
+    "initial_best_predicted_worst_error_pp": 2.849125862121582,
+    "normalized_parameters": [
+      0.6220129132270813,
+      0.23925766348838806,
+      0.0,
+      0.0,
+      0.0,
+      0.15052905678749084,
+      0.0
+    ],
+    "parameters_nm": {
+      "L_s": 48.16929626464844,
+      "Lout_q": 199.04412841796875,
+      "R_d": null,
+      "Rout_c": null,
+      "w_c": null,
+      "w_q": 38.281227111816406,
+      "w_t": null
+    },
+    "predicted_average_error_pp": 0.3279425436630845,
+    "predicted_within_tolerance": true,
+    "predicted_worst_error_pp": 0.863298773765564,
+    "seed_source_id": "G1222",
+    "step": 235,
+    "substrate": "air",
+    "tracks": false,
+    "trust_lower_nm": [
+      187.09999084472656,
+      34.5,
+      0.0,
+      0.0,
+      0.0,
+      40.0,
+      0.0
+    ],
+    "trust_upper_nm": [
+      202.90000915527344,
+      39.5,
+      0.0,
+      0.0,
+      0.0,
+      56.19999694824219,
+      0.0
+    ]
+  },
+  "previous_inverse_baseline_worst_error_pp": 11.295150047863045,
+  "reference_scores": {
+    "average_error": 0.005188518231165643,
+    "ripple": 0.019588999999999968,
+    "worst_error": 0.010017530773108574
+  },
+  "reference_source_id": "G1867",
+  "request": [
+    475.642,
+    558.352,
+    0.3012235307731086
+  ],
+  "solver_profile_sha256": "f6b4f36286ac7fd13dab8f8fe6afd3e6678090d61c6aee1359ec1025990dcce7",
+  "spectrum_sha256": "332c112bc26f045bbdc5ca22fd7e795e78bb36fec5f3a95da145fc6dec0e92f1",
+  "spectrum_surrogate_mae_pp": 1.6430844296119023,
+  "surrogate_optimism_pp": -0.23582412884778914,
+  "sweep_converged_and_passive": true
+}

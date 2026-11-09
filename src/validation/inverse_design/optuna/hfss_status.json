@@ -1,0 +1,67 @@
+{
+  "optuna_01": {
+    "stage": "solved",
+    "project": "src/validation/optuna/optuna_01/optuna_01.aedt",
+    "family": "F07",
+    "result": {
+      "worst_error": 0.32942660424664943,
+      "average_error": 0.18142653493146912,
+      "ripple": 0.2121587392516177,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.043882328573296436,
+      "solve_seconds": 209.67477308199886
+    }
+  },
+  "optuna_02": {
+    "stage": "solved",
+    "project": "src/validation/optuna/optuna_02/optuna_02.aedt",
+    "family": "F10",
+    "result": {
+      "worst_error": 0.7173525758691065,
+      "average_error": 0.6216666036545531,
+      "ripple": 0.23422785320189732,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.10104412475473096,
+      "solve_seconds": 346.0542853799998
+    }
+  },
+  "optuna_03": {
+    "stage": "solved",
+    "project": "src/validation/optuna/optuna_03/optuna_03.aedt",
+    "family": "F05",
+    "result": {
+      "worst_error": 0.7534311394250892,
+      "average_error": 0.6752357784456319,
+      "ripple": 0.16921664726915092,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.026877611289278347,
+      "solve_seconds": 279.271677793
+    }
+  },
+  "optuna_04": {
+    "stage": "solved",
+    "project": "src/validation/optuna/optuna_04/optuna_04.aedt",
+    "family": "F09",
+    "result": {
+      "worst_error": 0.2492416992548852,
+      "average_error": 0.23824521258310347,
+      "ripple": 0.021672536017035504,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.11173553375836398,
+      "solve_seconds": 299.500414215001
+    }
+  },
+  "optuna_05": {
+    "stage": "solved",
+    "project": "src/validation/optuna/optuna_05/optuna_05.aedt",
+    "family": "F08",
+    "result": {
+      "worst_error": 0.029069078697887607,
+      "average_error": 0.019685761693354384,
+      "ripple": 0.018624455511733445,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.011094847395270335,
+      "solve_seconds": 176.21896102000028
+    }
+  }
+}

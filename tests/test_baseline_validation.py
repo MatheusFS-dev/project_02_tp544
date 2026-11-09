@@ -2,17 +2,20 @@
 import importlib.util
 from pathlib import Path
 import numpy as np
+import pytest
 
 
-def load_validation():
-    spec = importlib.util.spec_from_file_location('baseline_validation', Path(__file__).resolve().parents[1] / 'src/validation/baseline/baseline_results.py')
+def load_validation(case="baseline"):
+    script = f"{case}_results.py"
+    spec = importlib.util.spec_from_file_location('baseline_validation', Path(__file__).resolve().parents[1] / f'src/validation/inverse_design/{case}/{script}')
     module = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(module)
     return module
 
 
-def test_selection_is_deterministic_and_diverse():
-    module = load_validation()
+@pytest.mark.parametrize("case", ["baseline", "optuna", "ray"])
+def test_selection_is_deterministic_and_diverse(case):
+    module = load_validation(case)
     predictions = [{'family': f'F{i % 6 + 1:02d}'} for i in range(36)]
     first = module.select_cases(predictions)
     assert first == module.select_cases(predictions)

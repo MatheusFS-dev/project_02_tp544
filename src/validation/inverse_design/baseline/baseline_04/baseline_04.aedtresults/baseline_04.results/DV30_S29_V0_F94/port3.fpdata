@@ -1,0 +1,50 @@
+$begin 'RCSData'
+	$begin 'Mode0'
+		KzReal=1.39625e+07
+		KzImag=-0
+		ThetaInc=0
+		PhiInc=-3.14159
+		ExReal=0
+		ExImag=0
+		EyReal=-8.57789e+07
+		EyImag=0
+		EzReal=0
+		EzImag=0
+	$end 'Mode0'
+	$begin 'Mode1'
+		KzReal=1.39625e+07
+		KzImag=-0
+		ThetaInc=0
+		PhiInc=-3.14159
+		ExReal=8.57789e+07
+		ExImag=0
+		EyReal=0
+		EyImag=0
+		EzReal=0
+		EzImag=0
+	$end 'Mode1'
+	$begin 'Mode2'
+		KzReal=-0
+		KzImag=-1.38051e+07
+		ThetaInc=0
+		PhiInc=-3.14159
+		ExReal=0
+		ExImag=-0
+		EyReal=8.62667e+07
+		EyImag=-0
+		EzReal=0
+		EzImag=0
+	$end 'Mode2'
+	$begin 'Mode3'
+		KzReal=-0
+		KzImag=-1.38051e+07
+		ThetaInc=0
+		PhiInc=-3.14159
+		ExReal=-8.62667e+07
+		ExImag=-0
+		EyReal=-0
+		EyImag=-0
+		EzReal=0
+		EzImag=0
+	$end 'Mode3'
+$end 'RCSData'

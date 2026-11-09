@@ -1,0 +1,13 @@
+$begin 'imprintInfo'
+	FileVersion='2025R2'
+	$begin 'imprintIDMap'
+	$end 'imprintIDMap'
+	$begin 'PartsInfo'
+		Part(6, 'Au_anelc', -1, 19, 149, 150, 151, 9, 8, 7, 152, 125, 127, 97, 99, 68, 70, 40, 42, 153, 154, 155, 156)
+		Part(222, 'Air_Domain', -1, 25, 223, 225, 226, 227, 224, 228, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372)
+	$end 'PartsInfo'
+	$begin 'PartAddtionalPiecesInfo'
+	$end 'PartAddtionalPiecesInfo'
+	$begin 'faceImprintInfo'
+	$end 'faceImprintInfo'
+$end 'imprintInfo'

@@ -1,0 +1,67 @@
+{
+  "autokeras_01": {
+    "stage": "solved",
+    "project": "src/validation/inverse_design/autokeras/autokeras_01/autokeras_01.aedt",
+    "family": "F12",
+    "result": {
+      "worst_error": 0.22101777442803328,
+      "average_error": 0.1722168781427061,
+      "ripple": 0.08756259311644882,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.1134175161745177,
+      "solve_seconds": 303.68894877099956
+    }
+  },
+  "autokeras_02": {
+    "stage": "solved",
+    "project": "src/validation/inverse_design/autokeras/autokeras_02/autokeras_02.aedt",
+    "family": "F10",
+    "result": {
+      "worst_error": 0.6158449574613594,
+      "average_error": 0.5372496239960455,
+      "ripple": 0.18007979729785423,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.0652747841323526,
+      "solve_seconds": 284.13077754200276
+    }
+  },
+  "autokeras_03": {
+    "stage": "solved",
+    "project": "src/validation/inverse_design/autokeras/autokeras_03/autokeras_03.aedt",
+    "family": "F09",
+    "result": {
+      "worst_error": 0.08233878493367436,
+      "average_error": 0.07605836633861868,
+      "ripple": 0.009752322307009564,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.01836509350780216,
+      "solve_seconds": 202.242045701998
+    }
+  },
+  "autokeras_04": {
+    "stage": "solved",
+    "project": "src/validation/inverse_design/autokeras/autokeras_04/autokeras_04.aedt",
+    "family": "F05",
+    "result": {
+      "worst_error": 0.753025258798838,
+      "average_error": 0.6931996708648239,
+      "ripple": 0.13789809787521243,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.04647788792056401,
+      "solve_seconds": 206.94803920699997
+    }
+  },
+  "autokeras_05": {
+    "stage": "solved",
+    "project": "src/validation/inverse_design/autokeras/autokeras_05/autokeras_05.aedt",
+    "family": "F06",
+    "result": {
+      "worst_error": 0.04522484399687976,
+      "average_error": 0.024641015168830303,
+      "ripple": 0.07694826897159382,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.03246094070027877,
+      "solve_seconds": 311.62218802499774
+    }
+  }
+}

@@ -1,0 +1,610 @@
+{
+  "case": "ray",
+  "checkpoint_sha256": "b71d2e78f3b077eb08dda70e2df1feaa5551a9fd1116e2b7a7e9385b6d86c0e5",
+  "dataset_sha256": "da3fba6a76c7651ee7dd6d7b2e55a8f417c9e32abf1112e9442c5c4b668c983e",
+  "test_requests": 1156,
+  "width_edges_nm": [
+    0.9119999999999777,
+    109.91850000000002,
+    266.89599999999996,
+    505.1685,
+    1122.816
+  ],
+  "width_quartiles": [
+    {
+      "majority_family_share": 0.24567474048442905,
+      "supported_family_macro_recall": 0.25679438231117546,
+      "label_family_counts": [
+        4,
+        4,
+        28,
+        12,
+        10,
+        8,
+        18,
+        10,
+        43,
+        62,
+        71,
+        19
+      ],
+      "count": 289,
+      "correct_count": 81,
+      "accuracy": 0.28027681660899656,
+      "routed_mae_nm": 9.785895347595215,
+      "oracle_mae_nm": 13.186076164245605,
+      "catalogue_median_worst_pp": 5.851920371656548,
+      "width_min_nm": 0.9119999999999777,
+      "width_max_nm": 109.91850000000002
+    },
+    {
+      "majority_family_share": 0.3993055555555556,
+      "supported_family_macro_recall": 0.2930611829688501,
+      "label_family_counts": [
+        2,
+        5,
+        15,
+        4,
+        31,
+        3,
+        36,
+        9,
+        26,
+        115,
+        15,
+        27
+      ],
+      "count": 288,
+      "correct_count": 147,
+      "accuracy": 0.5104166666666666,
+      "routed_mae_nm": 9.405220031738281,
+      "oracle_mae_nm": 9.43830680847168,
+      "catalogue_median_worst_pp": 16.646198587145268,
+      "width_min_nm": 109.91850000000002,
+      "width_max_nm": 266.89599999999996
+    },
+    {
+      "majority_family_share": 0.5172413793103449,
+      "supported_family_macro_recall": 0.35055883510428965,
+      "label_family_counts": [
+        3,
+        0,
+        20,
+        6,
+        69,
+        11,
+        2,
+        14,
+        3,
+        150,
+        3,
+        9
+      ],
+      "count": 290,
+      "correct_count": 205,
+      "accuracy": 0.7068965517241379,
+      "routed_mae_nm": 9.361824035644531,
+      "oracle_mae_nm": 9.232002258300781,
+      "catalogue_median_worst_pp": 23.84465595324454,
+      "width_min_nm": 266.89599999999996,
+      "width_max_nm": 505.1685
+    },
+    {
+      "majority_family_share": 0.6816608996539792,
+      "supported_family_macro_recall": 0.3805174158115335,
+      "label_family_counts": [
+        17,
+        0,
+        16,
+        1,
+        197,
+        1,
+        4,
+        5,
+        3,
+        37,
+        4,
+        4
+      ],
+      "count": 289,
+      "correct_count": 229,
+      "accuracy": 0.7923875432525952,
+      "routed_mae_nm": 8.852625846862793,
+      "oracle_mae_nm": 9.091397285461426,
+      "catalogue_median_worst_pp": 35.638607123285446,
+      "width_min_nm": 505.1685,
+      "width_max_nm": 1122.816
+    }
+  ],
+  "target_edges": [
+    0,
+    0.25,
+    0.5,
+    0.75,
+    1
+  ],
+  "width_target_cells": [
+    [
+      {
+        "majority_family_share": 0.32098765432098764,
+        "supported_family_macro_recall": 0.1732970732970733,
+        "label_family_counts": [
+          4,
+          2,
+          26,
+          11,
+          5,
+          6,
+          1,
+          6,
+          1,
+          1,
+          9,
+          9
+        ],
+        "count": 81,
+        "correct_count": 32,
+        "accuracy": 0.3950617283950617,
+        "routed_mae_nm": 7.894791603088379,
+        "oracle_mae_nm": 9.969069480895996,
+        "catalogue_median_worst_pp": 0.8613311153299247
+      },
+      {
+        "majority_family_share": 0.3194444444444444,
+        "supported_family_macro_recall": 0.17164855072463767,
+        "label_family_counts": [
+          0,
+          1,
+          1,
+          0,
+          2,
+          1,
+          6,
+          4,
+          16,
+          23,
+          14,
+          4
+        ],
+        "count": 72,
+        "correct_count": 22,
+        "accuracy": 0.3055555555555556,
+        "routed_mae_nm": 11.926695823669434,
+        "oracle_mae_nm": 12.743132591247559,
+        "catalogue_median_worst_pp": 1.647360976395687
+      },
+      {
+        "majority_family_share": 0.36231884057971014,
+        "supported_family_macro_recall": 0.2222222222222222,
+        "label_family_counts": [
+          0,
+          1,
+          0,
+          1,
+          3,
+          1,
+          6,
+          0,
+          14,
+          14,
+          25,
+          4
+        ],
+        "count": 69,
+        "correct_count": 14,
+        "accuracy": 0.2028985507246377,
+        "routed_mae_nm": 9.285482406616211,
+        "oracle_mae_nm": 14.04140853881836,
+        "catalogue_median_worst_pp": 22.66935006448767
+      },
+      {
+        "majority_family_share": 0.3582089552238806,
+        "supported_family_macro_recall": 0.20972222222222223,
+        "label_family_counts": [
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          5,
+          0,
+          12,
+          24,
+          23,
+          2
+        ],
+        "count": 67,
+        "correct_count": 13,
+        "accuracy": 0.19402985074626866,
+        "routed_mae_nm": 9.591497421264648,
+        "oracle_mae_nm": 16.044260025024414,
+        "catalogue_median_worst_pp": 44.52839509589009
+      }
+    ],
+    [
+      {
+        "majority_family_share": 0.24561403508771928,
+        "supported_family_macro_recall": 0.17605820105820105,
+        "label_family_counts": [
+          2,
+          3,
+          14,
+          4,
+          4,
+          2,
+          2,
+          9,
+          2,
+          4,
+          1,
+          10
+        ],
+        "count": 57,
+        "correct_count": 21,
+        "accuracy": 0.3684210526315789,
+        "routed_mae_nm": 7.6282453536987305,
+        "oracle_mae_nm": 9.278541564941406,
+        "catalogue_median_worst_pp": 3.1017404945659353
+      },
+      {
+        "majority_family_share": 0.5172413793103449,
+        "supported_family_macro_recall": 0.18914141414141414,
+        "label_family_counts": [
+          0,
+          2,
+          0,
+          0,
+          15,
+          1,
+          11,
+          0,
+          5,
+          45,
+          2,
+          6
+        ],
+        "count": 87,
+        "correct_count": 45,
+        "accuracy": 0.5172413793103449,
+        "routed_mae_nm": 9.775471687316895,
+        "oracle_mae_nm": 9.98904037475586,
+        "catalogue_median_worst_pp": 5.619313040979615
+      },
+      {
+        "majority_family_share": 0.42028985507246375,
+        "supported_family_macro_recall": 0.4186560565870911,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          13,
+          0,
+          9,
+          29,
+          7,
+          7
+        ],
+        "count": 69,
+        "correct_count": 38,
+        "accuracy": 0.5507246376811594,
+        "routed_mae_nm": 10.602021217346191,
+        "oracle_mae_nm": 9.581319808959961,
+        "catalogue_median_worst_pp": 27.913193615298727
+      },
+      {
+        "majority_family_share": 0.49333333333333335,
+        "supported_family_macro_recall": 0.28841698841698843,
+        "label_family_counts": [
+          0,
+          0,
+          1,
+          0,
+          8,
+          0,
+          10,
+          0,
+          10,
+          37,
+          5,
+          4
+        ],
+        "count": 75,
+        "correct_count": 43,
+        "accuracy": 0.5733333333333334,
+        "routed_mae_nm": 8.612530708312988,
+        "oracle_mae_nm": 8.755108833312988,
+        "catalogue_median_worst_pp": 56.012820770402286
+      }
+    ],
+    [
+      {
+        "majority_family_share": 0.2345679012345679,
+        "supported_family_macro_recall": 0.3195238095238095,
+        "label_family_counts": [
+          3,
+          0,
+          19,
+          6,
+          11,
+          10,
+          0,
+          14,
+          3,
+          7,
+          3,
+          5
+        ],
+        "count": 81,
+        "correct_count": 39,
+        "accuracy": 0.48148148148148145,
+        "routed_mae_nm": 6.886942386627197,
+        "oracle_mae_nm": 9.305447578430176,
+        "catalogue_median_worst_pp": 5.013773978643582
+      },
+      {
+        "majority_family_share": 0.6111111111111112,
+        "supported_family_macro_recall": 0.2613636363636364,
+        "label_family_counts": [
+          0,
+          0,
+          1,
+          0,
+          24,
+          1,
+          1,
+          0,
+          0,
+          44,
+          0,
+          1
+        ],
+        "count": 72,
+        "correct_count": 49,
+        "accuracy": 0.6805555555555556,
+        "routed_mae_nm": 9.06596565246582,
+        "oracle_mae_nm": 8.836657524108887,
+        "catalogue_median_worst_pp": 14.465625531682601
+      },
+      {
+        "majority_family_share": 0.7236842105263158,
+        "supported_family_macro_recall": 0.9181818181818182,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          21,
+          0,
+          0,
+          0,
+          0,
+          55,
+          0,
+          0
+        ],
+        "count": 76,
+        "correct_count": 67,
+        "accuracy": 0.881578947368421,
+        "routed_mae_nm": 9.603747367858887,
+        "oracle_mae_nm": 9.158148765563965,
+        "catalogue_median_worst_pp": 38.23188760223006
+      },
+      {
+        "majority_family_share": 0.7213114754098361,
+        "supported_family_macro_recall": 0.4602272727272727,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          13,
+          0,
+          1,
+          0,
+          0,
+          44,
+          0,
+          3
+        ],
+        "count": 61,
+        "correct_count": 50,
+        "accuracy": 0.819672131147541,
+        "routed_mae_nm": 10.75064468383789,
+        "oracle_mae_nm": 9.708394050598145,
+        "catalogue_median_worst_pp": 63.02420896402189
+      }
+    ],
+    [
+      {
+        "majority_family_share": 0.22972972972972974,
+        "supported_family_macro_recall": 0.3657754010695187,
+        "label_family_counts": [
+          17,
+          0,
+          16,
+          1,
+          10,
+          1,
+          4,
+          5,
+          3,
+          9,
+          4,
+          4
+        ],
+        "count": 74,
+        "correct_count": 36,
+        "accuracy": 0.4864864864864865,
+        "routed_mae_nm": 7.930612564086914,
+        "oracle_mae_nm": 11.109561920166016,
+        "catalogue_median_worst_pp": 8.777228537921221
+      },
+      {
+        "majority_family_share": 0.8615384615384616,
+        "supported_family_macro_recall": 0.5,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          56,
+          0,
+          0,
+          0,
+          0,
+          9,
+          0,
+          0
+        ],
+        "count": 65,
+        "correct_count": 56,
+        "accuracy": 0.8615384615384616,
+        "routed_mae_nm": 8.863752365112305,
+        "oracle_mae_nm": 8.506597518920898,
+        "catalogue_median_worst_pp": 23.410771058967562
+      },
+      {
+        "majority_family_share": 0.9452054794520548,
+        "supported_family_macro_recall": 0.625,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          69,
+          0,
+          0,
+          0,
+          0,
+          4,
+          0,
+          0
+        ],
+        "count": 73,
+        "correct_count": 70,
+        "accuracy": 0.958904109589041,
+        "routed_mae_nm": 8.950916290283203,
+        "oracle_mae_nm": 8.753806114196777,
+        "catalogue_median_worst_pp": 45.8620837913993
+      },
+      {
+        "majority_family_share": 0.8051948051948052,
+        "supported_family_macro_recall": 0.6666666666666666,
+        "label_family_counts": [
+          0,
+          0,
+          0,
+          0,
+          62,
+          0,
+          0,
+          0,
+          0,
+          15,
+          0,
+          0
+        ],
+        "count": 77,
+        "correct_count": 67,
+        "accuracy": 0.8701298701298701,
+        "routed_mae_nm": 9.029623985290527,
+        "oracle_mae_nm": 8.588067054748535,
+        "catalogue_median_worst_pp": 72.69428894504699
+      }
+    ]
+  ],
+  "fractions": [
+    0.1,
+    0.25,
+    0.5,
+    0.75,
+    1.0
+  ],
+  "catalogue_nested_mean_worst_pp": [
+    17.64803373952052,
+    20.62748798148547,
+    23.689774064040858,
+    25.564878552259334,
+    27.03481345747647
+  ],
+  "catalogue_nested_median_worst_pp": [
+    8.063416257988965,
+    12.110042542970426,
+    17.252025826718924,
+    19.627689551193136,
+    21.05603926612016
+  ],
+  "catalogue_nested_fraction_within_5pp": [
+    0.4602076124567474,
+    0.421280276816609,
+    0.3685121107266436,
+    0.28719723183391005,
+    0.24740484429065743
+  ],
+  "physical_nested": [
+    {
+      "case": "ray_01",
+      "full_width_nm": 155.88699999999994,
+      "target_absorption": 0.6083728182121688,
+      "worst_error_pp": [
+        15.958477943907507,
+        17.329719815302134,
+        18.99836195079237,
+        22.55307547396834,
+        32.942660323494856
+      ]
+    },
+    {
+      "case": "ray_02",
+      "full_width_nm": 257.95899999999995,
+      "target_absorption": 0.866225117258504,
+      "worst_error_pp": [
+        68.0080696525718,
+        70.36300629342144,
+        71.73524305881845,
+        71.73525762585041,
+        71.73525762585041
+      ]
+    },
+    {
+      "case": "ray_03",
+      "full_width_nm": 535.118,
+      "target_absorption": 0.9357161605849783,
+      "worst_error_pp": [
+        61.36443826249518,
+        69.147538749129,
+        75.34311395849784,
+        75.34311395849784,
+        75.34311395849784
+      ]
+    },
+    {
+      "case": "ray_04",
+      "full_width_nm": 24.63900000000001,
+      "target_absorption": 0.6950227510676252,
+      "worst_error_pp": [
+        23.92666963230053,
+        24.09180601785638,
+        24.368326712572387,
+        24.645941983755442,
+        24.9241698775778
+      ]
+    },
+    {
+      "case": "ray_05",
+      "full_width_nm": 75.83400000000006,
+      "target_absorption": 0.18184078163545014,
+      "worst_error_pp": [
+        2.0726859773003534,
+        2.2504817733015074,
+        2.5313290770639125,
+        2.7645890433250777,
+        2.906907840272874
+      ]
+    }
+  ]
+}

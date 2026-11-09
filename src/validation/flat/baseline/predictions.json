@@ -1,0 +1,323 @@
+{
+  "cases": [
+    {
+      "case": "flat_baseline_01",
+      "predicted_average_error_pp": 17.106810212135315,
+      "predicted_spectrum": "optimization/flat_baseline_01/F07_predicted.csv",
+      "predicted_worst_error_pp": 20.201531052589417,
+      "prediction": {
+        "family": "F07",
+        "initial_best_predicted_worst_error_pp": 21.1215078830719,
+        "normalized_parameters": [
+          0.746874988079071,
+          0.212864950299263,
+          0.0,
+          0.0,
+          0.38374999165534973,
+          0.0,
+          0.0
+        ],
+        "parameters_nm": {
+          "L_s": null,
+          "Lout_q": 239.0,
+          "R_d": 61.39999771118164,
+          "Rout_c": null,
+          "w_c": null,
+          "w_q": 34.05839157104492,
+          "w_t": null
+        },
+        "predicted_average_error_pp": 17.106810212135315,
+        "predicted_within_tolerance": false,
+        "predicted_worst_error_pp": 20.201531052589417,
+        "seed_source_id": "G0851",
+        "step": 39,
+        "substrate": "air",
+        "tracks": false,
+        "trust_lower_nm": [
+          229.10000610351562,
+          33.5,
+          0.0,
+          0.0,
+          52.599998474121094,
+          0.0,
+          0.0
+        ],
+        "trust_upper_nm": [
+          239.0,
+          38.5,
+          0.0,
+          0.0,
+          61.39999771118164,
+          0.0,
+          0.0
+        ]
+      },
+      "previous_case": "baseline_01",
+      "previous_test_position": 1130,
+      "reference_family": "F07",
+      "reference_source_id": "G0851",
+      "request": [
+        531.118,
+        687.005,
+        0.6083728182121688
+      ]
+    },
+    {
+      "case": "flat_baseline_02",
+      "predicted_average_error_pp": 51.50641202926636,
+      "predicted_spectrum": "optimization/flat_baseline_02/F10_predicted.csv",
+      "predicted_worst_error_pp": 54.517269134521484,
+      "prediction": {
+        "family": "F10",
+        "initial_best_predicted_worst_error_pp": 57.31078386306763,
+        "normalized_parameters": [
+          0.5,
+          0.1922522336244583,
+          0.0,
+          0.0,
+          0.0,
+          0.27562499046325684,
+          0.14687499403953552
+        ],
+        "parameters_nm": {
+          "L_s": 88.19999694824219,
+          "Lout_q": 160.0,
+          "R_d": null,
+          "Rout_c": null,
+          "w_c": null,
+          "w_q": 30.760356903076172,
+          "w_t": 23.5
+        },
+        "predicted_average_error_pp": 51.50641202926636,
+        "predicted_within_tolerance": false,
+        "predicted_worst_error_pp": 54.517269134521484,
+        "seed_source_id": "G1462",
+        "step": 128,
+        "substrate": "air",
+        "tracks": true,
+        "trust_lower_nm": [
+          160.0,
+          28.5,
+          0.0,
+          0.0,
+          0.0,
+          69.80000305175781,
+          23.5
+        ],
+        "trust_upper_nm": [
+          173.0,
+          33.5,
+          0.0,
+          0.0,
+          0.0,
+          88.19999694824219,
+          26.5
+        ]
+      },
+      "previous_case": "baseline_02",
+      "previous_test_position": 185,
+      "reference_family": "F10",
+      "reference_source_id": "G1462",
+      "request": [
+        631.567,
+        889.526,
+        0.866225117258504
+      ]
+    },
+    {
+      "case": "flat_baseline_03",
+      "predicted_average_error_pp": 0.3279425436630845,
+      "predicted_spectrum": "optimization/flat_baseline_03/F09_predicted.csv",
+      "predicted_worst_error_pp": 0.863298773765564,
+      "prediction": {
+        "family": "F09",
+        "initial_best_predicted_worst_error_pp": 2.849125862121582,
+        "normalized_parameters": [
+          0.6220129132270813,
+          0.23925766348838806,
+          0.0,
+          0.0,
+          0.0,
+          0.15052905678749084,
+          0.0
+        ],
+        "parameters_nm": {
+          "L_s": 48.16929626464844,
+          "Lout_q": 199.04412841796875,
+          "R_d": null,
+          "Rout_c": null,
+          "w_c": null,
+          "w_q": 38.281227111816406,
+          "w_t": null
+        },
+        "predicted_average_error_pp": 0.3279425436630845,
+        "predicted_within_tolerance": true,
+        "predicted_worst_error_pp": 0.863298773765564,
+        "seed_source_id": "G1222",
+        "step": 235,
+        "substrate": "air",
+        "tracks": false,
+        "trust_lower_nm": [
+          187.09999084472656,
+          34.5,
+          0.0,
+          0.0,
+          0.0,
+          40.0,
+          0.0
+        ],
+        "trust_upper_nm": [
+          202.90000915527344,
+          39.5,
+          0.0,
+          0.0,
+          0.0,
+          56.19999694824219,
+          0.0
+        ]
+      },
+      "previous_case": "baseline_03",
+      "previous_test_position": 836,
+      "reference_family": "F12",
+      "reference_source_id": "G1867",
+      "request": [
+        475.642,
+        558.352,
+        0.3012235307731086
+      ]
+    },
+    {
+      "case": "flat_baseline_04",
+      "predicted_average_error_pp": 63.01552057266235,
+      "predicted_spectrum": "optimization/flat_baseline_04/F10_predicted.csv",
+      "predicted_worst_error_pp": 70.97104787826538,
+      "prediction": {
+        "family": "F10",
+        "initial_best_predicted_worst_error_pp": 73.15582036972046,
+        "normalized_parameters": [
+          0.609375,
+          0.18437500298023224,
+          0.0,
+          0.0,
+          0.0,
+          0.36452969908714294,
+          0.171875
+        ],
+        "parameters_nm": {
+          "L_s": 116.64950561523438,
+          "Lout_q": 195.0,
+          "R_d": null,
+          "Rout_c": null,
+          "w_c": null,
+          "w_q": 29.5,
+          "w_t": 27.5
+        },
+        "predicted_average_error_pp": 63.01552057266235,
+        "predicted_within_tolerance": false,
+        "predicted_worst_error_pp": 70.97104787826538,
+        "seed_source_id": "G1481",
+        "step": 348,
+        "substrate": "air",
+        "tracks": true,
+        "trust_lower_nm": [
+          195.0,
+          25.0,
+          0.0,
+          0.0,
+          0.0,
+          110.80000305175781,
+          24.499998092651367
+        ],
+        "trust_upper_nm": [
+          210.99998474121094,
+          29.5,
+          0.0,
+          0.0,
+          0.0,
+          129.1999969482422,
+          27.5
+        ]
+      },
+      "previous_case": "baseline_04",
+      "previous_test_position": 131,
+      "reference_family": "F05",
+      "reference_source_id": "G0436",
+      "request": [
+        514.745,
+        1049.863,
+        0.9357161605849783
+      ]
+    },
+    {
+      "case": "flat_baseline_05",
+      "predicted_average_error_pp": 0.551955308765173,
+      "predicted_spectrum": "optimization/flat_baseline_05/F04_predicted.csv",
+      "predicted_worst_error_pp": 1.2651994824409485,
+      "prediction": {
+        "family": "F04",
+        "initial_best_predicted_worst_error_pp": 1.8765553832054138,
+        "normalized_parameters": [
+          0.3925153613090515,
+          0.15442338585853577,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "parameters_nm": {
+          "L_s": null,
+          "Lout_q": 125.60491943359375,
+          "R_d": null,
+          "Rout_c": null,
+          "w_c": null,
+          "w_q": 24.707740783691406,
+          "w_t": null
+        },
+        "predicted_average_error_pp": 0.551955308765173,
+        "predicted_within_tolerance": true,
+        "predicted_worst_error_pp": 1.2651994824409485,
+        "seed_source_id": "G0351",
+        "step": 187,
+        "substrate": "air",
+        "tracks": false,
+        "trust_lower_nm": [
+          121.0,
+          22.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "trust_upper_nm": [
+          138.6999969482422,
+          28.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "previous_case": "baseline_05",
+      "previous_test_position": 1097,
+      "reference_family": "F12",
+      "reference_source_id": "G1960",
+      "request": [
+        607.074,
+        741.956,
+        0.09859326609789898
+      ]
+    }
+  ],
+  "checkpoint_sha256": "92edabc76d4b4de461e44242714e1d86b760d6a467179d92e4a6c2a4c29c7757",
+  "dataset_sha256": "1bf24c56c2d09b0f26a219010f612ea2f870dee61a3070385637ed3e47602f27",
+  "optimization": {
+    "multistarts": 8,
+    "steps": 500,
+    "tolerance": 0.05,
+    "trust_fraction": 0.1
+  },
+  "selection": "same five target requests as earlier inverse baseline, no filtering on new predictions"
+}

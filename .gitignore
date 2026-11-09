@@ -18,3 +18,21 @@ src/validation/baseline/**/*.aedt.bak
 
 # Relocated local training artifacts
 /results/
+
+src/validation/optuna/**/*.aedtresults/
+src/validation/optuna/**/*.aedt.lock
+src/validation/optuna/**/*.aedt.auto
+src/validation/optuna/**/*.aedt.bak
+
+src/validation/ray/**/*.aedtresults/
+src/validation/ray/**/*.aedt.lock
+src/validation/ray/**/*.aedt.auto
+src/validation/ray/**/*.aedt.bak
+
+# Flat-spectrum preparation ownership lock
+data/processed/flat_spectra/.lock
+
+src/validation/flat/baseline/**/*.aedtresults/
+src/validation/flat/baseline/**/*.aedt.lock
+src/validation/flat/baseline/**/*.aedt.auto
+src/validation/flat/baseline/**/*.aedt.bak
