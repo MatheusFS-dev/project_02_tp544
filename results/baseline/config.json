@@ -1,0 +1,14 @@
+{
+  "batch_size": 32,
+  "candidates": 100,
+  "data": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/data/processed/treinar_families_v2/dataset.npz",
+  "device": "cuda:0",
+  "epochs": 50,
+  "learning_rate": 0.001,
+  "min_delta": 0.0001,
+  "output": "runs/treinar_full",
+  "patience": 8,
+  "seed": 42,
+  "threads": 1,
+  "weight_decay": 0.0001
+}

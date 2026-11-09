@@ -1,0 +1,38 @@
+{
+  "fingerprint": "50803fd47d3626ac92dc4cc7de59a56ba184a79afeb0d993eb11bec139042ec1",
+  "specification": {
+    "architecture": {
+      "activation": "silu",
+      "depth": 3,
+      "dropout": 0.0,
+      "schema": 2,
+      "trunk": "residual",
+      "width": 256
+    },
+    "config": {
+      "batch_size": 32,
+      "candidates": 100,
+      "data": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/data/processed/treinar_families_v2/dataset.npz",
+      "device": "cuda:0",
+      "epochs": 50,
+      "learning_rate": 0.001,
+      "min_delta": 0.0001,
+      "output": "runs/treinar_full",
+      "patience": 8,
+      "seed": 42,
+      "threads": 1,
+      "weight_decay": 0.0001
+    },
+    "data": {
+      "coordinates": "b4d0c7a22932edd79d0875b049879e499367d292b689d7b6603a4f0fe6fe8a3a",
+      "geometry": "8a660916088b73fd3fc30fdb5f332860fca6759a34ca852f722b7736ec9ef9c2",
+      "source_ids": "45b1a3e44d2e65492c437da81e08eb387540503fdee548e885322fce589d1b26",
+      "substrate": "15cad5292877b58bfd1319dae7106009eee5755a971833944c34dfabc14f24ac",
+      "test": "6aa746fc83b995ba9cb2359ca399ee288db056afd8165be2182ca77c18413873",
+      "train": "779f5a8401049823b101b7d5cf3939cd30ae7595ec247c3ad240c28ef4a5d1af",
+      "validation": "c9a8a22f01d3a25f9ac67ec7779b4a84a2a67a5ed5762960874781d95b2f1020",
+      "x": "1536db023780c51848970341b2c43a9f963c19ffb63529fa18988d976fb081e1"
+    },
+    "schema": 1
+  }
+}

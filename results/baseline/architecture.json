@@ -1,0 +1,8 @@
+{
+  "activation": "silu",
+  "depth": 3,
+  "dropout": 0.0,
+  "schema": 2,
+  "trunk": "residual",
+  "width": 256
+}

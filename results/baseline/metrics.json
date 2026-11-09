@@ -1,0 +1,96 @@
+{
+  "architecture": {
+    "activation": "silu",
+    "depth": 3,
+    "dropout": 0.0,
+    "schema": 2,
+    "trunk": "residual",
+    "width": 256
+  },
+  "best_validation_loss": 0.9848998188972473,
+  "epoch": 10,
+  "history": [
+    {
+      "epoch": 1,
+      "validation_loss": 1.0395079851150513
+    },
+    {
+      "epoch": 2,
+      "validation_loss": 0.9848998188972473
+    },
+    {
+      "epoch": 3,
+      "validation_loss": 1.2684807777404785
+    },
+    {
+      "epoch": 4,
+      "validation_loss": 1.0577442646026611
+    },
+    {
+      "epoch": 5,
+      "validation_loss": 1.0567785501480103
+    },
+    {
+      "epoch": 6,
+      "validation_loss": 1.0288736820220947
+    },
+    {
+      "epoch": 7,
+      "validation_loss": 1.120793342590332
+    },
+    {
+      "epoch": 8,
+      "validation_loss": 1.188406229019165
+    },
+    {
+      "epoch": 9,
+      "validation_loss": 1.3799817562103271
+    },
+    {
+      "epoch": 10,
+      "validation_loss": 1.1843880414962769
+    }
+  ],
+  "test": {
+    "correctly_routed_parameter_mae_nm": 10.345440864562988,
+    "geometry_accuracy": 0.5544982698961938,
+    "joint_accuracy": 0.5544982698961938,
+    "oracle_parameter_mae_nm": 11.273362159729004,
+    "per_family_accuracy": {
+      "F01": 0.6153846153846154,
+      "F02": 0.0,
+      "F03": 0.8354430379746836,
+      "F04": 0.13043478260869565,
+      "F05": 0.9218241042345277,
+      "F06": 0.08695652173913043,
+      "F07": 0.26666666666666666,
+      "F08": 0.10526315789473684,
+      "F09": 0.10666666666666667,
+      "F10": 0.6346153846153846,
+      "F11": 0.043010752688172046,
+      "F12": 0.13559322033898305
+    },
+    "substrate_accuracy": 1.0
+  },
+  "validation": {
+    "correctly_routed_parameter_mae_nm": 8.301793098449707,
+    "geometry_accuracy": 0.6868512110726643,
+    "joint_accuracy": 0.6868512110726643,
+    "oracle_parameter_mae_nm": 9.316617012023926,
+    "per_family_accuracy": {
+      "F01": 0.8461538461538461,
+      "F02": 0.0,
+      "F03": 0.8289473684210527,
+      "F04": 0.07142857142857142,
+      "F05": 0.8729792147806005,
+      "F06": 0.12,
+      "F07": 0.5462962962962963,
+      "F08": 0.03333333333333333,
+      "F09": 0.13846153846153847,
+      "F10": 0.9239130434782609,
+      "F11": 0.08333333333333333,
+      "F12": 0.38095238095238093
+    },
+    "substrate_accuracy": 1.0
+  }
+}
