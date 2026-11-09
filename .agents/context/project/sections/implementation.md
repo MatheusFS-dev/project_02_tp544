@@ -1,4 +1,20 @@
-# Current implementation
+> Current full-training configuration: all four TOMLs use up to 50 epochs, patience 8, 100 search candidates and runs/treinar_full. RUN.md is the root execution guide. Entry points mirror console output into runs/treinar_full/logs. Raw and processed datasets are tracked by explicit user request. Earlier short-run budgets below describe historical validation.
+
+# Current family-expert implementation
+
+Refreshed 2026-11-09 from executable sources. Root `PROBLEM_ARCHITECTURE.md` is the architecture reference. Root `README.md` owns execution commands. Existing runner TOMLs remain authoritative for current paths and budgets.
+
+`core.Architecture(schema=2)` selects the shared trunk, twelve family logits, substrate logits and twelve small parameter heads. `families.py` owns active fields and scales. Seven padded coordinates use native HFSS radii, lengths and widths, not legacy outer/inner diameters. Training routes regression with the true family. Prediction selects the argmax family's expert and reports inactive fields as null. AutoKeras uses equivalent heads and exports equivalent PyTorch weights. Family metrics distinguish oracle routing from correctly routed regression.
+
+`family_data.py` validates all received spectra and groups repeated physical parameterizations before stratification. `prepare_families` uses split-local minimax flat-target labeling with family-stratified geometry partitions (70/15/15). It must not be confused with historical minimax flat-target request preparation. Geometry-held-out and catalogue-shared request evaluations answer different questions. Preserve the chosen objective in preparation metadata.
+
+Version-one model loading remains supported. Changed datasets require fresh run directories. Package defaults to physical GPU 0 and preserves explicit CUDA_VISIBLE_DEVICES. RTX 4070 is physical GPU 1 on this machine. Checkpoint, optimizer and RNG recovery remain shared by expert training and the runners.
+
+All 2,000 originals are preserved under `data/raw/treinar`. There are 1,926 unique designs and 74 repetitions with identical spectra. All supplied spectra describe air. Exact-catalogue physical verification remains separate from regression accuracy. Unseen predictions require simulation.
+
+The older snapshot below is retained for provenance and does not describe the new expert schema.
+
+# Historical implementation snapshot (2026-11-06)
 
 Generated source-derived context, refreshed 2026-11-06. Canonical sources take precedence. HEAD: `e50d270415be53dd55d1b880cde2913956fcaf6b`.
 
@@ -6,7 +22,7 @@ Generated source-derived context, refreshed 2026-11-06. Canonical sources take p
 
 Python >=3.12,<3.13, hatchling src layout. Dependencies pinned in pyproject.toml and uv.lock. Setup: `uv sync`, then `source .venv/bin/activate`. Use only project .venv.
 
-Run `python3 -m inverse_design.baseline`, `python3 -m inverse_design.optuna_search`, `python3 -m inverse_design.autokeras_search`, or `python3 -m inverse_design.ray_search`. Each main loads its complete matching src/configs/<runner>.toml through training.load_config. No config CLI arguments. Data paths resolve relative to TOML, output relative to working directory. All shipped configs use cuda:0, 50 epochs, 100 candidates, seed 42 and output runs. Baseline ignores candidates. Package __init__.py sets physical GPU 0 and deterministic CUDA environment before framework imports. CPU requires explicit configuration.
+Run `python3 src/inverse_design/baseline.py`, `python3 src/inverse_design/optuna_search.py`, `python3 src/inverse_design/autokeras_search.py`, or `python3 src/inverse_design/ray_search.py`. Each main loads its complete matching src/configs/<runner>.toml through training.load_config. No config CLI arguments. Data paths resolve relative to TOML, output relative to working directory. All shipped configs use cuda:0, 50 epochs, 100 candidates, seed 42 and output runs. Baseline ignores candidates. Package __init__.py sets physical GPU 0 and deterministic CUDA environment before framework imports. CPU requires explicit configuration.
 
 ## Data and model
 
@@ -28,7 +44,7 @@ Public APIs in __init__.py: Architecture, Model, Config, normalize, decode, trai
 
 ## Verification and limits
 
-Canonical commands: README.md. `python3 -m pytest -q` and `python3 -m compileall -q src tests`. pytest config only sets tests directory. No separate lint/type-check configuration in pyproject.toml. Tests cover domain/model, configuration and received-data validation, CPU recovery, Optuna draw replay, winner completion ordering, AutoKeras export/recovery, and Ray checkpoint restoration/interruption.
+Canonical commands: README.md. `pytest -q` and `python3 -c "import compileall; compileall.compile_dir('src', quiet=1); compileall.compile_dir('tests', quiet=1)"`. pytest config only sets tests directory. No separate lint/type-check configuration in pyproject.toml. Tests cover domain/model, configuration and received-data validation, CPU recovery, Optuna draw replay, winner completion ordering, AutoKeras export/recovery, and Ray checkpoint restoration/interruption.
 
 No tests or training were executed during ingestion. docs/verification.md reports historical 2026-11-04 results of 25 passing tests and one-epoch GPU runner checks. Those are recorded claims, not newly reproduced results. Full search budgets and physical absorption accuracy remain unverified. Existing reference context covers proposal conflicts and original geometries. Do not equate synthetic learning with HFSS validation.
 
@@ -50,3 +66,5 @@ No tests or training were executed during ingestion. docs/verification.md report
 - `src/configs/baseline.toml` SHA-256 `0edad8739c302fb9a017aff7e7a6da169a9e8297e7eb6a1bb64b5ba2060e51e2`
 - `src/configs/optuna.toml` SHA-256 `0edad8739c302fb9a017aff7e7a6da169a9e8297e7eb6a1bb64b5ba2060e51e2`
 - `src/configs/ray.toml` SHA-256 `0edad8739c302fb9a017aff7e7a6da169a9e8297e7eb6a1bb64b5ba2060e51e2`
+
+Current full-family preprocessing: preserve the minimax constant-absorption objective, split unique geometries by family before label construction, and select labels only within each partition. Seed 42 yields 1,348/289/289 designs and 5,392/1,156/1,156 requests. Audit source-family and winning-label coverage separately. Defaults use data/processed/treinar_families_v2/dataset.npz and runs/treinar_families_v2.

@@ -1,5 +1,5 @@
 """Deterministic epoch-boundary training, recovery and prediction APIs."""
-from dataclasses import asdict, dataclass
+from dataclasses import asdict, dataclass, replace
 import copy
 import hashlib
 import json
@@ -147,6 +147,9 @@ def loss(outputs, targets):
 
     Returns:
         Scalar differentiable total training objective."""
+    if outputs[2].ndim == 3:
+        from .families import expert_loss
+        return expert_loss(outputs, targets)
     return F.cross_entropy(outputs[0], targets[0]) + F.cross_entropy(outputs[1], targets[1]) + F.huber_loss(outputs[2], targets[2])
 
 
@@ -163,6 +166,8 @@ def train(directory, config=Config(), architecture=Architecture(), report=None, 
     Returns:
         JSON-compatible metrics, architecture, epoch and validation history.
     """
+    if dataset(config.data)['coordinates'].shape[1] == 7:
+        architecture = replace(architecture, schema=2)
     with storage.ownership(directory) as directory:
         print(f'Loading dataset and preparing training: {directory}', flush=True)
         fingerprint = prepare(directory, config, architecture)
@@ -269,6 +274,13 @@ def predict(model, values):
         g, s, c = model(torch.tensor(normalize(values), device=next(model.parameters()).device))
         gp, sp = g.softmax(-1).cpu().numpy(), s.softmax(-1).cpu().numpy()
         gi, si = gp.argmax(-1), sp.argmax(-1)
+        if model.architecture.schema == 2:
+            from .families import ACTIVE, NAMES, PARAMETERS, decode_parameters
+            values = decode_parameters(c.cpu().numpy()[np.arange(len(gi)), gi])
+            return [dict(family=NAMES[a], geometry=NAMES[a], substrate=SUBSTRATES[b], tracks=a in (5, 7, 9, 11),
+                         parameters_nm={name: float(v[j]) if j in ACTIVE[a] else None for j, name in enumerate(PARAMETERS)},
+                         geometry_probabilities=p.tolist(), substrate_probabilities=q.tolist())
+                    for a, b, v, p, q in zip(gi, si, values, gp, sp)]
         dims = decode(c.cpu().numpy(), gi)
     return [dict(geometry=GEOMETRIES[a], substrate=SUBSTRATES[b], outer_nm=float(d[0]),
                  inner_nm=float(d[1]), geometry_probabilities=p.tolist(), substrate_probabilities=q.tolist())

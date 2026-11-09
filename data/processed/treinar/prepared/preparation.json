@@ -1,0 +1,28 @@
+{
+  "objective_version": "flat_target_v1",
+  "source_hashes": {
+    "geometry": "2468e4576f9afd419fba627a36635730acc8261d1195270e68e7a788e9eb7a49",
+    "spectra": "455f34126a91609f00717c1c3f81f46cb80405714313289d0ab23dcfd30450f7",
+    "requests": "468be3ffefeec3ad4991afab004e367caf478837adf1a90b62f4021250212f96"
+  },
+  "output_hashes": {
+    "data": "f609133f835cfeb551f5339c6ed87c416779168e69d41805bbe420ea467b8a03",
+    "selection": "fd3bf9e452ea48af165a6d4fb5d9e0ab6499bab7de990eb38a2ecbe9f425e940"
+  },
+  "geometry_labels": {
+    "circular_disk": 0,
+    "square": 1,
+    "circular_ring": 2,
+    "square_ring": 3
+  },
+  "substrate_labels": {
+    "air": 0,
+    "SiO2": 1
+  },
+  "selection_order": [
+    "worst_error",
+    "average_error",
+    "simulation_id"
+  ],
+  "average_rule": "trapezoidal absolute sample error divided by band width"
+}

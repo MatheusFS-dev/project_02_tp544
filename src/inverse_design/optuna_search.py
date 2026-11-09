@@ -1,10 +1,10 @@
 """Seeded TPE search with persistent study and interrupted-trial recovery."""
 import json
 from pathlib import Path
-from .core import Architecture
-from .training import load_config, prepare, train
-from .search import export_winner
-from . import storage
+from inverse_design.core import Architecture
+from inverse_design.training import load_config, prepare, train
+from inverse_design.search import export_winner
+from inverse_design import storage
 
 
 def run(config):
@@ -87,6 +87,10 @@ def sample_architecture(study, trial, journal, sampler_path):
     return Architecture(**trial.params)
 
 
+from inverse_design.run_logging import logged_runner
+
+
+@logged_runner('optuna')
 def main():
     """Execute the Optuna module entry point."""
     print(json.dumps(run(load_config('optuna')), indent=2))

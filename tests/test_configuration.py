@@ -2,10 +2,21 @@
 from dataclasses import fields
 from pathlib import Path
 import sys
+import subprocess
 import numpy as np
 import pytest
 from inverse_design.core import dataset
 from inverse_design.training import Config, load_config, specification
+
+
+def test_explicit_physical_gpu_selection_is_preserved():
+    code = (
+        "import os\n"
+        "os.environ['CUDA_VISIBLE_DEVICES'] = '1'\n"
+        "import inverse_design\n"
+        "assert os.environ['CUDA_VISIBLE_DEVICES'] == '1'\n"
+    )
+    subprocess.run([sys.executable, '-c', code], check=True)
 
 
 def test_missing_data_is_never_generated(tmp_path):
@@ -21,7 +32,7 @@ def test_each_runner_loads_complete_default_config(monkeypatch):
         config = load_config(runner)
         assert config.device == 'cuda:0'
         assert Path(config.data).is_absolute()
-        assert Path(config.data).name == 'example.npz'
+        assert Path(config.data).name == 'dataset.npz'
         import tomllib
         path = Path(__file__).resolve().parents[1] / 'src/configs' / f'{runner}.toml'
         assert set(tomllib.loads(path.read_text())) == {field.name for field in fields(Config)}
@@ -30,7 +41,7 @@ def test_each_runner_loads_complete_default_config(monkeypatch):
 def test_config_is_independent_of_command_line(monkeypatch):
     monkeypatch.setattr(sys, 'argv', ['runner', 'unused.toml', 'unused'])
     config = load_config('baseline')
-    expected = Path(__file__).resolve().parents[1] / 'data/example.npz'
+    expected = Path(__file__).resolve().parents[1] / 'data/processed/treinar_families_v2/dataset.npz'
     assert config.data == str(expected)
 
 

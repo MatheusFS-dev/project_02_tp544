@@ -1,9 +1,9 @@
 """Independent AutoKeras AutoModel search using the PyTorch Keras backend."""
 import json
 from pathlib import Path
-from .training import load_config, device_for, prepare
-from .search import export_winner
-from . import storage
+from inverse_design.training import load_config, device_for, prepare
+from inverse_design.search import export_winner
+from inverse_design import storage
 
 
 def run(config):
@@ -16,7 +16,7 @@ def run(config):
         Selected winner architecture, validation loss and held-out metrics."""
     import os
     os.environ['KERAS_BACKEND'] = 'torch'
-    from .autokeras_adapter import make_automodel, search
+    from inverse_design.autokeras_adapter import make_automodel, search
     import keras
     print(f'Starting AutoKeras search: {config.candidates} candidates', flush=True)
     with storage.ownership(Path(config.output) / 'autokeras') as root:
@@ -32,6 +32,10 @@ def run(config):
         return export_winner(root, candidate, config, best.score, best.trial_id, extra_artifacts=('best.keras',))
 
 
+from inverse_design.run_logging import logged_runner
+
+
+@logged_runner('autokeras')
 def main():
     """Execute the AutoKeras module entry point."""
     print(json.dumps(run(load_config('autokeras')), indent=2))

@@ -1,0 +1,2001 @@
+id,familia,descricao,trilhas,Lout_q,w_q,Rout_c,w_c,R_d,L_s,w_t
+G0798,F06,anel quadrado + anel circular + trilhas,1,208,49,45,20,,,24
+G0139,F02,quadrado,0,,,,,,213,
+G1239,F09,anel quadrado + quadrado,0,194,48,,,,48,
+G1706,F11,anel circular + disco,0,,,88,35,23,,
+G0784,F06,anel quadrado + anel circular + trilhas,1,197,43,38,21,,,25
+G0298,F03,anel circular,0,,,41,22,,,
+G0934,F07,anel quadrado + disco,0,218,37,,,24,,
+G0224,F03,anel circular,0,,,63,17,,,
+G0479,F05,anel quadrado + anel circular,0,187,32,42,27,,,
+G0084,F01,disco,0,,,,,33,,
+G0466,F05,anel quadrado + anel circular,0,172,41,35,18,,,
+G0319,F04,anel quadrado,0,189,29,,,,,
+G0981,F07,anel quadrado + disco,0,193,45,,,27,,
+G1807,F12,anel circular + disco + trilhas,1,,,133,32,47,,26
+G1560,F10,anel quadrado + quadrado + trilhas,1,225,41,,,,54,20
+G1442,F10,anel quadrado + quadrado + trilhas,1,236,29,,,,153,24
+G0600,F05,anel quadrado + anel circular,0,232,26,53,34,,,
+G1159,F08,anel quadrado + disco + trilhas,1,161,44,,,23,,23
+G1270,F09,anel quadrado + quadrado,0,195,37,,,,67,
+G1972,F12,anel circular + disco + trilhas,1,,,103,39,51,,29
+G1583,F10,anel quadrado + quadrado + trilhas,1,211,34,,,,111,16
+G1781,F11,anel circular + disco,0,,,83,29,26,,
+G0767,F06,anel quadrado + anel circular + trilhas,1,205,48,36,21,,,26
+G1727,F11,anel circular + disco,0,,,138,44,71,,
+G1869,F12,anel circular + disco + trilhas,1,,,136,42,29,,17
+G0884,F07,anel quadrado + disco,0,207,48,,,22,,
+G0941,F07,anel quadrado + disco,0,237,43,,,26,,
+G1023,F08,anel quadrado + disco + trilhas,1,171,38,,,26,,23
+G0180,F02,quadrado,0,,,,,,194,
+G1331,F09,anel quadrado + quadrado,0,181,47,,,,65,
+G1525,F10,anel quadrado + quadrado + trilhas,1,165,46,,,,46,23
+G0492,F05,anel quadrado + anel circular,0,230,39,50,27,,,
+G1726,F11,anel circular + disco,0,,,140,43,73,,
+G0732,F06,anel quadrado + anel circular + trilhas,1,230,38,59,33,,,17
+G1499,F10,anel quadrado + quadrado + trilhas,1,194,46,,,,42,29
+G0664,F06,anel quadrado + anel circular + trilhas,1,238,29,73,19,,,18
+G1416,F10,anel quadrado + quadrado + trilhas,1,194,39,,,,69,27
+G1314,F09,anel quadrado + quadrado,0,240,32,,,,45,
+G0909,F07,anel quadrado + disco,0,164,34,,,30,,
+G0919,F07,anel quadrado + disco,0,214,37,,,43,,
+G1206,F09,anel quadrado + quadrado,0,216,37,,,,55,
+G1605,F11,anel circular + disco,0,,,86,29,24,,
+G0013,F01,disco,0,,,,,90,,
+G0985,F07,anel quadrado + disco,0,176,31,,,47,,
+G1959,F12,anel circular + disco + trilhas,1,,,102,27,53,,26
+G0417,F05,anel quadrado + anel circular,0,233,45,43,20,,,
+G1796,F11,anel circular + disco,0,,,109,27,63,,
+G1316,F09,anel quadrado + quadrado,0,207,26,,,,56,
+G1125,F08,anel quadrado + disco + trilhas,1,174,28,,,47,,27
+G0806,F07,anel quadrado + disco,0,208,39,,,44,,
+G1084,F08,anel quadrado + disco + trilhas,1,190,28,,,39,,26
+G0066,F01,disco,0,,,,,48,,
+G0895,F07,anel quadrado + disco,0,160,30,,,21,,
+G0577,F05,anel quadrado + anel circular,0,192,29,56,27,,,
+G1368,F09,anel quadrado + quadrado,0,169,30,,,,58,
+G0939,F07,anel quadrado + disco,0,189,36,,,24,,
+G0515,F05,anel quadrado + anel circular,0,223,28,48,20,,,
+G0953,F07,anel quadrado + disco,0,215,44,,,28,,
+G0410,F05,anel quadrado + anel circular,0,194,36,48,18,,,
+G1549,F10,anel quadrado + quadrado + trilhas,1,217,37,,,,42,24
+G0335,F04,anel quadrado,0,256,37,,,,,
+G1599,F10,anel quadrado + quadrado + trilhas,1,235,27,,,,132,28
+G0765,F06,anel quadrado + anel circular + trilhas,1,232,35,58,25,,,22
+G0976,F07,anel quadrado + disco,0,238,44,,,39,,
+G0228,F03,anel circular,0,,,42,16,,,
+G0464,F05,anel quadrado + anel circular,0,169,28,42,19,,,
+G0323,F04,anel quadrado,0,221,46,,,,,
+G1046,F08,anel quadrado + disco + trilhas,1,211,39,,,20,,29
+G0188,F02,quadrado,0,,,,,,186,
+G0372,F04,anel quadrado,0,123,37,,,,,
+G1377,F09,anel quadrado + quadrado,0,182,37,,,,64,
+G1341,F09,anel quadrado + quadrado,0,219,38,,,,81,
+G1328,F09,anel quadrado + quadrado,0,172,33,,,,74,
+G1652,F11,anel circular + disco,0,,,86,33,23,,
+G0846,F07,anel quadrado + disco,0,186,33,,,37,,
+G0039,F01,disco,0,,,,,87,,
+G0873,F07,anel quadrado + disco,0,211,32,,,25,,
+G0864,F07,anel quadrado + disco,0,198,37,,,23,,
+G0965,F07,anel quadrado + disco,0,234,30,,,70,,
+G0914,F07,anel quadrado + disco,0,194,33,,,27,,
+G0643,F06,anel quadrado + anel circular + trilhas,1,199,28,52,33,,,21
+G1912,F12,anel circular + disco + trilhas,1,,,101,27,38,,16
+G0553,F05,anel quadrado + anel circular,0,221,41,57,31,,,
+G0931,F07,anel quadrado + disco,0,184,30,,,23,,
+G1453,F10,anel quadrado + quadrado + trilhas,1,205,32,,,,120,25
+G1623,F11,anel circular + disco,0,,,119,41,49,,
+G0763,F06,anel quadrado + anel circular + trilhas,1,183,42,37,18,,,19
+G0520,F05,anel quadrado + anel circular,0,169,35,36,21,,,
+G0344,F04,anel quadrado,0,169,30,,,,,
+G1143,F08,anel quadrado + disco + trilhas,1,184,34,,,43,,29
+G0196,F02,quadrado,0,,,,,,73,
+G0285,F03,anel circular,0,,,42,18,,,
+G1458,F10,anel quadrado + quadrado + trilhas,1,188,46,,,,52,21
+G0887,F07,anel quadrado + disco,0,181,45,,,30,,
+G1963,F12,anel circular + disco + trilhas,1,,,90,20,57,,27
+G0402,F05,anel quadrado + anel circular,0,223,49,38,17,,,
+G1141,F08,anel quadrado + disco + trilhas,1,216,31,,,43,,25
+G0230,F03,anel circular,0,,,124,27,,,
+G1914,F12,anel circular + disco + trilhas,1,,,91,41,37,,18
+G0152,F02,quadrado,0,,,,,,62,
+G0886,F07,anel quadrado + disco,0,162,46,,,22,,
+G0347,F04,anel quadrado,0,155,30,,,,,
+G1897,F12,anel circular + disco + trilhas,1,,,105,24,39,,25
+G0816,F07,anel quadrado + disco,0,181,31,,,30,,
+G1108,F08,anel quadrado + disco + trilhas,1,195,44,,,27,,29
+G1956,F12,anel circular + disco + trilhas,1,,,122,44,21,,19
+G0502,F05,anel quadrado + anel circular,0,193,41,41,22,,,
+G1794,F11,anel circular + disco,0,,,100,21,22,,
+G0011,F01,disco,0,,,,,88,,
+G0445,F05,anel quadrado + anel circular,0,237,41,67,16,,,
+G1998,F12,anel circular + disco + trilhas,1,,,81,40,29,,23
+G1467,F10,anel quadrado + quadrado + trilhas,1,176,29,,,,80,22
+G0589,F05,anel quadrado + anel circular,0,176,36,36,18,,,
+G1236,F09,anel quadrado + quadrado,0,163,46,,,,41,
+G0072,F01,disco,0,,,,,109,,
+G0533,F05,anel quadrado + anel circular,0,189,42,37,17,,,
+G1849,F12,anel circular + disco + trilhas,1,,,139,30,43,,25
+G1243,F09,anel quadrado + quadrado,0,187,37,,,,67,
+G1460,F10,anel quadrado + quadrado + trilhas,1,167,41,,,,43,17
+G1347,F09,anel quadrado + quadrado,0,209,45,,,,80,
+G1437,F10,anel quadrado + quadrado + trilhas,1,188,39,,,,43,19
+G1983,F12,anel circular + disco + trilhas,1,,,128,26,63,,17
+G0390,F04,anel quadrado,0,185,26,,,,,
+G1191,F08,anel quadrado + disco + trilhas,1,206,29,,,36,,25
+G0918,F07,anel quadrado + disco,0,189,42,,,29,,
+G1054,F08,anel quadrado + disco + trilhas,1,168,43,,,27,,21
+G0138,F02,quadrado,0,,,,,,154,
+G0945,F07,anel quadrado + disco,0,172,33,,,22,,
+G1156,F08,anel quadrado + disco + trilhas,1,173,43,,,20,,17
+G1340,F09,anel quadrado + quadrado,0,210,49,,,,47,
+G1411,F10,anel quadrado + quadrado + trilhas,1,199,29,,,,61,22
+G1205,F09,anel quadrado + quadrado,0,188,39,,,,74,
+G1888,F12,anel circular + disco + trilhas,1,,,129,33,50,,27
+G0537,F05,anel quadrado + anel circular,0,215,35,51,24,,,
+G0679,F06,anel quadrado + anel circular + trilhas,1,237,46,55,34,,,29
+G1325,F09,anel quadrado + quadrado,0,170,47,,,,50,
+G1283,F09,anel quadrado + quadrado,0,203,38,,,,66,
+G1217,F09,anel quadrado + quadrado,0,164,44,,,,42,
+G0832,F07,anel quadrado + disco,0,171,40,,,31,,
+G0375,F04,anel quadrado,0,238,32,,,,,
+G1120,F08,anel quadrado + disco + trilhas,1,223,44,,,49,,23
+G1310,F09,anel quadrado + quadrado,0,172,38,,,,65,
+G1682,F11,anel circular + disco,0,,,111,27,46,,
+G1438,F10,anel quadrado + quadrado + trilhas,1,177,28,,,,58,25
+G0597,F05,anel quadrado + anel circular,0,230,28,60,33,,,
+G1681,F11,anel circular + disco,0,,,133,22,67,,
+G1130,F08,anel quadrado + disco + trilhas,1,223,49,,,37,,28
+G0137,F02,quadrado,0,,,,,,96,
+G1863,F12,anel circular + disco + trilhas,1,,,105,28,32,,26
+G1575,F10,anel quadrado + quadrado + trilhas,1,238,48,,,,100,27
+G1947,F12,anel circular + disco + trilhas,1,,,116,37,30,,22
+G1592,F10,anel quadrado + quadrado + trilhas,1,171,39,,,,41,19
+G1055,F08,anel quadrado + disco + trilhas,1,199,26,,,24,,18
+G0979,F07,anel quadrado + disco,0,200,32,,,25,,
+G1823,F12,anel circular + disco + trilhas,1,,,129,37,23,,28
+G1607,F11,anel circular + disco,0,,,137,38,62,,
+G0100,F01,disco,0,,,,,103,,
+G1037,F08,anel quadrado + disco + trilhas,1,198,31,,,50,,19
+G1061,F08,anel quadrado + disco + trilhas,1,176,48,,,23,,28
+G0351,F04,anel quadrado,0,125,25,,,,,
+G1928,F12,anel circular + disco + trilhas,1,,,133,32,57,,16
+G0498,F05,anel quadrado + anel circular,0,194,27,53,25,,,
+G1517,F10,anel quadrado + quadrado + trilhas,1,232,42,,,,77,30
+G1357,F09,anel quadrado + quadrado,0,172,42,,,,66,
+G0596,F05,anel quadrado + anel circular,0,215,28,49,22,,,
+G1836,F12,anel circular + disco + trilhas,1,,,80,22,25,,23
+G1555,F10,anel quadrado + quadrado + trilhas,1,188,25,,,,88,20
+G0358,F04,anel quadrado,0,133,29,,,,,
+G1294,F09,anel quadrado + quadrado,0,167,33,,,,60,
+G0766,F06,anel quadrado + anel circular + trilhas,1,223,42,55,34,,,15
+G1064,F08,anel quadrado + disco + trilhas,1,161,49,,,21,,25
+G1964,F12,anel circular + disco + trilhas,1,,,136,41,69,,17
+G0283,F03,anel circular,0,,,106,20,,,
+G0847,F07,anel quadrado + disco,0,222,31,,,28,,
+G0029,F01,disco,0,,,,,71,,
+G1302,F09,anel quadrado + quadrado,0,236,36,,,,116,
+G1004,F08,anel quadrado + disco + trilhas,1,178,38,,,26,,19
+G1930,F12,anel circular + disco + trilhas,1,,,110,32,52,,20
+G0469,F05,anel quadrado + anel circular,0,219,35,44,19,,,
+G1441,F10,anel quadrado + quadrado + trilhas,1,205,48,,,,65,25
+G0877,F07,anel quadrado + disco,0,218,47,,,48,,
+G1554,F10,anel quadrado + quadrado + trilhas,1,169,27,,,,55,22
+G0008,F01,disco,0,,,,,75,,
+G0683,F06,anel quadrado + anel circular + trilhas,1,209,46,48,30,,,23
+G0970,F07,anel quadrado + disco,0,167,35,,,23,,
+G1012,F08,anel quadrado + disco + trilhas,1,229,41,,,48,,28
+G1502,F10,anel quadrado + quadrado + trilhas,1,162,47,,,,44,24
+G1134,F08,anel quadrado + disco + trilhas,1,221,32,,,26,,21
+G0731,F06,anel quadrado + anel circular + trilhas,1,226,49,51,19,,,24
+G0147,F02,quadrado,0,,,,,,109,
+G1072,F08,anel quadrado + disco + trilhas,1,197,41,,,21,,28
+G0718,F06,anel quadrado + anel circular + trilhas,1,221,36,36,18,,,22
+G0050,F01,disco,0,,,,,103,,
+G0103,F02,quadrado,0,,,,,,186,
+G0777,F06,anel quadrado + anel circular + trilhas,1,220,32,46,20,,,22
+G1131,F08,anel quadrado + disco + trilhas,1,167,38,,,22,,19
+G1078,F08,anel quadrado + disco + trilhas,1,195,47,,,40,,20
+G0627,F06,anel quadrado + anel circular + trilhas,1,172,34,36,17,,,17
+G0983,F07,anel quadrado + disco,0,218,43,,,48,,
+G1491,F10,anel quadrado + quadrado + trilhas,1,211,46,,,,95,16
+G1904,F12,anel circular + disco + trilhas,1,,,83,41,27,,27
+G1353,F09,anel quadrado + quadrado,0,202,28,,,,68,
+G1040,F08,anel quadrado + disco + trilhas,1,238,48,,,40,,24
+G0923,F07,anel quadrado + disco,0,170,46,,,27,,
+G1258,F09,anel quadrado + quadrado,0,218,36,,,,91,
+G1698,F11,anel circular + disco,0,,,121,35,38,,
+G0065,F01,disco,0,,,,,69,,
+G0755,F06,anel quadrado + anel circular + trilhas,1,193,25,48,29,,,16
+G1425,F10,anel quadrado + quadrado + trilhas,1,181,42,,,,69,27
+G0060,F01,disco,0,,,,,86,,
+G0676,F06,anel quadrado + anel circular + trilhas,1,215,39,55,33,,,23
+G1559,F10,anel quadrado + quadrado + trilhas,1,200,26,,,,103,24
+G0311,F04,anel quadrado,0,242,42,,,,,
+G0186,F02,quadrado,0,,,,,,81,
+G1360,F09,anel quadrado + quadrado,0,184,39,,,,40,
+G0327,F04,anel quadrado,0,230,32,,,,,
+G1196,F08,anel quadrado + disco + trilhas,1,171,33,,,36,,24
+G1564,F10,anel quadrado + quadrado + trilhas,1,187,26,,,,105,21
+G0382,F04,anel quadrado,0,193,30,,,,,
+G1931,F12,anel circular + disco + trilhas,1,,,88,27,45,,21
+G1378,F09,anel quadrado + quadrado,0,232,28,,,,47,
+G0299,F03,anel circular,0,,,83,30,,,
+G1606,F11,anel circular + disco,0,,,113,24,67,,
+G0378,F04,anel quadrado,0,221,40,,,,,
+G0885,F07,anel quadrado + disco,0,211,28,,,20,,
+G0384,F04,anel quadrado,0,145,50,,,,,
+G0277,F03,anel circular,0,,,57,32,,,
+G0644,F06,anel quadrado + anel circular + trilhas,1,180,35,41,24,,,16
+G0646,F06,anel quadrado + anel circular + trilhas,1,233,46,45,25,,,15
+G0690,F06,anel quadrado + anel circular + trilhas,1,188,36,46,17,,,20
+G0332,F04,anel quadrado,0,165,45,,,,,
+G0187,F02,quadrado,0,,,,,,145,
+G1058,F08,anel quadrado + disco + trilhas,1,181,42,,,28,,26
+G0524,F05,anel quadrado + anel circular,0,234,39,63,24,,,
+G1370,F09,anel quadrado + quadrado,0,226,34,,,,78,
+G0279,F03,anel circular,0,,,126,43,,,
+G1346,F09,anel quadrado + quadrado,0,196,36,,,,77,
+G1069,F08,anel quadrado + disco + trilhas,1,234,37,,,35,,29
+G1731,F11,anel circular + disco,0,,,90,25,24,,
+G1005,F08,anel quadrado + disco + trilhas,1,215,42,,,30,,18
+G0562,F05,anel quadrado + anel circular,0,195,27,45,21,,,
+G1065,F08,anel quadrado + disco + trilhas,1,169,40,,,23,,25
+G1440,F10,anel quadrado + quadrado + trilhas,1,197,45,,,,50,17
+G0586,F05,anel quadrado + anel circular,0,179,27,35,15,,,
+G1561,F10,anel quadrado + quadrado + trilhas,1,166,49,,,,41,28
+G0280,F03,anel circular,0,,,115,40,,,
+G1344,F09,anel quadrado + quadrado,0,238,43,,,,97,
+G0308,F04,anel quadrado,0,150,25,,,,,
+G0993,F07,anel quadrado + disco,0,171,48,,,25,,
+G1898,F12,anel circular + disco + trilhas,1,,,132,24,87,,28
+G0388,F04,anel quadrado,0,174,23,,,,,
+G1060,F08,anel quadrado + disco + trilhas,1,219,45,,,45,,25
+G0551,F05,anel quadrado + anel circular,0,212,47,38,23,,,
+G1997,F12,anel circular + disco + trilhas,1,,,98,31,31,,17
+G0461,F05,anel quadrado + anel circular,0,203,49,38,21,,,
+G1330,F09,anel quadrado + quadrado,0,225,30,,,,108,
+G1970,F12,anel circular + disco + trilhas,1,,,127,32,23,,17
+G0982,F07,anel quadrado + disco,0,206,43,,,47,,
+G1597,F10,anel quadrado + quadrado + trilhas,1,178,42,,,,71,15
+G1981,F12,anel circular + disco + trilhas,1,,,136,27,89,,21
+G0795,F06,anel quadrado + anel circular + trilhas,1,197,40,47,17,,,20
+G1936,F12,anel circular + disco + trilhas,1,,,96,33,43,,21
+G0077,F01,disco,0,,,,,94,,
+G1641,F11,anel circular + disco,0,,,126,30,70,,
+G1878,F12,anel circular + disco + trilhas,1,,,121,24,30,,25
+G1077,F08,anel quadrado + disco + trilhas,1,207,26,,,58,,16
+G1913,F12,anel circular + disco + trilhas,1,,,84,22,27,,19
+G1439,F10,anel quadrado + quadrado + trilhas,1,166,30,,,,73,19
+G0205,F03,anel circular,0,,,113,45,,,
+G0856,F07,anel quadrado + disco,0,187,41,,,31,,
+G1133,F08,anel quadrado + disco + trilhas,1,214,41,,,44,,27
+G1379,F09,anel quadrado + quadrado,0,223,31,,,,52,
+G1924,F12,anel circular + disco + trilhas,1,,,116,28,29,,18
+G0921,F07,anel quadrado + disco,0,184,48,,,22,,
+G1880,F12,anel circular + disco + trilhas,1,,,114,41,43,,15
+G1471,F10,anel quadrado + quadrado + trilhas,1,237,26,,,,96,19
+G1242,F09,anel quadrado + quadrado,0,175,47,,,,45,
+G0316,F04,anel quadrado,0,216,34,,,,,
+G1968,F12,anel circular + disco + trilhas,1,,,87,32,20,,18
+G1132,F08,anel quadrado + disco + trilhas,1,235,45,,,61,,28
+G0994,F07,anel quadrado + disco,0,166,37,,,32,,
+G1944,F12,anel circular + disco + trilhas,1,,,126,33,22,,28
+G1676,F11,anel circular + disco,0,,,111,42,49,,
+G1802,F12,anel circular + disco + trilhas,1,,,137,27,40,,16
+G1608,F11,anel circular + disco,0,,,119,27,64,,
+G1162,F08,anel quadrado + disco + trilhas,1,229,42,,,48,,17
+G1686,F11,anel circular + disco,0,,,129,35,40,,
+G0673,F06,anel quadrado + anel circular + trilhas,1,219,48,35,18,,,26
+G0587,F05,anel quadrado + anel circular,0,201,49,35,17,,,
+G1803,F12,anel circular + disco + trilhas,1,,,83,41,32,,26
+G1187,F08,anel quadrado + disco + trilhas,1,235,27,,,67,,30
+G1484,F10,anel quadrado + quadrado + trilhas,1,198,29,,,,55,15
+G1680,F11,anel circular + disco,0,,,111,40,45,,
+G0961,F07,anel quadrado + disco,0,187,29,,,47,,
+G0691,F06,anel quadrado + anel circular + trilhas,1,203,33,53,17,,,23
+G0392,F04,anel quadrado,0,192,44,,,,,
+G0838,F07,anel quadrado + disco,0,163,32,,,37,,
+G1832,F12,anel circular + disco + trilhas,1,,,131,31,31,,25
+G0067,F01,disco,0,,,,,101,,
+G0805,F07,anel quadrado + disco,0,198,26,,,61,,
+G1119,F08,anel quadrado + disco + trilhas,1,222,43,,,32,,26
+G0680,F06,anel quadrado + anel circular + trilhas,1,185,27,37,17,,,22
+G0354,F04,anel quadrado,0,149,34,,,,,
+G1209,F09,anel quadrado + quadrado,0,227,35,,,,126,
+G0662,F06,anel quadrado + anel circular + trilhas,1,203,40,36,16,,,18
+G1092,F08,anel quadrado + disco + trilhas,1,161,39,,,27,,19
+G0325,F04,anel quadrado,0,233,27,,,,,
+G0022,F01,disco,0,,,,,84,,
+G1879,F12,anel circular + disco + trilhas,1,,,90,28,36,,24
+G0113,F02,quadrado,0,,,,,,75,
+G1171,F08,anel quadrado + disco + trilhas,1,229,29,,,54,,30
+G0672,F06,anel quadrado + anel circular + trilhas,1,232,36,48,26,,,19
+G0973,F07,anel quadrado + disco,0,224,46,,,49,,
+G1786,F11,anel circular + disco,0,,,100,44,25,,
+G1798,F11,anel circular + disco,0,,,106,29,60,,
+G1049,F08,anel quadrado + disco + trilhas,1,216,34,,,27,,29
+G0774,F06,anel quadrado + anel circular + trilhas,1,196,36,36,20,,,28
+G1908,F12,anel circular + disco + trilhas,1,,,92,20,47,,27
+G0612,F06,anel quadrado + anel circular + trilhas,1,233,26,40,17,,,24
+G1363,F09,anel quadrado + quadrado,0,211,42,,,,105,
+G0024,F01,disco,0,,,,,50,,
+G0415,F05,anel quadrado + anel circular,0,210,29,40,21,,,
+G0318,F04,anel quadrado,0,229,23,,,,,
+G0917,F07,anel quadrado + disco,0,208,49,,,29,,
+G1618,F11,anel circular + disco,0,,,107,35,30,,
+G1309,F09,anel quadrado + quadrado,0,188,33,,,,52,
+G1094,F08,anel quadrado + disco + trilhas,1,187,50,,,27,,20
+G1809,F12,anel circular + disco + trilhas,1,,,132,27,95,,28
+G0462,F05,anel quadrado + anel circular,0,217,40,41,20,,,
+G0031,F01,disco,0,,,,,57,,
+G0517,F05,anel quadrado + anel circular,0,177,27,38,21,,,
+G0571,F05,anel quadrado + anel circular,0,231,38,59,23,,,
+G0714,F06,anel quadrado + anel circular + trilhas,1,200,33,37,21,,,19
+G0706,F06,anel quadrado + anel circular + trilhas,1,204,28,64,31,,,15
+G0505,F05,anel quadrado + anel circular,0,202,32,53,32,,,
+G1656,F11,anel circular + disco,0,,,102,43,27,,
+G0247,F03,anel circular,0,,,50,27,,,
+G0456,F05,anel quadrado + anel circular,0,169,25,41,26,,,
+G1240,F09,anel quadrado + quadrado,0,227,33,,,,48,
+G0535,F05,anel quadrado + anel circular,0,203,42,42,19,,,
+G0539,F05,anel quadrado + anel circular,0,210,32,62,26,,,
+G0901,F07,anel quadrado + disco,0,228,33,,,32,,
+G0684,F06,anel quadrado + anel circular + trilhas,1,200,46,42,18,,,24
+G1817,F12,anel circular + disco + trilhas,1,,,89,36,28,,26
+G1513,F10,anel quadrado + quadrado + trilhas,1,196,31,,,,107,21
+G1073,F08,anel quadrado + disco + trilhas,1,221,33,,,31,,16
+G1276,F09,anel quadrado + quadrado,0,186,37,,,,43,
+G1739,F11,anel circular + disco,0,,,138,38,73,,
+G0583,F05,anel quadrado + anel circular,0,176,33,45,22,,,
+G0639,F06,anel quadrado + anel circular + trilhas,1,197,31,40,22,,,25
+G0698,F06,anel quadrado + anel circular + trilhas,1,205,38,41,24,,,25
+G1343,F09,anel quadrado + quadrado,0,180,43,,,,58,
+G0621,F06,anel quadrado + anel circular + trilhas,1,218,50,36,16,,,28
+G0412,F05,anel quadrado + anel circular,0,194,46,39,24,,,
+G1175,F08,anel quadrado + disco + trilhas,1,189,34,,,35,,28
+G0746,F06,anel quadrado + anel circular + trilhas,1,174,31,44,18,,,27
+G0826,F07,anel quadrado + disco,0,176,26,,,21,,
+G0010,F01,disco,0,,,,,74,,
+G1973,F12,anel circular + disco + trilhas,1,,,115,32,61,,29
+G0183,F02,quadrado,0,,,,,,90,
+G0900,F07,anel quadrado + disco,0,165,50,,,20,,
+G0041,F01,disco,0,,,,,64,,
+G1043,F08,anel quadrado + disco + trilhas,1,234,26,,,64,,22
+G1263,F09,anel quadrado + quadrado,0,218,37,,,,68,
+G1851,F12,anel circular + disco + trilhas,1,,,137,25,79,,27
+G0995,F07,anel quadrado + disco,0,168,25,,,40,,
+G1766,F11,anel circular + disco,0,,,133,23,82,,
+G0786,F06,anel quadrado + anel circular + trilhas,1,188,45,39,24,,,25
+G1864,F12,anel circular + disco + trilhas,1,,,115,36,41,,17
+G0814,F07,anel quadrado + disco,0,181,33,,,24,,
+G1053,F08,anel quadrado + disco + trilhas,1,225,44,,,30,,27
+G1138,F08,anel quadrado + disco + trilhas,1,214,38,,,26,,24
+G1382,F09,anel quadrado + quadrado,0,194,41,,,,87,
+G1385,F09,anel quadrado + quadrado,0,177,31,,,,48,
+G1291,F09,anel quadrado + quadrado,0,197,34,,,,95,
+G1905,F12,anel circular + disco + trilhas,1,,,95,22,49,,21
+G0395,F04,anel quadrado,0,238,30,,,,,
+G0356,F04,anel quadrado,0,131,37,,,,,
+G1226,F09,anel quadrado + quadrado,0,207,45,,,,81,
+G1399,F09,anel quadrado + quadrado,0,236,43,,,,48,
+G1907,F12,anel circular + disco + trilhas,1,,,99,41,38,,19
+G1692,F11,anel circular + disco,0,,,110,43,31,,
+G1173,F08,anel quadrado + disco + trilhas,1,205,43,,,45,,22
+G0762,F06,anel quadrado + anel circular + trilhas,1,178,41,37,17,,,17
+G1901,F12,anel circular + disco + trilhas,1,,,98,29,43,,16
+G0004,F01,disco,0,,,,,99,,
+G0367,F04,anel quadrado,0,247,40,,,,,
+G0686,F06,anel quadrado + anel circular + trilhas,1,177,35,40,19,,,20
+G0428,F05,anel quadrado + anel circular,0,237,48,53,21,,,
+G1420,F10,anel quadrado + quadrado + trilhas,1,161,26,,,,86,16
+G0284,F03,anel circular,0,,,107,50,,,
+G0433,F05,anel quadrado + anel circular,0,236,35,36,18,,,
+G0578,F05,anel quadrado + anel circular,0,192,39,35,18,,,
+G0773,F06,anel quadrado + anel circular + trilhas,1,200,38,46,30,,,22
+G0530,F05,anel quadrado + anel circular,0,202,29,44,26,,,
+G0063,F01,disco,0,,,,,80,,
+G1384,F09,anel quadrado + quadrado,0,228,42,,,,47,
+G0905,F07,anel quadrado + disco,0,231,25,,,47,,
+G0540,F05,anel quadrado + anel circular,0,239,34,73,29,,,
+G0154,F02,quadrado,0,,,,,,202,
+G1800,F11,anel circular + disco,0,,,107,42,39,,
+G1259,F09,anel quadrado + quadrado,0,169,34,,,,59,
+G0387,F04,anel quadrado,0,242,36,,,,,
+G0561,F05,anel quadrado + anel circular,0,185,36,40,19,,,
+G0268,F03,anel circular,0,,,127,39,,,
+G1244,F09,anel quadrado + quadrado,0,239,36,,,,71,
+G0357,F04,anel quadrado,0,195,20,,,,,
+G0656,F06,anel quadrado + anel circular + trilhas,1,219,45,40,18,,,16
+G0467,F05,anel quadrado + anel circular,0,196,27,45,19,,,
+G0070,F01,disco,0,,,,,68,,
+G1977,F12,anel circular + disco + trilhas,1,,,132,34,25,,21
+G1042,F08,anel quadrado + disco + trilhas,1,169,47,,,24,,16
+G1449,F10,anel quadrado + quadrado + trilhas,1,235,28,,,,117,22
+G1194,F08,anel quadrado + disco + trilhas,1,203,40,,,51,,22
+G1939,F12,anel circular + disco + trilhas,1,,,90,37,37,,18
+G1611,F11,anel circular + disco,0,,,99,42,40,,
+G1617,F11,anel circular + disco,0,,,101,34,32,,
+G0055,F01,disco,0,,,,,71,,
+G1463,F10,anel quadrado + quadrado + trilhas,1,233,34,,,,84,26
+G1988,F12,anel circular + disco + trilhas,1,,,97,45,42,,18
+G1091,F08,anel quadrado + disco + trilhas,1,203,36,,,36,,18
+G0514,F05,anel quadrado + anel circular,0,189,37,43,26,,,
+G0454,F05,anel quadrado + anel circular,0,229,44,56,24,,,
+G1645,F11,anel circular + disco,0,,,96,21,35,,
+G1265,F09,anel quadrado + quadrado,0,174,28,,,,58,
+G1814,F12,anel circular + disco + trilhas,1,,,118,27,22,,17
+G0709,F06,anel quadrado + anel circular + trilhas,1,180,39,41,24,,,17
+G0775,F06,anel quadrado + anel circular + trilhas,1,175,33,42,20,,,26
+G1572,F10,anel quadrado + quadrado + trilhas,1,174,39,,,,66,27
+G1179,F08,anel quadrado + disco + trilhas,1,164,37,,,34,,19
+G1658,F11,anel circular + disco,0,,,108,25,67,,
+G0107,F02,quadrado,0,,,,,,215,
+G1991,F12,anel circular + disco + trilhas,1,,,127,44,55,,23
+G0016,F01,disco,0,,,,,79,,
+G1152,F08,anel quadrado + disco + trilhas,1,218,39,,,32,,24
+G1010,F08,anel quadrado + disco + trilhas,1,199,40,,,20,,26
+G1744,F11,anel circular + disco,0,,,109,22,56,,
+G0201,F03,anel circular,0,,,110,30,,,
+G1844,F12,anel circular + disco + trilhas,1,,,128,41,22,,29
+G0075,F01,disco,0,,,,,84,,
+G0990,F07,anel quadrado + disco,0,235,39,,,35,,
+G1994,F12,anel circular + disco + trilhas,1,,,132,29,69,,24
+G0291,F03,anel circular,0,,,48,28,,,
+G1902,F12,anel circular + disco + trilhas,1,,,106,37,57,,26
+G1277,F09,anel quadrado + quadrado,0,176,34,,,,64,
+G0486,F05,anel quadrado + anel circular,0,174,40,36,20,,,
+G1669,F11,anel circular + disco,0,,,138,33,37,,
+G0808,F07,anel quadrado + disco,0,171,35,,,24,,
+G1380,F09,anel quadrado + quadrado,0,183,41,,,,53,
+G0634,F06,anel quadrado + anel circular + trilhas,1,223,37,47,20,,,15
+G1741,F11,anel circular + disco,0,,,139,43,67,,
+G1024,F08,anel quadrado + disco + trilhas,1,227,40,,,59,,19
+G1182,F08,anel quadrado + disco + trilhas,1,189,26,,,29,,18
+G1724,F11,anel circular + disco,0,,,94,26,58,,
+G1855,F12,anel circular + disco + trilhas,1,,,82,25,34,,24
+G1961,F12,anel circular + disco + trilhas,1,,,116,22,32,,20
+G0722,F06,anel quadrado + anel circular + trilhas,1,175,36,41,25,,,19
+G0569,F05,anel quadrado + anel circular,0,183,27,36,20,,,
+G1923,F12,anel circular + disco + trilhas,1,,,132,30,72,,27
+G1146,F08,anel quadrado + disco + trilhas,1,235,46,,,61,,22
+G1067,F08,anel quadrado + disco + trilhas,1,226,30,,,57,,29
+G0204,F03,anel circular,0,,,112,43,,,
+G0254,F03,anel circular,0,,,51,26,,,
+G1088,F08,anel quadrado + disco + trilhas,1,173,47,,,22,,16
+G0126,F02,quadrado,0,,,,,,213,
+G1768,F11,anel circular + disco,0,,,120,21,48,,
+G0141,F02,quadrado,0,,,,,,141,
+G1671,F11,anel circular + disco,0,,,137,21,46,,
+G0465,F05,anel quadrado + anel circular,0,193,31,44,19,,,
+G0208,F03,anel circular,0,,,77,42,,,
+G1030,F08,anel quadrado + disco + trilhas,1,237,43,,,47,,18
+G0419,F05,anel quadrado + anel circular,0,223,39,62,24,,,
+G1664,F11,anel circular + disco,0,,,92,36,35,,
+G1014,F08,anel quadrado + disco + trilhas,1,224,37,,,45,,26
+G0602,F06,anel quadrado + anel circular + trilhas,1,239,45,52,19,,,23
+G0913,F07,anel quadrado + disco,0,181,41,,,22,,
+G0096,F01,disco,0,,,,,75,,
+G1110,F08,anel quadrado + disco + trilhas,1,223,34,,,52,,16
+G0218,F03,anel circular,0,,,126,21,,,
+G1883,F12,anel circular + disco + trilhas,1,,,122,30,70,,29
+G0026,F01,disco,0,,,,,104,,
+G1063,F08,anel quadrado + disco + trilhas,1,184,33,,,23,,29
+G1799,F11,anel circular + disco,0,,,98,39,49,,
+G1410,F10,anel quadrado + quadrado + trilhas,1,193,28,,,,68,19
+G0857,F07,anel quadrado + disco,0,203,41,,,34,,
+G0281,F03,anel circular,0,,,112,37,,,
+G0938,F07,anel quadrado + disco,0,229,47,,,31,,
+G1593,F10,anel quadrado + quadrado + trilhas,1,169,37,,,,48,30
+G0049,F01,disco,0,,,,,69,,
+G0321,F04,anel quadrado,0,166,35,,,,,
+G0143,F02,quadrado,0,,,,,,167,
+G0888,F07,anel quadrado + disco,0,163,47,,,24,,
+G1142,F08,anel quadrado + disco + trilhas,1,169,37,,,31,,25
+G0748,F06,anel quadrado + anel circular + trilhas,1,233,28,70,22,,,19
+G0015,F01,disco,0,,,,,49,,
+G1547,F10,anel quadrado + quadrado + trilhas,1,222,33,,,,132,21
+G0273,F03,anel circular,0,,,71,22,,,
+G0974,F07,anel quadrado + disco,0,209,40,,,43,,
+G0768,F06,anel quadrado + anel circular + trilhas,1,203,39,38,17,,,17
+G0125,F02,quadrado,0,,,,,,180,
+G1986,F12,anel circular + disco + trilhas,1,,,92,22,58,,30
+G1711,F11,anel circular + disco,0,,,96,32,45,,
+G0368,F04,anel quadrado,0,168,30,,,,,
+G0812,F07,anel quadrado + disco,0,206,46,,,35,,
+G1548,F10,anel quadrado + quadrado + trilhas,1,224,42,,,,104,17
+G0787,F06,anel quadrado + anel circular + trilhas,1,190,41,42,23,,,20
+G0003,F01,disco,0,,,,,71,,
+G0434,F05,anel quadrado + anel circular,0,171,31,40,18,,,
+G0006,F01,disco,0,,,,,48,,
+G1176,F08,anel quadrado + disco + trilhas,1,198,29,,,33,,25
+G1767,F11,anel circular + disco,0,,,118,30,20,,
+G0009,F01,disco,0,,,,,93,,
+G1311,F09,anel quadrado + quadrado,0,204,30,,,,60,
+G1887,F12,anel circular + disco + trilhas,1,,,117,32,70,,21
+G1494,F10,anel quadrado + quadrado + trilhas,1,169,33,,,,62,29
+G1059,F08,anel quadrado + disco + trilhas,1,162,49,,,22,,28
+G0446,F05,anel quadrado + anel circular,0,182,25,48,16,,,
+G0331,F04,anel quadrado,0,157,45,,,,,
+G1407,F10,anel quadrado + quadrado + trilhas,1,218,33,,,,74,20
+G0199,F02,quadrado,0,,,,,,102,
+G0239,F03,anel circular,0,,,72,41,,,
+G1774,F11,anel circular + disco,0,,,92,38,30,,
+G0071,F01,disco,0,,,,,104,,
+G0874,F07,anel quadrado + disco,0,186,35,,,25,,
+G1303,F09,anel quadrado + quadrado,0,233,39,,,,64,
+G1355,F09,anel quadrado + quadrado,0,233,34,,,,89,
+G0127,F02,quadrado,0,,,,,,167,
+G0557,F05,anel quadrado + anel circular,0,179,31,38,23,,,
+G0711,F06,anel quadrado + anel circular + trilhas,1,193,25,45,29,,,19
+G1168,F08,anel quadrado + disco + trilhas,1,184,39,,,28,,23
+G0640,F06,anel quadrado + anel circular + trilhas,1,187,32,42,26,,,15
+G0300,F03,anel circular,0,,,113,47,,,
+G1527,F10,anel quadrado + quadrado + trilhas,1,226,40,,,,54,26
+G1213,F09,anel quadrado + quadrado,0,179,43,,,,46,
+G1429,F10,anel quadrado + quadrado + trilhas,1,219,43,,,,50,21
+G0904,F07,anel quadrado + disco,0,215,37,,,55,,
+G1032,F08,anel quadrado + disco + trilhas,1,181,28,,,21,,26
+G0409,F05,anel quadrado + anel circular,0,225,31,63,18,,,
+G0260,F03,anel circular,0,,,68,48,,,
+G0057,F01,disco,0,,,,,48,,
+G1556,F10,anel quadrado + quadrado + trilhas,1,168,30,,,,85,17
+G0593,F05,anel quadrado + anel circular,0,162,33,36,19,,,
+G1760,F11,anel circular + disco,0,,,84,27,46,,
+G0086,F01,disco,0,,,,,78,,
+G1140,F08,anel quadrado + disco + trilhas,1,218,27,,,52,,15
+G1980,F12,anel circular + disco + trilhas,1,,,84,41,20,,24
+G1013,F08,anel quadrado + disco + trilhas,1,214,38,,,49,,16
+G1885,F12,anel circular + disco + trilhas,1,,,89,30,32,,21
+G1728,F11,anel circular + disco,0,,,130,24,80,,
+G0829,F07,anel quadrado + disco,0,190,33,,,37,,
+G0051,F01,disco,0,,,,,51,,
+G0850,F07,anel quadrado + disco,0,193,36,,,22,,
+G1966,F12,anel circular + disco + trilhas,1,,,110,44,41,,19
+G0840,F07,anel quadrado + disco,0,169,39,,,24,,
+G1847,F12,anel circular + disco + trilhas,1,,,100,44,24,,25
+G1734,F11,anel circular + disco,0,,,89,29,47,,
+G1148,F08,anel quadrado + disco + trilhas,1,209,31,,,27,,20
+G1714,F11,anel circular + disco,0,,,82,28,41,,
+G0238,F03,anel circular,0,,,75,48,,,
+G0828,F07,anel quadrado + disco,0,239,43,,,63,,
+G1457,F10,anel quadrado + quadrado + trilhas,1,183,41,,,,75,19
+G0594,F05,anel quadrado + anel circular,0,207,40,39,23,,,
+G1596,F10,anel quadrado + quadrado + trilhas,1,180,38,,,,57,18
+G0270,F03,anel circular,0,,,122,29,,,
+G1214,F09,anel quadrado + quadrado,0,217,34,,,,119,
+G1186,F08,anel quadrado + disco + trilhas,1,211,32,,,24,,24
+G0020,F01,disco,0,,,,,95,,
+G0572,F05,anel quadrado + anel circular,0,170,26,47,19,,,
+G1127,F08,anel quadrado + disco + trilhas,1,211,42,,,30,,30
+G1381,F09,anel quadrado + quadrado,0,225,31,,,,112,
+G0032,F01,disco,0,,,,,75,,
+G0506,F05,anel quadrado + anel circular,0,218,36,45,23,,,
+G0559,F05,anel quadrado + anel circular,0,202,34,44,26,,,
+G1165,F08,anel quadrado + disco + trilhas,1,230,33,,,55,,16
+G0696,F06,anel quadrado + anel circular + trilhas,1,234,31,36,17,,,22
+G0663,F06,anel quadrado + anel circular + trilhas,1,170,36,37,18,,,24
+G1842,F12,anel circular + disco + trilhas,1,,,137,20,60,,30
+G1579,F10,anel quadrado + quadrado + trilhas,1,211,41,,,,97,21
+G1828,F12,anel circular + disco + trilhas,1,,,88,30,30,,28
+G0398,F04,anel quadrado,0,141,37,,,,,
+G0005,F01,disco,0,,,,,38,,
+G0119,F02,quadrado,0,,,,,,153,
+G0946,F07,anel quadrado + disco,0,195,31,,,44,,
+G1279,F09,anel quadrado + quadrado,0,161,41,,,,42,
+G1033,F08,anel quadrado + disco + trilhas,1,227,37,,,24,,17
+G1984,F12,anel circular + disco + trilhas,1,,,126,36,71,,28
+G0089,F01,disco,0,,,,,69,,
+G0719,F06,anel quadrado + anel circular + trilhas,1,199,38,51,22,,,20
+G1228,F09,anel quadrado + quadrado,0,190,36,,,,61,
+G0243,F03,anel circular,0,,,51,31,,,
+G1544,F10,anel quadrado + quadrado + trilhas,1,195,35,,,,98,16
+G1783,F11,anel circular + disco,0,,,107,23,20,,
+G1286,F09,anel quadrado + quadrado,0,218,33,,,,56,
+G0747,F06,anel quadrado + anel circular + trilhas,1,187,45,38,15,,,21
+G0622,F06,anel quadrado + anel circular + trilhas,1,199,27,55,33,,,22
+G1821,F12,anel circular + disco + trilhas,1,,,90,30,39,,29
+G0170,F02,quadrado,0,,,,,,129,
+G1333,F09,anel quadrado + quadrado,0,238,30,,,,128,
+G1290,F09,anel quadrado + quadrado,0,163,27,,,,61,
+G0348,F04,anel quadrado,0,210,32,,,,,
+G1627,F11,anel circular + disco,0,,,127,29,58,,
+G1975,F12,anel circular + disco + trilhas,1,,,116,26,72,,20
+G0363,F04,anel quadrado,0,198,23,,,,,
+G0223,F03,anel circular,0,,,66,26,,,
+G0998,F07,anel quadrado + disco,0,232,40,,,21,,
+G0203,F03,anel circular,0,,,83,19,,,
+G1546,F10,anel quadrado + quadrado + trilhas,1,182,25,,,,71,26
+G0750,F06,anel quadrado + anel circular + trilhas,1,185,34,43,27,,,20
+G0214,F03,anel circular,0,,,90,35,,,
+G1403,F10,anel quadrado + quadrado + trilhas,1,188,37,,,,94,29
+G1284,F09,anel quadrado + quadrado,0,171,27,,,,61,
+G0441,F05,anel quadrado + anel circular,0,233,30,70,31,,,
+G1488,F10,anel quadrado + quadrado + trilhas,1,179,32,,,,63,19
+G0042,F01,disco,0,,,,,62,,
+G0822,F07,anel quadrado + disco,0,168,43,,,25,,
+G1397,F09,anel quadrado + quadrado,0,225,44,,,,85,
+G0546,F05,anel quadrado + anel circular,0,195,47,39,23,,,
+G1424,F10,anel quadrado + quadrado + trilhas,1,235,32,,,,45,20
+G0044,F01,disco,0,,,,,70,,
+G1089,F08,anel quadrado + disco + trilhas,1,237,34,,,54,,20
+G0407,F05,anel quadrado + anel circular,0,172,33,41,15,,,
+G1568,F10,anel quadrado + quadrado + trilhas,1,170,30,,,,55,21
+G1638,F11,anel circular + disco,0,,,105,26,49,,
+G1349,F09,anel quadrado + quadrado,0,217,46,,,,84,
+G1345,F09,anel quadrado + quadrado,0,171,34,,,,68,
+G0552,F05,anel quadrado + anel circular,0,204,38,50,26,,,
+G0012,F01,disco,0,,,,,91,,
+G0136,F02,quadrado,0,,,,,,82,
+G1172,F08,anel quadrado + disco + trilhas,1,171,41,,,31,,18
+G1635,F11,anel circular + disco,0,,,92,44,38,,
+G1746,F11,anel circular + disco,0,,,116,24,41,,
+G0399,F04,anel quadrado,0,257,42,,,,,
+G1553,F10,anel quadrado + quadrado + trilhas,1,187,30,,,,61,18
+G0309,F04,anel quadrado,0,205,24,,,,,
+G0027,F01,disco,0,,,,,94,,
+G1792,F11,anel circular + disco,0,,,118,38,67,,
+G0424,F05,anel quadrado + anel circular,0,205,35,50,26,,,
+G1201,F09,anel quadrado + quadrado,0,199,35,,,,59,
+G1300,F09,anel quadrado + quadrado,0,238,49,,,,112,
+G0681,F06,anel quadrado + anel circular + trilhas,1,219,31,56,18,,,16
+G1999,F12,anel circular + disco + trilhas,1,,,92,31,27,,27
+G0343,F04,anel quadrado,0,196,26,,,,,
+G1177,F08,anel quadrado + disco + trilhas,1,182,27,,,25,,29
+G0920,F07,anel quadrado + disco,0,210,36,,,31,,
+G1020,F08,anel quadrado + disco + trilhas,1,208,39,,,34,,20
+G1464,F10,anel quadrado + quadrado + trilhas,1,234,34,,,,97,24
+G0275,F03,anel circular,0,,,89,32,,,
+G1770,F11,anel circular + disco,0,,,112,40,57,,
+G1275,F09,anel quadrado + quadrado,0,182,47,,,,45,
+G1811,F12,anel circular + disco + trilhas,1,,,117,38,51,,26
+G0261,F03,anel circular,0,,,93,44,,,
+G0955,F07,anel quadrado + disco,0,235,30,,,71,,
+G0837,F07,anel quadrado + disco,0,199,41,,,42,,
+G0647,F06,anel quadrado + anel circular + trilhas,1,187,38,45,20,,,21
+G1804,F12,anel circular + disco + trilhas,1,,,103,24,23,,19
+G0373,F04,anel quadrado,0,156,43,,,,,
+G0345,F04,anel quadrado,0,249,42,,,,,
+G1701,F11,anel circular + disco,0,,,125,44,41,,
+G1651,F11,anel circular + disco,0,,,86,41,22,,
+G1509,F10,anel quadrado + quadrado + trilhas,1,197,31,,,,72,27
+G0233,F03,anel circular,0,,,123,26,,,
+G1650,F11,anel circular + disco,0,,,98,34,37,,
+G1541,F10,anel quadrado + quadrado + trilhas,1,168,48,,,,42,23
+G0894,F07,anel quadrado + disco,0,211,35,,,31,,
+G0677,F06,anel quadrado + anel circular + trilhas,1,232,40,61,31,,,29
+G0882,F07,anel quadrado + disco,0,203,44,,,36,,
+G1427,F10,anel quadrado + quadrado + trilhas,1,217,33,,,,51,27
+G1029,F08,anel quadrado + disco + trilhas,1,189,50,,,24,,27
+G0807,F07,anel quadrado + disco,0,207,35,,,57,,
+G0727,F06,anel quadrado + anel circular + trilhas,1,190,50,35,19,,,28
+G0652,F06,anel quadrado + anel circular + trilhas,1,208,37,50,16,,,26
+G0518,F05,anel quadrado + anel circular,0,235,49,48,17,,,
+G0034,F01,disco,0,,,,,67,,
+G1620,F11,anel circular + disco,0,,,132,37,73,,
+G0625,F06,anel quadrado + anel circular + trilhas,1,204,35,47,28,,,20
+G0958,F07,anel quadrado + disco,0,185,37,,,43,,
+G1475,F10,anel quadrado + quadrado + trilhas,1,239,46,,,,59,24
+G1493,F10,anel quadrado + quadrado + trilhas,1,178,37,,,,82,20
+G0954,F07,anel quadrado + disco,0,193,47,,,21,,
+G0475,F05,anel quadrado + anel circular,0,215,34,61,20,,,
+G0785,F06,anel quadrado + anel circular + trilhas,1,239,41,38,17,,,26
+G0162,F02,quadrado,0,,,,,,109,
+G0334,F04,anel quadrado,0,208,27,,,,,
+G0293,F03,anel circular,0,,,44,23,,,
+G0999,F07,anel quadrado + disco,0,205,47,,,22,,
+G1365,F09,anel quadrado + quadrado,0,195,42,,,,76,
+G0636,F06,anel quadrado + anel circular + trilhas,1,214,31,58,24,,,28
+G0346,F04,anel quadrado,0,121,31,,,,,
+G0197,F02,quadrado,0,,,,,,109,
+G0276,F03,anel circular,0,,,111,35,,,
+G0538,F05,anel quadrado + anel circular,0,235,37,67,27,,,
+G0870,F07,anel quadrado + disco,0,187,29,,,24,,
+G1295,F09,anel quadrado + quadrado,0,190,31,,,,89,
+G1454,F10,anel quadrado + quadrado + trilhas,1,198,33,,,,109,21
+G0121,F02,quadrado,0,,,,,,73,
+G0181,F02,quadrado,0,,,,,,132,
+G0916,F07,anel quadrado + disco,0,237,30,,,69,,
+G0968,F07,anel quadrado + disco,0,238,25,,,29,,
+G0324,F04,anel quadrado,0,176,25,,,,,
+G1707,F11,anel circular + disco,0,,,138,41,82,,
+G1996,F12,anel circular + disco + trilhas,1,,,100,22,59,,24
+G1144,F08,anel quadrado + disco + trilhas,1,178,34,,,26,,21
+G2000,F12,anel circular + disco + trilhas,1,,,94,45,34,,23
+G0588,F05,anel quadrado + anel circular,0,210,25,35,16,,,
+G0595,F05,anel quadrado + anel circular,0,175,37,40,25,,,
+G1313,F09,anel quadrado + quadrado,0,221,26,,,,111,
+G0699,F06,anel quadrado + anel circular + trilhas,1,166,36,35,19,,,25
+G0094,F01,disco,0,,,,,96,,
+G0781,F06,anel quadrado + anel circular + trilhas,1,200,46,37,18,,,18
+G1082,F08,anel quadrado + disco + trilhas,1,227,32,,,61,,19
+G1412,F10,anel quadrado + quadrado + trilhas,1,187,49,,,,47,18
+G0178,F02,quadrado,0,,,,,,67,
+G1646,F11,anel circular + disco,0,,,92,36,43,,
+G0820,F07,anel quadrado + disco,0,192,39,,,36,,
+G0025,F01,disco,0,,,,,108,,
+G1189,F08,anel quadrado + disco + trilhas,1,168,36,,,26,,26
+G1485,F10,anel quadrado + quadrado + trilhas,1,176,29,,,,69,25
+G1207,F09,anel quadrado + quadrado,0,197,34,,,,95,
+G0618,F06,anel quadrado + anel circular + trilhas,1,192,44,39,20,,,20
+G1677,F11,anel circular + disco,0,,,120,40,68,,
+G1989,F12,anel circular + disco + trilhas,1,,,81,37,32,,21
+G0925,F07,anel quadrado + disco,0,208,26,,,56,,
+G1039,F08,anel quadrado + disco + trilhas,1,182,38,,,42,,24
+G1367,F09,anel quadrado + quadrado,0,210,36,,,,95,
+G1634,F11,anel circular + disco,0,,,96,38,43,,
+G0752,F06,anel quadrado + anel circular + trilhas,1,228,40,62,26,,,22
+G1920,F12,anel circular + disco + trilhas,1,,,109,34,30,,17
+G1943,F12,anel circular + disco + trilhas,1,,,105,25,62,,21
+G1890,F12,anel circular + disco + trilhas,1,,,108,34,53,,25
+G1722,F11,anel circular + disco,0,,,84,35,27,,
+G0053,F01,disco,0,,,,,104,,
+G0496,F05,anel quadrado + anel circular,0,194,50,36,15,,,
+G1224,F09,anel quadrado + quadrado,0,162,48,,,,45,
+G1625,F11,anel circular + disco,0,,,111,21,24,,
+G0721,F06,anel quadrado + anel circular + trilhas,1,231,29,60,30,,,30
+G0708,F06,anel quadrado + anel circular + trilhas,1,196,27,48,24,,,22
+G0853,F07,anel quadrado + disco,0,204,28,,,52,,
+G1481,F10,anel quadrado + quadrado + trilhas,1,203,27,,,,120,26
+G1220,F09,anel quadrado + quadrado,0,232,43,,,,65,
+G0342,F04,anel quadrado,0,253,40,,,,,
+G0720,F06,anel quadrado + anel circular + trilhas,1,198,27,38,23,,,21
+G0665,F06,anel quadrado + anel circular + trilhas,1,222,29,56,30,,,22
+G0891,F07,anel quadrado + disco,0,231,33,,,59,,
+G1915,F12,anel circular + disco + trilhas,1,,,136,27,59,,25
+G1906,F12,anel circular + disco + trilhas,1,,,98,35,35,,26
+G0313,F04,anel quadrado,0,211,30,,,,,
+G0924,F07,anel quadrado + disco,0,186,34,,,40,,
+G0142,F02,quadrado,0,,,,,,74,
+G1659,F11,anel circular + disco,0,,,90,38,35,,
+G1663,F11,anel circular + disco,0,,,82,31,30,,
+G0062,F01,disco,0,,,,,38,,
+G1613,F11,anel circular + disco,0,,,106,29,27,,
+G0880,F07,anel quadrado + disco,0,165,33,,,21,,
+G1252,F09,anel quadrado + quadrado,0,201,47,,,,53,
+G0471,F05,anel quadrado + anel circular,0,216,43,50,23,,,
+G1523,F10,anel quadrado + quadrado + trilhas,1,192,29,,,,95,24
+G1249,F09,anel quadrado + quadrado,0,172,40,,,,70,
+G0114,F02,quadrado,0,,,,,,180,
+G0033,F01,disco,0,,,,,53,,
+G1221,F09,anel quadrado + quadrado,0,216,29,,,,116,
+G0297,F03,anel circular,0,,,57,35,,,
+G1716,F11,anel circular + disco,0,,,104,26,28,,
+G1107,F08,anel quadrado + disco + trilhas,1,182,35,,,38,,25
+G0337,F04,anel quadrado,0,184,32,,,,,
+G1126,F08,anel quadrado + disco + trilhas,1,198,37,,,23,,26
+G1508,F10,anel quadrado + quadrado + trilhas,1,212,31,,,,122,20
+G1469,F10,anel quadrado + quadrado + trilhas,1,167,50,,,,44,22
+G1643,F11,anel circular + disco,0,,,100,37,44,,
+G0353,F04,anel quadrado,0,158,21,,,,,
+G0794,F06,anel quadrado + anel circular + trilhas,1,225,48,44,25,,,29
+G1414,F10,anel quadrado + quadrado + trilhas,1,195,29,,,,46,18
+G1595,F10,anel quadrado + quadrado + trilhas,1,170,34,,,,75,21
+G1875,F12,anel circular + disco + trilhas,1,,,82,33,26,,20
+G1139,F08,anel quadrado + disco + trilhas,1,187,38,,,44,,25
+G0317,F04,anel quadrado,0,202,22,,,,,
+G0545,F05,anel quadrado + anel circular,0,216,46,51,21,,,
+G1081,F08,anel quadrado + disco + trilhas,1,201,42,,,45,,16
+G0257,F03,anel circular,0,,,63,20,,,
+G0045,F01,disco,0,,,,,39,,
+G1531,F10,anel quadrado + quadrado + trilhas,1,182,40,,,,81,26
+G0865,F07,anel quadrado + disco,0,235,39,,,60,,
+G0937,F07,anel quadrado + disco,0,210,41,,,22,,
+G0226,F03,anel circular,0,,,110,30,,,
+G1679,F11,anel circular + disco,0,,,121,35,54,,
+G1504,F10,anel quadrado + quadrado + trilhas,1,225,38,,,,82,30
+G1035,F08,anel quadrado + disco + trilhas,1,174,50,,,24,,23
+G1653,F11,anel circular + disco,0,,,118,40,44,,
+G1756,F11,anel circular + disco,0,,,94,43,34,,
+G0616,F06,anel quadrado + anel circular + trilhas,1,228,35,39,16,,,23
+G0879,F07,anel quadrado + disco,0,210,42,,,28,,
+G0440,F05,anel quadrado + anel circular,0,202,48,36,16,,,
+G1198,F08,anel quadrado + disco + trilhas,1,202,46,,,40,,25
+G0688,F06,anel quadrado + anel circular + trilhas,1,197,32,50,15,,,24
+G0052,F01,disco,0,,,,,64,,
+G1248,F09,anel quadrado + quadrado,0,176,37,,,,50,
+G0458,F05,anel quadrado + anel circular,0,188,44,38,20,,,
+G1629,F11,anel circular + disco,0,,,105,42,27,,
+G0227,F03,anel circular,0,,,41,16,,,
+G0449,F05,anel quadrado + anel circular,0,164,34,37,18,,,
+G0695,F06,anel quadrado + anel circular + trilhas,1,185,30,36,19,,,29
+G1022,F08,anel quadrado + disco + trilhas,1,188,30,,,29,,17
+G1829,F12,anel circular + disco + trilhas,1,,,93,45,20,,20
+G1102,F08,anel quadrado + disco + trilhas,1,220,46,,,47,,28
+G1257,F09,anel quadrado + quadrado,0,197,36,,,,84,
+G0674,F06,anel quadrado + anel circular + trilhas,1,186,48,35,20,,,17
+G0109,F02,quadrado,0,,,,,,137,
+G1594,F10,anel quadrado + quadrado + trilhas,1,175,33,,,,63,28
+G1296,F09,anel quadrado + quadrado,0,239,45,,,,71,
+G1395,F09,anel quadrado + quadrado,0,222,37,,,,103,
+G0929,F07,anel quadrado + disco,0,199,36,,,52,,
+G1492,F10,anel quadrado + quadrado + trilhas,1,222,46,,,,52,28
+G1408,F10,anel quadrado + quadrado + trilhas,1,183,35,,,,75,30
+G1591,F10,anel quadrado + quadrado + trilhas,1,184,43,,,,48,29
+G1245,F09,anel quadrado + quadrado,0,198,25,,,,89,
+G1388,F09,anel quadrado + quadrado,0,212,31,,,,119,
+G0442,F05,anel quadrado + anel circular,0,205,47,41,15,,,
+G1558,F10,anel quadrado + quadrado + trilhas,1,239,32,,,,85,19
+G1614,F11,anel circular + disco,0,,,118,41,25,,
+G0543,F05,anel quadrado + anel circular,0,177,28,50,31,,,
+G0485,F05,anel quadrado + anel circular,0,229,47,36,16,,,
+G1318,F09,anel quadrado + quadrado,0,162,41,,,,59,
+G1742,F11,anel circular + disco,0,,,124,22,74,,
+G0831,F07,anel quadrado + disco,0,200,26,,,63,,
+G1158,F08,anel quadrado + disco + trilhas,1,202,26,,,33,,16
+G0035,F01,disco,0,,,,,100,,
+G0764,F06,anel quadrado + anel circular + trilhas,1,214,29,66,17,,,20
+G0326,F04,anel quadrado,0,216,30,,,,,
+G0362,F04,anel quadrado,0,220,40,,,,,
+G0447,F05,anel quadrado + anel circular,0,234,27,67,26,,,
+G1860,F12,anel circular + disco + trilhas,1,,,140,29,59,,18
+G1222,F09,anel quadrado + quadrado,0,195,37,,,,45,
+G0002,F01,disco,0,,,,,70,,
+G0159,F02,quadrado,0,,,,,,64,
+G1886,F12,anel circular + disco + trilhas,1,,,122,42,30,,22
+G0477,F05,anel quadrado + anel circular,0,174,36,38,19,,,
+G0667,F06,anel quadrado + anel circular + trilhas,1,210,29,41,20,,,18
+G1269,F09,anel quadrado + quadrado,0,211,35,,,,77,
+G0251,F03,anel circular,0,,,92,27,,,
+G0499,F05,anel quadrado + anel circular,0,194,34,38,22,,,
+G1791,F11,anel circular + disco,0,,,88,26,25,,
+G0069,F01,disco,0,,,,,67,,
+G0653,F06,anel quadrado + anel circular + trilhas,1,225,29,35,17,,,29
+G0374,F04,anel quadrado,0,148,28,,,,,
+G0715,F06,anel quadrado + anel circular + trilhas,1,184,38,36,18,,,23
+G0701,F06,anel quadrado + anel circular + trilhas,1,194,31,55,19,,,24
+G0157,F02,quadrado,0,,,,,,117,
+G1640,F11,anel circular + disco,0,,,87,44,26,,
+G1603,F11,anel circular + disco,0,,,81,41,30,,
+G0155,F02,quadrado,0,,,,,,68,
+G1090,F08,anel quadrado + disco + trilhas,1,186,39,,,34,,22
+G1401,F10,anel quadrado + quadrado + trilhas,1,184,38,,,,43,25
+G1950,F12,anel circular + disco + trilhas,1,,,117,24,79,,28
+G1576,F10,anel quadrado + quadrado + trilhas,1,163,26,,,,67,19
+G1373,F09,anel quadrado + quadrado,0,230,40,,,,69,
+G1667,F11,anel circular + disco,0,,,100,22,57,,
+G0108,F02,quadrado,0,,,,,,195,
+G0128,F02,quadrado,0,,,,,,162,
+G0171,F02,quadrado,0,,,,,,114,
+G0601,F06,anel quadrado + anel circular + trilhas,1,225,27,55,31,,,23
+G1713,F11,anel circular + disco,0,,,113,33,70,,
+G0671,F06,anel quadrado + anel circular + trilhas,1,166,34,39,18,,,15
+G0834,F07,anel quadrado + disco,0,234,47,,,40,,
+G0145,F02,quadrado,0,,,,,,185,
+G1124,F08,anel quadrado + disco + trilhas,1,175,32,,,33,,29
+G1183,F08,anel quadrado + disco + trilhas,1,228,48,,,29,,25
+G1093,F08,anel quadrado + disco + trilhas,1,173,43,,,24,,19
+G1571,F10,anel quadrado + quadrado + trilhas,1,227,26,,,,100,28
+G0211,F03,anel circular,0,,,54,28,,,
+G0166,F02,quadrado,0,,,,,,151,
+G1702,F11,anel circular + disco,0,,,108,40,46,,
+G0615,F06,anel quadrado + anel circular + trilhas,1,233,35,36,18,,,16
+G1892,F12,anel circular + disco + trilhas,1,,,98,32,49,,26
+G0555,F05,anel quadrado + anel circular,0,198,47,38,16,,,
+G0014,F01,disco,0,,,,,77,,
+G1574,F10,anel quadrado + quadrado + trilhas,1,194,41,,,,54,21
+G0097,F01,disco,0,,,,,103,,
+G1375,F09,anel quadrado + quadrado,0,187,36,,,,50,
+G0246,F03,anel circular,0,,,90,40,,,
+G1505,F10,anel quadrado + quadrado + trilhas,1,167,49,,,,48,27
+G1203,F09,anel quadrado + quadrado,0,174,42,,,,55,
+G0980,F07,anel quadrado + disco,0,178,43,,,26,,
+G1031,F08,anel quadrado + disco + trilhas,1,226,37,,,39,,23
+G1292,F09,anel quadrado + quadrado,0,216,39,,,,73,
+G1056,F08,anel quadrado + disco + trilhas,1,191,27,,,30,,16
+G1180,F08,anel quadrado + disco + trilhas,1,225,33,,,37,,19
+G1326,F09,anel quadrado + quadrado,0,164,40,,,,63,
+G0876,F07,anel quadrado + disco,0,228,42,,,60,,
+G0527,F05,anel quadrado + anel circular,0,196,39,46,22,,,
+G0079,F01,disco,0,,,,,68,,
+G0950,F07,anel quadrado + disco,0,186,39,,,41,,
+G0393,F04,anel quadrado,0,158,46,,,,,
+G1400,F09,anel quadrado + quadrado,0,173,39,,,,75,
+G1169,F08,anel quadrado + disco + trilhas,1,161,39,,,29,,18
+G1788,F11,anel circular + disco,0,,,102,29,58,,
+G0172,F02,quadrado,0,,,,,,156,
+G1929,F12,anel circular + disco + trilhas,1,,,102,45,40,,22
+G1529,F10,anel quadrado + quadrado + trilhas,1,194,34,,,,43,24
+G1190,F08,anel quadrado + disco + trilhas,1,205,43,,,44,,19
+G1845,F12,anel circular + disco + trilhas,1,,,82,39,30,,27
+G1949,F12,anel circular + disco + trilhas,1,,,107,24,33,,16
+G1962,F12,anel circular + disco + trilhas,1,,,139,32,59,,25
+G1307,F09,anel quadrado + quadrado,0,188,36,,,,86,
+G0405,F05,anel quadrado + anel circular,0,199,39,35,16,,,
+G0476,F05,anel quadrado + anel circular,0,201,26,53,19,,,
+G1394,F09,anel quadrado + quadrado,0,194,44,,,,53,
+G1948,F12,anel circular + disco + trilhas,1,,,119,44,29,,25
+G0811,F07,anel quadrado + disco,0,218,32,,,55,,
+G0250,F03,anel circular,0,,,99,16,,,
+G1167,F08,anel quadrado + disco + trilhas,1,216,36,,,50,,18
+G0198,F02,quadrado,0,,,,,,115,
+G0910,F07,anel quadrado + disco,0,180,27,,,26,,
+G1468,F10,anel quadrado + quadrado + trilhas,1,163,39,,,,51,24
+G1873,F12,anel circular + disco + trilhas,1,,,118,43,31,,16
+G1666,F11,anel circular + disco,0,,,108,31,27,,
+G0019,F01,disco,0,,,,,66,,
+G0670,F06,anel quadrado + anel circular + trilhas,1,217,47,39,15,,,28
+G0258,F03,anel circular,0,,,42,18,,,
+G0726,F06,anel quadrado + anel circular + trilhas,1,238,30,45,17,,,26
+G1260,F09,anel quadrado + quadrado,0,186,43,,,,80,
+G0687,F06,anel quadrado + anel circular + trilhas,1,240,35,48,32,,,17
+G1199,F08,anel quadrado + disco + trilhas,1,222,49,,,34,,20
+G1691,F11,anel circular + disco,0,,,117,29,62,,
+G1506,F10,anel quadrado + quadrado + trilhas,1,165,49,,,,41,24
+G0638,F06,anel quadrado + anel circular + trilhas,1,211,35,36,20,,,29
+G1729,F11,anel circular + disco,0,,,84,34,29,,
+G1051,F08,anel quadrado + disco + trilhas,1,196,44,,,34,,21
+G1356,F09,anel quadrado + quadrado,0,163,47,,,,49,
+G0623,F06,anel quadrado + anel circular + trilhas,1,237,28,70,32,,,18
+G1335,F09,anel quadrado + quadrado,0,226,50,,,,68,
+G0868,F07,anel quadrado + disco,0,229,28,,,55,,
+G1103,F08,anel quadrado + disco + trilhas,1,198,35,,,51,,16
+G1409,F10,anel quadrado + quadrado + trilhas,1,225,33,,,,68,28
+G0182,F02,quadrado,0,,,,,,181,
+G0058,F01,disco,0,,,,,40,,
+G1034,F08,anel quadrado + disco + trilhas,1,173,46,,,28,,28
+G0633,F06,anel quadrado + anel circular + trilhas,1,202,42,40,20,,,28
+G1717,F11,anel circular + disco,0,,,105,32,30,,
+G0991,F07,anel quadrado + disco,0,189,35,,,41,,
+G0245,F03,anel circular,0,,,89,27,,,
+G0436,F05,anel quadrado + anel circular,0,202,49,36,17,,,
+G0818,F07,anel quadrado + disco,0,163,30,,,24,,
+G1157,F08,anel quadrado + disco + trilhas,1,209,39,,,23,,19
+G1116,F08,anel quadrado + disco + trilhas,1,188,37,,,38,,17
+G1178,F08,anel quadrado + disco + trilhas,1,201,46,,,40,,20
+G0619,F06,anel quadrado + anel circular + trilhas,1,181,28,40,19,,,20
+G1881,F12,anel circular + disco + trilhas,1,,,134,27,20,,30
+G0536,F05,anel quadrado + anel circular,0,223,28,41,21,,,
+G1231,F09,anel quadrado + quadrado,0,206,34,,,,98,
+G0689,F06,anel quadrado + anel circular + trilhas,1,239,38,62,22,,,23
+G0411,F05,anel quadrado + anel circular,0,177,29,49,23,,,
+G0304,F04,anel quadrado,0,143,47,,,,,
+G0940,F07,anel quadrado + disco,0,193,49,,,26,,
+G0061,F01,disco,0,,,,,101,,
+G1740,F11,anel circular + disco,0,,,125,23,27,,
+G1519,F10,anel quadrado + quadrado + trilhas,1,223,49,,,,96,24
+G0452,F05,anel quadrado + anel circular,0,200,33,41,22,,,
+G1736,F11,anel circular + disco,0,,,93,31,48,,
+G1793,F11,anel circular + disco,0,,,136,31,60,,
+G1815,F12,anel circular + disco + trilhas,1,,,102,28,33,,23
+G0144,F02,quadrado,0,,,,,,210,
+G1820,F12,anel circular + disco + trilhas,1,,,110,42,45,,27
+G0110,F02,quadrado,0,,,,,,70,
+G1048,F08,anel quadrado + disco + trilhas,1,162,33,,,21,,22
+G0438,F05,anel quadrado + anel circular,0,169,28,46,21,,,
+G0745,F06,anel quadrado + anel circular + trilhas,1,192,34,45,15,,,24
+G1096,F08,anel quadrado + disco + trilhas,1,239,30,,,64,,17
+G1570,F10,anel quadrado + quadrado + trilhas,1,174,44,,,,53,28
+G0289,F03,anel circular,0,,,86,38,,,
+G1434,F10,anel quadrado + quadrado + trilhas,1,238,47,,,,43,22
+G1181,F08,anel quadrado + disco + trilhas,1,201,30,,,40,,18
+G1838,F12,anel circular + disco + trilhas,1,,,107,35,54,,23
+G0833,F07,anel quadrado + disco,0,165,34,,,25,,
+G1882,F12,anel circular + disco + trilhas,1,,,87,43,31,,18
+G0863,F07,anel quadrado + disco,0,180,45,,,25,,
+G1268,F09,anel quadrado + quadrado,0,208,49,,,,48,
+G1184,F08,anel quadrado + disco + trilhas,1,171,26,,,38,,30
+G1101,F08,anel quadrado + disco + trilhas,1,218,39,,,38,,25
+G1466,F10,anel quadrado + quadrado + trilhas,1,176,25,,,,103,21
+G0380,F04,anel quadrado,0,162,34,,,,,
+G1759,F11,anel circular + disco,0,,,131,43,77,,
+G1192,F08,anel quadrado + disco + trilhas,1,213,35,,,53,,17
+G0038,F01,disco,0,,,,,32,,
+G1100,F08,anel quadrado + disco + trilhas,1,218,49,,,50,,29
+G0416,F05,anel quadrado + anel circular,0,239,26,82,28,,,
+G1703,F11,anel circular + disco,0,,,125,24,40,,
+G1835,F12,anel circular + disco + trilhas,1,,,119,26,74,,25
+G0174,F02,quadrado,0,,,,,,71,
+G1862,F12,anel circular + disco + trilhas,1,,,138,27,66,,21
+G1748,F11,anel circular + disco,0,,,84,39,22,,
+G0414,F05,anel quadrado + anel circular,0,219,28,38,21,,,
+G1393,F09,anel quadrado + quadrado,0,195,28,,,,91,
+G0161,F02,quadrado,0,,,,,,112,
+G1719,F11,anel circular + disco,0,,,124,22,28,,
+G0385,F04,anel quadrado,0,241,25,,,,,
+G0737,F06,anel quadrado + anel circular + trilhas,1,214,45,47,18,,,29
+G1036,F08,anel quadrado + disco + trilhas,1,210,46,,,39,,23
+G0504,F05,anel quadrado + anel circular,0,219,40,39,19,,,
+G0301,F04,anel quadrado,0,257,50,,,,,
+G1761,F11,anel circular + disco,0,,,103,23,21,,
+G1415,F10,anel quadrado + quadrado + trilhas,1,211,50,,,,62,20
+G0624,F06,anel quadrado + anel circular + trilhas,1,210,27,46,21,,,24
+G0712,F06,anel quadrado + anel circular + trilhas,1,202,48,41,22,,,25
+G0501,F05,anel quadrado + anel circular,0,223,42,44,26,,,
+G0478,F05,anel quadrado + anel circular,0,190,37,36,17,,,
+G1763,F11,anel circular + disco,0,,,133,23,49,,
+G0645,F06,anel quadrado + anel circular + trilhas,1,180,29,40,20,,,27
+G0788,F06,anel quadrado + anel circular + trilhas,1,195,44,36,17,,,16
+G1443,F10,anel quadrado + quadrado + trilhas,1,185,46,,,,46,17
+G1797,F11,anel circular + disco,0,,,137,32,38,,
+G1784,F11,anel circular + disco,0,,,93,35,41,,
+G0007,F01,disco,0,,,,,78,,
+G1413,F10,anel quadrado + quadrado + trilhas,1,203,40,,,,85,24
+G1790,F11,anel circular + disco,0,,,119,34,41,,
+G1150,F08,anel quadrado + disco + trilhas,1,177,47,,,27,,23
+G0265,F03,anel circular,0,,,108,26,,,
+G0554,F05,anel quadrado + anel circular,0,195,48,35,18,,,
+G1699,F11,anel circular + disco,0,,,121,42,45,,
+G1497,F10,anel quadrado + quadrado + trilhas,1,183,32,,,,84,19
+G1018,F08,anel quadrado + disco + trilhas,1,201,40,,,38,,24
+G1482,F10,anel quadrado + quadrado + trilhas,1,176,41,,,,55,26
+G0959,F07,anel quadrado + disco,0,231,29,,,55,,
+G1535,F10,anel quadrado + quadrado + trilhas,1,240,49,,,,107,23
+G1479,F10,anel quadrado + quadrado + trilhas,1,172,33,,,,43,25
+G1261,F09,anel quadrado + quadrado,0,195,28,,,,104,
+G0036,F01,disco,0,,,,,86,,
+G0129,F02,quadrado,0,,,,,,85,
+G0430,F05,anel quadrado + anel circular,0,192,38,46,22,,,
+G1445,F10,anel quadrado + quadrado + trilhas,1,211,39,,,,95,25
+G1859,F12,anel circular + disco + trilhas,1,,,116,23,56,,18
+G1114,F08,anel quadrado + disco + trilhas,1,162,26,,,35,,28
+G1200,F08,anel quadrado + disco + trilhas,1,219,32,,,51,,21
+G1470,F10,anel quadrado + quadrado + trilhas,1,234,44,,,,70,26
+G1642,F11,anel circular + disco,0,,,88,31,20,,
+G1319,F09,anel quadrado + quadrado,0,220,29,,,,133,
+G1889,F12,anel circular + disco + trilhas,1,,,118,27,33,,17
+G1545,F10,anel quadrado + quadrado + trilhas,1,193,39,,,,88,21
+G1396,F09,anel quadrado + quadrado,0,175,45,,,,56,
+G0054,F01,disco,0,,,,,68,,
+G0626,F06,anel quadrado + anel circular + trilhas,1,177,35,35,20,,,29
+G0610,F06,anel quadrado + anel circular + trilhas,1,164,27,45,17,,,30
+G0472,F05,anel quadrado + anel circular,0,229,42,40,16,,,
+G0376,F04,anel quadrado,0,151,22,,,,,
+G0312,F04,anel quadrado,0,173,39,,,,,
+G1945,F12,anel circular + disco + trilhas,1,,,131,26,51,,24
+G1019,F08,anel quadrado + disco + trilhas,1,167,26,,,30,,21
+G1474,F10,anel quadrado + quadrado + trilhas,1,170,44,,,,44,25
+G1954,F12,anel circular + disco + trilhas,1,,,110,33,29,,29
+G1071,F08,anel quadrado + disco + trilhas,1,171,47,,,22,,23
+G1512,F10,anel quadrado + quadrado + trilhas,1,236,34,,,,143,27
+G1211,F09,anel quadrado + quadrado,0,188,38,,,,65,
+G0694,F06,anel quadrado + anel circular + trilhas,1,173,41,35,18,,,17
+G0481,F05,anel quadrado + anel circular,0,183,42,39,20,,,
+G0693,F06,anel quadrado + anel circular + trilhas,1,177,37,37,18,,,26
+G0249,F03,anel circular,0,,,72,38,,,
+G1174,F08,anel quadrado + disco + trilhas,1,225,45,,,28,,28
+G1229,F09,anel quadrado + quadrado,0,226,33,,,,103,
+G0064,F01,disco,0,,,,,68,,
+G1398,F09,anel quadrado + quadrado,0,212,45,,,,78,
+G1850,F12,anel circular + disco + trilhas,1,,,124,37,61,,27
+G0404,F05,anel quadrado + anel circular,0,164,30,36,19,,,
+G1421,F10,anel quadrado + quadrado + trilhas,1,211,39,,,,80,20
+G0123,F02,quadrado,0,,,,,,100,
+G1160,F08,anel quadrado + disco + trilhas,1,207,37,,,42,,17
+G1098,F08,anel quadrado + disco + trilhas,1,165,44,,,28,,22
+G1695,F11,anel circular + disco,0,,,126,44,59,,
+G1387,F09,anel quadrado + quadrado,0,199,47,,,,71,
+G0580,F05,anel quadrado + anel circular,0,162,26,35,20,,,
+G1619,F11,anel circular + disco,0,,,123,43,24,,
+G0202,F03,anel circular,0,,,82,26,,,
+G1359,F09,anel quadrado + quadrado,0,235,33,,,,122,
+G1697,F11,anel circular + disco,0,,,93,23,32,,
+G0859,F07,anel quadrado + disco,0,176,39,,,30,,
+G0494,F05,anel quadrado + anel circular,0,228,27,77,31,,,
+G0942,F07,anel quadrado + disco,0,177,34,,,30,,
+G1818,F12,anel circular + disco + trilhas,1,,,89,21,54,,28
+G0381,F04,anel quadrado,0,133,33,,,,,
+G1657,F11,anel circular + disco,0,,,104,43,29,,
+G1044,F08,anel quadrado + disco + trilhas,1,237,46,,,41,,17
+G0215,F03,anel circular,0,,,59,24,,,
+G0448,F05,anel quadrado + anel circular,0,204,38,45,22,,,
+G1225,F09,anel quadrado + quadrado,0,223,49,,,,95,
+G1839,F12,anel circular + disco + trilhas,1,,,123,38,43,,21
+G0668,F06,anel quadrado + anel circular + trilhas,1,191,33,45,18,,,16
+G0322,F04,anel quadrado,0,166,47,,,,,
+G1585,F10,anel quadrado + quadrado + trilhas,1,161,44,,,,52,17
+G1336,F09,anel quadrado + quadrado,0,180,32,,,,50,
+G1147,F08,anel quadrado + disco + trilhas,1,186,40,,,41,,16
+G1773,F11,anel circular + disco,0,,,91,36,34,,
+G0328,F04,anel quadrado,0,232,31,,,,,
+G0369,F04,anel quadrado,0,205,28,,,,,
+G0207,F03,anel circular,0,,,119,38,,,
+G1232,F09,anel quadrado + quadrado,0,205,43,,,,47,
+G1510,F10,anel quadrado + quadrado + trilhas,1,230,46,,,,57,24
+G0630,F06,anel quadrado + anel circular + trilhas,1,205,47,36,16,,,23
+G1721,F11,anel circular + disco,0,,,105,41,37,,
+G1278,F09,anel quadrado + quadrado,0,201,48,,,,41,
+G0193,F02,quadrado,0,,,,,,122,
+G1678,F11,anel circular + disco,0,,,88,34,43,,
+G0429,F05,anel quadrado + anel circular,0,198,33,54,29,,,
+G0548,F05,anel quadrado + anel circular,0,238,46,54,26,,,
+G1282,F09,anel quadrado + quadrado,0,180,26,,,,78,
+G0797,F06,anel quadrado + anel circular + trilhas,1,185,46,36,15,,,27
+G1267,F09,anel quadrado + quadrado,0,216,30,,,,124,
+G0802,F07,anel quadrado + disco,0,169,40,,,21,,
+G0189,F02,quadrado,0,,,,,,143,
+G0769,F06,anel quadrado + anel circular + trilhas,1,208,26,66,25,,,24
+G1163,F08,anel quadrado + disco + trilhas,1,187,39,,,37,,27
+G0216,F03,anel circular,0,,,64,34,,,
+G0500,F05,anel quadrado + anel circular,0,208,45,39,22,,,
+G0997,F07,anel quadrado + disco,0,197,44,,,26,,
+G0118,F02,quadrado,0,,,,,,60,
+G0992,F07,anel quadrado + disco,0,170,38,,,32,,
+G1304,F09,anel quadrado + quadrado,0,165,29,,,,56,
+G1826,F12,anel circular + disco + trilhas,1,,,116,44,58,,26
+G0383,F04,anel quadrado,0,165,30,,,,,
+G1418,F10,anel quadrado + quadrado + trilhas,1,206,49,,,,76,18
+G0231,F03,anel circular,0,,,110,36,,,
+G0124,F02,quadrado,0,,,,,,159,
+G0073,F01,disco,0,,,,,74,,
+G1271,F09,anel quadrado + quadrado,0,236,41,,,,122,
+G1622,F11,anel circular + disco,0,,,139,34,47,,
+G0526,F05,anel quadrado + anel circular,0,239,29,53,16,,,
+G0206,F03,anel circular,0,,,61,45,,,
+G1730,F11,anel circular + disco,0,,,137,23,60,,
+G0949,F07,anel quadrado + disco,0,171,37,,,28,,
+G0503,F05,anel quadrado + anel circular,0,186,46,37,17,,,
+G1893,F12,anel circular + disco + trilhas,1,,,126,23,41,,25
+G1537,F10,anel quadrado + quadrado + trilhas,1,163,49,,,,42,30
+G0115,F02,quadrado,0,,,,,,126,
+G1426,F10,anel quadrado + quadrado + trilhas,1,179,34,,,,68,27
+G1066,F08,anel quadrado + disco + trilhas,1,221,32,,,58,,20
+G1532,F10,anel quadrado + quadrado + trilhas,1,232,38,,,,54,24
+G0592,F05,anel quadrado + anel circular,0,223,44,54,24,,,
+G1911,F12,anel circular + disco + trilhas,1,,,107,21,57,,21
+G0468,F05,anel quadrado + anel circular,0,222,43,54,20,,,
+G0235,F03,anel circular,0,,,128,46,,,
+G1992,F12,anel circular + disco + trilhas,1,,,87,41,35,,22
+G1732,F11,anel circular + disco,0,,,91,37,27,,
+G1447,F10,anel quadrado + quadrado + trilhas,1,180,48,,,,49,15
+G0163,F02,quadrado,0,,,,,,112,
+G1569,F10,anel quadrado + quadrado + trilhas,1,192,50,,,,42,24
+G1489,F10,anel quadrado + quadrado + trilhas,1,168,38,,,,53,27
+G1843,F12,anel circular + disco + trilhas,1,,,90,33,20,,16
+G1538,F10,anel quadrado + quadrado + trilhas,1,197,44,,,,81,16
+G1704,F11,anel circular + disco,0,,,94,34,25,,
+G1982,F12,anel circular + disco + trilhas,1,,,89,40,29,,24
+G1118,F08,anel quadrado + disco + trilhas,1,191,48,,,29,,28
+G1779,F11,anel circular + disco,0,,,121,40,53,,
+G0930,F07,anel quadrado + disco,0,182,45,,,26,,
+G1542,F10,anel quadrado + quadrado + trilhas,1,194,28,,,,57,22
+G0529,F05,anel quadrado + anel circular,0,224,36,43,25,,,
+G0329,F04,anel quadrado,0,142,42,,,,,
+G0455,F05,anel quadrado + anel circular,0,215,42,42,21,,,
+G1655,F11,anel circular + disco,0,,,111,23,70,,
+G0021,F01,disco,0,,,,,85,,
+G1050,F08,anel quadrado + disco + trilhas,1,184,30,,,25,,27
+G1250,F09,anel quadrado + quadrado,0,166,32,,,,52,
+G0790,F06,anel quadrado + anel circular + trilhas,1,175,40,36,18,,,21
+G0056,F01,disco,0,,,,,32,,
+G0134,F02,quadrado,0,,,,,,139,
+G0883,F07,anel quadrado + disco,0,237,33,,,55,,
+G1534,F10,anel quadrado + quadrado + trilhas,1,201,47,,,,40,21
+G0855,F07,anel quadrado + disco,0,174,30,,,41,,
+G0315,F04,anel quadrado,0,193,45,,,,,
+G1097,F08,anel quadrado + disco + trilhas,1,168,46,,,21,,20
+G1430,F10,anel quadrado + quadrado + trilhas,1,168,26,,,,78,16
+G1749,F11,anel circular + disco,0,,,89,22,42,,
+G1858,F12,anel circular + disco + trilhas,1,,,97,21,36,,19
+G0782,F06,anel quadrado + anel circular + trilhas,1,164,33,38,22,,,20
+G0209,F03,anel circular,0,,,116,38,,,
+G1352,F09,anel quadrado + quadrado,0,233,33,,,,94,
+G1354,F09,anel quadrado + quadrado,0,189,35,,,,61,
+G0725,F06,anel quadrado + anel circular + trilhas,1,198,45,41,18,,,16
+G1074,F08,anel quadrado + disco + trilhas,1,175,39,,,34,,20
+G0944,F07,anel quadrado + disco,0,190,33,,,31,,
+G1872,F12,anel circular + disco + trilhas,1,,,109,23,57,,15
+G1865,F12,anel circular + disco + trilhas,1,,,107,37,28,,15
+G1925,F12,anel circular + disco + trilhas,1,,,140,22,80,,24
+G1737,F11,anel circular + disco,0,,,93,26,35,,
+G1582,F10,anel quadrado + quadrado + trilhas,1,163,32,,,,77,27
+G1813,F12,anel circular + disco + trilhas,1,,,129,42,68,,25
+G1444,F10,anel quadrado + quadrado + trilhas,1,214,26,,,,122,25
+G0581,F05,anel quadrado + anel circular,0,195,26,55,27,,,
+G1495,F10,anel quadrado + quadrado + trilhas,1,227,44,,,,66,28
+G1348,F09,anel quadrado + quadrado,0,187,43,,,,49,
+G1690,F11,anel circular + disco,0,,,92,31,32,,
+G1337,F09,anel quadrado + quadrado,0,195,49,,,,62,
+G0635,F06,anel quadrado + anel circular + trilhas,1,184,29,50,25,,,20
+G1830,F12,anel circular + disco + trilhas,1,,,82,32,23,,28
+G1235,F09,anel quadrado + quadrado,0,187,27,,,,49,
+G1015,F08,anel quadrado + disco + trilhas,1,193,39,,,47,,25
+G0799,F06,anel quadrado + anel circular + trilhas,1,231,50,53,21,,,29
+G0101,F02,quadrado,0,,,,,,76,
+G1477,F10,anel quadrado + quadrado + trilhas,1,161,42,,,,52,24
+G0473,F05,anel quadrado + anel circular,0,191,40,42,20,,,
+G0872,F07,anel quadrado + disco,0,193,37,,,24,,
+G0724,F06,anel quadrado + anel circular + trilhas,1,186,30,46,22,,,21
+G1376,F09,anel quadrado + quadrado,0,223,46,,,,89,
+G0272,F03,anel circular,0,,,61,41,,,
+G0547,F05,anel quadrado + anel circular,0,176,41,36,17,,,
+G0564,F05,anel quadrado + anel circular,0,237,32,48,28,,,
+G0130,F02,quadrado,0,,,,,,110,
+G0355,F04,anel quadrado,0,159,39,,,,,
+G1612,F11,anel circular + disco,0,,,89,21,55,,
+G0951,F07,anel quadrado + disco,0,183,28,,,37,,
+G0241,F03,anel circular,0,,,103,25,,,
+G0341,F04,anel quadrado,0,247,45,,,,,
+G0059,F01,disco,0,,,,,34,,
+G0660,F06,anel quadrado + anel circular + trilhas,1,229,44,42,20,,,27
+G0717,F06,anel quadrado + anel circular + trilhas,1,166,27,37,16,,,16
+G1350,F09,anel quadrado + quadrado,0,215,42,,,,92,
+G1565,F10,anel quadrado + quadrado + trilhas,1,239,48,,,,55,22
+G1301,F09,anel quadrado + quadrado,0,171,39,,,,40,
+G1960,F12,anel circular + disco + trilhas,1,,,121,34,20,,16
+G1210,F09,anel quadrado + quadrado,0,169,42,,,,59,
+G0151,F02,quadrado,0,,,,,,91,
+G0813,F07,anel quadrado + disco,0,220,45,,,52,,
+G1755,F11,anel circular + disco,0,,,126,27,64,,
+G0271,F03,anel circular,0,,,128,48,,,
+G0037,F01,disco,0,,,,,76,,
+G0242,F03,anel circular,0,,,126,43,,,
+G0702,F06,anel quadrado + anel circular + trilhas,1,228,34,45,21,,,26
+G1917,F12,anel circular + disco + trilhas,1,,,119,24,48,,19
+G1990,F12,anel circular + disco + trilhas,1,,,134,36,27,,25
+G0758,F06,anel quadrado + anel circular + trilhas,1,225,45,51,31,,,22
+G1448,F10,anel quadrado + quadrado + trilhas,1,160,45,,,,47,26
+G1480,F10,anel quadrado + quadrado + trilhas,1,237,47,,,,70,22
+G0443,F05,anel quadrado + anel circular,0,237,49,52,32,,,
+G1621,F11,anel circular + disco,0,,,96,27,33,,
+G1673,F11,anel circular + disco,0,,,107,35,37,,
+G0628,F06,anel quadrado + anel circular + trilhas,1,189,43,36,18,,,17
+G1778,F11,anel circular + disco,0,,,90,43,23,,
+G0237,F03,anel circular,0,,,101,47,,,
+G1338,F09,anel quadrado + quadrado,0,219,35,,,,88,
+G1145,F08,anel quadrado + disco + trilhas,1,229,30,,,62,,29
+G0427,F05,anel quadrado + anel circular,0,220,27,58,17,,,
+G0757,F06,anel quadrado + anel circular + trilhas,1,220,42,44,17,,,19
+G1075,F08,anel quadrado + disco + trilhas,1,214,36,,,22,,23
+G0659,F06,anel quadrado + anel circular + trilhas,1,208,27,38,18,,,29
+G0169,F02,quadrado,0,,,,,,143,
+G1487,F10,anel quadrado + quadrado + trilhas,1,200,36,,,,86,21
+G0470,F05,anel quadrado + anel circular,0,173,40,35,16,,,
+G1006,F08,anel quadrado + disco + trilhas,1,161,34,,,25,,24
+G1586,F10,anel quadrado + quadrado + trilhas,1,187,32,,,,77,20
+G1099,F08,anel quadrado + disco + trilhas,1,201,41,,,47,,21
+G0164,F02,quadrado,0,,,,,,79,
+G1374,F09,anel quadrado + quadrado,0,204,44,,,,67,
+G0858,F07,anel quadrado + disco,0,190,45,,,37,,
+G1324,F09,anel quadrado + quadrado,0,204,37,,,,95,
+G1827,F12,anel circular + disco + trilhas,1,,,102,29,48,,27
+G0252,F03,anel circular,0,,,75,23,,,
+G1551,F10,anel quadrado + quadrado + trilhas,1,210,26,,,,82,23
+G1771,F11,anel circular + disco,0,,,110,31,39,,
+G0669,F06,anel quadrado + anel circular + trilhas,1,216,30,46,22,,,27
+G1021,F08,anel quadrado + disco + trilhas,1,204,48,,,37,,16
+G0531,F05,anel quadrado + anel circular,0,215,26,39,19,,,
+G1446,F10,anel quadrado + quadrado + trilhas,1,236,40,,,,91,20
+G1769,F11,anel circular + disco,0,,,118,26,77,,
+G1758,F11,anel circular + disco,0,,,118,30,34,,
+G0700,F06,anel quadrado + anel circular + trilhas,1,212,26,67,24,,,25
+G0560,F05,anel quadrado + anel circular,0,211,45,46,20,,,
+G0607,F06,anel quadrado + anel circular + trilhas,1,217,28,61,18,,,17
+G0099,F01,disco,0,,,,,55,,
+G1685,F11,anel circular + disco,0,,,94,40,31,,
+G0460,F05,anel quadrado + anel circular,0,214,42,46,20,,,
+G1009,F08,anel quadrado + disco + trilhas,1,161,29,,,21,,21
+G0651,F06,anel quadrado + anel circular + trilhas,1,217,37,38,15,,,24
+G1661,F11,anel circular + disco,0,,,132,38,31,,
+G1112,F08,anel quadrado + disco + trilhas,1,184,36,,,27,,30
+G1402,F10,anel quadrado + quadrado + trilhas,1,201,33,,,,69,24
+G0947,F07,anel quadrado + disco,0,194,42,,,36,,
+G1562,F10,anel quadrado + quadrado + trilhas,1,190,35,,,,100,28
+G1025,F08,anel quadrado + disco + trilhas,1,192,41,,,30,,19
+G0401,F05,anel quadrado + anel circular,0,213,27,58,16,,,
+G1522,F10,anel quadrado + quadrado + trilhas,1,221,30,,,,48,24
+G1129,F08,anel quadrado + disco + trilhas,1,222,45,,,51,,30
+G0512,F05,anel quadrado + anel circular,0,207,39,42,24,,,
+G0707,F06,anel quadrado + anel circular + trilhas,1,173,34,40,23,,,27
+G1476,F10,anel quadrado + quadrado + trilhas,1,216,26,,,,126,22
+G1819,F12,anel circular + disco + trilhas,1,,,109,44,28,,24
+G1733,F11,anel circular + disco,0,,,90,29,31,,
+G0796,F06,anel quadrado + anel circular + trilhas,1,211,25,44,17,,,27
+G0842,F07,anel quadrado + disco,0,192,46,,,21,,
+G0567,F05,anel quadrado + anel circular,0,178,33,39,23,,,
+G1693,F11,anel circular + disco,0,,,127,28,65,,
+G1738,F11,anel circular + disco,0,,,87,40,25,,
+G0394,F04,anel quadrado,0,188,37,,,,,
+G0112,F02,quadrado,0,,,,,,140,
+G1123,F08,anel quadrado + disco + trilhas,1,224,45,,,27,,20
+G0437,F05,anel quadrado + anel circular,0,177,27,38,18,,,
+G0642,F06,anel quadrado + anel circular + trilhas,1,197,45,41,17,,,23
+G0522,F05,anel quadrado + anel circular,0,219,35,39,24,,,
+G0692,F06,anel quadrado + anel circular + trilhas,1,238,43,43,23,,,21
+G0827,F07,anel quadrado + disco,0,229,40,,,57,,
+G1910,F12,anel circular + disco + trilhas,1,,,89,28,41,,28
+G0793,F06,anel quadrado + anel circular + trilhas,1,201,32,57,27,,,24
+G0911,F07,anel quadrado + disco,0,176,49,,,20,,
+G1273,F09,anel quadrado + quadrado,0,198,26,,,,95,
+G0185,F02,quadrado,0,,,,,,200,
+G1782,F11,anel circular + disco,0,,,117,32,28,,
+G0047,F01,disco,0,,,,,90,,
+G0753,F06,anel quadrado + anel circular + trilhas,1,221,30,49,27,,,25
+G0528,F05,anel quadrado + anel circular,0,211,45,39,22,,,
+G1712,F11,anel circular + disco,0,,,112,29,21,,
+G0598,F05,anel quadrado + anel circular,0,208,48,46,30,,,
+G1369,F09,anel quadrado + quadrado,0,170,26,,,,92,
+G1514,F10,anel quadrado + quadrado + trilhas,1,169,38,,,,55,22
+G1577,F10,anel quadrado + quadrado + trilhas,1,223,28,,,,96,21
+G0076,F01,disco,0,,,,,55,,
+G1895,F12,anel circular + disco + trilhas,1,,,90,27,47,,22
+G0817,F07,anel quadrado + disco,0,233,39,,,40,,
+G1668,F11,anel circular + disco,0,,,133,24,89,,
+G1639,F11,anel circular + disco,0,,,100,40,48,,
+G0754,F06,anel quadrado + anel circular + trilhas,1,195,25,42,19,,,28
+G1937,F12,anel circular + disco + trilhas,1,,,118,36,30,,19
+G1696,F11,anel circular + disco,0,,,125,31,60,,
+G0303,F04,anel quadrado,0,145,36,,,,,
+G1976,F12,anel circular + disco + trilhas,1,,,120,42,64,,17
+G1320,F09,anel quadrado + quadrado,0,219,43,,,,86,
+G1601,F11,anel circular + disco,0,,,82,35,22,,
+G0563,F05,anel quadrado + anel circular,0,177,39,38,21,,,
+G0582,F05,anel quadrado + anel circular,0,199,49,35,17,,,
+G1654,F11,anel circular + disco,0,,,107,30,64,,
+G0217,F03,anel circular,0,,,49,20,,,
+G0483,F05,anel quadrado + anel circular,0,194,36,45,29,,,
+G0320,F04,anel quadrado,0,225,27,,,,,
+G1743,F11,anel circular + disco,0,,,131,24,60,,
+G0575,F05,anel quadrado + anel circular,0,205,32,47,23,,,
+G0736,F06,anel quadrado + anel circular + trilhas,1,217,41,44,27,,,16
+G0497,F05,anel quadrado + anel circular,0,198,44,45,21,,,
+G1854,F12,anel circular + disco + trilhas,1,,,98,24,39,,17
+G0541,F05,anel quadrado + anel circular,0,198,48,41,17,,,
+G1109,F08,anel quadrado + disco + trilhas,1,200,28,,,27,,18
+G0566,F05,anel quadrado + anel circular,0,167,30,37,16,,,
+G1834,F12,anel circular + disco + trilhas,1,,,114,41,54,,17
+G0845,F07,anel quadrado + disco,0,194,29,,,20,,
+G1609,F11,anel circular + disco,0,,,93,44,39,,
+G0350,F04,anel quadrado,0,244,30,,,,,
+G0111,F02,quadrado,0,,,,,,103,
+G1105,F08,anel quadrado + disco + trilhas,1,213,45,,,38,,17
+G1215,F09,anel quadrado + quadrado,0,185,28,,,,89,
+G0400,F04,anel quadrado,0,138,44,,,,,
+G1598,F10,anel quadrado + quadrado + trilhas,1,171,38,,,,63,28
+G0836,F07,anel quadrado + disco,0,173,46,,,26,,
+G1052,F08,anel quadrado + disco + trilhas,1,199,27,,,41,,25
+G0179,F02,quadrado,0,,,,,,147,
+G1735,F11,anel circular + disco,0,,,129,22,56,,
+G0650,F06,anel quadrado + anel circular + trilhas,1,203,36,47,19,,,29
+G1822,F12,anel circular + disco + trilhas,1,,,96,22,45,,29
+G1461,F10,anel quadrado + quadrado + trilhas,1,192,33,,,,84,25
+G0028,F01,disco,0,,,,,110,,
+G0906,F07,anel quadrado + disco,0,232,28,,,47,,
+G1867,F12,anel circular + disco + trilhas,1,,,97,39,35,,24
+G0453,F05,anel quadrado + anel circular,0,174,27,40,22,,,
+G0487,F05,anel quadrado + anel circular,0,195,30,36,16,,,
+G0866,F07,anel quadrado + disco,0,232,45,,,38,,
+G1628,F11,anel circular + disco,0,,,122,39,56,,
+G1287,F09,anel quadrado + quadrado,0,233,28,,,,105,
+G1027,F08,anel quadrado + disco + trilhas,1,181,49,,,26,,26
+G1935,F12,anel circular + disco + trilhas,1,,,104,38,51,,17
+G1921,F12,anel circular + disco + trilhas,1,,,89,38,21,,21
+G1871,F12,anel circular + disco + trilhas,1,,,138,27,56,,29
+G1516,F10,anel quadrado + quadrado + trilhas,1,186,27,,,,102,20
+G0810,F07,anel quadrado + disco,0,212,36,,,56,,
+G0278,F03,anel circular,0,,,54,36,,,
+G0046,F01,disco,0,,,,,71,,
+G1918,F12,anel circular + disco + trilhas,1,,,106,24,41,,19
+G0219,F03,anel circular,0,,,102,42,,,
+G1450,F10,anel quadrado + quadrado + trilhas,1,190,25,,,,115,25
+G0366,F04,anel quadrado,0,258,50,,,,,
+G0585,F05,anel quadrado + anel circular,0,217,46,51,21,,,
+G1662,F11,anel circular + disco,0,,,90,35,23,,
+G1289,F09,anel quadrado + quadrado,0,165,31,,,,52,
+G0292,F03,anel circular,0,,,70,24,,,
+G1649,F11,anel circular + disco,0,,,107,40,55,,
+G0491,F05,anel quadrado + anel circular,0,187,29,47,17,,,
+G0386,F04,anel quadrado,0,156,48,,,,,
+G0426,F05,anel quadrado + anel circular,0,171,28,36,18,,,
+G0723,F06,anel quadrado + anel circular + trilhas,1,221,50,39,18,,,17
+G1104,F08,anel quadrado + disco + trilhas,1,230,29,,,48,,22
+G0579,F05,anel quadrado + anel circular,0,238,26,50,18,,,
+G1080,F08,anel quadrado + disco + trilhas,1,211,35,,,36,,19
+G0893,F07,anel quadrado + disco,0,191,29,,,22,,
+G0741,F06,anel quadrado + anel circular + trilhas,1,194,33,37,21,,,23
+G1153,F08,anel quadrado + disco + trilhas,1,235,48,,,47,,22
+G1795,F11,anel circular + disco,0,,,90,28,31,,
+G1955,F12,anel circular + disco + trilhas,1,,,138,34,23,,28
+G1720,F11,anel circular + disco,0,,,114,35,49,,
+G1016,F08,anel quadrado + disco + trilhas,1,231,49,,,34,,21
+G0861,F07,anel quadrado + disco,0,184,40,,,42,,
+G1218,F09,anel quadrado + quadrado,0,239,37,,,,135,
+G1285,F09,anel quadrado + quadrado,0,237,49,,,,104,
+G0425,F05,anel quadrado + anel circular,0,197,37,35,19,,,
+G1312,F09,anel quadrado + quadrado,0,170,27,,,,83,
+G1708,F11,anel circular + disco,0,,,122,36,63,,
+G0935,F07,anel quadrado + disco,0,172,47,,,26,,
+G0135,F02,quadrado,0,,,,,,175,
+G0236,F03,anel circular,0,,,102,45,,,
+G0459,F05,anel quadrado + anel circular,0,179,34,38,17,,,
+G1272,F09,anel quadrado + quadrado,0,177,31,,,,49,
+G0352,F04,anel quadrado,0,137,44,,,,,
+G1852,F12,anel circular + disco + trilhas,1,,,137,42,39,,23
+G0413,F05,anel quadrado + anel circular,0,210,36,58,27,,,
+G0509,F05,anel quadrado + anel circular,0,234,41,55,23,,,
+G0377,F04,anel quadrado,0,178,22,,,,,
+G0165,F02,quadrado,0,,,,,,212,
+G0074,F01,disco,0,,,,,75,,
+G1953,F12,anel circular + disco + trilhas,1,,,81,40,26,,29
+G1317,F09,anel quadrado + quadrado,0,216,42,,,,60,
+G0898,F07,anel quadrado + disco,0,187,31,,,31,,
+G0620,F06,anel quadrado + anel circular + trilhas,1,186,27,53,30,,,17
+G0875,F07,anel quadrado + disco,0,230,46,,,24,,
+G0091,F01,disco,0,,,,,51,,
+G0153,F02,quadrado,0,,,,,,77,
+G1899,F12,anel circular + disco + trilhas,1,,,115,20,36,,29
+G1637,F11,anel circular + disco,0,,,140,42,64,,
+G0803,F07,anel quadrado + disco,0,198,38,,,48,,
+G1775,F11,anel circular + disco,0,,,98,32,46,,
+G1521,F10,anel quadrado + quadrado + trilhas,1,209,41,,,,74,21
+G1868,F12,anel circular + disco + trilhas,1,,,90,42,29,,26
+G1610,F11,anel circular + disco,0,,,139,23,87,,
+G1128,F08,anel quadrado + disco + trilhas,1,172,49,,,20,,28
+G0330,F04,anel quadrado,0,212,24,,,,,
+G0435,F05,anel quadrado + anel circular,0,195,43,35,18,,,
+G0493,F05,anel quadrado + anel circular,0,170,34,36,18,,,
+G0969,F07,anel quadrado + disco,0,199,34,,,51,,
+G0106,F02,quadrado,0,,,,,,214,
+G0302,F04,anel quadrado,0,144,35,,,,,
+G0090,F01,disco,0,,,,,104,,
+G1665,F11,anel circular + disco,0,,,128,24,38,,
+G1017,F08,anel quadrado + disco + trilhas,1,219,26,,,22,,22
+G0266,F03,anel circular,0,,,99,15,,,
+G0259,F03,anel circular,0,,,83,24,,,
+G1362,F09,anel quadrado + quadrado,0,164,30,,,,72,
+G0511,F05,anel quadrado + anel circular,0,190,46,37,20,,,
+G0310,F04,anel quadrado,0,258,35,,,,,
+G0804,F07,anel quadrado + disco,0,238,46,,,51,,
+G0771,F06,anel quadrado + anel circular + trilhas,1,191,28,48,31,,,30
+G0406,F05,anel quadrado + anel circular,0,189,39,40,22,,,
+G0761,F06,anel quadrado + anel circular + trilhas,1,171,32,37,16,,,19
+G0451,F05,anel quadrado + anel circular,0,214,29,43,22,,,
+G1528,F10,anel quadrado + quadrado + trilhas,1,212,44,,,,68,19
+G1709,F11,anel circular + disco,0,,,91,44,25,,
+G0908,F07,anel quadrado + disco,0,225,32,,,64,,
+G1121,F08,anel quadrado + disco + trilhas,1,193,33,,,30,,27
+G0370,F04,anel quadrado,0,244,45,,,,,
+G0149,F02,quadrado,0,,,,,,189,
+G1672,F11,anel circular + disco,0,,,92,25,56,,
+G1580,F10,anel quadrado + quadrado + trilhas,1,211,37,,,,97,18
+G1254,F09,anel quadrado + quadrado,0,201,34,,,,69,
+G1435,F10,anel quadrado + quadrado + trilhas,1,214,46,,,,84,26
+G0484,F05,anel quadrado + anel circular,0,228,45,48,22,,,
+G0195,F02,quadrado,0,,,,,,126,
+G0253,F03,anel circular,0,,,78,23,,,
+G0359,F04,anel quadrado,0,151,34,,,,,
+G1070,F08,anel quadrado + disco + trilhas,1,190,46,,,23,,23
+G1227,F09,anel quadrado + quadrado,0,240,33,,,,90,
+G0104,F02,quadrado,0,,,,,,142,
+G0516,F05,anel quadrado + anel circular,0,184,47,35,15,,,
+G0043,F01,disco,0,,,,,77,,
+G0869,F07,anel quadrado + disco,0,216,30,,,49,,
+G0339,F04,anel quadrado,0,214,30,,,,,
+G1315,F09,anel quadrado + quadrado,0,168,37,,,,73,
+G1095,F08,anel quadrado + disco + trilhas,1,161,47,,,21,,29
+G0098,F01,disco,0,,,,,97,,
+G0648,F06,anel quadrado + anel circular + trilhas,1,184,26,47,18,,,25
+G0584,F05,anel quadrado + anel circular,0,216,42,37,18,,,
+G0637,F06,anel quadrado + anel circular + trilhas,1,209,47,43,21,,,19
+G0167,F02,quadrado,0,,,,,,189,
+G1473,F10,anel quadrado + quadrado + trilhas,1,203,25,,,,91,20
+G0256,F03,anel circular,0,,,102,29,,,
+G1776,F11,anel circular + disco,0,,,87,22,54,,
+G0450,F05,anel quadrado + anel circular,0,179,25,43,16,,,
+G1076,F08,anel quadrado + disco + trilhas,1,189,31,,,38,,19
+G0480,F05,anel quadrado + anel circular,0,210,38,53,34,,,
+G1967,F12,anel circular + disco + trilhas,1,,,104,37,37,,18
+G1230,F09,anel quadrado + quadrado,0,162,27,,,,57,
+G0926,F07,anel quadrado + disco,0,180,48,,,23,,
+G1909,F12,anel circular + disco + trilhas,1,,,124,27,20,,28
+G0907,F07,anel quadrado + disco,0,171,43,,,30,,
+G0735,F06,anel quadrado + anel circular + trilhas,1,174,41,35,16,,,25
+G1801,F12,anel circular + disco + trilhas,1,,,98,24,36,,26
+G1193,F08,anel quadrado + disco + trilhas,1,203,30,,,39,,26
+G1884,F12,anel circular + disco + trilhas,1,,,128,21,35,,17
+G0288,F03,anel circular,0,,,74,49,,,
+G0294,F03,anel circular,0,,,111,21,,,
+G1238,F09,anel quadrado + quadrado,0,192,26,,,,118,
+G0739,F06,anel quadrado + anel circular + trilhas,1,209,26,51,16,,,30
+G1390,F09,anel quadrado + quadrado,0,201,42,,,,52,
+G0849,F07,anel quadrado + disco,0,214,45,,,23,,
+G1293,F09,anel quadrado + quadrado,0,200,35,,,,92,
+G0655,F06,anel quadrado + anel circular + trilhas,1,181,30,43,17,,,26
+G1155,F08,anel quadrado + disco + trilhas,1,212,47,,,45,,17
+G1764,F11,anel circular + disco,0,,,108,41,42,,
+G0740,F06,anel quadrado + anel circular + trilhas,1,189,38,44,20,,,24
+G1204,F09,anel quadrado + quadrado,0,196,48,,,,54,
+G0190,F02,quadrado,0,,,,,,213,
+G1500,F10,anel quadrado + quadrado + trilhas,1,179,44,,,,64,17
+G0023,F01,disco,0,,,,,47,,
+G1616,F11,anel circular + disco,0,,,86,42,33,,
+G0948,F07,anel quadrado + disco,0,189,38,,,28,,
+G1478,F10,anel quadrado + quadrado + trilhas,1,209,28,,,,116,19
+G0815,F07,anel quadrado + disco,0,239,34,,,21,,
+G0977,F07,anel quadrado + disco,0,234,26,,,40,,
+G1062,F08,anel quadrado + disco + trilhas,1,186,25,,,30,,26
+G1526,F10,anel quadrado + quadrado + trilhas,1,231,30,,,,88,30
+G0482,F05,anel quadrado + anel circular,0,227,34,48,19,,,
+G0087,F01,disco,0,,,,,67,,
+G0611,F06,anel quadrado + anel circular + trilhas,1,207,39,35,16,,,17
+G1971,F12,anel circular + disco + trilhas,1,,,121,27,59,,27
+G1237,F09,anel quadrado + quadrado,0,203,34,,,,95,
+G1003,F08,anel quadrado + disco + trilhas,1,191,35,,,45,,23
+G0922,F07,anel quadrado + disco,0,163,45,,,26,,
+G0988,F07,anel quadrado + disco,0,217,39,,,22,,
+G1490,F10,anel quadrado + quadrado + trilhas,1,205,25,,,,50,22
+G0591,F05,anel quadrado + anel circular,0,240,35,37,20,,,
+G0843,F07,anel quadrado + disco,0,167,29,,,24,,
+G1857,F12,anel circular + disco + trilhas,1,,,89,30,28,,23
+G0987,F07,anel quadrado + disco,0,192,35,,,43,,
+G1530,F10,anel quadrado + quadrado + trilhas,1,164,42,,,,44,16
+G1927,F12,anel circular + disco + trilhas,1,,,98,21,28,,18
+G0744,F06,anel quadrado + anel circular + trilhas,1,202,38,39,23,,,18
+G1557,F10,anel quadrado + quadrado + trilhas,1,236,31,,,,134,27
+G1000,F07,anel quadrado + disco,0,205,33,,,33,,
+G0984,F07,anel quadrado + disco,0,234,48,,,50,,
+G1540,F10,anel quadrado + quadrado + trilhas,1,188,29,,,,86,20
+G1946,F12,anel circular + disco + trilhas,1,,,109,27,69,,28
+G1630,F11,anel circular + disco,0,,,98,26,43,,
+G1874,F12,anel circular + disco + trilhas,1,,,131,33,63,,20
+G1825,F12,anel circular + disco + trilhas,1,,,99,40,31,,29
+G0878,F07,anel quadrado + disco,0,204,32,,,34,,
+G1234,F09,anel quadrado + quadrado,0,197,40,,,,45,
+G0703,F06,anel quadrado + anel circular + trilhas,1,201,43,47,21,,,22
+G0095,F01,disco,0,,,,,95,,
+G0852,F07,anel quadrado + disco,0,180,27,,,42,,
+G0963,F07,anel quadrado + disco,0,202,48,,,34,,
+G0080,F01,disco,0,,,,,101,,
+G0654,F06,anel quadrado + anel circular + trilhas,1,210,45,49,18,,,24
+G0017,F01,disco,0,,,,,39,,
+G0295,F03,anel circular,0,,,66,34,,,
+G1993,F12,anel circular + disco + trilhas,1,,,80,34,30,,29
+G0967,F07,anel quadrado + disco,0,187,42,,,30,,
+G1038,F08,anel quadrado + disco + trilhas,1,218,26,,,46,,20
+G0734,F06,anel quadrado + anel circular + trilhas,1,233,27,70,34,,,21
+G0809,F07,anel quadrado + disco,0,205,28,,,40,,
+G1940,F12,anel circular + disco + trilhas,1,,,86,34,27,,20
+G0397,F04,anel quadrado,0,206,36,,,,,
+G1979,F12,anel circular + disco + trilhas,1,,,111,22,62,,28
+G0140,F02,quadrado,0,,,,,,200,
+G1483,F10,anel quadrado + quadrado + trilhas,1,175,38,,,,70,19
+G0508,F05,anel quadrado + anel circular,0,233,40,46,20,,,
+G0915,F07,anel quadrado + disco,0,163,35,,,26,,
+G0534,F05,anel quadrado + anel circular,0,187,27,47,17,,,
+G0168,F02,quadrado,0,,,,,,85,
+G0760,F06,anel quadrado + anel circular + trilhas,1,161,26,39,16,,,22
+G0030,F01,disco,0,,,,,36,,
+G0778,F06,anel quadrado + anel circular + trilhas,1,175,41,36,20,,,26
+G1115,F08,anel quadrado + disco + trilhas,1,228,46,,,39,,30
+G1674,F11,anel circular + disco,0,,,103,39,21,,
+G0391,F04,anel quadrado,0,191,36,,,,,
+G1808,F12,anel circular + disco + trilhas,1,,,109,32,24,,23
+G1694,F11,anel circular + disco,0,,,132,39,73,,
+G0751,F06,anel quadrado + anel circular + trilhas,1,235,43,46,25,,,26
+G0102,F02,quadrado,0,,,,,,170,
+G1188,F08,anel quadrado + disco + trilhas,1,185,25,,,39,,16
+G1683,F11,anel circular + disco,0,,,116,21,26,,
+G1765,F11,anel circular + disco,0,,,133,30,87,,
+G1926,F12,anel circular + disco + trilhas,1,,,122,20,52,,18
+G1288,F09,anel quadrado + quadrado,0,192,48,,,,50,
+G0105,F02,quadrado,0,,,,,,132,
+G0361,F04,anel quadrado,0,163,37,,,,,
+G0989,F07,anel quadrado + disco,0,194,28,,,29,,
+G0960,F07,anel quadrado + disco,0,204,32,,,41,,
+G1496,F10,anel quadrado + quadrado + trilhas,1,181,44,,,,52,24
+G0379,F04,anel quadrado,0,215,43,,,,,
+G1113,F08,anel quadrado + disco + trilhas,1,176,29,,,29,,18
+G0490,F05,anel quadrado + anel circular,0,186,47,35,15,,,
+G1041,F08,anel quadrado + disco + trilhas,1,174,45,,,22,,24
+G1754,F11,anel circular + disco,0,,,133,41,81,,
+G0191,F02,quadrado,0,,,,,,86,
+G0835,F07,anel quadrado + disco,0,170,31,,,39,,
+G1166,F08,anel quadrado + disco + trilhas,1,202,29,,,25,,15
+G0972,F07,anel quadrado + disco,0,179,46,,,23,,
+G1789,F11,anel circular + disco,0,,,113,25,39,,
+G0132,F02,quadrado,0,,,,,,183,
+G1298,F09,anel quadrado + quadrado,0,233,40,,,,78,
+G1161,F08,anel quadrado + disco + trilhas,1,229,27,,,21,,29
+G1334,F09,anel quadrado + quadrado,0,179,26,,,,73,
+G1602,F11,anel circular + disco,0,,,125,30,63,,
+G0713,F06,anel quadrado + anel circular + trilhas,1,216,43,43,16,,,23
+G0573,F05,anel quadrado + anel circular,0,186,39,38,17,,,
+G1715,F11,anel circular + disco,0,,,132,23,37,,
+G1455,F10,anel quadrado + quadrado + trilhas,1,170,27,,,,64,28
+G0830,F07,anel quadrado + disco,0,203,26,,,23,,
+G1149,F08,anel quadrado + disco + trilhas,1,176,46,,,21,,28
+G0871,F07,anel quadrado + disco,0,212,44,,,45,,
+G1632,F11,anel circular + disco,0,,,94,41,22,,
+G0248,F03,anel circular,0,,,51,18,,,
+G1812,F12,anel circular + disco + trilhas,1,,,136,24,85,,15
+G0800,F06,anel quadrado + anel circular + trilhas,1,188,27,44,22,,,29
+G1262,F09,anel quadrado + quadrado,0,232,30,,,,86,
+G0819,F07,anel quadrado + disco,0,167,36,,,34,,
+G1587,F10,anel quadrado + quadrado + trilhas,1,174,28,,,,59,18
+G1135,F08,anel quadrado + disco + trilhas,1,190,33,,,36,,18
+G0902,F07,anel quadrado + disco,0,200,25,,,51,,
+G1423,F10,anel quadrado + quadrado + trilhas,1,206,28,,,,75,27
+G1777,F11,anel circular + disco,0,,,110,38,37,,
+G0267,F03,anel circular,0,,,128,31,,,
+G0890,F07,anel quadrado + disco,0,165,38,,,25,,
+G1810,F12,anel circular + disco + trilhas,1,,,101,43,26,,22
+G0605,F06,anel quadrado + anel circular + trilhas,1,193,45,38,16,,,15
+G1518,F10,anel quadrado + quadrado + trilhas,1,218,33,,,,132,22
+G0200,F02,quadrado,0,,,,,,140,
+G0117,F02,quadrado,0,,,,,,62,
+G1197,F08,anel quadrado + disco + trilhas,1,195,30,,,43,,20
+G0371,F04,anel quadrado,0,125,31,,,,,
+G1274,F09,anel quadrado + quadrado,0,240,28,,,,93,
+G1122,F08,anel quadrado + disco + trilhas,1,221,44,,,47,,26
+G1969,F12,anel circular + disco + trilhas,1,,,99,35,43,,25
+G1391,F09,anel quadrado + quadrado,0,210,38,,,,70,
+G0742,F06,anel quadrado + anel circular + trilhas,1,210,36,42,20,,,28
+G1840,F12,anel circular + disco + trilhas,1,,,86,25,51,,22
+G0860,F07,anel quadrado + disco,0,169,49,,,21,,
+G1932,F12,anel circular + disco + trilhas,1,,,130,22,71,,16
+G1208,F09,anel quadrado + quadrado,0,205,49,,,,47,
+G1332,F09,anel quadrado + quadrado,0,230,37,,,,132,
+G1900,F12,anel circular + disco + trilhas,1,,,84,22,20,,17
+G0408,F05,anel quadrado + anel circular,0,161,27,40,22,,,
+G0525,F05,anel quadrado + anel circular,0,234,35,41,22,,,
+G0912,F07,anel quadrado + disco,0,212,29,,,33,,
+G0603,F06,anel quadrado + anel circular + trilhas,1,167,32,38,23,,,25
+G1837,F12,anel circular + disco + trilhas,1,,,103,44,41,,25
+G1856,F12,anel circular + disco + trilhas,1,,,85,29,44,,26
+G1965,F12,anel circular + disco + trilhas,1,,,139,31,54,,25
+G0306,F04,anel quadrado,0,210,20,,,,,
+G1195,F08,anel quadrado + disco + trilhas,1,204,46,,,34,,28
+G0544,F05,anel quadrado + anel circular,0,166,33,36,21,,,
+G0421,F05,anel quadrado + anel circular,0,186,31,47,23,,,
+G1589,F10,anel quadrado + quadrado + trilhas,1,187,28,,,,73,21
+G0617,F06,anel quadrado + anel circular + trilhas,1,188,27,36,16,,,18
+G1364,F09,anel quadrado + quadrado,0,173,38,,,,48,
+G0234,F03,anel circular,0,,,59,28,,,
+G0631,F06,anel quadrado + anel circular + trilhas,1,219,27,44,26,,,26
+G0779,F06,anel quadrado + anel circular + trilhas,1,194,42,42,17,,,29
+G0728,F06,anel quadrado + anel circular + trilhas,1,199,28,40,19,,,19
+G1578,F10,anel quadrado + quadrado + trilhas,1,201,42,,,,84,30
+G1780,F11,anel circular + disco,0,,,126,44,54,,
+G1747,F11,anel circular + disco,0,,,122,35,64,,
+G0542,F05,anel quadrado + anel circular,0,196,47,41,23,,,
+G0851,F07,anel quadrado + disco,0,237,36,,,57,,
+G0971,F07,anel quadrado + disco,0,182,32,,,32,,
+G1942,F12,anel circular + disco + trilhas,1,,,130,23,47,,26
+G1688,F11,anel circular + disco,0,,,134,34,73,,
+G0927,F07,anel quadrado + disco,0,182,30,,,25,,
+G0418,F05,anel quadrado + anel circular,0,231,46,47,17,,,
+G0396,F04,anel quadrado,0,260,32,,,,,
+G0710,F06,anel quadrado + anel circular + trilhas,1,208,39,53,22,,,22
+G0933,F07,anel quadrado + disco,0,166,30,,,26,,
+G0966,F07,anel quadrado + disco,0,210,30,,,22,,
+G0092,F01,disco,0,,,,,69,,
+G0549,F05,anel quadrado + anel circular,0,209,26,63,27,,,
+G0120,F02,quadrado,0,,,,,,209,
+G0825,F07,anel quadrado + disco,0,175,37,,,29,,
+G0360,F04,anel quadrado,0,205,25,,,,,
+G0558,F05,anel quadrado + anel circular,0,197,42,36,19,,,
+G1002,F08,anel quadrado + disco + trilhas,1,191,37,,,46,,30
+G1389,F09,anel quadrado + quadrado,0,173,43,,,,44,
+G0131,F02,quadrado,0,,,,,,153,
+G1524,F10,anel quadrado + quadrado + trilhas,1,231,31,,,,57,28
+G0156,F02,quadrado,0,,,,,,116,
+G0444,F05,anel quadrado + anel circular,0,201,48,42,26,,,
+G1321,F09,anel quadrado + quadrado,0,201,37,,,,91,
+G1507,F10,anel quadrado + quadrado + trilhas,1,208,44,,,,91,16
+G1511,F10,anel quadrado + quadrado + trilhas,1,171,34,,,,75,26
+G0349,F04,anel quadrado,0,229,34,,,,,
+G0210,F03,anel circular,0,,,127,27,,,
+G0658,F06,anel quadrado + anel circular + trilhas,1,173,30,40,20,,,22
+G1501,F10,anel quadrado + quadrado + trilhas,1,193,46,,,,42,25
+G0897,F07,anel quadrado + disco,0,184,37,,,31,,
+G1151,F08,anel quadrado + disco + trilhas,1,181,34,,,41,,17
+G0431,F05,anel quadrado + anel circular,0,199,40,41,23,,,
+G0286,F03,anel circular,0,,,116,35,,,
+G1462,F10,anel quadrado + quadrado + trilhas,1,165,31,,,,79,25
+G0844,F07,anel quadrado + disco,0,210,42,,,33,,
+G1417,F10,anel quadrado + quadrado + trilhas,1,222,45,,,,47,23
+G1933,F12,anel circular + disco + trilhas,1,,,100,39,47,,21
+G1833,F12,anel circular + disco + trilhas,1,,,123,43,47,,20
+G0262,F03,anel circular,0,,,90,38,,,
+G1894,F12,anel circular + disco + trilhas,1,,,82,44,23,,16
+G0896,F07,anel quadrado + disco,0,197,32,,,33,,
+G0889,F07,anel quadrado + disco,0,221,32,,,55,,
+G1026,F08,anel quadrado + disco + trilhas,1,217,48,,,24,,29
+G0952,F07,anel quadrado + disco,0,223,34,,,22,,
+G1922,F12,anel circular + disco + trilhas,1,,,128,34,45,,30
+G1219,F09,anel quadrado + quadrado,0,206,35,,,,71,
+G1853,F12,anel circular + disco + trilhas,1,,,81,40,24,,24
+G1001,F08,anel quadrado + disco + trilhas,1,220,32,,,65,,30
+G1111,F08,anel quadrado + disco + trilhas,1,203,48,,,25,,21
+G1185,F08,anel quadrado + disco + trilhas,1,221,41,,,55,,26
+G1406,F10,anel quadrado + quadrado + trilhas,1,182,43,,,,71,25
+G1648,F11,anel circular + disco,0,,,119,38,30,,
+G1590,F10,anel quadrado + quadrado + trilhas,1,216,49,,,,88,15
+G0495,F05,anel quadrado + anel circular,0,194,49,35,18,,,
+G1419,F10,anel quadrado + quadrado + trilhas,1,183,44,,,,54,30
+G1106,F08,anel quadrado + disco + trilhas,1,190,33,,,24,,20
+G1631,F11,anel circular + disco,0,,,107,30,21,,
+G0229,F03,anel circular,0,,,102,35,,,
+G1305,F09,anel quadrado + quadrado,0,180,46,,,,53,
+G0881,F07,anel quadrado + disco,0,222,32,,,21,,
+G1212,F09,anel quadrado + quadrado,0,225,48,,,,75,
+G1978,F12,anel circular + disco + trilhas,1,,,118,38,66,,16
+G1957,F12,anel circular + disco + trilhas,1,,,118,43,39,,26
+G0570,F05,anel quadrado + anel circular,0,222,33,62,30,,,
+G0083,F01,disco,0,,,,,52,,
+G0521,F05,anel quadrado + anel circular,0,233,45,37,19,,,
+G1877,F12,anel circular + disco + trilhas,1,,,118,32,72,,29
+G1995,F12,anel circular + disco + trilhas,1,,,110,31,58,,20
+G1432,F10,anel quadrado + quadrado + trilhas,1,234,49,,,,80,23
+G1246,F09,anel quadrado + quadrado,0,237,30,,,,55,
+G0192,F02,quadrado,0,,,,,,195,
+G0749,F06,anel quadrado + anel circular + trilhas,1,186,39,37,17,,,22
+G1787,F11,anel circular + disco,0,,,113,41,32,,
+G0282,F03,anel circular,0,,,48,22,,,
+G0488,F05,anel quadrado + anel circular,0,168,30,36,19,,,
+G1264,F09,anel quadrado + quadrado,0,198,42,,,,63,
+G0222,F03,anel circular,0,,,65,44,,,
+G0801,F07,anel quadrado + disco,0,203,36,,,28,,
+G1281,F09,anel quadrado + quadrado,0,163,25,,,,79,
+G1515,F10,anel quadrado + quadrado + trilhas,1,190,46,,,,41,23
+G0661,F06,anel quadrado + anel circular + trilhas,1,238,35,40,19,,,18
+G1675,F11,anel circular + disco,0,,,81,30,29,,
+G0146,F02,quadrado,0,,,,,,206,
+G1085,F08,anel quadrado + disco + trilhas,1,175,31,,,41,,26
+G1919,F12,anel circular + disco + trilhas,1,,,94,20,64,,21
+G0772,F06,anel quadrado + anel circular + trilhas,1,184,32,42,20,,,23
+G1136,F08,anel quadrado + disco + trilhas,1,222,46,,,28,,23
+G0364,F04,anel quadrado,0,158,33,,,,,
+G0081,F01,disco,0,,,,,65,,
+G0463,F05,anel quadrado + anel circular,0,235,40,51,28,,,
+G0613,F06,anel quadrado + anel circular + trilhas,1,187,29,47,30,,,22
+G1647,F11,anel circular + disco,0,,,133,22,98,,
+G1615,F11,anel circular + disco,0,,,107,29,26,,
+G1974,F12,anel circular + disco + trilhas,1,,,84,21,50,,17
+G0608,F06,anel quadrado + anel circular + trilhas,1,220,28,41,17,,,22
+G0290,F03,anel circular,0,,,54,27,,,
+G0657,F06,anel quadrado + anel circular + trilhas,1,197,36,42,25,,,19
+G0001,F01,disco,0,,,,,40,,
+G0685,F06,anel quadrado + anel circular + trilhas,1,180,27,40,17,,,24
+G0088,F01,disco,0,,,,,72,,
+G0824,F07,anel quadrado + disco,0,169,31,,,28,,
+G1573,F10,anel quadrado + quadrado + trilhas,1,190,39,,,,62,18
+G0177,F02,quadrado,0,,,,,,207,
+G0759,F06,anel quadrado + anel circular + trilhas,1,215,36,54,24,,,15
+G0240,F03,anel circular,0,,,79,16,,,
+G1718,F11,anel circular + disco,0,,,128,22,81,,
+G1323,F09,anel quadrado + quadrado,0,162,44,,,,45,
+G1725,F11,anel circular + disco,0,,,93,31,42,,
+G1452,F10,anel quadrado + quadrado + trilhas,1,167,36,,,,46,18
+G1047,F08,anel quadrado + disco + trilhas,1,177,42,,,34,,15
+G1233,F09,anel quadrado + quadrado,0,167,50,,,,45,
+G0287,F03,anel circular,0,,,92,48,,,
+G0122,F02,quadrado,0,,,,,,187,
+G0862,F07,anel quadrado + disco,0,184,50,,,31,,
+G1958,F12,anel circular + disco + trilhas,1,,,123,40,59,,21
+G1366,F09,anel quadrado + quadrado,0,196,34,,,,81,
+G1952,F12,anel circular + disco + trilhas,1,,,113,22,74,,22
+G0678,F06,anel quadrado + anel circular + trilhas,1,194,48,35,15,,,24
+G0040,F01,disco,0,,,,,59,,
+G1710,F11,anel circular + disco,0,,,86,24,31,,
+G1934,F12,anel circular + disco + trilhas,1,,,117,44,63,,25
+G1552,F10,anel quadrado + quadrado + trilhas,1,169,37,,,,73,29
+G0532,F05,anel quadrado + anel circular,0,166,35,35,20,,,
+G1431,F10,anel quadrado + quadrado + trilhas,1,162,46,,,,45,22
+G1624,F11,anel circular + disco,0,,,98,40,33,,
+G0738,F06,anel quadrado + anel circular + trilhas,1,210,50,40,19,,,29
+G1831,F12,anel circular + disco + trilhas,1,,,120,40,28,,25
+G0978,F07,anel quadrado + disco,0,182,40,,,38,,
+G0975,F07,anel quadrado + disco,0,210,43,,,32,,
+G0018,F01,disco,0,,,,,95,,
+G0296,F03,anel circular,0,,,72,49,,,
+G0422,F05,anel quadrado + anel circular,0,188,46,37,19,,,
+G1202,F09,anel quadrado + quadrado,0,219,34,,,,119,
+G0510,F05,anel quadrado + anel circular,0,194,37,41,16,,,
+G0892,F07,anel quadrado + disco,0,165,28,,,34,,
+G1465,F10,anel quadrado + quadrado + trilhas,1,170,30,,,,59,17
+G0770,F06,anel quadrado + anel circular + trilhas,1,178,27,41,15,,,30
+G1660,F11,anel circular + disco,0,,,94,44,25,,
+G0550,F05,anel quadrado + anel circular,0,199,42,44,16,,,
+G0333,F04,anel quadrado,0,182,24,,,,,
+G0867,F07,anel quadrado + disco,0,220,44,,,41,,
+G1436,F10,anel quadrado + quadrado + trilhas,1,169,34,,,,57,21
+G0314,F04,anel quadrado,0,247,24,,,,,
+G1563,F10,anel quadrado + quadrado + trilhas,1,208,35,,,,84,18
+G0576,F05,anel quadrado + anel circular,0,201,43,44,26,,,
+G0389,F04,anel quadrado,0,205,26,,,,,
+G0629,F06,anel quadrado + anel circular + trilhas,1,212,46,47,32,,,19
+G1751,F11,anel circular + disco,0,,,86,32,30,,
+G0264,F03,anel circular,0,,,64,37,,,
+G1451,F10,anel quadrado + quadrado + trilhas,1,167,27,,,,41,21
+G1223,F09,anel quadrado + quadrado,0,196,41,,,,67,
+G1404,F10,anel quadrado + quadrado + trilhas,1,218,42,,,,42,26
+G1216,F09,anel quadrado + quadrado,0,189,42,,,,68,
+G1757,F11,anel circular + disco,0,,,98,31,45,,
+G0116,F02,quadrado,0,,,,,,132,
+G0225,F03,anel circular,0,,,77,46,,,
+G1805,F12,anel circular + disco + trilhas,1,,,118,41,50,,22
+G1684,F11,anel circular + disco,0,,,126,20,54,,
+G0221,F03,anel circular,0,,,97,33,,,
+G1588,F10,anel quadrado + quadrado + trilhas,1,238,49,,,,95,27
+G1567,F10,anel quadrado + quadrado + trilhas,1,221,27,,,,68,21
+G0232,F03,anel circular,0,,,99,37,,,
+G0789,F06,anel quadrado + anel circular + trilhas,1,236,28,65,19,,,21
+G1322,F09,anel quadrado + quadrado,0,197,31,,,,44,
+G0666,F06,anel quadrado + anel circular + trilhas,1,190,26,58,18,,,26
+G0556,F05,anel quadrado + anel circular,0,233,47,58,20,,,
+G0899,F07,anel quadrado + disco,0,172,42,,,30,,
+G0474,F05,anel quadrado + anel circular,0,209,33,49,33,,,
+G1329,F09,anel quadrado + quadrado,0,222,28,,,,134,
+G1785,F11,anel circular + disco,0,,,91,42,32,,
+G1848,F12,anel circular + disco + trilhas,1,,,119,41,28,,19
+G1687,F11,anel circular + disco,0,,,134,30,29,,
+G1392,F09,anel quadrado + quadrado,0,190,44,,,,57,
+G0160,F02,quadrado,0,,,,,,142,
+G1861,F12,anel circular + disco + trilhas,1,,,135,27,25,,23
+G0928,F07,anel quadrado + disco,0,232,36,,,37,,
+G0274,F03,anel circular,0,,,72,37,,,
+G1253,F09,anel quadrado + quadrado,0,200,41,,,,68,
+G0756,F06,anel quadrado + anel circular + trilhas,1,219,28,60,28,,,18
+G1533,F10,anel quadrado + quadrado + trilhas,1,195,34,,,,68,24
+G1057,F08,anel quadrado + disco + trilhas,1,221,49,,,31,,29
+G0420,F05,anel quadrado + anel circular,0,209,40,53,28,,,
+G1626,F11,anel circular + disco,0,,,90,29,28,,
+G1472,F10,anel quadrado + quadrado + trilhas,1,203,44,,,,57,25
+G1750,F11,anel circular + disco,0,,,91,39,25,,
+G1689,F11,anel circular + disco,0,,,126,43,55,,
+G1503,F10,anel quadrado + quadrado + trilhas,1,212,41,,,,95,20
+G0903,F07,anel quadrado + disco,0,161,50,,,20,,
+G0269,F03,anel circular,0,,,118,47,,,
+G0841,F07,anel quadrado + disco,0,221,47,,,26,,
+G1520,F10,anel quadrado + quadrado + trilhas,1,231,44,,,,52,18
+G0590,F05,anel quadrado + anel circular,0,174,40,37,16,,,
+G1241,F09,anel quadrado + quadrado,0,175,36,,,,47,
+G1433,F10,anel quadrado + quadrado + trilhas,1,168,46,,,,44,22
+G0729,F06,anel quadrado + anel circular + trilhas,1,229,25,45,16,,,27
+G1011,F08,anel quadrado + disco + trilhas,1,171,28,,,43,,22
+G0523,F05,anel quadrado + anel circular,0,205,26,59,21,,,
+G0932,F07,anel quadrado + disco,0,206,32,,,49,,
+G0791,F06,anel quadrado + anel circular + trilhas,1,232,40,37,18,,,25
+G1339,F09,anel quadrado + quadrado,0,161,41,,,,41,
+G0609,F06,anel quadrado + anel circular + trilhas,1,238,45,55,27,,,25
+G1891,F12,anel circular + disco + trilhas,1,,,98,21,65,,17
+G1327,F09,anel quadrado + quadrado,0,195,36,,,,72,
+G1255,F09,anel quadrado + quadrado,0,224,28,,,,45,
+G0821,F07,anel quadrado + disco,0,223,35,,,63,,
+G0085,F01,disco,0,,,,,82,,
+G1636,F11,anel circular + disco,0,,,111,27,51,,
+G0078,F01,disco,0,,,,,70,,
+G0632,F06,anel quadrado + anel circular + trilhas,1,232,28,43,18,,,27
+G1297,F09,anel quadrado + quadrado,0,168,46,,,,46,
+G1028,F08,anel quadrado + disco + trilhas,1,239,30,,,65,,26
+G0697,F06,anel quadrado + anel circular + trilhas,1,191,42,42,21,,,21
+G1247,F09,anel quadrado + quadrado,0,205,33,,,,76,
+G0082,F01,disco,0,,,,,54,,
+G1251,F09,anel quadrado + quadrado,0,236,37,,,,77,
+G1987,F12,anel circular + disco + trilhas,1,,,116,44,21,,24
+G0423,F05,anel quadrado + anel circular,0,168,32,35,18,,,
+G0403,F05,anel quadrado + anel circular,0,203,34,45,18,,,
+G1896,F12,anel circular + disco + trilhas,1,,,136,39,67,,25
+G0175,F02,quadrado,0,,,,,,124,
+G0336,F04,anel quadrado,0,137,28,,,,,
+G0704,F06,anel quadrado + anel circular + trilhas,1,169,37,37,17,,,21
+G1753,F11,anel circular + disco,0,,,114,41,50,,
+G1486,F10,anel quadrado + quadrado + trilhas,1,212,45,,,,67,18
+G1745,F11,anel circular + disco,0,,,100,23,50,,
+G0176,F02,quadrado,0,,,,,,91,
+G0194,F02,quadrado,0,,,,,,128,
+G0212,F03,anel circular,0,,,92,34,,,
+G0093,F01,disco,0,,,,,71,,
+G1876,F12,anel circular + disco + trilhas,1,,,116,36,65,,19
+G1566,F10,anel quadrado + quadrado + trilhas,1,183,36,,,,50,23
+G0854,F07,anel quadrado + disco,0,216,41,,,51,,
+G0340,F04,anel quadrado,0,215,48,,,,,
+G0489,F05,anel quadrado + anel circular,0,211,50,42,20,,,
+G1846,F12,anel circular + disco + trilhas,1,,,119,31,20,,29
+G0956,F07,anel quadrado + disco,0,218,42,,,34,,
+G1806,F12,anel circular + disco + trilhas,1,,,84,21,42,,21
+G0158,F02,quadrado,0,,,,,,183,
+G1308,F09,anel quadrado + quadrado,0,161,42,,,,54,
+G1342,F09,anel quadrado + quadrado,0,186,38,,,,78,
+G1938,F12,anel circular + disco + trilhas,1,,,124,22,58,,17
+G1164,F08,anel quadrado + disco + trilhas,1,193,43,,,41,,25
+G1456,F10,anel quadrado + quadrado + trilhas,1,222,43,,,,42,25
+G0705,F06,anel quadrado + anel circular + trilhas,1,184,29,38,23,,,29
+G0068,F01,disco,0,,,,,80,,
+G1422,F10,anel quadrado + quadrado + trilhas,1,160,41,,,,47,17
+G1266,F09,anel quadrado + quadrado,0,174,27,,,,70,
+G0962,F07,anel quadrado + disco,0,224,42,,,25,,
+G1951,F12,anel circular + disco + trilhas,1,,,127,34,81,,27
+G0649,F06,anel quadrado + anel circular + trilhas,1,231,39,40,17,,,24
+G1428,F10,anel quadrado + quadrado + trilhas,1,188,33,,,,69,18
+G0743,F06,anel quadrado + anel circular + trilhas,1,237,36,42,17,,,28
+G0986,F07,anel quadrado + disco,0,205,31,,,53,,
+G1550,F10,anel quadrado + quadrado + trilhas,1,181,38,,,,62,22
+G0263,F03,anel circular,0,,,127,33,,,
+G0173,F02,quadrado,0,,,,,,169,
+G1916,F12,anel circular + disco + trilhas,1,,,133,40,25,,30
+G1008,F08,anel quadrado + disco + trilhas,1,190,32,,,38,,17
+G0148,F02,quadrado,0,,,,,,126,
+G1581,F10,anel quadrado + quadrado + trilhas,1,234,46,,,,100,27
+G0614,F06,anel quadrado + anel circular + trilhas,1,236,50,46,30,,,27
+G1903,F12,anel circular + disco + trilhas,1,,,133,39,38,,26
+G1371,F09,anel quadrado + quadrado,0,181,41,,,,50,
+G1386,F09,anel quadrado + quadrado,0,206,37,,,,62,
+G1299,F09,anel quadrado + quadrado,0,221,31,,,,103,
+G0513,F05,anel quadrado + anel circular,0,191,34,39,19,,,
+G1361,F09,anel quadrado + quadrado,0,187,49,,,,68,
+G1824,F12,anel circular + disco + trilhas,1,,,104,24,27,,16
+G0964,F07,anel quadrado + disco,0,207,38,,,42,,
+G0599,F05,anel quadrado + anel circular,0,213,37,43,18,,,
+G0220,F03,anel circular,0,,,105,21,,,
+G1358,F09,anel quadrado + quadrado,0,218,49,,,,55,
+G1007,F08,anel quadrado + disco + trilhas,1,167,27,,,37,,19
+G0641,F06,anel quadrado + anel circular + trilhas,1,193,33,40,17,,,18
+G0996,F07,anel quadrado + disco,0,232,32,,,21,,
+G1772,F11,anel circular + disco,0,,,133,23,37,,
+G0574,F05,anel quadrado + anel circular,0,209,32,54,33,,,
+G1383,F09,anel quadrado + quadrado,0,216,33,,,,112,
+G1816,F12,anel circular + disco + trilhas,1,,,82,41,28,,17
+G1068,F08,anel quadrado + disco + trilhas,1,177,43,,,23,,29
+G1256,F09,anel quadrado + quadrado,0,164,33,,,,71,
+G0783,F06,anel quadrado + anel circular + trilhas,1,169,30,36,19,,,22
+G0255,F03,anel circular,0,,,100,48,,,
+G0823,F07,anel quadrado + disco,0,174,48,,,22,,
+G1536,F10,anel quadrado + quadrado + trilhas,1,208,31,,,,114,18
+G1405,F10,anel quadrado + quadrado + trilhas,1,228,27,,,,97,25
+G0432,F05,anel quadrado + anel circular,0,207,40,44,15,,,
+G0730,F06,anel quadrado + anel circular + trilhas,1,182,38,37,22,,,27
+G1841,F12,anel circular + disco + trilhas,1,,,131,39,60,,16
+G1351,F09,anel quadrado + quadrado,0,218,41,,,,79,
+G1600,F10,anel quadrado + quadrado + trilhas,1,197,30,,,,104,23
+G1079,F08,anel quadrado + disco + trilhas,1,217,48,,,20,,21
+G1762,F11,anel circular + disco,0,,,135,29,87,,
+G0507,F05,anel quadrado + anel circular,0,236,33,70,20,,,
+G1543,F10,anel quadrado + quadrado + trilhas,1,172,39,,,,41,25
+G1584,F10,anel quadrado + quadrado + trilhas,1,237,49,,,,68,24
+G0957,F07,anel quadrado + disco,0,214,31,,,42,,
+G0716,F06,anel quadrado + anel circular + trilhas,1,235,35,45,27,,,17
+G0338,F04,anel quadrado,0,123,35,,,,,
+G1870,F12,anel circular + disco + trilhas,1,,,108,41,45,,19
+G1604,F11,anel circular + disco,0,,,139,22,107,,
+G1700,F11,anel circular + disco,0,,,114,30,36,,
+G0213,F03,anel circular,0,,,50,29,,,
+G0792,F06,anel quadrado + anel circular + trilhas,1,221,27,45,24,,,16
+G1459,F10,anel quadrado + quadrado + trilhas,1,165,38,,,,55,27
+G1372,F09,anel quadrado + quadrado,0,168,33,,,,61,
+G1752,F11,anel circular + disco,0,,,85,22,22,,
+G0457,F05,anel quadrado + anel circular,0,200,35,46,23,,,
+G1083,F08,anel quadrado + disco + trilhas,1,166,50,,,21,,29
+G1539,F10,anel quadrado + quadrado + trilhas,1,222,38,,,,66,19
+G0675,F06,anel quadrado + anel circular + trilhas,1,224,27,66,24,,,19
+G1644,F11,anel circular + disco,0,,,138,29,79,,
+G0848,F07,anel quadrado + disco,0,171,50,,,20,,
+G1866,F12,anel circular + disco + trilhas,1,,,101,42,34,,23
+G1086,F08,anel quadrado + disco + trilhas,1,220,47,,,39,,17
+G0839,F07,anel quadrado + disco,0,180,48,,,21,,
+G0733,F06,anel quadrado + anel circular + trilhas,1,183,40,37,18,,,28
+G0565,F05,anel quadrado + anel circular,0,219,45,52,22,,,
+G1633,F11,anel circular + disco,0,,,83,34,28,,
+G1170,F08,anel quadrado + disco + trilhas,1,166,26,,,44,,18
+G1306,F09,anel quadrado + quadrado,0,215,28,,,,47,
+G0936,F07,anel quadrado + disco,0,202,34,,,52,,
+G1705,F11,anel circular + disco,0,,,127,22,74,,
+G0365,F04,anel quadrado,0,146,42,,,,,
+G0439,F05,anel quadrado + anel circular,0,160,30,36,20,,,
+G0307,F04,anel quadrado,0,172,31,,,,,
+G0244,F03,anel circular,0,,,69,47,,,
+G0133,F02,quadrado,0,,,,,,212,
+G0048,F01,disco,0,,,,,78,,
+G1985,F12,anel circular + disco + trilhas,1,,,81,38,25,,22
+G0776,F06,anel quadrado + anel circular + trilhas,1,163,36,35,20,,,20
+G0943,F07,anel quadrado + disco,0,233,44,,,37,,
+G0780,F06,anel quadrado + anel circular + trilhas,1,223,31,38,22,,,17
+G0305,F04,anel quadrado,0,192,46,,,,,
+G1045,F08,anel quadrado + disco + trilhas,1,194,35,,,26,,19
+G1137,F08,anel quadrado + disco + trilhas,1,223,44,,,38,,21
+G1723,F11,anel circular + disco,0,,,106,43,38,,
+G1087,F08,anel quadrado + disco + trilhas,1,220,33,,,50,,21
+G1280,F09,anel quadrado + quadrado,0,235,29,,,,152,
+G0682,F06,anel quadrado + anel circular + trilhas,1,213,34,51,30,,,28
+G0184,F02,quadrado,0,,,,,,174,
+G1670,F11,anel circular + disco,0,,,102,22,61,,
+G0519,F05,anel quadrado + anel circular,0,209,38,48,20,,,
+G1117,F08,anel quadrado + disco + trilhas,1,235,28,,,24,,30
+G0604,F06,anel quadrado + anel circular + trilhas,1,215,29,44,26,,,26
+G1154,F08,anel quadrado + disco + trilhas,1,230,39,,,40,,18
+G1941,F12,anel circular + disco + trilhas,1,,,83,40,25,,24
+G0150,F02,quadrado,0,,,,,,143,
+G0606,F06,anel quadrado + anel circular + trilhas,1,213,40,56,15,,,26
+G0568,F05,anel quadrado + anel circular,0,163,32,39,23,,,
+G1498,F10,anel quadrado + quadrado + trilhas,1,162,29,,,,70,27

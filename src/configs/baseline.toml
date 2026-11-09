@@ -1,5 +1,5 @@
 # Data paths are relative to this TOML. Output paths are relative to the working directory.
-data = "../../data/example.npz"
+data = "../../data/processed/treinar_families_v2/dataset.npz"
 device = "cuda:0"
 epochs = 50
 candidates = 100
@@ -10,4 +10,4 @@ batch_size = 32
 learning_rate = 0.001
 weight_decay = 0.0001
 threads = 1
-output = "runs"
+output = "runs/treinar_full"

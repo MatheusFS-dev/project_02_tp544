@@ -1,3 +1,5 @@
+> Historical source summary. For the implemented F01–F12 expert architecture and received Treinar data, read root `PROBLEM_ARCHITECTURE.md` and `sections/implementation.md`. Original proposals below do not override current code.
+
 # Inverse design proposals
 
 Source-derived summary of docs/design/idea.md and docs/reference/Single_Model_Inverse_Design_Full_320nm.pdf pp. 1–5. These are proposals, not implemented behavior.

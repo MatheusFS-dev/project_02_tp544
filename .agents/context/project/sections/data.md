@@ -1,3 +1,5 @@
+> Historical source summary. For the implemented F01–F12 expert architecture and received Treinar data, read root `PROBLEM_ARCHITECTURE.md` and `sections/implementation.md`. Original proposals below do not override current code.
+
 # Data and simulation budget
 
 Source-derived from both data/examples CSVs and docs/reference/Dataset_Geometry_and_14_Day_Steps.pdf pp. 1–2.

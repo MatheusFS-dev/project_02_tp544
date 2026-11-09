@@ -53,7 +53,16 @@ def test_baseline_import_does_not_load_search_frameworks():
 def test_runtime_environment_precedes_framework_imports():
     import subprocess
     import sys
-    subprocess.run([sys.executable, '-c', "import os; os.environ['CUDA_VISIBLE_DEVICES'] = '1'; import inverse_design; assert os.environ['CUDA_VISIBLE_DEVICES'] == '0'; assert os.environ['CUDA_DEVICE_ORDER'] == 'PCI_BUS_ID'; assert os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] == 'true'; assert os.environ['CUBLAS_WORKSPACE_CONFIG'] == ':4096:8'"], check=True)
+    code = """
+import os
+os.environ.pop('CUDA_VISIBLE_DEVICES', None)
+import inverse_design
+assert os.environ['CUDA_VISIBLE_DEVICES'] == '0'
+assert os.environ['CUDA_DEVICE_ORDER'] == 'PCI_BUS_ID'
+assert os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] == 'true'
+assert os.environ['CUBLAS_WORKSPACE_CONFIG'] == ':4096:8'
+"""
+    subprocess.run([sys.executable, '-c', code], check=True)
 
 
 def test_default_device_requires_gpu_zero(monkeypatch):

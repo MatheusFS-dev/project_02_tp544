@@ -5,7 +5,7 @@ AutoTuner.search's final full-data refit and preprocessing, since inputs already
 use the shared normalization. Explicit batches make epoch recovery deterministic.
 """
 import copy
-from dataclasses import asdict
+from dataclasses import asdict, replace
 from importlib.metadata import version
 import os
 from time import perf_counter
@@ -81,6 +81,59 @@ class FixedHead(Head):
         return dict(super().get_config(), units=self.units, coordinate=self.coordinate)
 
 
+@keras.utils.register_keras_serializable(package='inverse_design')
+class RoutedHuber(keras.losses.Loss):
+    """True-family routed Huber objective for padded expert outputs."""
+
+    def call(self, y_true, y_pred):
+        """Return active-parameter losses for packed family and target rows.
+
+        Args:
+            y_true: Family index followed by seven coordinates.
+            y_pred: Padded expert predictions.
+
+        Returns:
+            One masked Huber loss per sample.
+        """
+        from .families import MASK
+        family = y_true[:, 0].long()
+        values = y_pred[torch.arange(len(family), device=family.device), family]
+        mask = torch.as_tensor(MASK, device=family.device)[family]
+        return (torch.nn.functional.huber_loss(values, y_true[:, 1:], reduction='none') * mask).sum(-1) / mask.sum(-1)
+
+
+@keras.utils.register_keras_serializable(package='inverse_design')
+class ExpertHead(Head):
+    """Small family-specific regressors sharing the AutoKeras trunk."""
+
+    def __init__(self, **kwargs):
+        kwargs.setdefault('loss', RoutedHuber())
+        super().__init__(**kwargs)
+
+    def build(self, hp, inputs=None):
+        """Build padded expert outputs matching the PyTorch representation.
+
+        Args:
+            hp: Tuner hyperparameters, unused.
+            inputs: Shared feature tensor.
+
+        Returns:
+            Tensor with twelve rows of seven masked coordinates per sample.
+        """
+        from .families import ACTIVE
+        experts = []
+        for i, active in enumerate(ACTIVE):
+            hidden = keras.layers.Dense(32, activation=hp.values['trunk/activation'], name=f'expert_{i}_hidden')(inputs[0])
+            values = keras.layers.Dense(len(active), activation='hard_sigmoid', name=f'expert_{i}_values')(hidden)
+            projection = np.zeros((len(active), 7), dtype=np.float32)
+            for j, index in enumerate(active):
+                projection[j, index] = 1
+            padded = keras.layers.Dense(7, use_bias=False, trainable=False,
+                kernel_initializer=keras.initializers.Constant(projection), name=f'expert_{i}_pad')(values)
+            experts.append(keras.layers.Reshape((1, 7))(padded))
+        return keras.layers.Concatenate(axis=1, name=self.name)(experts)
+
+
 def architecture(hp):
     """Extract the trunk's namespaced hyperparameters.
 
@@ -89,7 +142,7 @@ def architecture(hp):
 
     Returns:
         Shared immutable Architecture specification."""
-    return Architecture(**{k: hp.values[f'trunk/{k}'] for k in ('depth', 'width', 'activation', 'dropout', 'trunk')})
+    return Architecture(schema=2 if dataset(RecoverableTuner.config.data)['coordinates'].shape[1] == 7 else 1, **{k: hp.values[f'trunk/{k}'] for k in ('depth', 'width', 'activation', 'dropout', 'trunk')})
 
 
 def torch_weights(model, spec):
@@ -119,7 +172,12 @@ def torch_weights(model, spec):
             linear(block[0], f'block_{i}_a')
     linear(target.geometry, 'geometry')
     linear(target.substrate, 'substrate')
-    linear(target.dimensions[0], 'dimensions')
+    if spec.schema == 2:
+        for i, head in enumerate(target.experts):
+            linear(head[0], f'expert_{i}_hidden')
+            linear(head[2], f'expert_{i}_values')
+    else:
+        linear(target.dimensions[0], 'dimensions')
     return target.state_dict()
 
 
@@ -162,6 +220,8 @@ class RecoverableTuner(RandomSearch):
             data = dataset(config.data)
             x = normalize(data['x'])
             y = [data[k] for k in ('geometry', 'substrate', 'coordinates')]
+            if spec.schema == 2:
+                y[2] = np.column_stack([data['geometry'], data['coordinates']]).astype(np.float32)
             while state['epoch'] < config.epochs and state['wait'] < config.patience and not state['complete']:
                 epoch_start = perf_counter()
                 order = np.random.permutation(data['train'])
@@ -220,8 +280,9 @@ def make_automodel(root, config):
     node = ak.Input(shape=(3,))
     node.dtype = 'float32'
     trunk = Trunk(name='trunk')(node)
-    outputs = [FixedHead(4, name='geometry')(trunk), FixedHead(2, name='substrate')(trunk),
-               FixedHead(2, coordinate=True, name='dimensions')(trunk)]
+    schema = 2 if dataset(config.data)['coordinates'].shape[1] == 7 else 1
+    outputs = [FixedHead(12 if schema == 2 else 4, name='geometry')(trunk), FixedHead(2, name='substrate')(trunk),
+               ExpertHead(name='dimensions')(trunk) if schema == 2 else FixedHead(2, coordinate=True, name='dimensions')(trunk)]
     RecoverableTuner.config, RecoverableTuner.root = config, Path(root)
     auto = ak.AutoModel(node, outputs, tuner=RecoverableTuner, directory=str(root),
                         project_name='tuner', max_trials=config.candidates, seed=config.seed, overwrite=False)

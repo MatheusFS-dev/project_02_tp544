@@ -3,10 +3,10 @@ from dataclasses import asdict
 import json
 from pathlib import Path
 import shutil
-from .core import Architecture
-from .training import Config, load_config, device_for, prepare, train
-from .search import export_winner
-from . import storage
+from inverse_design.core import Architecture
+from inverse_design.training import Config, load_config, device_for, prepare, train
+from inverse_design.search import export_winner
+from inverse_design import storage
 
 
 def candidate(parameters, settings):
@@ -76,6 +76,10 @@ def run(config):
             return export_winner(root, path, config, best.metrics['validation_loss'], best.path)
 
 
+from inverse_design.run_logging import logged_runner
+
+
+@logged_runner('ray')
 def main():
     """Execute the Ray module entry point."""
     print(json.dumps(run(load_config('ray')), indent=2))

@@ -1,10 +1,12 @@
 # Inverse design
 
+See [RUN.md](RUN.md) for full-training commands, GPU selection, progress logs and recovery.
+
 Three-head inverse model predicting geometry, substrate, and outer/inner size
 in nanometers. Includes a residual PyTorch baseline and independent Optuna,
 AutoKeras, and Ray Tune searches. The runners receive data from an NPZ file
 specified in their TOML configuration.
-Existing CSV examples need conversion to the documented array schema.
+Received Treinar CSVs can be converted to the documented array schema.
 Synthetic example results do not establish
 physical feasibility or absorption accuracy. Received HFSS spectra can be
 converted into flat-target training labels using the explicit tools below.
@@ -26,7 +28,8 @@ GPU execution defaults to physical GPU 0. The package sets
 `CUDA_DEVICE_ORDER=PCI_BUS_ID`, `CUDA_VISIBLE_DEVICES=0`, and
 `TF_FORCE_GPU_ALLOW_GROWTH=true`, and `CUBLAS_WORKSPACE_CONFIG=:4096:8`
 through `os.environ` before importing the
-frameworks. No shell exports are needed. A CUDA-capable GPU is required for
+frameworks. An explicitly set `CUDA_VISIBLE_DEVICES` is preserved.
+No shell exports are needed. A CUDA-capable GPU is required for
 default runs. There is no automatic CPU fallback. AutoKeras uses the PyTorch
 Keras backend, so the TensorFlow growth setting has no effect on that backend.
 
@@ -43,8 +46,67 @@ For the fake example only, explicitly create the dataset once:
 python3 data/fake_generator.py
 ```
 
-This writes `data/example.npz`, the default input named in all four configs.
+This writes `data/example.npz`. To use it, explicitly select it in a config.
 The generator is independent of training and is never called automatically.
+
+## Full-family expert implementation
+
+[PROBLEM_ARCHITECTURE.md](PROBLEM_ARCHITECTURE.md) describes F01–F12,
+parameter units, shared features, family-specific heads and output semantics.
+Architecture schema 2 supports all twelve families through the same baseline,
+Optuna, AutoKeras and Ray module entry points. The NPZ `coordinates` array has
+seven columns in native HFSS parameter order. The legacy two-column schema
+remains supported. Point each runner TOML at a prepared schema-2 NPZ and use a
+fresh output root before running it. Checkpoints identify their architecture
+schema explicitly.
+
+Run the expert regression checks after activation:
+
+```bash
+pytest -q tests/test_families.py
+```
+
+`python3 data/prepare_treinar.py` now prepares all twelve families. Enter
+`data/raw/treinar` and a new output directory, such as
+`data/processed/treinar_families_v2`. It groups identical designs and stratifies
+unique geometries by family into 1,348/289/289 train/validation/test designs.
+The 7,704 flat-target requests are labelled using only their own split's
+catalogue. No geometry crosses splits. All 2,000 originals are accounted for.
+The manifest reports source-family and winning-label coverage separately.
+
+The four shipped TOMLs select this version-two NPZ and
+`runs/treinar_full`, with up to 50 epochs and 100 candidates per search.
+Use the RTX 4070 command below with any of the four modules. For version-two
+physical evaluation, `python3 data/evaluate_flatness.py` prompts for the model,
+NPZ, original Treinar directory and a fresh output JSON. Predictions without
+exact received matches require simulation.
+
+The following four-family preparation/results describe the earlier validation,
+not the current default dataset. Its earlier converter remains available as
+`inverse_design.treinar.convert_catalogue` for legacy use.
+
+## RTX 4070 execution and prior validation
+
+The package defaults to physical GPU 0. On the validated machine, physical GPU 1
+is the RTX 4070 and physical GPU 0 is the RTX 3060. After environment activation,
+run a current case on the RTX 4070 with:
+
+```bash
+CUDA_VISIBLE_DEVICES=1 python3 src/inverse_design/baseline.py
+```
+
+Replace `src/inverse_design/baseline.py` with `src/inverse_design/optuna_search.py`,
+`src/inverse_design/autokeras_search.py` or `src/inverse_design/ray_search.py` for the other
+cases. PCI bus ordering is set before framework imports. Physical GPU 1 becomes
+logical `cuda:0`. Reruns resume existing checkpoints, so use a fresh output root
+when changing data, splits or architecture.
+
+All original received files remain in `data/raw/treinar/`, including the import
+hash manifest. Earlier four-family data and results in `data/processed/treinar/`
+and `runs/treinar_smoke/` remain historical. Their
+[validation report](docs/reports/treinar_validation.md) does not establish the
+performance of the full-family model. The old four-family converter remains
+available through `inverse_design.treinar.convert_catalogue`.
 
 ## Prepare flat-target training labels
 
@@ -114,18 +176,19 @@ TOML automatically, using GPU `cuda:0`:
 
 | Case | Configuration | Command |
 | --- | --- | --- |
-| Residual baseline | `src/configs/baseline.toml` | `python3 -m inverse_design.baseline` |
-| Optuna TPE | `src/configs/optuna.toml` | `python3 -m inverse_design.optuna_search` |
-| AutoKeras AutoModel | `src/configs/autokeras.toml` | `python3 -m inverse_design.autokeras_search` |
-| Ray Tune with ASHA | `src/configs/ray.toml` | `python3 -m inverse_design.ray_search` |
+| Residual baseline | `src/configs/baseline.toml` | `python3 src/inverse_design/baseline.py` |
+| Optuna TPE | `src/configs/optuna.toml` | `python3 src/inverse_design/optuna_search.py` |
+| AutoKeras AutoModel | `src/configs/autokeras.toml` | `python3 src/inverse_design/autokeras_search.py` |
+| Ray Tune with ASHA | `src/configs/ray.toml` | `python3 src/inverse_design/ray_search.py` |
 
 Edit the matching TOML to select your data, training budget, and output root.
 Each config includes every shared training field. The baseline ignores the
 search-only `candidates` field.
 
-The baseline allows at most 50 epochs. Each search defaults to 100 candidates
-with one active trial. Outputs live in `runs/baseline`, `runs/optuna`,
-`runs/autokeras`, and `runs/ray`. Full searches can take substantial time and
+The baseline allows at most 50 epochs. Current configs use up to 50 epochs and
+100 candidates with one active trial. Outputs live in
+`runs/treinar_full/baseline`, `runs/treinar_full/optuna`,
+`runs/treinar_full/autokeras`, and `runs/treinar_full/ray`. Full searches can take substantial time and
 storage. Rerun the same command to resume interrupted work. Completed searches
 return their saved result without starting another budget. Use a new output
 root when changing configuration or data.
@@ -157,8 +220,7 @@ returns geometry, substrate, sizes in nanometers, and class probabilities.
 After setup and activation:
 
 ```bash
-python3 -m pytest -q
-python3 -m compileall -q src tests
+pytest -q
 ```
 
 Tests create temporary fake input explicitly and include CPU training and

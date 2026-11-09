@@ -61,6 +61,11 @@ def dataset(path='data/example.npz'):
         if not set(keys).issubset(archive.files):
             raise ValueError(f'dataset must contain {keys}')
         data = {key: archive[key] for key in keys}
+        if 'source_ids' in archive.files:
+            data['source_ids'] = archive['source_ids']
+    if data['coordinates'].shape == (len(data['x']), 7):
+        from .family_data import validate_arrays
+        return validate_arrays(data)
     normalize(data['x'])
     n = len(data['x'])
     for key, classes in (('geometry', 4), ('substrate', 2)):
@@ -93,8 +98,11 @@ class Architecture:
     activation: str = 'silu'
     dropout: float = 0.0
     trunk: str = 'residual'
+    schema: int = 1
 
     def __post_init__(self):
+        if self.schema not in (1, 2):
+            raise ValueError('unsupported model schema')
         if not 1 <= self.depth <= 6 or self.width not in (64, 128, 256, 512):
             raise ValueError('invalid depth or width')
         if self.activation not in ('relu', 'silu', 'gelu') or self.dropout not in (0, .1, .2, .3):
@@ -132,8 +140,12 @@ class Model(nn.Module):
         blocks = [Block(a) if a.trunk == 'residual' else nn.Sequential(
             nn.Linear(a.width, a.width), act(), nn.Dropout(a.dropout)) for _ in range(a.depth)]
         self.trunk = nn.Sequential(nn.Linear(3, a.width), act(), *blocks)
-        self.geometry = nn.Linear(a.width, 4)
+        self.geometry = nn.Linear(a.width, 12 if a.schema == 2 else 4)
         self.substrate = nn.Linear(a.width, 2)
+        if a.schema == 2:
+            from .families import ACTIVE
+            self.experts = nn.ModuleList([nn.Sequential(nn.Linear(a.width, 32), act(), nn.Linear(32, len(active)), nn.Hardsigmoid()) for active in ACTIVE])
+            return
         self.dimensions = nn.Sequential(nn.Linear(a.width, 2), nn.Hardsigmoid())
 
     def forward(self, x):
@@ -145,6 +157,12 @@ class Model(nn.Module):
         Returns:
             Geometry logits, substrate logits and hard-sigmoid coordinates."""
         z = self.trunk(x)
+        if self.architecture.schema == 2:
+            from .families import ACTIVE
+            values = z.new_zeros((len(z), 12, 7))
+            for i, (head, active) in enumerate(zip(self.experts, ACTIVE)):
+                values[:, i, list(active)] = head(z)
+            return self.geometry(z), self.substrate(z), values
         return self.geometry(z), self.substrate(z), self.dimensions(z)
 
 
@@ -158,6 +176,9 @@ def metrics(outputs, data, indices):
 
     Returns:
         Classification accuracies and decoded dimensional MAEs in nanometers."""
+    if data['coordinates'].shape[1] == 7:
+        from .families import expert_metrics
+        return expert_metrics([np.asarray(x) for x in outputs], data, indices)
     g, s, c = [np.asarray(x) for x in outputs]
     pg, ps = g.argmax(-1), s.argmax(-1)
     target_g, target_s = data['geometry'][indices], data['substrate'][indices]
