@@ -1,0 +1,63 @@
+{
+  "case": "baseline_01",
+  "predicted_family": "F12",
+  "labelled_family": "F07",
+  "label_source_id": "G0955",
+  "request": [
+    531.118,
+    687.005,
+    0.6083728182121688
+  ],
+  "prediction": {
+    "family": "F12",
+    "geometry": "F12",
+    "substrate": "air",
+    "tracks": true,
+    "parameters_nm": {
+      "Lout_q": null,
+      "w_q": null,
+      "Rout_c": 139.33053588867188,
+      "w_c": 19.845346450805664,
+      "R_d": 86.54013061523438,
+      "L_s": null,
+      "w_t": 11.334012985229492
+    },
+    "geometry_probabilities": [
+      0.0006631358992308378,
+      0.001968097174540162,
+      0.0017637660494074225,
+      0.0021624688524752855,
+      0.014117741025984287,
+      0.0012117725564166903,
+      0.35546210408210754,
+      0.0007427088567055762,
+      0.041254520416259766,
+      0.21643966436386108,
+      0.002688029548153281,
+      0.3615260124206543
+    ],
+    "substrate_probabilities": [
+      0.9998834133148193,
+      0.00011656945571303368
+    ]
+  },
+  "spectrum_sha256": "53fb4e8f67c0510fa845aaa33f0d5a2855d7499e12747205deccfabe8a2f827e",
+  "solver_profile_sha256": "30807133548f581fa9c74e7e806b316ecc308fa6736b108e0427e6d5b1ff26cf",
+  "mesh_converged": true,
+  "sweep_converged_and_passive": true,
+  "final_adaptive_delta_s": 0.00275699,
+  "physical_scores": {
+    "worst_error": 0.31172446641389484,
+    "average_error": 0.20525318039195964,
+    "ripple": 0.16864064230886322,
+    "wavelength_samples": 401,
+    "polarization_T_max_difference": 0.06517490661816522,
+    "solve_seconds": 375.9883857500008
+  },
+  "catalogue_scores": {
+    "worst_error": 0.2193398182121688,
+    "average_error": 0.20240562456548888,
+    "ripple": 0.100244
+  },
+  "excess_worst_error": 0.09238464820172604
+}

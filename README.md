@@ -169,6 +169,21 @@ predictions only, alongside verified/unverified counts. Sampled scores do not
 guarantee performance between wavelength samples. No success tolerance is
 assumed.
 
+For the trained full-family baseline, generate held-out figures and then create
+and solve five predicted designs in the AEDT GUI:
+
+```bash
+python3 src/validation/baseline/baseline_results.py
+python3 src/validation/baseline/hfss_cases.py
+```
+
+This requires licensed local AEDT 2025 R2 and a graphical display. Results and
+projects are saved in `src/validation/baseline/`, with summaries in
+`src/validation/baseline/baseline_validation.md` and `src/validation/baseline/baseline_hfss.md`.
+See [RUN.md](RUN.md) for selection and recovery details.
+Use `python3 src/validation/baseline/hfss_report.py` to refresh comparisons from exported
+spectra and solver profiles without starting a simulation.
+
 ## Run each case
 
 After setup and activation, choose a command. Each loads its own complete
@@ -243,3 +258,5 @@ select `cuda:0`.
 
 Agent instruction entry points remain at the root. Reusable agent context
 remains under `.agents/context/`.
+
+The validated full-training baseline is stored in `results/baseline/`. `metrics.json` contains its training history and validation/test metrics, `best.ckpt` contains the best-validation model, and `training.log` contains the training log. The original `runs/treinar_full/baseline` and baseline-log paths are compatibility symlinks, preserving checkpoint/configuration identity. Validation reports and HFSS artifacts remain in `src/validation/baseline/`.

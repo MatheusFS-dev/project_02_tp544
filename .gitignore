@@ -7,3 +7,14 @@ __pycache__/
 *.egg-info/
 runs/
 .verification/
+# Local HFSS solver runtime artifacts
+src/validation/*.log
+src/validation/**/logs/
+src/validation/baseline/**/*.aedtresults/
+src/validation/baseline/**/*.aedt.lock
+src/validation/baseline/**/*.aedt.auto
+src/validation/baseline/**/*.aedt.bak
+/batch.log
+
+# Relocated local training artifacts
+/results/
