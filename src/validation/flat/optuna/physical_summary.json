@@ -1,0 +1,407 @@
+[
+  {
+    "case": "flat_optuna_01",
+    "change_from_previous_inverse_baseline_pp": -2.987506284666397,
+    "family": "F12",
+    "final_adaptive_delta_s": 0.00266861,
+    "mesh_converged": true,
+    "physical_scores": {
+      "average_error": 0.198945453955056,
+      "polarization_T_max_difference": 0.030856899789328485,
+      "ripple": 0.1580449122660204,
+      "solve_seconds": 211.5559798969989,
+      "wavelength_samples": 401,
+      "worst_error": 0.28184940356723087
+    },
+    "predicted_average_error_pp": 17.151297628879547,
+    "predicted_worst_error_pp": 20.509251952171326,
+    "prediction": {
+      "family": "F12",
+      "initial_best_predicted_worst_error_pp": 22.75259792804718,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.862500011920929,
+        0.171875,
+        0.4748053252696991,
+        0.0,
+        0.17812500894069672
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": 75.9688491821289,
+        "Rout_c": 138.0,
+        "w_c": 27.5,
+        "w_q": null,
+        "w_t": 28.500001907348633
+      },
+      "predicted_average_error_pp": 17.151297628879547,
+      "predicted_within_tolerance": false,
+      "predicted_worst_error_pp": 20.509251952171326,
+      "seed_source_id": "G1923",
+      "step": 140,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        125.99999237060547,
+        27.5,
+        64.5,
+        0.0,
+        25.5
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        138.0,
+        32.5,
+        79.5,
+        0.0,
+        28.500001907348633
+      ]
+    },
+    "previous_inverse_baseline_worst_error_pp": 31.172446641389485,
+    "reference_scores": {
+      "average_error": 0.16122403685772613,
+      "ripple": 0.07826500000000003,
+      "worst_error": 0.20463281821216883
+    },
+    "reference_source_id": "G0851",
+    "request": [
+      531.118,
+      687.005,
+      0.6083728182121688
+    ],
+    "solver_profile_sha256": "276555df60b5b6b38870822f221078dc9e9b479a3e513db06e653933d79a7d43",
+    "spectrum_sha256": "eceb2d60610dcbc755a454565f40dad5b2c2a20e84d9ca209612e594570530ba",
+    "spectrum_surrogate_mae_pp": 2.2803171486661507,
+    "surrogate_optimism_pp": 7.67568840455176,
+    "sweep_converged_and_passive": true
+  },
+  {
+    "case": "flat_optuna_02",
+    "change_from_previous_inverse_baseline_pp": 3.963075481792999,
+    "family": "F10",
+    "final_adaptive_delta_s": 0.00373845,
+    "mesh_converged": true,
+    "physical_scores": {
+      "average_error": 0.5807360618861623,
+      "polarization_T_max_difference": 0.22654805107189718,
+      "ripple": 0.27435889735541485,
+      "solve_seconds": 250.39049149600032,
+      "wavelength_samples": 401,
+      "worst_error": 0.686554265797391
+    },
+    "predicted_average_error_pp": 48.950183391571045,
+    "predicted_worst_error_pp": 51.09206438064575,
+    "prediction": {
+      "family": "F10",
+      "initial_best_predicted_worst_error_pp": 53.77746820449829,
+      "normalized_parameters": [
+        0.53125,
+        0.22650156915187836,
+        0.0,
+        0.0,
+        0.0,
+        0.2691681981086731,
+        0.11562500149011612
+      ],
+      "parameters_nm": {
+        "L_s": 86.13381958007812,
+        "Lout_q": 170.0,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 36.24024963378906,
+        "w_t": 18.5
+      },
+      "predicted_average_error_pp": 48.950183391571045,
+      "predicted_within_tolerance": false,
+      "predicted_worst_error_pp": 51.09206438064575,
+      "seed_source_id": "G1493",
+      "step": 352,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        170.0,
+        34.5,
+        0.0,
+        0.0,
+        0.0,
+        72.79999542236328,
+        18.5
+      ],
+      "trust_upper_nm": [
+        185.99998474121094,
+        39.5,
+        0.0,
+        0.0,
+        0.0,
+        91.19999694824219,
+        21.5
+      ]
+    },
+    "previous_inverse_baseline_worst_error_pp": 64.6923510979461,
+    "reference_scores": {
+      "average_error": 0.4658206278493343,
+      "ripple": 0.209233,
+      "worst_error": 0.5818141172585041
+    },
+    "reference_source_id": "G1462",
+    "request": [
+      631.567,
+      889.526,
+      0.866225117258504
+    ],
+    "solver_profile_sha256": "b528036320a853c298ac2f5593b2c4674105966d344c3c480e4ab65dcdad2089",
+    "spectrum_sha256": "7f5c878017796fe0a56365817ac187f251d60ad6d3ce84aeeb689cf7cda6174a",
+    "spectrum_surrogate_mae_pp": 3.982132450915893,
+    "surrogate_optimism_pp": 17.563362199093348,
+    "sweep_converged_and_passive": true
+  },
+  {
+    "case": "flat_optuna_03",
+    "change_from_previous_inverse_baseline_pp": -9.5402785394132,
+    "family": "F11",
+    "final_adaptive_delta_s": 0.00408509,
+    "mesh_converged": true,
+    "physical_scores": {
+      "average_error": 0.008264104387910238,
+      "polarization_T_max_difference": 0.0348363177008949,
+      "ripple": 0.01266347934850276,
+      "solve_seconds": 171.78862484699494,
+      "wavelength_samples": 401,
+      "worst_error": 0.017548715084498456
+    },
+    "predicted_average_error_pp": 0.32274797558784485,
+    "predicted_worst_error_pp": 0.7996052503585815,
+    "prediction": {
+      "family": "F11",
+      "initial_best_predicted_worst_error_pp": 1.726117730140686,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.8618749976158142,
+        0.2308848351240158,
+        0.18147940933704376,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": 29.036705017089844,
+        "Rout_c": 137.89999389648438,
+        "w_c": 36.94157409667969,
+        "w_q": null,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.32274797558784485,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.7996052503585815,
+      "seed_source_id": "G1661",
+      "step": 197,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        126.0999984741211,
+        35.70000076293945,
+        22.299999237060547,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        137.89999389648438,
+        40.29999542236328,
+        39.69999694824219,
+        0.0,
+        0.0
+      ]
+    },
+    "previous_inverse_baseline_worst_error_pp": 11.295150047863045,
+    "reference_scores": {
+      "average_error": 0.005188518231165643,
+      "ripple": 0.019588999999999968,
+      "worst_error": 0.010017530773108574
+    },
+    "reference_source_id": "G1867",
+    "request": [
+      475.642,
+      558.352,
+      0.3012235307731086
+    ],
+    "solver_profile_sha256": "da7974d54f141a19eb04e22abb4a087b5327a7bef3374c3163125bec2bf5a43e",
+    "spectrum_sha256": "a2a8fc755614b97419b269919c3bbadf82d76d2d2907b37199e8fa1b9b2c838d",
+    "spectrum_surrogate_mae_pp": 1.2986051762105104,
+    "surrogate_optimism_pp": 0.9552662580912641,
+    "sweep_converged_and_passive": true
+  },
+  {
+    "case": "flat_optuna_04",
+    "change_from_previous_inverse_baseline_pp": 4.688923561321012,
+    "family": "F05",
+    "final_adaptive_delta_s": 0.00369124,
+    "mesh_converged": true,
+    "physical_scores": {
+      "average_error": 0.7269892697288046,
+      "polarization_T_max_difference": 0.13828938364426369,
+      "ripple": 0.2436675641314643,
+      "solve_seconds": 358.5262471599999,
+      "wavelength_samples": 401,
+      "worst_error": 0.8295140377704733
+    },
+    "predicted_average_error_pp": 61.480337381362915,
+    "predicted_worst_error_pp": 68.05317401885986,
+    "prediction": {
+      "family": "F05",
+      "initial_best_predicted_worst_error_pp": 70.12136578559875,
+      "normalized_parameters": [
+        0.5503125190734863,
+        0.30937498807907104,
+        0.21875,
+        0.09511091560125351,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 176.10000610351562,
+        "R_d": null,
+        "Rout_c": 35.0,
+        "w_c": 15.21774673461914,
+        "w_q": 49.5,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 61.480337381362915,
+      "predicted_within_tolerance": false,
+      "predicted_worst_error_pp": 68.05317401885986,
+      "seed_source_id": "G0516",
+      "step": 42,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        176.10000610351562,
+        44.5,
+        35.0,
+        15.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        191.89999389648438,
+        49.5,
+        39.70000076293945,
+        16.900001525878906,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    "previous_inverse_baseline_worst_error_pp": 78.26248021572631,
+    "reference_scores": {
+      "average_error": 0.6497008502739815,
+      "ripple": 0.16395800000000002,
+      "worst_error": 0.7240381605849783
+    },
+    "reference_source_id": "G0436",
+    "request": [
+      514.745,
+      1049.863,
+      0.9357161605849783
+    ],
+    "solver_profile_sha256": "c15efa793597d5ab49eb34565f4e49b5a6074fb171db3d4573382004b3401379",
+    "spectrum_sha256": "e75d9ee6e31be578e38855c0ef764b6cbd1bd793fe4cccddda9a2178e856f43d",
+    "spectrum_surrogate_mae_pp": 7.595295874859058,
+    "surrogate_optimism_pp": 14.898229758187469,
+    "sweep_converged_and_passive": true
+  },
+  {
+    "case": "flat_optuna_05",
+    "change_from_previous_inverse_baseline_pp": -3.4575099706483323,
+    "family": "F08",
+    "final_adaptive_delta_s": 0.00481319,
+    "mesh_converged": true,
+    "physical_scores": {
+      "average_error": 0.010274001650671676,
+      "polarization_T_max_difference": 0.021218499924087197,
+      "ripple": 0.02903931005105795,
+      "solve_seconds": 186.80860260700138,
+      "wavelength_samples": 401,
+      "worst_error": 0.017199560880805917
+    },
+    "predicted_average_error_pp": 0.7423373404890299,
+    "predicted_worst_error_pp": 2.346748113632202,
+    "prediction": {
+      "family": "F08",
+      "initial_best_predicted_worst_error_pp": 3.5409480333328247,
+      "normalized_parameters": [
+        0.5668749809265137,
+        0.15625,
+        0.0,
+        0.0,
+        0.15312500298023224,
+        0.0,
+        0.10312499850988388
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 181.39999389648438,
+        "R_d": 24.5,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 25.0,
+        "w_t": 16.5
+      },
+      "predicted_average_error_pp": 0.7423373404890299,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 2.346748113632202,
+      "seed_source_id": "G1182",
+      "step": 6,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        181.39999389648438,
+        25.0,
+        0.0,
+        0.0,
+        24.5,
+        0.0,
+        16.5
+      ],
+      "trust_upper_nm": [
+        196.60000610351562,
+        28.5,
+        0.0,
+        0.0,
+        33.5,
+        0.0,
+        19.5
+      ]
+    },
+    "previous_inverse_baseline_worst_error_pp": 5.177466058728924,
+    "reference_scores": {
+      "average_error": 0.007118931129340672,
+      "ripple": 0.026162999999999992,
+      "worst_error": 0.018577733902101018
+    },
+    "reference_source_id": "G1960",
+    "request": [
+      607.074,
+      741.956,
+      0.09859326609789898
+    ],
+    "solver_profile_sha256": "cdd340290d80088f48d85cbd6947f96333beda37d2d5a34e45b8bc089a56e03d",
+    "spectrum_sha256": "d792d970f95464cea119c8428dcc7cb8104411b5a7565a98465ed546dda9df0c",
+    "spectrum_surrogate_mae_pp": 0.7344719713879284,
+    "surrogate_optimism_pp": -0.6267920255516104,
+    "sweep_converged_and_passive": true
+  }
+]

@@ -1,0 +1,81 @@
+{
+  "case": "flat_ray_04",
+  "change_from_previous_inverse_baseline_pp": 8.12109885725567,
+  "family": "F05",
+  "final_adaptive_delta_s": 0.00293905,
+  "mesh_converged": true,
+  "physical_scores": {
+    "average_error": 0.7432132977378504,
+    "polarization_T_max_difference": 0.36267090290151266,
+    "ripple": 0.2564332582635098,
+    "solve_seconds": 379.8298981360058,
+    "wavelength_samples": 401,
+    "worst_error": 0.8638357907298199
+  },
+  "predicted_average_error_pp": 61.88898682594299,
+  "predicted_worst_error_pp": 67.79084205627441,
+  "prediction": {
+    "family": "F05",
+    "initial_best_predicted_worst_error_pp": 70.12498378753662,
+    "normalized_parameters": [
+      0.5515692234039307,
+      0.30937498807907104,
+      0.22704027593135834,
+      0.10562500357627869,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "parameters_nm": {
+      "L_s": null,
+      "Lout_q": 176.5021514892578,
+      "R_d": null,
+      "Rout_c": 36.32644271850586,
+      "w_c": 16.900001525878906,
+      "w_q": 49.5,
+      "w_t": null
+    },
+    "predicted_average_error_pp": 61.88898682594299,
+    "predicted_within_tolerance": false,
+    "predicted_worst_error_pp": 67.79084205627441,
+    "seed_source_id": "G0516",
+    "step": 361,
+    "substrate": "air",
+    "tracks": false,
+    "trust_lower_nm": [
+      176.10000610351562,
+      44.5,
+      35.0,
+      15.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "trust_upper_nm": [
+      191.89999389648438,
+      49.5,
+      39.70000076293945,
+      16.900001525878906,
+      0.0,
+      0.0,
+      0.0
+    ]
+  },
+  "previous_inverse_baseline_worst_error_pp": 78.26248021572631,
+  "reference_scores": {
+    "average_error": 0.6497008502739815,
+    "ripple": 0.16395800000000002,
+    "worst_error": 0.7240381605849783
+  },
+  "reference_source_id": "G0436",
+  "request": [
+    514.745,
+    1049.863,
+    0.9357161605849783
+  ],
+  "solver_profile_sha256": "4618693e39e32f344d20af8744eb74d0eb8d689a1185d9efb764cc234459160c",
+  "spectrum_sha256": "f1ce714dbe84784ea0dc41f8471c1b5b3a57069ae90a0d5e41912e486bbe6fb5",
+  "spectrum_surrogate_mae_pp": 8.10700319145489,
+  "surrogate_optimism_pp": 18.592737016707574,
+  "sweep_converged_and_passive": true
+}

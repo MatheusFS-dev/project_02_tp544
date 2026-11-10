@@ -36,3 +36,21 @@ src/validation/flat/baseline/**/*.aedtresults/
 src/validation/flat/baseline/**/*.aedt.lock
 src/validation/flat/baseline/**/*.aedt.auto
 src/validation/flat/baseline/**/*.aedt.bak
+
+# Flat Optuna solver runtime files
+src/validation/flat/optuna/**/*.aedtresults/
+src/validation/flat/optuna/**/*.aedt.lock
+src/validation/flat/optuna/**/*.aedt.auto
+src/validation/flat/optuna/**/*.aedt.bak
+
+# Flat Ray solver runtime files
+src/validation/flat/ray/**/*.aedtresults/
+src/validation/flat/ray/**/*.aedt.lock
+src/validation/flat/ray/**/*.aedt.auto
+src/validation/flat/ray/**/*.aedt.bak
+
+# Flat AutoKeras solver runtime files
+src/validation/flat/autokeras/**/*.aedtresults/
+src/validation/flat/autokeras/**/*.aedt.lock
+src/validation/flat/autokeras/**/*.aedt.auto
+src/validation/flat/autokeras/**/*.aedt.bak

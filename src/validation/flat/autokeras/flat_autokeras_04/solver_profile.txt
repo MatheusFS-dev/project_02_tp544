@@ -1,0 +1,1660 @@
+$begin 'Profile'
+	$begin 'ProfileGroup'
+		MajorVer=2025
+		MinorVer=2
+		Name='Solution Process'
+		$begin 'StartInfo'
+			I(1, 'Start Time', '11/10/2026 09:21:27')
+			I(1, 'Host', 'XGM-046057LN')
+			I(1, 'Processor', '36')
+			I(1, 'OS', 'Linux 7.0.0-42-generic')
+			I(1, 'Product', 'HFSS Version 2025.2.0')
+		$end 'StartInfo'
+		$begin 'TotalInfo'
+			I(1, 'Elapsed Time', '00:04:35')
+			I(1, 'ComEngine Memory', '170 M')
+		$end 'TotalInfo'
+		GroupOptions=8
+		TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Executing From\', \'/usr/local/AnsysEM25R2/v252/AnsysEM/HFSSCOMENGINE.exe\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2025
+			MinorVer=2
+			Name='HPC'
+			$begin 'StartInfo'
+				I(1, 'Type', 'Auto')
+				I(1, 'MPI Vendor', 'Intel')
+				I(1, 'MPI Version', '2021')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions(Memory=8)
+			ProfileItem('Machine', 0, 0, 0, 0, 0, 'I(5, 1, \'Name\', \'XGM-046057LN\', 1, \'Memory\', \'62.4 GB\', 3, \'RAM Limit\', 90, \'%f%%\', 2, \'Cores\', 4, false, 1, \'Free Disk Space\', \'130 GB\')', false, true)
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Allow off core\', \'True\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'Solution Basis Order\', \'1\')', false, true)
+		ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(1, 0, \'Elapsed time : 00:00:00 , HFSS ComEngine Memory : 163 M\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Perform full validations with standard port validations\')', false, true)
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2025
+			MinorVer=2
+			Name='Initial Meshing'
+			$begin 'StartInfo'
+				I(1, 'Time', '11/10/2026 09:21:27')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(1, 'Elapsed Time', '00:00:04')
+			$end 'TotalInfo'
+			GroupOptions=4
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('Mesh', 0, 0, 1, 0, 66000, 'I(4, 2, \'Tetrahedra\', 1257, false, 1, \'Type\', \'TAU\', 2, \'Cores\', 4, false, 1, \'Band_Angle\', \'1.00000 deg\')', true, true)
+			ProfileItem('Coarsen', 1, 0, 1, 0, 66000, 'I(2, 2, \'Tetrahedra\', 702, false, 1, \'Band_Angle\', \'1.00000 deg\')', true, true)
+			ProfileItem('Post', 0, 0, 0, 0, 69736, 'I(1, 2, \'Tetrahedra\', 692, false)', true, true)
+			ProfileItem('Lambda Refine', 0, 0, 0, 0, 51576, 'I(1, 2, \'Tetrahedra\', 3236, false)', true, true)
+			ProfileItem('Simulation Setup', 0, 0, 0, 0, 157560, 'I(2, 2, \'Tetrahedra\', 3236, false, 1, \'Disk\', \'0 Bytes\')', true, true)
+			ProfileItem('Port Adapt', 0, 0, 0, 0, 159124, 'I(2, 2, \'Tetrahedra\', 3236, false, 1, \'Disk\', \'19.9 KB\')', true, true)
+			ProfileItem('Port Refine', 0, 0, 0, 0, 51604, 'I(1, 2, \'Tetrahedra\', 3824, false)', true, true)
+		$end 'ProfileGroup'
+		$begin 'ProfileGroup'
+			MajorVer=2025
+			MinorVer=2
+			Name='Adaptive Meshing'
+			$begin 'StartInfo'
+				I(1, 'Time', '11/10/2026 09:21:31')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(1, 'Elapsed Time', '00:00:09')
+			$end 'TotalInfo'
+			GroupOptions=4
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			$begin 'ProfileGroup'
+				MajorVer=2025
+				MinorVer=2
+				Name='Adaptive Pass 1'
+				$begin 'StartInfo'
+					I(1, 'Frequency', '666200000000000Hz')
+				$end 'StartInfo'
+				$begin 'TotalInfo'
+					I(0, ' ')
+				$end 'TotalInfo'
+				GroupOptions=0
+				TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				ProfileItem('Simulation Setup ', 0, 0, 0, 0, 161608, 'I(2, 2, \'Tetrahedra\', 3824, false, 1, \'Disk\', \'3.6 KB\')', true, true)
+				ProfileItem('Matrix Assembly', 0, 0, 0, 0, 233888, 'I(4, 2, \'Tetrahedra\', 3824, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'341 KB\')', true, true)
+				ProfileItem('Matrix Solve', 0, 0, 2, 0, 415852, 'I(5, 1, \'Type\', \'DCA\', 2, \'Cores\', 4, false, 2, \'Matrix size\', 23026, false, 3, \'Matrix bandwidth\', 42.4168, \'%5.1f\', 1, \'Disk\', \'90.7 KB\')', true, true)
+				ProfileItem('Field Recovery', 0, 0, 0, 0, 415852, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'1.63 MB\')', true, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 171632, 'I(1, 0, \'Adaptive Pass 1\')', true, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='APIPms'
+					$begin 'StartInfo'
+						I(1, 'Timesinceepock', '1794313292')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, ' ')
+					$end 'TotalInfo'
+					GroupOptions=16
+					TaskDataOptions(Memory=8)
+					ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'fullsolve\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'false\', 1, \'Fbsnumcores\', \'4\', 1, \'Fbsnumsolvestotal\', \'2\', 1, \'Fbsnumsolves\', \'2\', 1, \'Fbsavgsolvetime1solvesec\', \'0.018799\', 1, \'Fbscputimesec\', \'0.037599\', 1, \'Fbsmemorytotalkb\', \'205532.000000\')', false, true)
+					ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'4\', 1, \'Factorizationtimesec\', \'0.251129\', 1, \'Factorizationmentotalkb\', \'144584.000000\')', false, true)
+					ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'1956\', 1, \'Factornnz\', \'3764275\', 1, \'Factorestflops\', \'3506399190\', 1, \'Fbsestflops\', \'26094948\', 1, \'Rootfactestflops\', \'5194708\', 1, \'Rootfbsestflops\', \'39204\', 1, \'Analysistimesec\', \'0.168058\', 1, \'Analysismemkb\', \'23992.000000\')', false, true)
+					ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'205532\', 1, \'Maxdiskkb\', \'0\')', false, true)
+					ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'23026\', 1, \'Matrixbw\', \'42.676800\', 1, \'Matrixnnz\', \'982676\', 1, \'Rootdim\', \'198\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+					ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+				$end 'ProfileGroup'
+			$end 'ProfileGroup'
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+			$begin 'ProfileGroup'
+				MajorVer=2025
+				MinorVer=2
+				Name='Adaptive Pass 2'
+				$begin 'StartInfo'
+					I(1, 'Frequency', '666200000000000Hz')
+				$end 'StartInfo'
+				$begin 'TotalInfo'
+					I(0, ' ')
+				$end 'TotalInfo'
+				GroupOptions=0
+				TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+				ProfileItem('Adaptive Refine', 0, 0, 0, 0, 51660, 'I(1, 2, \'Tetrahedra\', 4623, false)', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				ProfileItem('Simulation Setup ', 0, 0, 0, 0, 164208, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'3.6 KB\')', true, true)
+				ProfileItem('Matrix Assembly', 0, 0, 1, 0, 251696, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, true)
+				ProfileItem('Matrix Solve', 0, 0, 2, 0, 503144, 'I(5, 1, \'Type\', \'DCA\', 2, \'Cores\', 4, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 1, \'Disk\', \'110 KB\')', true, true)
+				ProfileItem('Field Recovery', 0, 0, 1, 0, 503144, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'1.34 MB\')', true, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 171636, 'I(1, 0, \'Adaptive Pass 2\')', true, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='APIPms'
+					$begin 'StartInfo'
+						I(1, 'Timesinceepock', '1794313297')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, ' ')
+					$end 'TotalInfo'
+					GroupOptions=16
+					TaskDataOptions(Memory=8)
+					ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'fullsolve\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'false\', 1, \'Fbsnumcores\', \'4\', 1, \'Fbsnumsolvestotal\', \'2\', 1, \'Fbsnumsolves\', \'2\', 1, \'Fbsavgsolvetime1solvesec\', \'0.027198\', 1, \'Fbscputimesec\', \'0.054395\', 1, \'Fbsmemorytotalkb\', \'281408.000000\')', false, true)
+					ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'4\', 1, \'Factorizationtimesec\', \'0.343101\', 1, \'Factorizationmentotalkb\', \'189850.000000\')', false, true)
+					ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2430\', 1, \'Factornnz\', \'4992447\', 1, \'Factorestflops\', \'5311381510\', 1, \'Fbsestflops\', \'34868060\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.224375\', 1, \'Analysismemkb\', \'30384.000000\')', false, true)
+					ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'281408\', 1, \'Maxdiskkb\', \'0\')', false, true)
+					ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+					ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+				$end 'ProfileGroup'
+				ProfileFootnote('I(1, 3, \'Max Mag. Delta S\', 0.00395007, \'%.5f\')', 0)
+			$end 'ProfileGroup'
+			ProfileFootnote('I(1, 0, \'Adaptive Passes converged\')', 0)
+		$end 'ProfileGroup'
+		$begin 'ProfileGroup'
+			MajorVer=2025
+			MinorVer=2
+			Name='Frequency Sweep'
+			$begin 'StartInfo'
+				I(1, 'Time', '11/10/2026 09:21:40')
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(1, 'Elapsed Time', '00:04:21')
+			$end 'TotalInfo'
+			GroupOptions=4
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 1, \'HPC\', \'Enabled\')', false, true)
+			$begin 'ProfileGroup'
+				MajorVer=2025
+				MinorVer=2
+				Name='Solution - Varredura'
+				$begin 'StartInfo'
+					I(0, 'Interpolating HFSS Frequency Sweep, Solving Distributed - up to 4 frequencies in parallel')
+					I(1, 'Time', '11/10/2026 09:21:40')
+				$end 'StartInfo'
+				$begin 'TotalInfo'
+					I(1, 'Elapsed Time', '00:04:21')
+				$end 'TotalInfo'
+				GroupOptions=4
+				TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'From 187400000000000Hz to 666200000000000Hz, 401 Frequencies\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Frequency: 666200000000000Hz has already been solved\')', false, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 187400000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #1\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228036, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256980, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 1, 0, 1, 0, 328204, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'111 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 328204, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313313')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000470\', 1, \'Fbscputimesec\', \'0.000470\', 1, \'Fbsmemorytotalkb\', \'43136.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.620444\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.335619\', 1, \'Analysismemkb\', \'15677.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'43136\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 426800000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #1\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228016, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257232, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 326676, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'111 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 326676, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313313')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000876\', 1, \'Fbscputimesec\', \'0.000876\', 1, \'Fbsmemorytotalkb\', \'41388.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.624855\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.320458\', 1, \'Analysismemkb\', \'15677.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'41388\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 307100000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #1\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228284, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257272, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 327060, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'111 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 327060, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313314')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000518\', 1, \'Fbscputimesec\', \'0.000518\', 1, \'Fbsmemorytotalkb\', \'41952.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.620858\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.318626\', 1, \'Analysismemkb\', \'15848.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'41952\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 546500000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #1\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227424, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256596, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 323588, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'111 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 323588, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313314')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000753\', 1, \'Fbscputimesec\', \'0.000753\', 1, \'Fbsmemorytotalkb\', \'38604.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.563986\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.323454\', 1, \'Analysismemkb\', \'15677.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'38604\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 1, Frequency: 666200000000000Hz; Additional basis points are needed before the interpolation error can be computed.\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 2, Frequency: 187400000000000Hz; Additional basis points are needed before the interpolation error can be computed.\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 3, Frequency: 426800000000000Hz; S Matrix Error = 148.018%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 4, Frequency: 307100000000000Hz; S Matrix Error =  84.237%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 5, Frequency: 546500000000000Hz; S Matrix Error =  81.224%\')', false, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 606350000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #2\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228140, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257172, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316320, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316320, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313342')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000524\', 1, \'Fbscputimesec\', \'0.000524\', 1, \'Fbsmemorytotalkb\', \'31408.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.617893\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043817\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31408\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 486650000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #2\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228320, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257548, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316760, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316760, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313343')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000781\', 1, \'Fbscputimesec\', \'0.000781\', 1, \'Fbsmemorytotalkb\', \'31064.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.612949\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046724\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31064\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 366950000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #2\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227844, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256796, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 315896, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 315896, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313343')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000842\', 1, \'Fbscputimesec\', \'0.000842\', 1, \'Fbsmemorytotalkb\', \'30508.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.592213\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045601\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30508\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 247250000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #2\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 233260, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 262284, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 319020, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 319020, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313344')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000578\', 1, \'Fbscputimesec\', \'0.000578\', 1, \'Fbsmemorytotalkb\', \'29652.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.578082\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.044141\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'29652\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 6, Frequency: 606350000000000Hz; S Matrix Error =  47.796%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 7, Frequency: 486650000000000Hz; S Matrix Error =  88.849%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 8, Frequency: 366950000000000Hz; S Matrix Error = 164.322%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 9, Frequency: 247250000000000Hz; S Matrix Error =  80.583%\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177068, 'I(1, 0, \'Frequency Group #2; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 396875000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #3\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228668, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257632, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316648, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316648, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313372')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000685\', 1, \'Fbscputimesec\', \'0.000685\', 1, \'Fbsmemorytotalkb\', \'31704.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.606850\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045417\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31704\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 217325000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #3\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 230396, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259388, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318604, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318604, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313372')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000474\', 1, \'Fbscputimesec\', \'0.000474\', 1, \'Fbsmemorytotalkb\', \'30968.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.612966\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045623\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30968\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 277175000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #3\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227784, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256772, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316156, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316156, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313373')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000909\', 1, \'Fbscputimesec\', \'0.000909\', 1, \'Fbsmemorytotalkb\', \'30968.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.593001\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046196\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30968\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 456725000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #3\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227648, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256772, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 313672, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 313672, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313373')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000407\', 1, \'Fbscputimesec\', \'0.000407\', 1, \'Fbsmemorytotalkb\', \'28588.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.602320\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043145\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'28588\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 10, Frequency: 396875000000000Hz; S Matrix Error =  29.150%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 11, Frequency: 217325000000000Hz; S Matrix Error =  22.312%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 12, Frequency: 277175000000000Hz; S Matrix Error =  23.575%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 13, Frequency: 456725000000000Hz; S Matrix Error =  38.489%\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177132, 'I(1, 0, \'Frequency Group #3; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 337025000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #4\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 232584, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 261548, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 322268, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 322268, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313402')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000843\', 1, \'Fbscputimesec\', \'0.000843\', 1, \'Fbsmemorytotalkb\', \'33324.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.611199\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045044\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'33324\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 516575000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #4\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228336, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257332, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316912, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316912, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313402')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000446\', 1, \'Fbscputimesec\', \'0.000446\', 1, \'Fbsmemorytotalkb\', \'31480.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.652521\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046258\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31480\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 636275000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #4\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 230524, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259456, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318756, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318756, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313402')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000974\', 1, \'Fbscputimesec\', \'0.000974\', 1, \'Fbsmemorytotalkb\', \'31352.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.636016\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046573\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31352\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 576425000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #4\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227492, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256632, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 313604, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 313604, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313403')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000609\', 1, \'Fbscputimesec\', \'0.000609\', 1, \'Fbsmemorytotalkb\', \'28532.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.583106\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.048797\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'28532\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 14, Frequency: 337025000000000Hz; S Matrix Error =  19.160%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 15, Frequency: 516575000000000Hz; S Matrix Error =  16.388%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 16, Frequency: 636275000000000Hz; S Matrix Error =  12.804%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 17, Frequency: 576425000000000Hz; S Matrix Error =   8.423%\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177212, 'I(1, 0, \'Frequency Group #4; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 292137500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #5\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 226932, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256184, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 314712, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 314712, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313429')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000933\', 1, \'Fbscputimesec\', \'0.000933\', 1, \'Fbsmemorytotalkb\', \'29956.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.620153\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.048886\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'29956\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 262212500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #5\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228168, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257220, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316076, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316076, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313430')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000483\', 1, \'Fbscputimesec\', \'0.000483\', 1, \'Fbsmemorytotalkb\', \'30708.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.624066\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045074\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30708\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 441762500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #5\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228492, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257476, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316344, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316344, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313430')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000624\', 1, \'Fbscputimesec\', \'0.000624\', 1, \'Fbsmemorytotalkb\', \'31436.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.620901\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046915\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31436\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 411837500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #5\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227840, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256960, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 313928, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 313928, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313431')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000936\', 1, \'Fbscputimesec\', \'0.000936\', 1, \'Fbsmemorytotalkb\', \'28932.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.588272\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.048616\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'28932\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 18, Frequency: 292137500000000Hz; S Matrix Error =   7.842%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 19, Frequency: 262212500000000Hz; S Matrix Error =   5.649%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 20, Frequency: 441762500000000Hz; S Matrix Error =   1.129%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 21, Frequency: 411837500000000Hz; S Matrix Error =   1.053%\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177268, 'I(1, 0, \'Frequency Group #5; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 381912500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #6\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228592, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257568, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316596, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316596, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313458')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000880\', 1, \'Fbscputimesec\', \'0.000880\', 1, \'Fbsmemorytotalkb\', \'31428.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.610794\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046751\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31428\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 322062500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #6\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 229004, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257972, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 317684, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 317684, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313458')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000891\', 1, \'Fbscputimesec\', \'0.000891\', 1, \'Fbsmemorytotalkb\', \'32160.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.613726\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045684\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'32160\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 351987500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #6\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228132, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257108, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316312, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316312, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313458')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000425\', 1, \'Fbscputimesec\', \'0.000425\', 1, \'Fbsmemorytotalkb\', \'31160.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.608439\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045522\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31160\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 471687500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #6\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 232764, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 261700, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318336, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318336, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313459')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000421\', 1, \'Fbscputimesec\', \'0.000421\', 1, \'Fbsmemorytotalkb\', \'28768.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.602825\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043275\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'28768\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 22, Frequency: 381912500000000Hz; S Matrix Error =   1.207%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 23, Frequency: 322062500000000Hz; S Matrix Error =   0.893%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 24, Frequency: 351987500000000Hz; S Matrix Error =   0.691%\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 25, Frequency: 471687500000000Hz; S Matrix Error =   0.349%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177340, 'I(1, 0, \'Frequency Group #6; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 501612500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #7\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 230100, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259164, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 319912, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 319912, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313485')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000626\', 1, \'Fbscputimesec\', \'0.000626\', 1, \'Fbsmemorytotalkb\', \'32856.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.602450\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.044073\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'32856\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 479168750000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #7\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 230468, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259584, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 317932, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 317932, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313486')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000577\', 1, \'Fbscputimesec\', \'0.000577\', 1, \'Fbsmemorytotalkb\', \'30276.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.607990\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043446\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30276\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 464206250000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #7\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228748, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257784, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316556, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.6 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316556, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313486')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000536\', 1, \'Fbscputimesec\', \'0.000536\', 1, \'Fbsmemorytotalkb\', \'31152.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.604102\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046319\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31152\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 404356250000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #7\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228548, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257604, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 314292, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 314292, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313487')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000583\', 1, \'Fbscputimesec\', \'0.000583\', 1, \'Fbsmemorytotalkb\', \'29280.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.598414\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043930\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'29280\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 26, Frequency: 501612500000000Hz; S Matrix Error =   0.145%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 27, Frequency: 479168750000000Hz; S Matrix Error =   0.224%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 28, Frequency: 464206250000000Hz; S Matrix Error =   0.227%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 29, Frequency: 404356250000000Hz; S Matrix Error =   0.102%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 177400, 'I(1, 0, \'Frequency Group #7; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 408096875000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #8\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 227724, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 256868, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 315592, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 315592, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313513')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000425\', 1, \'Fbscputimesec\', \'0.000425\', 1, \'Fbsmemorytotalkb\', \'30496.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.636519\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046190\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30496\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 202362500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #8\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 230604, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259344, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318384, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318384, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313514')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000404\', 1, \'Fbscputimesec\', \'0.000404\', 1, \'Fbsmemorytotalkb\', \'31128.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.627384\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046318\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31128\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 389393750000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #8\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228444, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257512, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316644, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316644, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313514')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000538\', 1, \'Fbscputimesec\', \'0.000538\', 1, \'Fbsmemorytotalkb\', \'31520.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.629625\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045756\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31520\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 232287500000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #8\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 231924, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 261000, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318004, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318004, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313515')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000538\', 1, \'Fbscputimesec\', \'0.000538\', 1, \'Fbsmemorytotalkb\', \'28748.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.627864\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.049760\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'28748\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 30, Frequency: 408096875000000Hz; S Matrix Error =   0.075%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 31, Frequency: 202362500000000Hz; S Matrix Error =   0.101%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 32, Frequency: 389393750000000Hz; S Matrix Error =   0.114%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 33, Frequency: 232287500000000Hz; S Matrix Error =   0.057%; Secondary solver criterion is not converged\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 178344, 'I(1, 0, \'Frequency Group #8; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 449243750000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #9\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 229820, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 258744, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 319404, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 319404, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313541')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000424\', 1, \'Fbscputimesec\', \'0.000424\', 1, \'Fbsmemorytotalkb\', \'32560.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.622214\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.048526\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'32560\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 509093750000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #9\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 229944, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 259156, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 318252, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 318252, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313542')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000684\', 1, \'Fbscputimesec\', \'0.000684\', 1, \'Fbsmemorytotalkb\', \'30936.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.615315\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045963\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'30936\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 239768750000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #9\')', false, true)
+					ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228612, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257852, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 316624, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 316624, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313542')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000455\', 1, \'Fbscputimesec\', \'0.000455\', 1, \'Fbsmemorytotalkb\', \'31572.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.616966\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.043817\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'31572\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 224806250000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:02')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Distributed Solve Group #9\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 228400, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Assembly', 0, 0, 0, 0, 257332, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, false)
+					ProfileItem('Matrix Solve', 0, 0, 0, 0, 314484, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 1, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, false)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 314484, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, false)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313543')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'1\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000832\', 1, \'Fbscputimesec\', \'0.000832\', 1, \'Fbsmemorytotalkb\', \'29408.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'1\', 1, \'Factorizationtimesec\', \'0.613107\', 1, \'Factorizationmentotalkb\', \'25892.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.046365\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'29408\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 34, Frequency: 449243750000000Hz; Scattering matrix quantities converged; Passivity Error =   0.000152\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 35, Frequency: 509093750000000Hz; Scattering matrix quantities converged; Passivity Error =   0.009430\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 36, Frequency: 239768750000000Hz; Scattering matrix quantities converged; Passivity Error =   0.001014\')', false, true)
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 37, Frequency: 224806250000000Hz; Scattering matrix quantities converged; Passivity Error =   0.000780\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 178504, 'I(1, 0, \'Frequency Group #9; Interpolating frequency sweep\')', true, true)
+				ProfileItem(' ', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+				$begin 'ProfileGroup'
+					MajorVer=2025
+					MinorVer=2
+					Name='Frequency - 419618000000000Hz'
+					$begin 'StartInfo'
+						I(0, 'XGM-046057LN')
+					$end 'StartInfo'
+					$begin 'TotalInfo'
+						I(0, 'Elapsed time : 00:00:00')
+					$end 'TotalInfo'
+					GroupOptions=0
+					TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+					ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'HFSS: Single Frequency Solve Group #10\')', false, true)
+					ProfileItem('Simulation Setup ', 0, 0, 0, 0, 162764, 'I(2, 2, \'Tetrahedra\', 4623, false, 1, \'Disk\', \'0 Bytes\')', true, true)
+					ProfileItem('Matrix Assembly', 0, 0, 1, 0, 251172, 'I(4, 2, \'Tetrahedra\', 4623, false, 2, \'FloquetCima Triangles\', 256, false, 2, \'FloquetBaixo Triangles\', 256, false, 1, \'Disk\', \'0 Bytes\')', true, true)
+					ProfileItem('Matrix Solve', 0, 0, 1, 0, 329532, 'I(6, 1, \'Type\', \'DCA\', 2, \'Cores\', 4, false, 2, \'Matrix size\', 28066, false, 3, \'Matrix bandwidth\', 42.7517, \'%5.1f\', 2, \'S-matrix only solve\', 8, false, 1, \'Disk\', \'1.61 KB\')', true, true)
+					ProfileItem('Field Recovery', 0, 0, 0, 0, 329532, 'I(2, 2, \'Excitations\', 8, false, 1, \'Disk\', \'16.2 KB\')', true, true)
+					$begin 'ProfileGroup'
+						MajorVer=2025
+						MinorVer=2
+						Name='APIPms1'
+						$begin 'StartInfo'
+							I(1, 'Timesinceepock', '1794313558')
+						$end 'StartInfo'
+						$begin 'TotalInfo'
+							I(0, ' ')
+						$end 'TotalInfo'
+						GroupOptions=16
+						TaskDataOptions('CPU Time'=8, 'Real Time'=8)
+						ProfileItem('fbsinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Fbstatus\', \'valid\', 1, \'Fbstype\', \'partial_dense\', 1, \'Fbsmt\', \'false\', 1, \'Fbsmrhs\', \'true\', 1, \'Fbsnumcores\', \'4\', 1, \'Fbsnumsolvestotal\', \'8\', 1, \'Fbsnumsolves\', \'1\', 1, \'Fbsavgsolvetime1solvesec\', \'0.000306\', 1, \'Fbscputimesec\', \'0.000306\', 1, \'Fbsmemorytotalkb\', \'107632.000000\')', false, true)
+						ProfileItem('factorinfo', 0, 0, 0, 0, 0, 'I(4, 1, \'Fatorizationstatus\', \'valid\', 1, \'Factorizationnumcores\', \'4\', 1, \'Factorizationtimesec\', \'0.258033\', 1, \'Factorizationmentotalkb\', \'35140.000000\')', false, true)
+						ProfileItem('analysisinfo', 0, 0, 0, 0, 0, 'I(9, 1, \'Analysisstatus\', \'valid\', 1, \'Numsupernodes\', \'2412\', 1, \'Factornnz\', \'4889259\', 1, \'Factorestflops\', \'5058786806\', 1, \'Fbsestflops\', \'33720252\', 1, \'Rootfactestflops\', \'9011914\', 1, \'Rootfbsestflops\', \'56644\', 1, \'Analysistimesec\', \'0.045313\', 1, \'Analysismemkb\', \'15786.000000\')', false, true)
+						ProfileItem('solverprofile', 0, 0, 0, 0, 0, 'I(2, 1, \'Maxmemkb\', \'107632\', 1, \'Maxdiskkb\', \'0\')', false, true)
+						ProfileItem('solverinfo', 0, 0, 0, 0, 0, 'I(10, 1, \'Solvertype\', \'shared_memory\', 1, \'Precision\', \'double\', 1, \'Solversymmetry\', \'complex_unsym\', 1, \'Matrixdim\', \'28066\', 1, \'Matrixbw\', \'42.951801\', 1, \'Matrixnnz\', \'1205484\', 1, \'Rootdim\', \'238\', 1, \'Mathtype\', \'mkl\', 1, \'Mpitasks\', \'1\', 1, \'Threadspertasks\', \'0\')', false, true)
+						ProfileItem('sysinfo', 0, 0, 0, 0, 0, 'I(12, 1, \'Os\', \'lin\', 1, \'Cpuid\', \'Intel(R) Xeon(R) Gold 5220 CPU @ 2.20GHz\', 1, \'CpuPhysicCores\', \'18\', 1, \'CpuLogicCores\', \'36\', 1, \'Cpufreqkhz\', \'2200000000.000000\', 1, \'Cpucachelinesizebytes\', \'64\', 1, \'Cpuestlastlevelcachesizemb\', \'36.000000\', 1, \'Cpuestgflops\', \'844.799988\', 1, \'Memorybwestkbps\', \'128.000000\', 1, \'Numanodes\', \'1\', 1, \'Virtualmemkb\', \'-1.000000\', 1, \'Pagesizekb\', \'4096\')', false, true)
+					$end 'ProfileGroup'
+				$end 'ProfileGroup'
+				ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'Basis Element # 38, Frequency: 419618000000000Hz; Scattering matrix quantities converged; Passive within tolerance\')', false, true)
+				ProfileItem('Data Transfer', 0, 0, 0, 0, 178540, 'I(1, 0, \'Frequency #37;  Interpolating frequency sweep\')', true, true)
+				ProfileFootnote('I(1, 0, \'Interpolating sweep converged and is passive\')', 0)
+				ProfileFootnote('I(1, 0, \'HFSS: Distributed Interpolating sweep\')', 0)
+			$end 'ProfileGroup'
+		$end 'ProfileGroup'
+		ProfileItem('', 0, 0, 0, 0, 0, 'I(1, 0, \'\')', false, true)
+		$begin 'ProfileGroup'
+			MajorVer=2025
+			MinorVer=2
+			Name='Simulation Summary'
+			$begin 'StartInfo'
+			$end 'StartInfo'
+			$begin 'TotalInfo'
+				I(0, ' ')
+			$end 'TotalInfo'
+			GroupOptions=0
+			TaskDataOptions('CPU Time'=8, Memory=8, 'Real Time'=8)
+			ProfileItem('Design Validation', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:00\', 1, \'Total Memory\', \'163 MB\')', false, true)
+			ProfileItem('Initial Meshing', 0, 0, 0, 0, 0, 'I(2, 1, \'Elapsed Time\', \'00:00:04\', 1, \'Total Memory\', \'224 MB\')', false, true)
+			ProfileItem('Adaptive Meshing', 0, 0, 0, 0, 0, 'I(5, 1, \'Elapsed Time\', \'00:00:09\', 1, \'Average memory/process\', \'491 MB\', 1, \'Max memory/process\', \'491 MB\', 2, \'Max number of processes/frequency\', 1, false, 2, \'Total number of cores\', 4, false)', false, true)
+			ProfileItem('Frequency Sweep', 0, 0, 0, 0, 0, 'I(5, 1, \'Elapsed Time\', \'00:04:21\', 1, \'Average memory/process\', \'311 MB\', 1, \'Max memory/process\', \'322 MB\', 2, \'Max number of processes/frequency\', 1, false, 2, \'Total number of cores\', 4, false)', false, true)
+			ProfileFootnote('I(3, 2, \'Max solved tets\', 4623, false, 2, \'Max matrix size\', 28066, false, 1, \'Matrix bandwidth\', \'42.8\')', 0)
+		$end 'ProfileGroup'
+		ProfileFootnote('I(2, 1, \'Stop Time\', \'11/10/2026 09:26:02\', 1, \'Status\', \'Normal Completion\')', 0)
+	$end 'ProfileGroup'
+$end 'Profile'

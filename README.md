@@ -348,3 +348,33 @@ held-out spectra and optimizes the same five targets used by the earlier inverse
 baseline. The second performs actual GUI HFSS simulations. The third refreshes
 the physical comparison report without rerunning the solver. Existing optimized
 cases and completed simulations are reused after their provenance is checked.
+
+### Flat Optuna validation
+
+The validation-selected trial and retained dataset are copied to `results/flat/optuna/`. The original run remains in `runs/flat/optuna/`. All case scripts, reports, figures and HFSS projects are under `src/validation/flat/optuna/`. The five target requests match the flat baseline for paired comparison.
+
+```bash
+python3 src/validation/flat/optuna/optuna_results.py
+python3 src/validation/flat/optuna/hfss_cases.py
+python3 src/validation/flat/optuna/hfss_report.py
+```
+
+### Flat Ray validation
+
+The validation-selected candidate from `Downloads/ray` is copied to `results/flat/ray/`, with its committed checkpoint, training state, search summary, logs and verified dataset snapshot. The downloaded run is preserved. All validation scripts, reports, figures and HFSS projects are under `src/validation/flat/ray/`. The five target requests match the flat baseline and Optuna for paired comparison.
+
+```bash
+python3 src/validation/flat/ray/ray_results.py
+python3 src/validation/flat/ray/hfss_cases.py
+python3 src/validation/flat/ray/hfss_report.py
+```
+
+### Flat AutoKeras validation
+
+The validation-selected trial from `Downloads/autokeras` is copied to `results/flat/autokeras/`, including its native Keras model, exported checkpoint, training state, tuner metadata, logs and verified dataset snapshot. The downloaded run is preserved. All validation scripts, reports, figures and HFSS projects are under `src/validation/flat/autokeras/`. The five target requests match the other flat cases for paired comparison.
+
+```bash
+python3 src/validation/flat/autokeras/autokeras_results.py
+python3 src/validation/flat/autokeras/hfss_cases.py
+python3 src/validation/flat/autokeras/hfss_report.py
+```

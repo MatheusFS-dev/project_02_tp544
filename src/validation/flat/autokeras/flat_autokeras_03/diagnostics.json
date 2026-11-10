@@ -1,0 +1,81 @@
+{
+  "case": "flat_autokeras_03",
+  "change_from_previous_inverse_baseline_pp": -10.428436965580884,
+  "family": "F09",
+  "final_adaptive_delta_s": 0.00962538,
+  "mesh_converged": true,
+  "physical_scores": {
+    "average_error": 0.0030963124080588657,
+    "polarization_T_max_difference": 0.06112968433079757,
+    "ripple": 0.015000020172230066,
+    "solve_seconds": 197.72524887199688,
+    "wavelength_samples": 401,
+    "worst_error": 0.008667130822821612
+  },
+  "predicted_average_error_pp": 0.2346634864807129,
+  "predicted_worst_error_pp": 0.8511930704116821,
+  "prediction": {
+    "family": "F09",
+    "initial_best_predicted_worst_error_pp": 2.5068819522857666,
+    "normalized_parameters": [
+      0.6340625286102295,
+      0.24632124602794647,
+      0.0,
+      0.0,
+      0.0,
+      0.13580165803432465,
+      0.0
+    ],
+    "parameters_nm": {
+      "L_s": 43.4565315246582,
+      "Lout_q": 202.90000915527344,
+      "R_d": null,
+      "Rout_c": null,
+      "w_c": null,
+      "w_q": 39.411399841308594,
+      "w_t": null
+    },
+    "predicted_average_error_pp": 0.2346634864807129,
+    "predicted_within_tolerance": true,
+    "predicted_worst_error_pp": 0.8511930704116821,
+    "seed_source_id": "G1222",
+    "step": 423,
+    "substrate": "air",
+    "tracks": false,
+    "trust_lower_nm": [
+      187.09999084472656,
+      34.5,
+      0.0,
+      0.0,
+      0.0,
+      40.0,
+      0.0
+    ],
+    "trust_upper_nm": [
+      202.90000915527344,
+      39.5,
+      0.0,
+      0.0,
+      0.0,
+      56.19999694824219,
+      0.0
+    ]
+  },
+  "previous_inverse_baseline_worst_error_pp": 11.295150047863045,
+  "reference_scores": {
+    "average_error": 0.005188518231165643,
+    "ripple": 0.019588999999999968,
+    "worst_error": 0.010017530773108574
+  },
+  "reference_source_id": "G1867",
+  "request": [
+    475.642,
+    558.352,
+    0.3012235307731086
+  ],
+  "solver_profile_sha256": "7a615171c03b379de86e823a5c9114acfa9269d1348d6d637a9d607f5253b250",
+  "spectrum_sha256": "f74fce5ad78e1dd8da213e3af3b4132fab617c8aa3658010c725104d3064e66a",
+  "spectrum_surrogate_mae_pp": 1.3812714528426306,
+  "surrogate_optimism_pp": 0.015520011870479022,
+  "sweep_converged_and_passive": true
+}

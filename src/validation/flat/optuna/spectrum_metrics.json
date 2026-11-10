@@ -1,0 +1,73 @@
+{
+  "checkpoint_sha256": "d5d1c7f2c04fa52d6e17bdc96475c596d8d1cbe9b3ae41ae99c06ac02f2cae98",
+  "dataset_sha256": "1bf24c56c2d09b0f26a219010f612ea2f870dee61a3070385637ed3e47602f27",
+  "per_family": {
+    "F01": {
+      "absorption_mae_pp": 1.361160259693861,
+      "count": 9,
+      "mean_worst_error_pp": 4.545801877975464
+    },
+    "F02": {
+      "absorption_mae_pp": 1.726643554866314,
+      "count": 11,
+      "mean_worst_error_pp": 8.663294464349747
+    },
+    "F03": {
+      "absorption_mae_pp": 1.3052399270236492,
+      "count": 14,
+      "mean_worst_error_pp": 6.603659689426422
+    },
+    "F04": {
+      "absorption_mae_pp": 1.6793841496109962,
+      "count": 15,
+      "mean_worst_error_pp": 7.763360440731049
+    },
+    "F05": {
+      "absorption_mae_pp": 1.9477123394608498,
+      "count": 30,
+      "mean_worst_error_pp": 7.96658918261528
+    },
+    "F06": {
+      "absorption_mae_pp": 1.502909790724516,
+      "count": 30,
+      "mean_worst_error_pp": 7.001008838415146
+    },
+    "F07": {
+      "absorption_mae_pp": 1.4790411107242107,
+      "count": 30,
+      "mean_worst_error_pp": 7.173348963260651
+    },
+    "F08": {
+      "absorption_mae_pp": 0.8134931325912476,
+      "count": 30,
+      "mean_worst_error_pp": 3.7615012377500534
+    },
+    "F09": {
+      "absorption_mae_pp": 1.4588041231036186,
+      "count": 30,
+      "mean_worst_error_pp": 6.757804751396179
+    },
+    "F10": {
+      "absorption_mae_pp": 2.092518098652363,
+      "count": 30,
+      "mean_worst_error_pp": 8.766991645097733
+    },
+    "F11": {
+      "absorption_mae_pp": 1.6895005479454994,
+      "count": 30,
+      "mean_worst_error_pp": 7.074514031410217
+    },
+    "F12": {
+      "absorption_mae_pp": 1.4382578432559967,
+      "count": 30,
+      "mean_worst_error_pp": 6.682617217302322
+    }
+  },
+  "test": {
+    "absorption_mae_pp": 1.5480094589293003,
+    "count": 289,
+    "loss": 0.018527918614472897,
+    "mean_worst_spectrum_error_pp": 6.922634690999985,
+    "p95_worst_spectrum_error_pp": 12.953582406044006
+  }
+}
