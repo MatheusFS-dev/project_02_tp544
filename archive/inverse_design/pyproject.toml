@@ -9,7 +9,7 @@ description = "Three-head inverse design and resumable architecture searches"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "numpy==1.26.4",
-    "torch==2.7.1",
+    "torch==2.13.0",
     "optuna==4.5.0",
     "ray[tune]==2.49.2",
     "pyarrow==20.0.0",
