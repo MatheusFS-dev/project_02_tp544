@@ -1,0 +1,67 @@
+{
+  "flat_ray_01": {
+    "stage": "solved",
+    "project": "validation/flat/ray/flat_ray_01/flat_ray_01.aedt",
+    "family": "F07",
+    "result": {
+      "worst_error": 0.2946637063705681,
+      "average_error": 0.1802512467927258,
+      "ripple": 0.1735096182680792,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.0843633353986703,
+      "solve_seconds": 226.29500320700026
+    }
+  },
+  "flat_ray_02": {
+    "stage": "solved",
+    "project": "validation/flat/ray/flat_ray_02/flat_ray_02.aedt",
+    "family": "F10",
+    "result": {
+      "worst_error": 0.7951433569784832,
+      "average_error": 0.6428400886168322,
+      "ripple": 0.25402650758717715,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.030363549430467762,
+      "solve_seconds": 372.4231567550014
+    }
+  },
+  "flat_ray_03": {
+    "stage": "solved",
+    "project": "validation/flat/ray/flat_ray_03/flat_ray_03.aedt",
+    "family": "F09",
+    "result": {
+      "worst_error": 0.004952983431922464,
+      "average_error": 0.0016899643064964085,
+      "ripple": 0.008281697865437532,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.08828496300638655,
+      "solve_seconds": 223.00844447399868
+    }
+  },
+  "flat_ray_04": {
+    "stage": "solved",
+    "project": "validation/flat/ray/flat_ray_04/flat_ray_04.aedt",
+    "family": "F05",
+    "result": {
+      "worst_error": 0.8638357907298199,
+      "average_error": 0.7432132977378504,
+      "ripple": 0.2564332582635098,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.36267090290151266,
+      "solve_seconds": 379.8298981360058
+    }
+  },
+  "flat_ray_05": {
+    "stage": "solved",
+    "project": "validation/flat/ray/flat_ray_05/flat_ray_05.aedt",
+    "family": "F03",
+    "result": {
+      "worst_error": 0.0218605635213745,
+      "average_error": 0.016419008098713203,
+      "ripple": 0.02908795081856598,
+      "wavelength_samples": 401,
+      "polarization_T_max_difference": 0.008239735299405804,
+      "solve_seconds": 180.63491367800452
+    }
+  }
+}

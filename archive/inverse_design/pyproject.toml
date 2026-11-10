@@ -1,0 +1,32 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "inverse-design"
+version = "0.1.0"
+description = "Three-head inverse design and resumable architecture searches"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "numpy==1.26.4",
+    "torch==2.7.1",
+    "optuna==4.5.0",
+    "ray[tune]==2.49.2",
+    "pyarrow==20.0.0",
+    "autokeras==3.0.0",
+    "keras==3.11.3",
+    "keras-tuner==1.4.7",
+    "grpcio==1.74.0",
+    "protobuf==5.29.5",
+    "six==1.17.0",
+    "pytest==8.4.2",
+    "tqdm==4.67.1",
+    "matplotlib==3.10.9",
+    "pyaedt==0.28.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/inverse_design", "src/flat"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

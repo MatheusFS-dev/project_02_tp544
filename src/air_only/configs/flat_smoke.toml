@@ -1,0 +1,24 @@
+# Data and raw paths are relative to this TOML. Output is relative to src/air_only.
+data = "../data/processed/flat_spectra/dataset.npz"
+raw = "../data/raw/treinar"
+output = "runs/flat_smoke"
+device = "cuda:0"
+epochs = 2
+candidates = 2
+seed = 42
+patience = 2
+min_delta = 0.00001
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0001
+threads = 2
+width = 64
+depth = 1
+dropout = 0.1
+trunk = "residual"
+max_train = 120
+max_eval = 36
+optimization_steps = 8
+multistarts = 1
+trust_fraction = 0.1
+tolerance = 0.05

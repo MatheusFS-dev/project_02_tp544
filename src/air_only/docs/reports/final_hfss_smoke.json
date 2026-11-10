@@ -1,0 +1,33 @@
+{
+  "stage": "solved",
+  "project": "temporary project removed after verification",
+  "spectrum": "temporary spectrum removed after verification",
+  "samples": 401,
+  "solve_seconds": 226.82286256899533,
+  "mesh_converged": true,
+  "sweep_converged_and_passive": true,
+  "actual_target_scores": {
+    "worst_error_pp": 28.061476474082784,
+    "mean_error_pp": 23.041080303211086
+  },
+  "geometry": {
+    "family": "F01",
+    "substrate": "air",
+    "tracks": false,
+    "parameters_nm": {
+      "Lout_q": null,
+      "w_q": null,
+      "Rout_c": null,
+      "w_c": null,
+      "R_d": 40.0,
+      "L_s": null,
+      "w_t": null
+    },
+    "request": [
+      600.1,
+      700.2,
+      0.3
+    ]
+  },
+  "timestamp": "2026-11-10T10:29:55-03:00"
+}

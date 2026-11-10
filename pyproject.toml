@@ -3,9 +3,9 @@ requires = ["hatchling"]
 build-backend = "hatchling.build"
 
 [project]
-name = "inverse-design"
+name = "air-only-flat-design"
 version = "0.1.0"
-description = "Three-head inverse design and resumable architecture searches"
+description = "Air-only flat-spectrum learning, geometry optimization and HFSS validation"
 requires-python = ">=3.12,<3.13"
 dependencies = [
     "numpy==1.26.4",
@@ -26,7 +26,7 @@ dependencies = [
 ]
 
 [tool.hatch.build.targets.wheel]
-packages = ["src/inverse_design", "src/flat"]
+packages = ["src/air_only"]
 
 [tool.pytest.ini_options]
-testpaths = ["tests"]
+testpaths = ["src/air_only/tests"]

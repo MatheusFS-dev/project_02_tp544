@@ -1,0 +1,35 @@
+# All input and output paths are relative to this TOML.
+data = "../data/processed/final_flat/dataset.npz"
+raw = "../data/raw/treinar"
+output = "../runs/final"
+device = "cuda:0"
+epochs = 300
+candidates = 1
+seed = 42
+patience = 30
+min_delta = 0.00001
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0001
+threads = 2
+width = 256
+depth = 3
+dropout = 0.1
+trunk = "residual"
+max_train = 0
+max_eval = 0
+optimization_steps = 500
+multistarts = 8
+trust_fraction = 0.1
+tolerance = 0.05
+
+[selected_models]
+baseline = "../results/flat/baseline/final"
+optuna = "../results/flat/optuna/final"
+ray = "../results/flat/ray/final"
+autokeras = "../results/flat/autokeras/final"
+
+[hfss]
+version = "2025.2"
+installation = "/usr/local/AnsysEM25R2/v252/AnsysEM"
+cores = 4

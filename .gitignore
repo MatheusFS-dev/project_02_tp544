@@ -1,56 +1,27 @@
-# Agent workspace template
-docs/superpowers/specs/
-docs/superpowers/plans/
+# One project environment and transient Python state
 .venv/
 __pycache__/
 .pytest_cache/
 *.egg-info/
-runs/
-.verification/
-# Local HFSS solver runtime artifacts
-src/validation/*.log
-src/validation/**/logs/
-src/validation/baseline/**/*.aedtresults/
-src/validation/baseline/**/*.aedt.lock
-src/validation/baseline/**/*.aedt.auto
-src/validation/baseline/**/*.aedt.bak
-/batch.log
 
-# Relocated local training artifacts
-/results/
+# Runtime weights, logs, local experiments and solver caches
+src/air_only/results/
+src/air_only/runs/
+src/air_only/validation/**/logs/
+src/air_only/validation/**/*.aedtresults/
+src/air_only/validation/**/*.aedt.lock
+src/air_only/validation/**/*.aedt.auto
+src/air_only/validation/**/*.aedt.bak
+src/air_only/data/processed/**/.lock
+src/air_only/docs/plans/
 
-src/validation/optuna/**/*.aedtresults/
-src/validation/optuna/**/*.aedt.lock
-src/validation/optuna/**/*.aedt.auto
-src/validation/optuna/**/*.aedt.bak
-
-src/validation/ray/**/*.aedtresults/
-src/validation/ray/**/*.aedt.lock
-src/validation/ray/**/*.aedt.auto
-src/validation/ray/**/*.aedt.bak
-
-# Flat-spectrum preparation ownership lock
-data/processed/flat_spectra/.lock
-
-src/validation/flat/baseline/**/*.aedtresults/
-src/validation/flat/baseline/**/*.aedt.lock
-src/validation/flat/baseline/**/*.aedt.auto
-src/validation/flat/baseline/**/*.aedt.bak
-
-# Flat Optuna solver runtime files
-src/validation/flat/optuna/**/*.aedtresults/
-src/validation/flat/optuna/**/*.aedt.lock
-src/validation/flat/optuna/**/*.aedt.auto
-src/validation/flat/optuna/**/*.aedt.bak
-
-# Flat Ray solver runtime files
-src/validation/flat/ray/**/*.aedtresults/
-src/validation/flat/ray/**/*.aedt.lock
-src/validation/flat/ray/**/*.aedt.auto
-src/validation/flat/ray/**/*.aedt.bak
-
-# Flat AutoKeras solver runtime files
-src/validation/flat/autokeras/**/*.aedtresults/
-src/validation/flat/autokeras/**/*.aedt.lock
-src/validation/flat/autokeras/**/*.aedt.auto
-src/validation/flat/autokeras/**/*.aedt.bak
+# Archived large/runtime artifacts remain local, without deleting them
+archive/inverse_design/results/
+archive/inverse_design/runs/
+archive/inverse_design/validation/**/logs/
+archive/inverse_design/validation/**/*.aedtresults/
+archive/inverse_design/validation/**/*.aedt.lock
+archive/inverse_design/validation/**/*.aedt.auto
+archive/inverse_design/validation/**/*.aedt.bak
+archive/inverse_design/verification/
+archive/inverse_design/docs/superpowers/

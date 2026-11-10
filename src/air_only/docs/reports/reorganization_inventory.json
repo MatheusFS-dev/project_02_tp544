@@ -1,0 +1,264 @@
+{
+  "timestamp": "2026-11-10T10:45:31-03:00",
+  "moves": [
+    {
+      "source": "src/flat",
+      "destination": "src/air_only/flat"
+    },
+    {
+      "source": "src/final",
+      "destination": "src/air_only/final"
+    },
+    {
+      "source": "src/validation/flat",
+      "destination": "src/air_only/validation/flat"
+    },
+    {
+      "source": "results/flat",
+      "destination": "src/air_only/results/flat"
+    },
+    {
+      "source": "runs/flat",
+      "destination": "src/air_only/runs/flat"
+    },
+    {
+      "source": "runs/final",
+      "destination": "src/air_only/runs/final"
+    },
+    {
+      "source": "runs/flat_smoke",
+      "destination": "src/air_only/runs/flat_smoke"
+    },
+    {
+      "source": "data/raw",
+      "destination": "src/air_only/data/raw"
+    },
+    {
+      "source": "data/processed/flat_spectra",
+      "destination": "src/air_only/data/processed/flat_spectra"
+    },
+    {
+      "source": "data/processed/final_flat",
+      "destination": "src/air_only/data/processed/final_flat"
+    },
+    {
+      "source": "src/configs/optuna.toml",
+      "destination": "archive/inverse_design/src/configs/optuna.toml"
+    },
+    {
+      "source": "src/configs/baseline.toml",
+      "destination": "archive/inverse_design/src/configs/baseline.toml"
+    },
+    {
+      "source": "src/configs/flat_optuna.toml",
+      "destination": "src/air_only/configs/flat_optuna.toml"
+    },
+    {
+      "source": "src/configs/ray.toml",
+      "destination": "archive/inverse_design/src/configs/ray.toml"
+    },
+    {
+      "source": "src/configs/flat_prepare.toml",
+      "destination": "src/air_only/configs/flat_prepare.toml"
+    },
+    {
+      "source": "src/configs/flat_baseline.toml",
+      "destination": "src/air_only/configs/flat_baseline.toml"
+    },
+    {
+      "source": "src/configs/final.toml",
+      "destination": "src/air_only/configs/final.toml"
+    },
+    {
+      "source": "src/configs/autokeras.toml",
+      "destination": "archive/inverse_design/src/configs/autokeras.toml"
+    },
+    {
+      "source": "src/configs/flat_ray.toml",
+      "destination": "src/air_only/configs/flat_ray.toml"
+    },
+    {
+      "source": "src/configs/flat_autokeras.toml",
+      "destination": "src/air_only/configs/flat_autokeras.toml"
+    },
+    {
+      "source": "src/configs/flat_smoke.toml",
+      "destination": "src/air_only/configs/flat_smoke.toml"
+    },
+    {
+      "source": "src/inverse_design",
+      "destination": "archive/inverse_design/src/inverse_design"
+    },
+    {
+      "source": "src/validation/inverse_design",
+      "destination": "archive/inverse_design/validation"
+    },
+    {
+      "source": "results/inverse_design",
+      "destination": "archive/inverse_design/results"
+    },
+    {
+      "source": "runs/treinar_families_v2",
+      "destination": "archive/inverse_design/runs/treinar_families_v2"
+    },
+    {
+      "source": "runs/treinar_full",
+      "destination": "archive/inverse_design/runs/treinar_full"
+    },
+    {
+      "source": "runs/treinar_smoke",
+      "destination": "archive/inverse_design/runs/treinar_smoke"
+    },
+    {
+      "source": "runs/optuna",
+      "destination": "archive/inverse_design/runs/optuna"
+    },
+    {
+      "source": "runs/baseline",
+      "destination": "archive/inverse_design/runs/baseline"
+    },
+    {
+      "source": "data",
+      "destination": "archive/inverse_design/data"
+    },
+    {
+      "source": "tests/test_flatness.py",
+      "destination": "archive/inverse_design/tests/test_flatness.py"
+    },
+    {
+      "source": "tests/test_configuration.py",
+      "destination": "archive/inverse_design/tests/test_configuration.py"
+    },
+    {
+      "source": "tests/test_preparation.py",
+      "destination": "archive/inverse_design/tests/test_preparation.py"
+    },
+    {
+      "source": "tests/test_flat_validation.py",
+      "destination": "src/air_only/tests/test_flat_validation.py"
+    },
+    {
+      "source": "tests/test_recovery.py",
+      "destination": "archive/inverse_design/tests/test_recovery.py"
+    },
+    {
+      "source": "tests/test_physical_evaluation.py",
+      "destination": "archive/inverse_design/tests/test_physical_evaluation.py"
+    },
+    {
+      "source": "tests/test_families.py",
+      "destination": "archive/inverse_design/tests/test_families.py"
+    },
+    {
+      "source": "tests/test_baseline_validation.py",
+      "destination": "archive/inverse_design/tests/test_baseline_validation.py"
+    },
+    {
+      "source": "tests/test_script_entrypoints.py",
+      "destination": "archive/inverse_design/tests/test_script_entrypoints.py"
+    },
+    {
+      "source": "tests/test_ray.py",
+      "destination": "archive/inverse_design/tests/test_ray.py"
+    },
+    {
+      "source": "tests/test_air_only_layout.py",
+      "destination": "src/air_only/tests/test_air_only_layout.py"
+    },
+    {
+      "source": "tests/test_treinar.py",
+      "destination": "archive/inverse_design/tests/test_treinar.py"
+    },
+    {
+      "source": "tests/test_run_logging.py",
+      "destination": "archive/inverse_design/tests/test_run_logging.py"
+    },
+    {
+      "source": "tests/test_autokeras.py",
+      "destination": "archive/inverse_design/tests/test_autokeras.py"
+    },
+    {
+      "source": "tests/test_core.py",
+      "destination": "archive/inverse_design/tests/test_core.py"
+    },
+    {
+      "source": "tests/test_flat.py",
+      "destination": "src/air_only/tests/test_flat.py"
+    },
+    {
+      "source": "tests/conftest.py",
+      "destination": "archive/inverse_design/tests/conftest.py"
+    },
+    {
+      "source": "tests/test_search.py",
+      "destination": "archive/inverse_design/tests/test_search.py"
+    },
+    {
+      "source": "tests/test_final.py",
+      "destination": "src/air_only/tests/test_final.py"
+    },
+    {
+      "source": "docs/flat_architecture.md",
+      "destination": "src/air_only/docs/flat_architecture.md"
+    },
+    {
+      "source": "docs/reports/final_smoke.json",
+      "destination": "src/air_only/docs/reports/final_smoke.json"
+    },
+    {
+      "source": "docs/reports/final_smoke.md",
+      "destination": "src/air_only/docs/reports/final_smoke.md"
+    },
+    {
+      "source": "docs/reports/final_implementation.md",
+      "destination": "src/air_only/docs/reports/final_implementation.md"
+    },
+    {
+      "source": "docs/reports/final_substrate_audit.md",
+      "destination": "src/air_only/docs/reports/final_substrate_audit.md"
+    },
+    {
+      "source": "docs/reports/final_hfss_smoke.json",
+      "destination": "src/air_only/docs/reports/final_hfss_smoke.json"
+    },
+    {
+      "source": "docs/superpowers/plans/2026-11-09-flat-spectrum.md",
+      "destination": "src/air_only/docs/plans/2026-11-09-flat-spectrum.md"
+    },
+    {
+      "source": "docs/superpowers/plans/2026-11-10-final-flat.md",
+      "destination": "src/air_only/docs/plans/2026-11-10-final-flat.md"
+    },
+    {
+      "source": "docs",
+      "destination": "archive/inverse_design/docs"
+    },
+    {
+      "source": "PROBLEM_ARCHITECTURE.md",
+      "destination": "archive/inverse_design/PROBLEM_ARCHITECTURE.md"
+    },
+    {
+      "source": ".agents/context/project",
+      "destination": "archive/inverse_design/agent_context/project"
+    },
+    {
+      "source": ".verification",
+      "destination": "archive/inverse_design/verification"
+    },
+    {
+      "source": "batch.log",
+      "destination": "src/air_only/runs/logs/batch.log"
+    }
+  ],
+  "rename_verification": "inode and byte-size maps checked before and after each directory move",
+  "verified_sha256": {
+    "src/air_only/data/processed/flat_spectra/dataset.npz": "1bf24c56c2d09b0f26a219010f612ea2f870dee61a3070385637ed3e47602f27",
+    "src/air_only/data/processed/final_flat/dataset.npz": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "src/air_only/results/flat/baseline/final/best.ckpt": "92edabc76d4b4de461e44242714e1d86b760d6a467179d92e4a6c2a4c29c7757",
+    "src/air_only/results/flat/optuna/final/best.ckpt": "d5d1c7f2c04fa52d6e17bdc96475c596d8d1cbe9b3ae41ae99c06ac02f2cae98",
+    "src/air_only/results/flat/ray/final/best.ckpt": "cebc1860e121d443832ebbc01bc23972ed214bf2acd96076b498fad511d40797",
+    "src/air_only/results/flat/autokeras/final/best.ckpt": "7762e97ca55e173566090cf9cfaf4eadbc71b6bbd3260e840e9ae50093440adb"
+  },
+  "retained_hfss_cases": 20,
+  "active_tests": 20
+}

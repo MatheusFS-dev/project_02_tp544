@@ -1,6 +1,0 @@
-$begin 'CacheDataVersion'
-	DataVersion=1
-$end 'CacheDataVersion'
-$begin 'VariableValues'
-	theta_inc='0deg'
-$end 'VariableValues'
