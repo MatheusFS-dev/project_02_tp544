@@ -1,0 +1,17 @@
+{
+  "fingerprint": "70cd79d0a0fed1628379f390742ea324a99054c9f651d4525e564a67f412d4f1",
+  "specification": {
+    "architecture": {
+      "depth": 3,
+      "dropout": 0.0,
+      "points": 401,
+      "trunk": "plain",
+      "width": 128
+    },
+    "case": "autokeras",
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "initialization": "from scratch",
+    "selected_identity": "032",
+    "source_checkpoint_sha256": "7762e97ca55e173566090cf9cfaf4eadbc71b6bbd3260e840e9ae50093440adb"
+  }
+}

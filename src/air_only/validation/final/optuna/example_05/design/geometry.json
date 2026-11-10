@@ -1,0 +1,23 @@
+{
+  "case": "optuna",
+  "checkpoint_sha256": "23eb71d52ec22f45b1e6fa49a78c62bc661579a2d1eb0ea52e939ad20aafc429",
+  "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+  "family": "F09",
+  "parameters_nm": {
+    "L_s": 63.80000305175781,
+    "Lout_q": 231.2301788330078,
+    "R_d": null,
+    "Rout_c": null,
+    "w_c": null,
+    "w_q": 49.090187072753906,
+    "w_t": null
+  },
+  "predicted_worst_error_pp": 0.5515560507774353,
+  "request": [
+    1250.0,
+    1300.0,
+    0.15
+  ],
+  "substrate": "air",
+  "tracks": false
+}

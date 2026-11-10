@@ -1,0 +1,23 @@
+{
+  "case": "baseline",
+  "checkpoint_sha256": "e16c63ca2144852094460ba6bdba8094cf7cfc4cf143323b6b6840619e5cd4ab",
+  "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+  "family": "F11",
+  "parameters_nm": {
+    "L_s": null,
+    "Lout_q": null,
+    "R_d": 63.790367126464844,
+    "Rout_c": 123.39845275878906,
+    "w_c": 39.39761734008789,
+    "w_q": null,
+    "w_t": null
+  },
+  "predicted_worst_error_pp": 0.3026634454727173,
+  "request": [
+    500.0,
+    510.0,
+    0.4
+  ],
+  "substrate": "air",
+  "tracks": false
+}

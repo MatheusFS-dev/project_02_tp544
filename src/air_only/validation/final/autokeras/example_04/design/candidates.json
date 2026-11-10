@@ -1,0 +1,584 @@
+{
+  "best_received_training_reference": {
+    "average_error_pp": 0.18550138920545578,
+    "family": "F07",
+    "source_id": "G0879",
+    "worst_error_pp": 0.23629963397979736
+  },
+  "candidates": [
+    {
+      "family": "F09",
+      "initial_best_predicted_worst_error_pp": 0.9729638695716858,
+      "normalized_parameters": [
+        0.645907461643219,
+        0.266114205121994,
+        0.0,
+        0.0,
+        0.0,
+        0.17650118470191956,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": 56.480377197265625,
+        "Lout_q": 206.6903839111328,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 42.57827377319336,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.2659424673765898,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.42867958545684814,
+      "seed_source_id": "G1390",
+      "step": 463,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        193.10000610351562,
+        39.5,
+        0.0,
+        0.0,
+        0.0,
+        40.79999923706055,
+        0.0
+      ],
+      "trust_upper_nm": [
+        208.89999389648438,
+        44.5,
+        0.0,
+        0.0,
+        0.0,
+        63.19999694824219,
+        0.0
+      ]
+    },
+    {
+      "family": "F07",
+      "initial_best_predicted_worst_error_pp": 1.561671495437622,
+      "normalized_parameters": [
+        0.6633826494216919,
+        0.27812498807907104,
+        0.0,
+        0.0,
+        0.23577681183815002,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 212.28244018554688,
+        "R_d": 37.72428894042969,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 44.5,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.35850859712809324,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.5748972296714783,
+      "seed_source_id": "G0956",
+      "step": 362,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        210.0999755859375,
+        39.5,
+        0.0,
+        0.0,
+        29.600000381469727,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        225.89999389648438,
+        44.5,
+        0.0,
+        0.0,
+        38.400001525878906,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "F05",
+      "initial_best_predicted_worst_error_pp": 1.6451701521873474,
+      "normalized_parameters": [
+        0.6915969252586365,
+        0.25603511929512024,
+        0.21875,
+        0.13062499463558197,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 221.31101989746094,
+        "R_d": null,
+        "Rout_c": 35.0,
+        "w_c": 20.899999618530273,
+        "w_q": 40.96561813354492,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.3718790365383029,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.5901336669921875,
+      "seed_source_id": "G0504",
+      "step": 124,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        211.10000610351562,
+        37.5,
+        35.0,
+        17.099998474121094,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        226.89999389648438,
+        42.5,
+        43.69999694824219,
+        20.899999618530273,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "F04",
+      "initial_best_predicted_worst_error_pp": 1.0180622339248657,
+      "normalized_parameters": [
+        0.6515944600105286,
+        0.21031250059604645,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 208.51022338867188,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 33.650001525878906,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.4350646398961544,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.6568670272827148,
+      "seed_source_id": "G0348",
+      "step": 66,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        196.30001831054688,
+        29.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        223.69998168945312,
+        35.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "F11",
+      "initial_best_predicted_worst_error_pp": 1.4224648475646973,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.7478808164596558,
+        0.25619542598724365,
+        0.125,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": 20.0,
+        "Rout_c": 119.66093444824219,
+        "w_c": 40.991268157958984,
+        "w_q": null,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.4260796122252941,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.6618648767471313,
+      "seed_source_id": "G1614",
+      "step": 91,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        112.0999984741211,
+        38.599998474121094,
+        20.0,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        123.9000015258789,
+        43.400001525878906,
+        33.69999694824219,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "F12",
+      "initial_best_predicted_worst_error_pp": 1.3808339834213257,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.7802446484565735,
+        0.15634021162986755,
+        0.3845530152320862,
+        0.0,
+        0.09693705290555954
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": 61.528480529785156,
+        "Rout_c": 124.83914184570312,
+        "w_c": 25.014434814453125,
+        "w_q": null,
+        "w_t": 15.509928703308105
+      },
+      "predicted_average_error_pp": 0.5297106225043535,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.7655158638954163,
+      "seed_source_id": "G1983",
+      "step": 400,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        122.0,
+        23.5,
+        55.5,
+        0.0,
+        15.500000953674316
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        134.0,
+        28.5,
+        70.5,
+        0.0,
+        18.5
+      ]
+    },
+    {
+      "family": "F03",
+      "initial_best_predicted_worst_error_pp": 1.0933876037597656,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.7310599088668823,
+        0.23552869260311127,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": null,
+        "Rout_c": 116.96958923339844,
+        "w_c": 37.68458938598633,
+        "w_q": null,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 0.4806559067219496,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 0.8347347378730774,
+      "seed_source_id": "G0209",
+      "step": 386,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        107.30000305175781,
+        34.599998474121094,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        124.70000457763672,
+        41.39999771118164,
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "family": "F10",
+      "initial_best_predicted_worst_error_pp": 1.1622235178947449,
+      "normalized_parameters": [
+        0.75,
+        0.15937499701976776,
+        0.0,
+        0.0,
+        0.0,
+        0.36619576811790466,
+        0.12818388640880585
+      ],
+      "parameters_nm": {
+        "L_s": 117.18264770507812,
+        "Lout_q": 240.0,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 25.5,
+        "w_t": 20.509422302246094
+      },
+      "predicted_average_error_pp": 0.4911269526928663,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 1.0500401258468628,
+      "seed_source_id": "G1449",
+      "step": 469,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        227.0,
+        25.5,
+        0.0,
+        0.0,
+        0.0,
+        107.79999542236328,
+        20.5
+      ],
+      "trust_upper_nm": [
+        240.0,
+        30.5,
+        0.0,
+        0.0,
+        0.0,
+        126.19999694824219,
+        23.500001907348633
+      ]
+    },
+    {
+      "family": "F06",
+      "initial_best_predicted_worst_error_pp": 3.2460272312164307,
+      "normalized_parameters": [
+        0.6278125047683716,
+        0.15625,
+        0.2762500047683716,
+        0.1693750023841858,
+        0.0,
+        0.0,
+        0.09375
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 200.89999389648438,
+        "R_d": null,
+        "Rout_c": 44.20000076293945,
+        "w_c": 27.100000381469727,
+        "w_q": 25.0,
+        "w_t": 15.0
+      },
+      "predicted_average_error_pp": 0.8940499275922775,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 1.8784359097480774,
+      "seed_source_id": "G0755",
+      "step": 6,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        185.0999755859375,
+        25.0,
+        44.20000076293945,
+        27.100000381469727,
+        0.0,
+        0.0,
+        15.0
+      ],
+      "trust_upper_nm": [
+        200.89999389648438,
+        27.5,
+        51.80000305175781,
+        30.900001525878906,
+        0.0,
+        0.0,
+        17.5
+      ]
+    },
+    {
+      "family": "F08",
+      "initial_best_predicted_worst_error_pp": 2.644534409046173,
+      "normalized_parameters": [
+        0.6318756937980652,
+        0.15625,
+        0.0,
+        0.0,
+        0.19622080028057098,
+        0.0,
+        0.09375
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": 202.20022583007812,
+        "R_d": 31.395328521728516,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 25.0,
+        "w_t": 15.0
+      },
+      "predicted_average_error_pp": 1.323659997433424,
+      "predicted_within_tolerance": true,
+      "predicted_worst_error_pp": 1.8842726945877075,
+      "seed_source_id": "G1158",
+      "step": 110,
+      "substrate": "air",
+      "tracks": true,
+      "trust_lower_nm": [
+        194.1999969482422,
+        25.0,
+        0.0,
+        0.0,
+        28.5,
+        0.0,
+        15.0
+      ],
+      "trust_upper_nm": [
+        209.80001831054688,
+        28.5,
+        0.0,
+        0.0,
+        37.5,
+        0.0,
+        17.5
+      ]
+    },
+    {
+      "family": "F02",
+      "initial_best_predicted_worst_error_pp": 16.071726381778717,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.5813935995101929,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": 186.04595947265625,
+        "Lout_q": null,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": null,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 15.457955002784729,
+      "predicted_within_tolerance": false,
+      "predicted_worst_error_pp": 16.070950031280518,
+      "seed_source_id": "G0122",
+      "step": 31,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        171.50001525878906,
+        0.0
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        202.5,
+        0.0
+      ]
+    },
+    {
+      "family": "F01",
+      "initial_best_predicted_worst_error_pp": 17.591238021850586,
+      "normalized_parameters": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.6875,
+        0.0,
+        0.0
+      ],
+      "parameters_nm": {
+        "L_s": null,
+        "Lout_q": null,
+        "R_d": 110.0,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": null,
+        "w_t": null
+      },
+      "predicted_average_error_pp": 17.2102689743042,
+      "predicted_within_tolerance": false,
+      "predicted_worst_error_pp": 17.591238021850586,
+      "seed_source_id": "G0028",
+      "step": 0,
+      "substrate": "air",
+      "tracks": false,
+      "trust_lower_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        102.20000457763672,
+        0.0,
+        0.0
+      ],
+      "trust_upper_nm": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        110.0,
+        0.0,
+        0.0
+      ]
+    }
+  ],
+  "constraint": "training-only per-family bounds and local multistart trust regions",
+  "ranking": "worst absolute target error, then mean absolute error",
+  "request": [
+    1000.0,
+    1040.0,
+    0.2
+  ],
+  "status": "SURROGATE_PREDICTIONS_ONLY_NOT_HFSS_VERIFIED",
+  "tolerance_pp": 5.0,
+  "trust_fraction": 0.1
+}

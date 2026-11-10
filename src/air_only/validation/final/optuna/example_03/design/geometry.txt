@@ -1,0 +1,9 @@
+Family: F06
+Substrate: air
+Tracks: yes
+Lout_q: 180.52603149414062 nm
+w_q: 42.5 nm
+Rout_c: 41.754753112792969 nm
+w_c: 15 nm
+w_t: 19.5 nm
+Circular dimensions are radii. Square dimensions are side lengths.

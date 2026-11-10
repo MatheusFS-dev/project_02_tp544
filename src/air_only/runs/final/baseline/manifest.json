@@ -1,0 +1,17 @@
+{
+  "fingerprint": "a3acd906dde7ccebac1fe2f4d248a6f4030654a82c3e298b016ab1eacc49213b",
+  "specification": {
+    "architecture": {
+      "depth": 3,
+      "dropout": 0.1,
+      "points": 401,
+      "trunk": "residual",
+      "width": 256
+    },
+    "case": "baseline",
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "initialization": "from scratch",
+    "selected_identity": "baseline",
+    "source_checkpoint_sha256": "92edabc76d4b4de461e44242714e1d86b760d6a467179d92e4a6c2a4c29c7757"
+  }
+}

@@ -196,3 +196,13 @@ python3 src/air_only/final/smoke.py
 ```
 
 This checks every final topology with short real-data GPU training and removes its temporary models. It does not replace `train_all.py`. Default GPU is physical 0. On this PC, the RTX 4070 is physical 1 and can be selected before Python starts with `export CUDA_VISIBLE_DEVICES=1`.
+
+## Final models: five fixed narrow-band HFSS examples
+
+After all four final models are trained:
+
+```bash
+python3 src/air_only/validation/final/run_validation.py
+```
+
+This resumes the same five dataset-supported requests for all four models. It preserves the original HFSS setup, opens graphical AEDT, and saves designs, solver projects, actual spectra, T/R/A and band-detail plots under `src/air_only/validation/final/`. Read `SUMMARY.md` there for the comparison. Identical physical proposals share an explicitly linked real simulation. Rerun the command after an interruption to reuse completed inferences and solves. Dataset, model and configuration fingerprints must remain unchanged.

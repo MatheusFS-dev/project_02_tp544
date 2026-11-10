@@ -1,0 +1,52 @@
+{
+  "band_end_nm": 1040.0,
+  "band_max_absorption_percent": 22.614575955084014,
+  "band_min_absorption_percent": 22.139971186537057,
+  "band_start_nm": 1000.0,
+  "case": "autokeras",
+  "example": "example_04",
+  "family": "F09",
+  "geometry": {
+    "case": "autokeras",
+    "checkpoint_sha256": "69dca22184df958e7713f449df42caa2bdd127a777a971db88cd3c2aa60fc395",
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "family": "F09",
+    "parameters_nm": {
+      "L_s": 56.480377197265625,
+      "Lout_q": 206.6903839111328,
+      "R_d": null,
+      "Rout_c": null,
+      "w_c": null,
+      "w_q": 42.57827377319336,
+      "w_t": null
+    },
+    "predicted_worst_error_pp": 0.42867958545684814,
+    "request": [
+      1000.0,
+      1040.0,
+      0.2
+    ],
+    "substrate": "air",
+    "tracks": false
+  },
+  "hfss_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_ef856fd45df9e307/geometry_ef856fd45df9e307.aedt",
+  "mean_error_pp": 2.479961133074308,
+  "mesh_converged": true,
+  "predicted_worst_error_pp": 0.42867958545684814,
+  "solver": {
+    "actual_target_scores": {
+      "mean_error_pp": 2.479961133074308,
+      "worst_error_pp": 2.614575955084014
+    },
+    "mesh_converged": true,
+    "project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_ef856fd45df9e307/geometry_ef856fd45df9e307.aedt",
+    "samples": 401,
+    "solve_seconds": 234.80654465100088,
+    "spectrum": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_ef856fd45df9e307/spectrum.csv",
+    "stage": "solved",
+    "sweep_converged_and_passive": true
+  },
+  "sweep_converged_and_passive": true,
+  "target_absorption_percent": 20.0,
+  "worst_error_pp": 2.614575955084014
+}

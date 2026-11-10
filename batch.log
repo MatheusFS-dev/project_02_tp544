@@ -1,0 +1,187 @@
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 11:57:52
+Location: /usr/local/AnsysEM25R2/v252/AnsysEM/ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:00:44 AM  Nov 10, 2026
+Temp directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/temp
+Project directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/src
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 41827. 
+      geometry_9f734e3eff978534 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/)
+        geometry_9f734e3eff978534 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:02:19 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:06:19 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:06:20 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:06:20 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:06:20 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:06:21 AM  Nov 10, 2026)
+-- Message Window --
+Stopping Batch Run: 11:09:30 AM  Nov 10, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 11:57:52
+Location: /usr/local/AnsysEM25R2/v252/AnsysEM/ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:12:04 AM  Nov 10, 2026
+Temp directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/temp
+Project directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/src
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 57509. 
+      geometry_2424899b1ad60312 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/)
+        geometry_2424899b1ad60312 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:18:57 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:23:25 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:23:25 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:23:25 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:23:25 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:23:26 AM  Nov 10, 2026)
+      geometry_f439feebfee9f56f (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/)
+        geometry_f439feebfee9f56f (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:13:41 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:17:33 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:17:33 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:17:33 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:17:33 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:17:34 AM  Nov 10, 2026)
+-- Message Window --
+Stopping Batch Run: 11:32:47 AM  Nov 10, 2026
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 11:57:52
+Location: /usr/local/AnsysEM25R2/v252/AnsysEM/ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:32:56 AM  Nov 10, 2026
+Temp directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/temp
+Project directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/src
+ 
+Ansys Electronics Desktop Version 2025.2.0, Build: 2025-05-16 11:57:52
+Location: /usr/local/AnsysEM25R2/v252/AnsysEM/ansysedt.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:37:25 AM  Nov 10, 2026
+Temp directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/temp
+Project directory: /media/matheus.f@local.inatel.br/ssd01/Ansys/src
+-- Message Window --
+      *Global - Messages
+        [info] GRPC server running on port: 41543. 
+      geometry_18431b7eec04b2f5 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_18431b7eec04b2f5/)
+        geometry_18431b7eec04b2f5 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:08:39 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:12:55 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:12:55 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:12:55 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:12:57 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:12:57 PM  Nov 10, 2026)
+      geometry_2a9d70cfde9cc3d0 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_2a9d70cfde9cc3d0/)
+        geometry_2a9d70cfde9cc3d0 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:43:49 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:47:31 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:47:31 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:47:31 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:47:32 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:47:33 AM  Nov 10, 2026)
+      geometry_305795dff98cd517 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_305795dff98cd517/)
+        geometry_305795dff98cd517 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:49:03 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:53:52 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:53:52 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:53:52 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:53:53 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:53:53 AM  Nov 10, 2026)
+      geometry_33fb23079d585a71 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_33fb23079d585a71/)
+        geometry_33fb23079d585a71 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:14:34 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:19:27 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:19:27 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:19:27 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:19:29 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:19:29 PM  Nov 10, 2026)
+      geometry_3985e04b0c0e691c (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_3985e04b0c0e691c/)
+        geometry_3985e04b0c0e691c (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:50:41 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:55:28 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:55:28 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:55:28 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:55:29 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:55:30 PM  Nov 10, 2026)
+      geometry_5e4d79c1ca0b8c50 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_5e4d79c1ca0b8c50/)
+        geometry_5e4d79c1ca0b8c50 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (01:02:57 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (01:08:06 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (01:08:06 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (01:08:06 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (01:08:08 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (01:08:08 PM  Nov 10, 2026)
+      geometry_946b8f06efcb9868 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_946b8f06efcb9868/)
+        geometry_946b8f06efcb9868 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:21:08 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:25:56 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:25:56 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:25:56 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:25:58 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:25:58 PM  Nov 10, 2026)
+      geometry_a328917382926a01 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_a328917382926a01/)
+        geometry_a328917382926a01 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:38:54 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (11:42:14 AM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (11:42:14 AM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (11:42:14 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:42:15 AM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (11:42:15 AM  Nov 10, 2026)
+      geometry_b7e64c458309eaee (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_b7e64c458309eaee/)
+        geometry_b7e64c458309eaee (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:39:23 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:43:29 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:43:29 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:43:29 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:43:30 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:43:31 PM  Nov 10, 2026)
+      geometry_cab6dca120944d85 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_cab6dca120944d85/)
+        geometry_cab6dca120944d85 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:33:37 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:37:51 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:37:51 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:37:51 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:37:52 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:37:52 PM  Nov 10, 2026)
+      geometry_d4b77d717c573da5 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_d4b77d717c573da5/)
+        geometry_d4b77d717c573da5 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:02:26 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:07:12 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:07:12 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:07:12 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:07:13 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:07:13 PM  Nov 10, 2026)
+      geometry_da592dd9b5b140a9 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_da592dd9b5b140a9/)
+        geometry_da592dd9b5b140a9 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:27:24 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:32:09 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:32:09 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:32:09 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:32:11 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:32:11 PM  Nov 10, 2026)
+      geometry_ef856fd45df9e307 (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_ef856fd45df9e307/)
+        geometry_ef856fd45df9e307 (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:57:10 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (01:01:24 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (01:01:24 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (01:01:24 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (01:01:26 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (01:01:26 PM  Nov 10, 2026)
+      geometry_f9e2e0958cb9c4ab (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_f9e2e0958cb9c4ab/)
+        geometry_f9e2e0958cb9c4ab (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (11:55:27 AM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:00:44 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:00:44 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:00:44 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:00:45 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:00:45 PM  Nov 10, 2026)
+      geometry_fe5f60fb9bfb106a (/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_fe5f60fb9bfb106a/)
+        geometry_fe5f60fb9bfb106a (Modal Network)
+          [warning] :  Solving inside a solid with high conductivity may require a large mesh (12:45:07 PM  Nov 10, 2026)
+          [info] An interpolating frequency sweep with 401 points has been started using HFSS - Solving Distributed. (12:48:56 PM  Nov 10, 2026)
+          [info] Interpolating frequency sweep complete. Converged. (12:48:56 PM  Nov 10, 2026)
+          [info] Normal completion of simulation on server: Local Machine. (12:48:56 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:48:57 PM  Nov 10, 2026)
+          [warning] The variable  'Phase' doesn't have an associated sweep and is excluded from the definition of trace. (12:48:58 PM  Nov 10, 2026)
+-- Message Window --
+Stopping Batch Run: 1:37:29 PM  Nov 10, 2026

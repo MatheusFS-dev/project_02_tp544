@@ -1,0 +1,23 @@
+{
+  "case": "ray",
+  "checkpoint_sha256": "ddfa10996b9d1729f5375c9af6f84da921832ab956864c9b0ec79459084753f9",
+  "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+  "family": "F06",
+  "parameters_nm": {
+    "L_s": null,
+    "Lout_q": 180.52603149414062,
+    "R_d": null,
+    "Rout_c": 41.75475311279297,
+    "w_c": 15.0,
+    "w_q": 42.5,
+    "w_t": 19.5
+  },
+  "predicted_worst_error_pp": 0.3771454095840454,
+  "request": [
+    750.0,
+    780.0,
+    0.25
+  ],
+  "substrate": "air",
+  "tracks": true
+}

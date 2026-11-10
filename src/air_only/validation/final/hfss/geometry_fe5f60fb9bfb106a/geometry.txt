@@ -1,0 +1,8 @@
+Family: F12
+Substrate: air
+Tracks: yes
+Rout_c: 86.984519958496094 nm
+w_c: 40.734500885009766 nm
+R_d: 29.652643203735352 nm
+w_t: 27.400218963623047 nm
+Circular dimensions are radii. Square dimensions are side lengths.

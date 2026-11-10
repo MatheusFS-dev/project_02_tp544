@@ -1,0 +1,265 @@
+2026-11-10T11:00:37.778588 Starting hfss. Log: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/logs/hfss.log
+Paste geometry.json from final inference, or press Enter to enter dimensions manually.
+Geometry JSON path (blank for manual entry): Family: F07
+Substrate: air
+Tracks: no
+Lout_q: 239 nm
+R_d: 54.400001525878906 nm
+w_q: 50 nm
+Circular dimensions are radii. Square dimensions are side lengths.
+Options: simulate also solves the full optical sweep. Generate creates the GUI project only.
+Action [simulate/generate, default simulate]: Copying received project without changing the original
+Starting visible AEDT desktop on port 41827
+Waiting for graphical AEDT startup: 0s elapsed
+Waiting for graphical AEDT startup: 3s elapsed
+Waiting for graphical AEDT startup: 6s elapsed
+Waiting for graphical AEDT startup: 9s elapsed
+Waiting for graphical AEDT startup: 12s elapsed
+Waiting for graphical AEDT startup: 15s elapsed
+Waiting for graphical AEDT startup: 18s elapsed
+Opening GUI project /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt
+PyAEDT INFO: Python version 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0].
+PyAEDT INFO: PyAEDT version 0.28.0.
+PyAEDT INFO: Initializing Desktop session.
+PyAEDT INFO: AEDT version 2025.2.
+PyAEDT INFO: AEDT installation Path /usr/local/AnsysEM25R2/v252/AnsysEM
+PyAEDT INFO: Connected to AEDT gRPC session on port 41827.
+PyAEDT WARNING: Service Pack is not detected. PyAEDT is currently connecting in Insecure Mode.
+PyAEDT WARNING: Please download and install latest Service Pack to use connect to AEDT in Secure Mode.
+PyAEDT INFO: Project geometry_9f734e3eff978534 has been opened.
+PyAEDT INFO: Added design 'geometry_9f734e3eff978534' of type HFSS.
+PyAEDT INFO: AEDT objects correctly read
+Building original gold dispersion and geometry
+PyAEDT INFO: Modeler class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt correctly loaded. Elapsed time: 0m 2sec
+PyAEDT INFO: aedt file load time 1.911694049835205
+PyAEDT INFO: Dataset eps_Au$ exists.
+PyAEDT WARNING: Dataset eps_Au already exists
+PyAEDT INFO: Dataset sig_Au$ exists.
+PyAEDT WARNING: Dataset sig_Au already exists
+PyAEDT INFO: Materials class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Union of 2 objects has been executed.
+Applying original periodic boundaries, Floquet ports and 401-point sweep
+PyAEDT INFO: Boundary Lattice Pair LatticePair_W1UXTR has been created.
+PyAEDT INFO: Boundary Lattice Pair LatticePair_2MC3VC has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetCima has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetBaixo has been created.
+PyAEDT INFO: Project geometry_9f734e3eff978534 Saved correctly
+PyAEDT INFO: Project geometry_9f734e3eff978534 Saved correctly
+Solving original 401-point HFSS sweep. This takes several minutes.
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+PyAEDT INFO: Solving design setup Setup1
+PyAEDT INFO: Design setup Setup1 solved correctly in 0.0h 3.0m 59.0s
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+Exporting both incident polarizations and checking power conservation
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: aedt file load time 0.048601627349853516
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Post class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Project geometry_9f734e3eff978534 Saved correctly
+Project ready: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt
+{
+  "stage": "solved",
+  "project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/geometry_9f734e3eff978534.aedt",
+  "spectrum": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_9f734e3eff978534/spectrum.csv",
+  "samples": 401,
+  "solve_seconds": 239.5048537850089,
+  "mesh_converged": true,
+  "sweep_converged_and_passive": true,
+  "actual_target_scores": {
+    "worst_error_pp": 7.792918635541913,
+    "mean_error_pp": 6.9711123178845105
+  }
+}
+Leaving the geometry project open in the graphical desktop
+PyAEDT INFO: Desktop has been released.
+2026-11-10T11:06:21.861293 Completed hfss
+2026-11-10T11:11:58.106614 Starting hfss. Log: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/logs/hfss.log
+Paste geometry.json from final inference, or press Enter to enter dimensions manually.
+Geometry JSON path (blank for manual entry): Family: F11
+Substrate: air
+Tracks: no
+R_d: 43.699996948242188 nm
+Rout_c: 90.100006103515625 nm
+w_c: 20.805864334106445 nm
+Circular dimensions are radii. Square dimensions are side lengths.
+Options: simulate also solves the full optical sweep. Generate creates the GUI project only.
+Action [simulate/generate, default simulate]: Copying received project without changing the original
+Starting visible AEDT desktop on port 57509
+Waiting for graphical AEDT startup: 0s elapsed
+Waiting for graphical AEDT startup: 3s elapsed
+Waiting for graphical AEDT startup: 6s elapsed
+Waiting for graphical AEDT startup: 9s elapsed
+Waiting for graphical AEDT startup: 12s elapsed
+Waiting for graphical AEDT startup: 15s elapsed
+Opening GUI project /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt
+PyAEDT INFO: Python version 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0].
+PyAEDT INFO: PyAEDT version 0.28.0.
+PyAEDT INFO: Initializing Desktop session.
+PyAEDT INFO: AEDT version 2025.2.
+PyAEDT INFO: AEDT installation Path /usr/local/AnsysEM25R2/v252/AnsysEM
+PyAEDT INFO: Connected to AEDT gRPC session on port 57509.
+PyAEDT WARNING: Service Pack is not detected. PyAEDT is currently connecting in Insecure Mode.
+PyAEDT WARNING: Please download and install latest Service Pack to use connect to AEDT in Secure Mode.
+PyAEDT INFO: Project geometry_f439feebfee9f56f has been opened.
+PyAEDT INFO: Added design 'geometry_f439feebfee9f56f' of type HFSS.
+PyAEDT INFO: AEDT objects correctly read
+Building original gold dispersion and geometry
+PyAEDT INFO: Modeler class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt correctly loaded. Elapsed time: 0m 2sec
+PyAEDT INFO: aedt file load time 2.1548075675964355
+PyAEDT INFO: Dataset eps_Au$ exists.
+PyAEDT WARNING: Dataset eps_Au already exists
+PyAEDT INFO: Dataset sig_Au$ exists.
+PyAEDT WARNING: Dataset sig_Au already exists
+PyAEDT INFO: Materials class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Union of 2 objects has been executed.
+Applying original periodic boundaries, Floquet ports and 401-point sweep
+PyAEDT INFO: Boundary Lattice Pair LatticePair_Y43VEB has been created.
+PyAEDT INFO: Boundary Lattice Pair LatticePair_KVYLR2 has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetCima has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetBaixo has been created.
+PyAEDT INFO: Project geometry_f439feebfee9f56f Saved correctly
+PyAEDT INFO: Project geometry_f439feebfee9f56f Saved correctly
+Solving original 401-point HFSS sweep. This takes several minutes.
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+PyAEDT INFO: Solving design setup Setup1
+PyAEDT INFO: Design setup Setup1 solved correctly in 0.0h 3.0m 51.0s
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+Exporting both incident polarizations and checking power conservation
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: aedt file load time 0.05196547508239746
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Post class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Project geometry_f439feebfee9f56f Saved correctly
+Project ready: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt
+{
+  "stage": "solved",
+  "project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/geometry_f439feebfee9f56f.aedt",
+  "spectrum": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_f439feebfee9f56f/spectrum.csv",
+  "samples": 401,
+  "solve_seconds": 231.40793299299548,
+  "mesh_converged": true,
+  "sweep_converged_and_passive": true,
+  "actual_target_scores": {
+    "worst_error_pp": 8.038993751153834,
+    "mean_error_pp": 5.90612247850772
+  }
+}
+Leaving the geometry project open in the graphical desktop
+PyAEDT INFO: Desktop has been released.
+2026-11-10T11:17:34.368446 Completed hfss
+2026-11-10T11:17:41.484760 Starting hfss. Log: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/logs/hfss.log
+Paste geometry.json from final inference, or press Enter to enter dimensions manually.
+Geometry JSON path (blank for manual entry): Family: F12
+Substrate: air
+Tracks: yes
+R_d: 50.563465118408203 nm
+Rout_c: 82.929039001464844 nm
+w_c: 20.172479629516602 nm
+w_t: 18.5 nm
+Circular dimensions are radii. Square dimensions are side lengths.
+Options: simulate also solves the full optical sweep. Generate creates the GUI project only.
+Action [simulate/generate, default simulate]: Copying received project without changing the original
+Opening GUI project /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt
+PyAEDT INFO: Python version 3.12.3 (main, Aug 31 2026, 10:18:26) [GCC 13.3.0].
+PyAEDT INFO: PyAEDT version 0.28.0.
+PyAEDT INFO: Initializing Desktop session.
+PyAEDT INFO: AEDT version 2025.2.
+PyAEDT INFO: AEDT installation Path /usr/local/AnsysEM25R2/v252/AnsysEM
+PyAEDT INFO: Connected to AEDT gRPC session on port 57509.
+PyAEDT WARNING: Service Pack is not detected. PyAEDT is currently connecting in Insecure Mode.
+PyAEDT WARNING: Please download and install latest Service Pack to use connect to AEDT in Secure Mode.
+PyAEDT INFO: Project geometry_2424899b1ad60312 has been opened.
+PyAEDT INFO: Added design 'geometry_2424899b1ad60312' of type HFSS.
+PyAEDT INFO: AEDT objects correctly read
+Building original gold dispersion and geometry
+PyAEDT INFO: Modeler class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt correctly loaded. Elapsed time: 0m 2sec
+PyAEDT INFO: aedt file load time 1.8770880699157715
+PyAEDT INFO: Dataset eps_Au$ exists.
+PyAEDT WARNING: Dataset eps_Au already exists
+PyAEDT INFO: Dataset sig_Au$ exists.
+PyAEDT WARNING: Dataset sig_Au already exists
+PyAEDT INFO: Materials class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Parsing design objects. This operation can take time
+PyAEDT INFO: Refreshing bodies from Object Info
+PyAEDT INFO: Bodies Info Refreshed Elapsed time: 0m 0sec
+PyAEDT INFO: 3D Modeler objects parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Union of 6 objects has been executed.
+Applying original periodic boundaries, Floquet ports and 401-point sweep
+PyAEDT INFO: Boundary Lattice Pair LatticePair_34Y48A has been created.
+PyAEDT INFO: Boundary Lattice Pair LatticePair_B1JEHO has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetCima has been created.
+PyAEDT INFO: Boundary Floquet Port FloquetBaixo has been created.
+PyAEDT INFO: Project geometry_2424899b1ad60312 Saved correctly
+PyAEDT INFO: Project geometry_2424899b1ad60312 Saved correctly
+Solving original 401-point HFSS sweep. This takes several minutes.
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+PyAEDT INFO: Solving design setup Setup1
+PyAEDT INFO: Design setup Setup1 solved correctly in 0.0h 4.0m 27.0s
+PyAEDT INFO: Key Desktop/ActiveDSOConfigurations/HFSS correctly changed.
+Exporting both incident polarizations and checking power conservation
+PyAEDT INFO: Parsing /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt.
+PyAEDT INFO: File /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: aedt file load time 0.05894637107849121
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: PostProcessor class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Post class has been initialized! Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly loaded. Elapsed time: 0m 0sec
+PyAEDT INFO: Solution Correctly parsed. Elapsed time: 0m 0sec
+PyAEDT INFO: Project geometry_2424899b1ad60312 Saved correctly
+Project ready: /media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt
+{
+  "stage": "solved",
+  "project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/geometry_2424899b1ad60312.aedt",
+  "spectrum": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final/hfss/geometry_2424899b1ad60312/spectrum.csv",
+  "samples": 401,
+  "solve_seconds": 267.2167115300108,
+  "mesh_converged": true,
+  "sweep_converged_and_passive": true,
+  "actual_target_scores": {
+    "worst_error_pp": 30.328852072163627,
+    "mean_error_pp": 28.650160414699542
+  }
+}
+Leaving the geometry project open in the graphical desktop
+PyAEDT INFO: Desktop has been released.
+2026-11-10T11:23:26.460834 Completed hfss

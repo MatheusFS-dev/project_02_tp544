@@ -1,0 +1,7 @@
+Family: F09
+Substrate: air
+Tracks: no
+Lout_q: 231.23017883300781 nm
+w_q: 49.090187072753906 nm
+L_s: 63.800003051757812 nm
+Circular dimensions are radii. Square dimensions are side lengths.

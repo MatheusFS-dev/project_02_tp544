@@ -1,0 +1,19 @@
+{
+  "family": "F09",
+  "parameters_nm": {
+    "L_s": 40.0,
+    "Lout_q": 240.0,
+    "R_d": null,
+    "Rout_c": null,
+    "w_c": null,
+    "w_q": 44.34678649902344,
+    "w_t": null
+  },
+  "request": [
+    1250.0,
+    1300.0,
+    0.15
+  ],
+  "substrate": "air",
+  "tracks": false
+}

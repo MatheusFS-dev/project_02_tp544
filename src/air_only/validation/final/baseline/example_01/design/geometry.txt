@@ -1,0 +1,7 @@
+Family: F11
+Substrate: air
+Tracks: no
+Rout_c: 123.39845275878906 nm
+w_c: 39.397617340087891 nm
+R_d: 63.790367126464844 nm
+Circular dimensions are radii. Square dimensions are side lengths.

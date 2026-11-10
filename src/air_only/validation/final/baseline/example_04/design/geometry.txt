@@ -1,0 +1,8 @@
+Family: F10
+Substrate: air
+Tracks: yes
+Lout_q: 240 nm
+w_q: 30.5 nm
+L_s: 113.91116333007812 nm
+w_t: 23.500001907348633 nm
+Circular dimensions are radii. Square dimensions are side lengths.

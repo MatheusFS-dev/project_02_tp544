@@ -1,0 +1,17 @@
+{
+  "fingerprint": "96b1f93c2bcf70e3ec9314a3986d38e4f4f95d4d92fe554f7e38f8d99e5e7ae8",
+  "specification": {
+    "architecture": {
+      "depth": 3,
+      "dropout": 0.0,
+      "points": 401,
+      "trunk": "plain",
+      "width": 256
+    },
+    "case": "optuna",
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "initialization": "from scratch",
+    "selected_identity": "16",
+    "source_checkpoint_sha256": "d5d1c7f2c04fa52d6e17bdc96475c596d8d1cbe9b3ae41ae99c06ac02f2cae98"
+  }
+}

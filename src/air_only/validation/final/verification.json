@@ -1,0 +1,19 @@
+{
+  "timestamp": "2026-11-10T13:09:13-03:00",
+  "validated_proposals": 20,
+  "unique_actual_hfss_solves": 15,
+  "converged_and_passive": true,
+  "all_artifact_links_and_401_point_spectra_verified": true,
+  "recomputed_target_scores_match": true,
+  "original_sources_unchanged": [
+    "Amostras_simuladas_10_por_familia.aedt",
+    "Geometrias_Trabalho3.aedt",
+    "HFSS_Base_Dados.py"
+  ],
+  "old_three_examples_removed": true,
+  "cached_resume_inferences": 20,
+  "cached_resume_hfss_results": 20,
+  "repeated_hfss_solves_on_resume": 0,
+  "tests": "22 passed",
+  "check": "git diff --check passed"
+}

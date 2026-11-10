@@ -1,0 +1,31 @@
+{
+  "fingerprint": "ef856fd45df9e307e13d41a12006e8570905fdc0715f2d9f2f83675849487559",
+  "specification": {
+    "builder_sha256": "6134b6b5ef6162eac16af5809fdc452e1104f2fc44d89d76647d194523e870a6",
+    "geometry": {
+      "family": "F09",
+      "parameters_nm": {
+        "L_s": 56.480377197265625,
+        "Lout_q": 206.6903839111328,
+        "R_d": null,
+        "Rout_c": null,
+        "w_c": null,
+        "w_q": 42.57827377319336,
+        "w_t": null
+      },
+      "request": [
+        1000.0,
+        1040.0,
+        0.2
+      ],
+      "substrate": "air",
+      "tracks": false
+    },
+    "settings": {
+      "cores": 4,
+      "installation": "/usr/local/AnsysEM25R2/v252/AnsysEM",
+      "version": "2025.2"
+    },
+    "template_sha256": "843daeed0bf128f6a3396e7551d11e185b0172ebb176eefaa8b4a1d119a1d1e4"
+  }
+}

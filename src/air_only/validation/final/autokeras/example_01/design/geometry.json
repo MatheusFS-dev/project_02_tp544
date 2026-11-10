@@ -1,0 +1,23 @@
+{
+  "case": "autokeras",
+  "checkpoint_sha256": "69dca22184df958e7713f449df42caa2bdd127a777a971db88cd3c2aa60fc395",
+  "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+  "family": "F09",
+  "parameters_nm": {
+    "L_s": 95.46896362304688,
+    "Lout_q": 220.7161102294922,
+    "R_d": null,
+    "Rout_c": null,
+    "w_c": null,
+    "w_q": 42.88070297241211,
+    "w_t": null
+  },
+  "predicted_worst_error_pp": 0.256839394569397,
+  "request": [
+    500.0,
+    510.0,
+    0.4
+  ],
+  "substrate": "air",
+  "tracks": false
+}

@@ -1,0 +1,13 @@
+{
+  "actual_target_scores": {
+    "mean_error_pp": 2.491169212267962,
+    "worst_error_pp": 2.9857645694383983
+  },
+  "mesh_converged": true,
+  "project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_f9e2e0958cb9c4ab/geometry_f9e2e0958cb9c4ab.aedt",
+  "samples": 401,
+  "solve_seconds": 299.0587915220094,
+  "spectrum": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_f9e2e0958cb9c4ab/spectrum.csv",
+  "stage": "solved",
+  "sweep_converged_and_passive": true
+}

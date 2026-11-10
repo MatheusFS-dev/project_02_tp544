@@ -1,0 +1,38 @@
+{
+  "fingerprint": "a08e85f4838f99829f64e1aa31ea53bdc78bdafca14f64cf325f01c89b68668f",
+  "specification": {
+    "case": "ray",
+    "checkpoint_sha256": "ddfa10996b9d1729f5375c9af6f84da921832ab956864c9b0ec79459084753f9",
+    "config": {
+      "batch_size": 64,
+      "candidates": 1,
+      "data": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/data/processed/final_flat/dataset.npz",
+      "depth": 3,
+      "device": "cuda:0",
+      "dropout": 0.1,
+      "epochs": 300,
+      "learning_rate": 0.001,
+      "max_eval": 0,
+      "max_train": 0,
+      "min_delta": 1e-05,
+      "multistarts": 8,
+      "optimization_steps": 500,
+      "output": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/runs/final",
+      "patience": 30,
+      "raw": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/data/raw/treinar",
+      "seed": 42,
+      "threads": 2,
+      "tolerance": 0.05,
+      "trunk": "residual",
+      "trust_fraction": 0.1,
+      "weight_decay": 0.0001,
+      "width": 256
+    },
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "request": [
+      1000.0,
+      1040.0,
+      0.2
+    ]
+  }
+}

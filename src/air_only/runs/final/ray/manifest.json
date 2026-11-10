@@ -1,0 +1,17 @@
+{
+  "fingerprint": "ef4c21649fd156ccc7a4e4a86fbb7e44c60befb992669711ef87fc2eb36116ce",
+  "specification": {
+    "architecture": {
+      "depth": 3,
+      "dropout": 0.0,
+      "points": 401,
+      "trunk": "plain",
+      "width": 256
+    },
+    "case": "ray",
+    "dataset_sha256": "68250214c99374c2168d083ce09ff9a0a464a405e75190bebf86ba7bf69ca9a1",
+    "initialization": "from scratch",
+    "selected_identity": "candidate_3793e_00046_46_depth=3,dropout=0.0000,trunk=plain,width=256_2026-11-09_15-46-40",
+    "source_checkpoint_sha256": "cebc1860e121d443832ebbc01bc23972ed214bf2acd96076b498fad511d40797"
+  }
+}
