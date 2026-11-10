@@ -14,7 +14,7 @@ dependencies = [
     "ray[tune]==2.49.2",
     "pyarrow==20.0.0",
     "autokeras==3.0.0",
-    "keras==3.11.3",
+    "keras==3.15.0",
     "keras-tuner==1.4.7",
     "grpcio==1.74.0",
     "protobuf==5.29.5",
