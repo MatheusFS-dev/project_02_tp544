@@ -1,0 +1,65 @@
+% Complete procedure from final/workflow.py, flat/optimize.py and final/hfss.py.
+% Network detail preserved from model.py and saved final metrics architecture.
+% Dependencies: amsmath, amssymb, xcolor, tikz, arrows.meta.
+% Intended full-page width: approximately 190 mm. Main text: 8 pt.
+\begin{tikzpicture}[x=1mm,y=1mm,font=\sffamily\fontsize{8}{9.5}\selectfont,
+box/.style={draw=black!55,rounded corners=1mm,fill=blue!5,align=center,text width=57mm,minimum height=8mm,inner sep=1.5mm},
+arr/.style={-{Stealth[length=1.6mm]},line width=.45pt},
+block/.style={box,fill=orange!9},note/.style={align=center,text width=76mm}]
+\path[use as bounding box] (-46,-1) rectangle (141,265);
+\node[font=\sffamily\bfseries\fontsize{12}{14}\selectfont] at (47,260) {AutoKeras: complete inverse-design procedure};
+\node[box] (raw) at (0,240) {\textbf{Offline: prepare received HFSS data}\\2,000 spectra $\to$ 1,926 unique geometries\\Group duplicates, normalize geometry};
+\node[box] (train) at (0,219) {\textbf{Retrain selected case topology from scratch}\\1,541 training / 385 validation / 0 test\\Select final checkpoint by validation only};
+\node[box,fill=green!8] (request) at (0,185) {\textbf{User request}\\Wavelength band $[\lambda_{\min},\lambda_{\max}]$ (nm)\\Constant target absorption $A^\star$ (\% $\to$ fraction)};
+\node[box] (starts) at (0,162) {\textbf{Initialize all families F01--F12}\\8 training-only starts per family\\Training bounds, local trust radius: 10\% of span};
+\node[box] (surrogate) at (0,139) {\textbf{Evaluate frozen case surrogate}\\Family $f$ + candidate geometry $\mathbf{p}$\\Predict 401-point T/R/A spectra (detail at right)};
+\node[box] (score) at (0,115) {\textbf{Evaluate requested absorption band}\\Interpolate exact band endpoints\\$e_\infty=\max_j|\widehat A_j-A^\star|$\\$e_{\rm mean}=\frac{\int|\widehat A(\lambda)-A^\star|\,d\lambda}{\lambda_{\max}-\lambda_{\min}}$};
+\node[box] (update) at (0,86) {\textbf{Update geometry only: 500 Adam steps}\\Gradient of $\mathrm{mean}(e_\infty)+0.001\,\mathrm{mean}(e_{\rm mean})$\\Project to bounds, mask and positive ring holes};
+\node[box] (rank) at (0,59) {\textbf{Rank candidates: $e_\infty$, then $e_{\rm mean}$}\\Best geometry in native nm: \texttt{geometry.json}\\Predicted spectra and errors, pending HFSS};
+\node[box] (hfss) at (0,34) {\textbf{Run separate HFSS verification}\\Copy received template, apply selected air geometry\\Preserve materials, boundaries and Floquet ports\\Solve original 401-point sweep};
+\node[box,fill=green!8] (actual) at (0,9) {\textbf{Evaluate actual HFSS T/R/A}\\Compare actual absorption with request\\Endpoint interpolation, worst and mean errors};
+\draw[arr] (raw) -- (train);
+\draw[arr] (request) -- (starts);
+\draw[arr] (starts) -- (surrogate);
+\draw[arr] (surrogate) -- (score);
+\draw[arr] (score) -- (update);
+\draw[arr] (rank) -- (hfss);
+\draw[arr] (hfss) -- (actual);
+
+
+\draw[arr,dashed] (train.west) -- (-44,219) -- (-44,139) -- (surrogate.west);
+\node[rotate=90,fill=white,inner sep=1mm,font=\sffamily\fontsize{7}{8}\selectfont] at (-44,178) {Load selected weights};
+\draw[arr] (update.west) -- (-36,86) -- (-36,135) -- ([yshift=-4mm]surrogate.west);
+\node[rotate=90,fill=white,inner sep=.6mm,font=\sffamily\fontsize{7}{8}\selectfont] at (-36,111) {Repeat};
+\draw[arr] (score.east) -- (36,115) -- (36,59) -- (rank.east);
+\node[rotate=90,fill=white,inner sep=.6mm,font=\sffamily\fontsize{7}{8}\selectfont] at (36,86) {After final evaluation};
+\draw[black!35,dashed,rounded corners=2mm] (49,22) rectangle (140,239);
+\node[note,font=\sffamily\fontsize{8}{10}\selectfont] at (99,244) {Expanded forward evaluation inside the optimization loop};
+\begin{scope}[shift={(100,25)}]
+\node[font=\sffamily\bfseries\fontsize{11}{13}\selectfont] at (0,207) {AutoKeras: surrogate detail};
+\node[note] at (0,199) {Family-conditioned forward spectrum model (PyTorch)};
+\node[box] (inputs) at (0,187) {Family index $f\in\{0,\ldots,11\}$ (F01--F12)\\Geometry $\mathbf{p}\in\mathbb{R}^{7}$, normalized by fixed scales};
+\node[box] (encode) at (0,171) {Embedding lookup $e(f)\in\mathbb{R}^{16}$\\Family mask lookup $m(f)\in\{0,1\}^{7}$};
+\draw[arr] (inputs) -- (encode);
+\node[box] (concat) at (0,154) {Concatenate $[e(f),\;\mathbf{p}\odot m(f),\;m(f)]$\\$16+7+7=30$ features};
+\draw[arr] (encode) -- (concat);
+\node[box] (stem) at (0,139) {Linear $30\to 128$ (bias) $\to$ SiLU};
+\draw[arr] (concat) -- (stem);
+\coordinate (split1) at (0,127);
+\node[block] (b1) at (0,117) {Block 1: Linear $128\to 128$ (bias)\\LayerNorm $(128)$ $\to$ SiLU\\Dropout $p=0$ (identity)};
+\draw[arr] (stem) -- (b1);
+\coordinate (split2) at (0,98);
+\node[block] (b2) at (0,88) {Block 2: Linear $128\to 128$ (bias)\\LayerNorm $(128)$ $\to$ SiLU\\Dropout $p=0$ (identity)};
+\draw[arr] (b1) -- (b2);
+\coordinate (split3) at (0,69);
+\node[block] (b3) at (0,59) {Block 3: Linear $128\to 128$ (bias)\\LayerNorm $(128)$ $\to$ SiLU\\Dropout $p=0$ (identity)};
+\draw[arr] (b2) -- (b3);
+\node[box] (head) at (0,33) {Linear $128\to 1203$ (bias)\\Reshape: $1203\to 401\times3$ logits};
+\draw[arr] (b3) -- (head);
+\node[box,fill=green!8] (output) at (0,15) {Softmax over T/R/A at each wavelength\\$\widehat{\mathbf{Y}}\in[0,1]^{401\times3}$, $T_j+R_j+A_j=1$};
+\draw[arr] (head) -- (output);
+\node[note,font=\sffamily\fontsize{7}{8}\selectfont] at (0,2) {Batch dimension omitted. Plain blocks are sequential, with no skip additions.};
+
+\end{scope}
+\draw[dashed,black!55] (surrogate.east) -- (49,139);
+\end{tikzpicture}

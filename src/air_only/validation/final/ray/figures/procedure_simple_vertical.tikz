@@ -1,0 +1,26 @@
+% Simplified procedure, source: final/workflow.py, flat/optimize.py, final/hfss.py.
+% Model identity checked against runs/final/ray/final/metrics.json.
+% Dependencies: xcolor, tikz, arrows.meta. Intended width: approximately 95 mm.
+\begin{tikzpicture}[x=1mm,y=1mm,font=\sffamily\fontsize{9}{11}\selectfont,
+box/.style={draw=black!55,rounded corners=1.5mm,align=center,text width=64mm,inner sep=2mm,minimum height=15mm},
+process/.style={box,fill=blue!5},io/.style={box,fill=green!9},
+arr/.style={-{Stealth[length=1.8mm]},line width=.55pt}]
+\path[use as bounding box] (-39,0) rectangle (53,185);
+\node[font=\sffamily\bfseries\fontsize{12}{14}\selectfont] at (7,180) {Ray: from target to geometry};
+\node[align=center,font=\sffamily\fontsize{8}{10}\selectfont] at (7,172) {Model trained beforehand on HFSS examples};
+\node[io] (input) at (0,156) {\textbf{1. Your inputs}\\Wavelength range (nm)\\Desired absorption (\%)};
+\node[process] (search) at (0,132) {\textbf{2. Propose a geometry}\\The optimizer chooses a shape family\\and its dimensions};
+\node[process] (model) at (0,108) {\textbf{3. Predict the optical response}\\Frozen Ray neural network\\Geometry in $\to$ T/R/A spectra out};
+\node[process] (compare) at (0,84) {\textbf{4. Compare with your target}\\Check predicted absorption\\across your wavelength range};
+\node[io] (geometry) at (0,60) {\textbf{5. Proposed design output}\\Best shape family and dimensions (nm)\\\texttt{geometry.json} + predicted spectra};
+\node[process] (hfss) at (0,36) {\textbf{6. Verify separately in HFSS}\\Build the proposed geometry\\and simulate its optical response};
+\node[io] (actual) at (0,12) {\textbf{7. Verification output}\\Simulated transmission, reflection, absorption\\and actual error relative to your target};
+\draw[arr] (input) -- (search);
+\draw[arr] (search) -- node[right,font=\sffamily\fontsize{7}{8}\selectfont] {candidate} (model);
+\draw[arr] (model) -- (compare);
+\draw[arr] (compare) -- node[right,font=\sffamily\fontsize{7}{8}\selectfont] {after search} (geometry);
+\draw[arr] (geometry) -- (hfss);
+\draw[arr] (hfss) -- (actual);
+\draw[arr] (compare.east) -- (46,84) -- (46,132) -- (search.east);
+\node[rotate=90,fill=white,inner sep=1mm,align=center,font=\sffamily\fontsize{8}{10}\selectfont] at (46,108) {Adjust geometry and repeat};
+\end{tikzpicture}
