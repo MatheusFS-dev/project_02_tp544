@@ -1,0 +1,18 @@
+% Native coordinates in nm. Every cell is 320 nm wide and uses the same scale.
+\begin{tikzpicture}[font=\footnotesize,x=.0065cm,y=.0065cm,
+ gold/.style={draw=orange!70!black,fill=orange!45,even odd rule},cell/.style={draw=gray!70,thin}]
+\newcommand{\cell}[4]{\begin{scope}[shift={(#1,#2)}]\draw[cell] (-160,-160) rectangle (160,160);#4\node[below,font=\footnotesize] at (0,-160) {#3};\end{scope}}
+\newcommand{\tracks}[3]{\foreach \a in {0,90,180,270}{\begin{scope}[rotate=\a]\filldraw[gold] (-#3/2,#1) rectangle (#3/2,#2);\end{scope}}}
+% Optuna winners. Square outer half-size is Lout_q/2 and ring-hole half-size is Lout_q/2-w_q.
+\cell{0}{0}{1: F07}{\filldraw[gold] (-115.837,-115.837) rectangle (115.837,115.837) (-80.109,-80.109) rectangle (80.109,80.109);\filldraw[gold] (0,0) circle (60.167);}
+\cell{410}{0}{2: F06}{\filldraw[gold] (-118.816,-118.816) rectangle (118.816,118.816) (-81.930,-81.930) rectangle (81.930,81.930);\filldraw[gold] (0,0) circle (58.963) (0,0) circle (34.949);\tracks{24.949}{100.373}{20.5}}
+\cell{820}{0}{3: F06}{\filldraw[gold] (-90.263,-90.263) rectangle (90.263,90.263) (-47.763,-47.763) rectangle (47.763,47.763);\filldraw[gold] (0,0) circle (41.755) (0,0) circle (26.755);\tracks{16.755}{69.013}{19.5}}
+\cell{1230}{0}{4: F07}{\filldraw[gold] (-111.871,-111.871) rectangle (111.871,111.871) (-65.819,-65.819) rectangle (65.819,65.819);\filldraw[gold] (0,0) circle (38.026);}
+\cell{1640}{0}{5: F09}{\filldraw[gold] (-115.615,-115.615) rectangle (115.615,115.615) (-66.525,-66.525) rectangle (66.525,66.525);\filldraw[gold] (-31.9,-31.9) rectangle (31.9,31.9);}
+\node[font=\footnotesize] at (820,-262) {Optuna winners, identical 320 nm air cells. Circular sizes are radii.};
+% Example 3. F12 uses only the circular ring, disc, and cardinal tracks.
+\node[font=\footnotesize\bfseries] at (820,-345) {Example 3, model-specific native geometries};
+\cell{410}{-570}{Baseline F12}{\filldraw[gold] (0,0) circle (111.4) (0,0) circle (66.4);\filldraw[gold] (0,0) circle (56.3);\tracks{46.3}{88.9}{27.1}}
+\cell{820}{-570}{AutoKeras F12}{\filldraw[gold] (0,0) circle (118.7) (0,0) circle (85.4);\filldraw[gold] (0,0) circle (76.6);\tracks{66.6}{102.05}{27.5}}
+\cell{1230}{-570}{Optuna/Ray F06}{\filldraw[gold] (-90.263,-90.263) rectangle (90.263,90.263) (-47.763,-47.763) rectangle (47.763,47.763);\filldraw[gold] (0,0) circle (41.755) (0,0) circle (26.755);\tracks{16.755}{69.013}{19.5}}
+\end{tikzpicture}

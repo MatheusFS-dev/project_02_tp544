@@ -1,0 +1,29 @@
+{
+  "case": "baseline",
+  "checkpoint_sha256": "92edabc76d4b4de461e44242714e1d86b760d6a467179d92e4a6c2a4c29c7757",
+  "dataset_sha256": "1bf24c56c2d09b0f26a219010f612ea2f870dee61a3070385637ed3e47602f27",
+  "examples": [
+    {
+      "original_row": 1064,
+      "quantile": "Best",
+      "source_id": "G1138",
+      "worst_error_pp": 2.261701226234436,
+      "zoom_center_nm": 452.442
+    },
+    {
+      "original_row": 1183,
+      "quantile": "Median",
+      "source_id": "G1257",
+      "worst_error_pp": 7.749703526496887,
+      "zoom_center_nm": 1314.314
+    },
+    {
+      "original_row": 162,
+      "quantile": "P95",
+      "source_id": "G0234",
+      "worst_error_pp": 15.904900431632996,
+      "zoom_center_nm": 774.059
+    }
+  ],
+  "ranking": "maximum absorption error, stable nearest rank"
+}

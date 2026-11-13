@@ -1,0 +1,57 @@
+[
+  {
+    "example": 1,
+    "model": "Optuna = Ray",
+    "family": "F07",
+    "source_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_18431b7eec04b2f5/geometry_18431b7eec04b2f5.aedt",
+    "source_sha256": "fab93a312d1b62ca0a541d7e0eef10c150fd94bee7ba0d4c8d83640f325b50c1",
+    "image": "example_01.jpg",
+    "image_sha256": "9b95b5013a92f0e7cbf4b8b968b86f7ba2d745207c842105893993a81a522ca9",
+    "view": "top",
+    "export": "HFSS ExportModelImageToFile"
+  },
+  {
+    "example": 2,
+    "model": "Optuna = Ray",
+    "family": "F06",
+    "source_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_33fb23079d585a71/geometry_33fb23079d585a71.aedt",
+    "source_sha256": "1e20ac7731a97dfea263c5cb6317cd6db38ff5c74edaa1e151d8bddef07f6110",
+    "image": "example_02.jpg",
+    "image_sha256": "6c1b7e30a5453066191ddbd897c8ffe665f098db15e4d64d61ca69bcd277bc97",
+    "view": "top",
+    "export": "HFSS ExportModelImageToFile"
+  },
+  {
+    "example": 3,
+    "model": "Optuna = Ray",
+    "family": "F06",
+    "source_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_946b8f06efcb9868/geometry_946b8f06efcb9868.aedt",
+    "source_sha256": "d1bcd77e5f71add58c84ce535e46615e7d1f6b0328c9927aebdc5281c1ae67c9",
+    "image": "example_03.jpg",
+    "image_sha256": "42610be1f4470b53f23b467f70f7d968c56405d15700bca35e648feffcf020c7",
+    "view": "top",
+    "export": "HFSS ExportModelImageToFile"
+  },
+  {
+    "example": 4,
+    "model": "Optuna = Ray",
+    "family": "F07",
+    "source_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_da592dd9b5b140a9/geometry_da592dd9b5b140a9.aedt",
+    "source_sha256": "eb80bb0e458c3d9010ab8c63db07a10a2dc2c2012ceb5163fcaf91cda440fe4e",
+    "image": "example_04.jpg",
+    "image_sha256": "3e9137a325cde6c1d12942d2467321e49ccb4201abfd9158d00cfafb0f5fa9af",
+    "view": "top",
+    "export": "HFSS ExportModelImageToFile"
+  },
+  {
+    "example": 5,
+    "model": "Optuna = Ray",
+    "family": "F09",
+    "source_project": "/media/matheus.f@local.inatel.br/ssd01/src/temp/project_02_tp544/src/air_only/validation/final/hfss/geometry_cab6dca120944d85/geometry_cab6dca120944d85.aedt",
+    "source_sha256": "b9770a92b33cd70d409c686b358acefd2474ac78ca26d5d03f6df079220d72c8",
+    "image": "example_05.jpg",
+    "image_sha256": "7e8e72bed22f8d975b95c05125a6648876d3df544de4c347d2f333c052b27fb2",
+    "view": "top",
+    "export": "HFSS ExportModelImageToFile"
+  }
+]

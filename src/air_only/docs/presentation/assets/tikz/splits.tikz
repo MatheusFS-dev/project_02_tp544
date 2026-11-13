@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\footnotesize,>=Latex,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=31mm,minimum height=10mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
+\node[box] (raw) at (0,0) {1,926 unique\\geometries};
+\node[box] (cmp) at (-1.75,-1.9) {Comparison\\1,348 / 289 / 289};
+\node[box] (final) at (1.75,-1.9) {Final retraining\\1,541 / 385 / 0};
+\node[box] (select) at (-1.75,-3.8) {Validation selects\\the winner};
+\node[box] (physical) at (1.75,-3.8) {Five HFSS\\demonstrations};
+\draw[arr] (raw)--(cmp); \draw[arr] (raw)--(final); \draw[arr] (cmp)--(select); \draw[arr] (final)--(physical);
+\node[font=\scriptsize,inatelnavy,above=1pt of cmp.north west,anchor=south west] {train / val / test};
+\end{tikzpicture}

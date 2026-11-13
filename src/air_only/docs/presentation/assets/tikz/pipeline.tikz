@@ -1,0 +1,9 @@
+\begin{tikzpicture}[font=\small,>=Latex,node distance=7mm,
+  stage/.style={draw=inatelblue,rounded corners=2pt,minimum width=27mm,minimum height=15mm,align=center,fill=inatelblue!7},
+  arrow/.style={->,thick,inatelnavy}]
+\node[stage] (data) {HFSS dataset\\2,000 spectra};
+\node[stage,right=of data] (train) {Train surrogate\\$\hat T,\hat R,\hat A$};
+\node[stage,right=of train] (infer) {Gradient inference\\geometry};
+\node[stage,right=of infer] (hfss) {HFSS verification\\actual spectrum};
+\draw[arrow] (data)--(train); \draw[arrow] (train)--(infer); \draw[arrow] (infer)--(hfss);
+\end{tikzpicture}

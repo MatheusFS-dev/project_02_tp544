@@ -1,0 +1,17 @@
+% Native representative geometries: closest training row to family median normalized parameters.
+\begin{tikzpicture}[font=\tiny,x=.0054cm,y=.0054cm,gold/.style={draw=orange!70!black,fill=orange!45,even odd rule},cell/.style={draw=gray!70,thin}]
+\newcommand{\cell}[4]{\begin{scope}[shift={(#1,#2)}]\draw[cell] (-160,-160) rectangle (160,160);#4\node[below,align=center,font=\scriptsize] at (0,-160) {#3};\end{scope}}
+\newcommand{\tracks}[3]{\foreach \a in {0,90,180,270}{\begin{scope}[rotate=\a]\filldraw[gold] (-#3/2,#1) rectangle (#3/2,#2);\end{scope}}}
+\cell{0}{0}{F01 (56)}{\filldraw[gold] (0,0) circle (72.000);}
+\cell{380}{0}{F02 (74)}{\filldraw[gold] (-66.000,-66.000) rectangle (66.000,66.000);}
+\cell{760}{0}{F03 (97)}{\filldraw[gold] (0,0) circle (82.000) (0,0) circle (56.000);}
+\cell{1140}{0}{F04 (100)}{\filldraw[gold] (-92.000,-92.000) rectangle (92.000,92.000) (-60.000,-60.000) rectangle (60.000,60.000);}
+\cell{0}{-430}{F05 (200)}{\filldraw[gold] (-99.500,-99.500) rectangle (99.500,99.500) (-59.500,-59.500) rectangle (59.500,59.500);\filldraw[gold] (0,0) circle (41.000) (0,0) circle (18.000);}
+\cell{380}{-430}{F06 (200)}{\filldraw[gold] (-102.500,-102.500) rectangle (102.500,102.500) (-64.500,-64.500) rectangle (64.500,64.500);\filldraw[gold] (0,0) circle (41.000) (0,0) circle (17.000);\tracks{7.000}{83.500}{25.000}}
+\cell{760}{-430}{F07 (200)}{\filldraw[gold] (-94.500,-94.500) rectangle (94.500,94.500) (-56.500,-56.500) rectangle (56.500,56.500);\filldraw[gold] (0,0) circle (28.000);}
+\cell{1140}{-430}{F08 (200)}{\filldraw[gold] (-104.000,-104.000) rectangle (104.000,104.000) (-65.000,-65.000) rectangle (65.000,65.000);\filldraw[gold] (0,0) circle (34.000);\tracks{24.000}{84.500}{20.000}}
+\cell{0}{-860}{F09 (199)}{\filldraw[gold] (-97.500,-97.500) rectangle (97.500,97.500) (-60.500,-60.500) rectangle (60.500,60.500);\filldraw[gold] (-33.500,-33.500) rectangle (33.500,33.500);}
+\cell{380}{-860}{F10 (200)}{\filldraw[gold] (-97.500,-97.500) rectangle (97.500,97.500) (-63.500,-63.500) rectangle (63.500,63.500);\filldraw[gold] (-34.000,-34.000) rectangle (34.000,34.000);\tracks{24.000}{80.500}{24.000}}
+\cell{760}{-860}{F11 (200)}{\filldraw[gold] (0,0) circle (111.000) (0,0) circle (84.000);\filldraw[gold] (0,0) circle (46.000);}
+\cell{1140}{-860}{F12 (200)}{\filldraw[gold] (0,0) circle (110.000) (0,0) circle (78.000);\filldraw[gold] (0,0) circle (52.000);\tracks{42.000}{94.000}{20.000}}
+\end{tikzpicture}

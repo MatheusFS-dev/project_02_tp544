@@ -1,0 +1,10 @@
+\begin{tikzpicture}[font=\footnotesize,>=Latex,node distance=5mm,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=27mm,minimum height=11mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
+\node[box] (request) {Request\\$\lambda_1,\lambda_2,A_\star$};
+\node[box,right=of request] (starts) {12 families $\times$\\8 training starts};
+\node[box,right=of starts] (gd) {500 gradient steps\\frozen surrogate};
+\node[box,right=of gd] (rank) {Rank candidates\\worst, then mean error};
+\node[box,below=9mm of rank] (out) {\texttt{geometry.json}\\HFSS verification};
+\node[draw=inatelblue,dashed,rounded corners=2pt,align=center,text width=58mm,anchor=north] (note) at ($(starts.south)!.5!(gd.south)-(0,9mm)$) {Training bounds, local trust region, positive ring holes.\\Band endpoints are linearly interpolated.};
+\draw[arr] (request)--(starts); \draw[arr] (starts)--(gd); \draw[arr] (gd)--(rank); \draw[arr] (rank)--(out);
+\draw[inatelblue,dashed] (note.north) -- ($(starts.south)!.5!(gd.south)$);
+\end{tikzpicture}

@@ -1,0 +1,681 @@
+{
+  "protocol": "Nested family-stratified subsets, fixed validation/test, validation-selected epochs, no new topology search",
+  "results": [
+    {
+      "best_validation_loss": 0.04844356684020646,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.1,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 5.175768956542015,
+        "count": 289,
+        "loss": 0.04869853755439854,
+        "mean_worst_spectrum_error_pp": 16.49535298347473,
+        "p95_worst_spectrum_error_pp": 28.934115171432495
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.04701870860319236,
+      "case": "optuna",
+      "epochs": 270,
+      "fraction": 0.1,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 5.239718034863472,
+        "count": 289,
+        "loss": 0.04789035474707511,
+        "mean_worst_spectrum_error_pp": 16.1590114235878,
+        "p95_worst_spectrum_error_pp": 27.891374826431274
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.04516152591544451,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.1,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 5.131296068429947,
+        "count": 289,
+        "loss": 0.046378146637888515,
+        "mean_worst_spectrum_error_pp": 15.707109868526459,
+        "p95_worst_spectrum_error_pp": 26.8410187959671
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.033856226524473475,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 3.102080337703228,
+        "count": 289,
+        "loss": 0.0341934072414484,
+        "mean_worst_spectrum_error_pp": 12.210741639137268,
+        "p95_worst_spectrum_error_pp": 22.416088879108425
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.02792334135712018,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 2.4083398282527924,
+        "count": 289,
+        "loss": 0.028029649444311137,
+        "mean_worst_spectrum_error_pp": 10.221870988607407,
+        "p95_worst_spectrum_error_pp": 19.716624617576585
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.02859684311910484,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 2.524111047387123,
+        "count": 289,
+        "loss": 0.029050577651051915,
+        "mean_worst_spectrum_error_pp": 10.520883649587631,
+        "p95_worst_spectrum_error_pp": 19.453380107879628
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.025435258321799208,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.5,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 2.0932069048285484,
+        "count": 289,
+        "loss": 0.02534011213244245,
+        "mean_worst_spectrum_error_pp": 9.366188198328018,
+        "p95_worst_spectrum_error_pp": 17.685969471931454
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.021215323842159604,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.5,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.7256317660212517,
+        "count": 289,
+        "loss": 0.02115717662375897,
+        "mean_worst_spectrum_error_pp": 7.883603870868683,
+        "p95_worst_spectrum_error_pp": 15.110884308814992
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.022464989172133607,
+      "case": "autokeras",
+      "epochs": 272,
+      "fraction": 0.5,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.929011009633541,
+        "count": 289,
+        "loss": 0.022489779947847642,
+        "mean_worst_spectrum_error_pp": 8.293035626411438,
+        "p95_worst_spectrum_error_pp": 16.46519899368285
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.02343459163106024,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 2.001594193279743,
+        "count": 289,
+        "loss": 0.024055399464694687,
+        "mean_worst_spectrum_error_pp": 8.92142429947853,
+        "p95_worst_spectrum_error_pp": 16.650126576423645
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.018981872642071188,
+      "case": "optuna",
+      "epochs": 282,
+      "fraction": 0.75,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.5501437708735466,
+        "count": 289,
+        "loss": 0.019181169176338865,
+        "mean_worst_spectrum_error_pp": 7.176566869020462,
+        "p95_worst_spectrum_error_pp": 13.892238140106189
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.01931505765005379,
+      "case": "autokeras",
+      "epochs": 296,
+      "fraction": 0.75,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.685166172683239,
+        "count": 289,
+        "loss": 0.019710944424090087,
+        "mean_worst_spectrum_error_pp": 7.344897091388702,
+        "p95_worst_spectrum_error_pp": 13.66336703300476
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.024289606809358284,
+      "case": "baseline",
+      "epochs": 235,
+      "fraction": 1.0,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 2.1337177604436874,
+        "count": 289,
+        "loss": 0.02391034474912193,
+        "mean_worst_spectrum_error_pp": 8.82665440440178,
+        "p95_worst_spectrum_error_pp": 16.41095042228698
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.018834596544916656,
+      "case": "optuna",
+      "epochs": 272,
+      "fraction": 1.0,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.6335824504494667,
+        "count": 289,
+        "loss": 0.019757332467187236,
+        "mean_worst_spectrum_error_pp": 7.35572874546051,
+        "p95_worst_spectrum_error_pp": 15.019628405570984
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.018896384435386805,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 1.0,
+      "seed": 42,
+      "test": {
+        "absorption_mae_pp": 1.5605570748448372,
+        "count": 289,
+        "loss": 0.019208932295441628,
+        "mean_worst_spectrum_error_pp": 7.173041999340057,
+        "p95_worst_spectrum_error_pp": 14.112733304500576
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.04741223958227461,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.1,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 5.235765129327774,
+        "count": 289,
+        "loss": 0.048274589335114075,
+        "mean_worst_spectrum_error_pp": 16.28166437149048,
+        "p95_worst_spectrum_error_pp": 25.338805913925157
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.04452191494327928,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.1,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 5.04741333425045,
+        "count": 289,
+        "loss": 0.04514479477306551,
+        "mean_worst_spectrum_error_pp": 15.251308679580688,
+        "p95_worst_spectrum_error_pp": 25.445779561996456
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.04564357180290156,
+      "case": "autokeras",
+      "epochs": 271,
+      "fraction": 0.1,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 5.3523339331150055,
+        "count": 289,
+        "loss": 0.04654748985305377,
+        "mean_worst_spectrum_error_pp": 15.591219067573547,
+        "p95_worst_spectrum_error_pp": 24.540364742279035
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.03428456669344621,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 3.1304389238357544,
+        "count": 289,
+        "loss": 0.033986429648415854,
+        "mean_worst_spectrum_error_pp": 12.178874760866165,
+        "p95_worst_spectrum_error_pp": 21.721992492675774
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.027633959975312736,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 2.2613072767853737,
+        "count": 289,
+        "loss": 0.026332282219533275,
+        "mean_worst_spectrum_error_pp": 9.593498706817627,
+        "p95_worst_spectrum_error_pp": 18.872046172618862
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.02803343165163144,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 2.446005493402481,
+        "count": 289,
+        "loss": 0.027466918132348455,
+        "mean_worst_spectrum_error_pp": 9.942582249641418,
+        "p95_worst_spectrum_error_pp": 18.957622945308675
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.027033835353013964,
+      "case": "baseline",
+      "epochs": 266,
+      "fraction": 0.5,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 2.345963753759861,
+        "count": 289,
+        "loss": 0.027284992652523064,
+        "mean_worst_spectrum_error_pp": 9.986111521720886,
+        "p95_worst_spectrum_error_pp": 18.66421818733215
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.022663596785501627,
+      "case": "optuna",
+      "epochs": 271,
+      "fraction": 0.5,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.9361574202775955,
+        "count": 289,
+        "loss": 0.022925133833010716,
+        "mean_worst_spectrum_error_pp": 8.466344326734543,
+        "p95_worst_spectrum_error_pp": 16.152789592742916
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.02327762308263036,
+      "case": "autokeras",
+      "epochs": 268,
+      "fraction": 0.5,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.947205327451229,
+        "count": 289,
+        "loss": 0.02303259817812476,
+        "mean_worst_spectrum_error_pp": 8.473692834377289,
+        "p95_worst_spectrum_error_pp": 16.212967038154595
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.02300160647624504,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.9441232085227966,
+        "count": 289,
+        "loss": 0.023068672626127832,
+        "mean_worst_spectrum_error_pp": 8.588597923517227,
+        "p95_worst_spectrum_error_pp": 15.904309451580046
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.01876530808535208,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.582568697631359,
+        "count": 289,
+        "loss": 0.018766004611515667,
+        "mean_worst_spectrum_error_pp": 7.015860080718994,
+        "p95_worst_spectrum_error_pp": 13.536558151245115
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.019543410681677937,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.5809349715709686,
+        "count": 289,
+        "loss": 0.019551640917840302,
+        "mean_worst_spectrum_error_pp": 7.313178479671478,
+        "p95_worst_spectrum_error_pp": 14.489796757698054
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.022731640514721096,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 1.0,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.8978670239448547,
+        "count": 289,
+        "loss": 0.022558402579445327,
+        "mean_worst_spectrum_error_pp": 8.398552983999252,
+        "p95_worst_spectrum_error_pp": 15.50298899412155
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.02283621636770382,
+      "case": "optuna",
+      "epochs": 170,
+      "fraction": 1.0,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.9077086821198463,
+        "count": 289,
+        "loss": 0.022729827426245054,
+        "mean_worst_spectrum_error_pp": 8.368951827287674,
+        "p95_worst_spectrum_error_pp": 16.000343263149258
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.019132302597061987,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 1.0,
+      "seed": 43,
+      "test": {
+        "absorption_mae_pp": 1.6467815265059471,
+        "count": 289,
+        "loss": 0.019094386515062574,
+        "mean_worst_spectrum_error_pp": 7.117811590433121,
+        "p95_worst_spectrum_error_pp": 13.638378381729115
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.04814312849387166,
+      "case": "baseline",
+      "epochs": 261,
+      "fraction": 0.1,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 5.352269485592842,
+        "count": 289,
+        "loss": 0.04945561180219931,
+        "mean_worst_spectrum_error_pp": 16.70472025871277,
+        "p95_worst_spectrum_error_pp": 29.228219985961886
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.044305787366979266,
+      "case": "optuna",
+      "epochs": 297,
+      "fraction": 0.1,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 5.120653286576271,
+        "count": 289,
+        "loss": 0.04547559747079252,
+        "mean_worst_spectrum_error_pp": 15.32982736825943,
+        "p95_worst_spectrum_error_pp": 28.118487596511837
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.046948770531630435,
+      "case": "autokeras",
+      "epochs": 221,
+      "fraction": 0.1,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 5.4945312440395355,
+        "count": 289,
+        "loss": 0.04792881579135116,
+        "mean_worst_spectrum_error_pp": 16.024965047836304,
+        "p95_worst_spectrum_error_pp": 28.70726644992827
+      },
+      "train_count": 135
+    },
+    {
+      "best_validation_loss": 0.03287807957730079,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 2.8779854997992516,
+        "count": 289,
+        "loss": 0.033522878886300386,
+        "mean_worst_spectrum_error_pp": 12.079687416553497,
+        "p95_worst_spectrum_error_pp": 24.143654406070684
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.02689222164555198,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 2.2814450785517693,
+        "count": 289,
+        "loss": 0.026708825488146203,
+        "mean_worst_spectrum_error_pp": 9.708531200885773,
+        "p95_worst_spectrum_error_pp": 19.886287152767164
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.02770620633470971,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.25,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 2.447391301393509,
+        "count": 289,
+        "loss": 0.028168379093897383,
+        "mean_worst_spectrum_error_pp": 10.170000046491623,
+        "p95_worst_spectrum_error_pp": 19.84831988811493
+      },
+      "train_count": 337
+    },
+    {
+      "best_validation_loss": 0.025829968838646338,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.5,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 2.2457171231508255,
+        "count": 289,
+        "loss": 0.02538835399729364,
+        "mean_worst_spectrum_error_pp": 9.356868267059326,
+        "p95_worst_spectrum_error_pp": 18.81094098091125
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.022130792915408586,
+      "case": "optuna",
+      "epochs": 244,
+      "fraction": 0.5,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.836012490093708,
+        "count": 289,
+        "loss": 0.022122723472572114,
+        "mean_worst_spectrum_error_pp": 8.175043761730194,
+        "p95_worst_spectrum_error_pp": 15.671201348304745
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.02145157214963106,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.5,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.7749054357409477,
+        "count": 289,
+        "loss": 0.021106757249386664,
+        "mean_worst_spectrum_error_pp": 7.836141437292099,
+        "p95_worst_spectrum_error_pp": 15.249395072460171
+      },
+      "train_count": 674
+    },
+    {
+      "best_validation_loss": 0.02274611313862784,
+      "case": "baseline",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.8626440316438675,
+        "count": 289,
+        "loss": 0.022428465291703035,
+        "mean_worst_spectrum_error_pp": 8.353446424007416,
+        "p95_worst_spectrum_error_pp": 16.20454907417295
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.018957021140258205,
+      "case": "optuna",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.5447252430021763,
+        "count": 289,
+        "loss": 0.019018913886693523,
+        "mean_worst_spectrum_error_pp": 7.119490951299667,
+        "p95_worst_spectrum_error_pp": 15.280948877334577
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.019329015835861846,
+      "case": "autokeras",
+      "epochs": 300,
+      "fraction": 0.75,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.621284894645214,
+        "count": 289,
+        "loss": 0.019159690770207804,
+        "mean_worst_spectrum_error_pp": 7.152654975652695,
+        "p95_worst_spectrum_error_pp": 13.532550036907187
+      },
+      "train_count": 1011
+    },
+    {
+      "best_validation_loss": 0.024300316393787887,
+      "case": "baseline",
+      "epochs": 221,
+      "fraction": 1.0,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 2.1004967391490936,
+        "count": 289,
+        "loss": 0.024221139202687154,
+        "mean_worst_spectrum_error_pp": 8.948685228824615,
+        "p95_worst_spectrum_error_pp": 16.745920181274403
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.019926573681583865,
+      "case": "optuna",
+      "epochs": 217,
+      "fraction": 1.0,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.6792034730315208,
+        "count": 289,
+        "loss": 0.01990548242850287,
+        "mean_worst_spectrum_error_pp": 7.3792338371276855,
+        "p95_worst_spectrum_error_pp": 14.990153312683105
+      },
+      "train_count": 1348
+    },
+    {
+      "best_validation_loss": 0.01900865683480324,
+      "case": "autokeras",
+      "epochs": 277,
+      "fraction": 1.0,
+      "seed": 44,
+      "test": {
+        "absorption_mae_pp": 1.6294138506054878,
+        "count": 289,
+        "loss": 0.019462683466891516,
+        "mean_worst_spectrum_error_pp": 7.258778810501099,
+        "p95_worst_spectrum_error_pp": 14.224192798137663
+      },
+      "train_count": 1348
+    }
+  ],
+  "source_dataset_sha256": "1bf24c56c2d09b0f26a219010f612ea2f870dee61a3070385637ed3e47602f27"
+}

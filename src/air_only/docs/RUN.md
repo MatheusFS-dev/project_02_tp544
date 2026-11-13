@@ -206,3 +206,38 @@ python3 src/air_only/validation/final/run_validation.py
 ```
 
 This resumes the same five dataset-supported requests for all four models. It preserves the original HFSS setup, opens graphical AEDT, and saves designs, solver projects, actual spectra, T/R/A and band-detail plots under `src/air_only/validation/final/`. Read `SUMMARY.md` there for the comparison. Identical physical proposals share an explicitly linked real simulation. Rerun the command after an interruption to reuse completed inferences and solves. Dataset, model and configuration fingerprints must remain unchanged.
+
+## Training presentation and learning curve
+
+The presentation plan is in `docs/plans/2026-11-13-apresentacao-treinamento.md`.
+The fixed experiment uses three distinct selected topologies, five nested training
+sizes and three seeds. Validation and test retain their original 289 rows each.
+The sweep prepares derived real-data subsets explicitly and preserves original
+source IDs. It never reruns architecture searches or changes retained models.
+
+```bash
+source .venv/bin/activate
+export CUDA_VISIBLE_DEVICES=1
+python3 src/air_only/validation/presentation/sweep.py
+python3 src/air_only/validation/presentation/plots.py
+```
+
+Rerun the sweep to resume atomic epoch checkpoints under
+`src/air_only/runs/presentation/learning_curve/`. Per-case logs are under that
+run directory. The aggregate results, subset provenance and plot source hashes
+are under `src/air_only/validation/presentation/`. The plotting runner rejects an
+incomplete 45-fit aggregate. Its held-out examples use the baseline comparison
+model with a fixed maximum-error quantile rule. The 20 physical spectrum plots
+are under `validation/presentation/hfss/`.
+
+Compile the slides from their directory:
+
+```bash
+cd src/air_only/docs/presentation
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error presentation.tex
+pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error presentation.tex
+```
+
+The PDF and editable source are in `docs/presentation/`, with vector plot and
+TikZ sources in `assets/`. The two model populations and the dataset-supported
+nature of the five physical requests are stated in the slides.

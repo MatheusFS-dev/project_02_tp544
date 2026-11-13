@@ -1,0 +1,125 @@
+{
+  "selection": "closest training geometry to the per-family median in active normalized parameters",
+  "representatives": [
+    {
+      "family": "F01",
+      "dataset_row": 53,
+      "source_id": "G0088",
+      "parameters_nm": {
+        "R_d": 71.99999809265137
+      }
+    },
+    {
+      "family": "F02",
+      "dataset_row": 60,
+      "source_id": "G0105",
+      "parameters_nm": {
+        "L_s": 131.99999809265137
+      }
+    },
+    {
+      "family": "F03",
+      "dataset_row": 131,
+      "source_id": "G0202",
+      "parameters_nm": {
+        "Rout_c": 81.99999809265137,
+        "w_c": 25.999999046325684
+      }
+    },
+    {
+      "family": "F04",
+      "dataset_row": 263,
+      "source_id": "G0337",
+      "parameters_nm": {
+        "Lout_q": 183.99999618530273,
+        "w_q": 32.00000047683716
+      }
+    },
+    {
+      "family": "F05",
+      "dataset_row": 357,
+      "source_id": "G0431",
+      "parameters_nm": {
+        "Lout_q": 198.99999618530273,
+        "w_q": 40.0,
+        "Rout_c": 40.999999046325684,
+        "w_c": 22.999999523162842
+      }
+    },
+    {
+      "family": "F06",
+      "dataset_row": 624,
+      "source_id": "G0698",
+      "parameters_nm": {
+        "Lout_q": 205.0,
+        "w_q": 37.99999952316284,
+        "Rout_c": 40.999999046325684,
+        "w_c": 24.000000953674316,
+        "w_t": 25.0
+      }
+    },
+    {
+      "family": "F07",
+      "dataset_row": 874,
+      "source_id": "G0948",
+      "parameters_nm": {
+        "Lout_q": 188.99999618530273,
+        "w_q": 37.99999952316284,
+        "R_d": 27.999999523162842
+      }
+    },
+    {
+      "family": "F08",
+      "dataset_row": 946,
+      "source_id": "G1020",
+      "parameters_nm": {
+        "Lout_q": 207.99999237060547,
+        "w_q": 39.000000953674316,
+        "R_d": 34.000000953674316,
+        "w_t": 20.0
+      }
+    },
+    {
+      "family": "F09",
+      "dataset_row": 1196,
+      "source_id": "G1270",
+      "parameters_nm": {
+        "Lout_q": 195.0,
+        "w_q": 37.00000047683716,
+        "L_s": 66.99999809265137
+      }
+    },
+    {
+      "family": "F10",
+      "dataset_row": 1458,
+      "source_id": "G1533",
+      "parameters_nm": {
+        "Lout_q": 195.0,
+        "w_q": 34.000000953674316,
+        "L_s": 68.00000190734863,
+        "w_t": 24.000000953674316
+      }
+    },
+    {
+      "family": "F11",
+      "dataset_row": 1607,
+      "source_id": "G1682",
+      "parameters_nm": {
+        "Rout_c": 111.00000381469727,
+        "w_c": 27.000000476837158,
+        "R_d": 45.999999046325684
+      }
+    },
+    {
+      "family": "F12",
+      "dataset_row": 1855,
+      "source_id": "G1930",
+      "parameters_nm": {
+        "Rout_c": 110.0,
+        "w_c": 32.00000047683716,
+        "R_d": 51.99999809265137,
+        "w_t": 20.0
+      }
+    }
+  ]
+}

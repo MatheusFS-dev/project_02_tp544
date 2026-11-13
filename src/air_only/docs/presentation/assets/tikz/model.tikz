@@ -1,0 +1,3 @@
+\begin{tikzpicture}[font=\scriptsize,>=Latex,node distance=5mm,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=22mm,minimum height=11mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
+\node[box] (x) {Family ID\\7 parameters\\mask}; \node[box,right=of x] (e) {Family embedding\\+ normalized inputs}; \node[box,right=of e] (m) {MLP trunk\\2--5 layers}; \node[box,right=of m] (y) {401 $\times$ 3 logits\\softmax per $\lambda$}; \draw[arr] (x)--(e); \draw[arr] (e)--(m); \draw[arr] (m)--(y); \node[align=center,below=6mm of m] {Loss: absorption MSE + maximum spectral error\\+ auxiliary $T/R/A$ MSE};
+\end{tikzpicture}
