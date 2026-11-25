@@ -10,7 +10,7 @@ def test_active_code_is_namespaced_and_does_not_import_archive():
     assert (active/'final/train_all.py').is_file()
     assert (active/'data/raw/treinar/HFSS_Base_Dados.py').is_file()
     assert (root/'archive/inverse_design/src/inverse_design').is_dir()
-    for directory in ('flat', 'final', 'shared', 'validation'):
+    for directory in ('flat', 'final', 'joint', 'shared', 'validation'):
         for path in (active/directory).rglob('*.py'):
             for node in ast.walk(ast.parse(path.read_text())):
                 if isinstance(node, ast.ImportFrom):

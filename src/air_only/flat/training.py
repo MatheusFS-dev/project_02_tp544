@@ -12,6 +12,7 @@ from torch.utils.data import DataLoader, TensorDataset
 from tqdm import tqdm
 from air_only.shared import storage
 from air_only.flat.model import SpectrumModel
+from air_only.shared.families import SUBSTRATES
 
 
 def loss(prediction, reference):
@@ -26,6 +27,28 @@ def loss(prediction, reference):
     """
     difference = prediction[..., 2]-reference[..., 2]
     return difference.square().mean()+.25*difference.abs().amax(-1).mean()+.1*F.mse_loss(prediction, reference)
+
+
+def predict(model, families, parameters, substrates=None):
+    """Run a surrogate, passing substrates only to multi-substrate models.
+
+    Args:
+        model: Forward spectrum surrogate.
+        families: Integer family tensor.
+        parameters: Normalized parameter tensor.
+        substrates: Optional integer substrate tensor.
+
+    Returns:
+        Predicted T/R/A spectra.
+
+    Raises:
+        ValueError: A multi-substrate model received no substrates.
+    """
+    if model.architecture.get('substrates', 1) > 1:
+        if substrates is None:
+            raise ValueError('multi-substrate model requires substrate indices')
+        return model(families, parameters, substrates)
+    return model(families, parameters)
 
 
 def subset(indices, families, limit):
@@ -69,17 +92,36 @@ def evaluate(model, data, indices, batch_size, label):
     gpu = next(model.parameters()).device
     total = 0.
     errors = []
+    substrate = data.get('substrate')
     print(f'Evaluating {label}: {len(indices)} real spectra', flush=True)
     with torch.no_grad():
         for start in range(0, len(indices), batch_size):
             rows = indices[start:start+batch_size]
-            output = model(torch.as_tensor(data['family'][rows], device=gpu),
-                           torch.as_tensor(data['parameters'][rows], device=gpu))
+            output = predict(model, torch.as_tensor(data['family'][rows], device=gpu),
+                             torch.as_tensor(data['parameters'][rows], device=gpu),
+                             None if substrate is None else torch.as_tensor(substrate[rows], device=gpu))
             target = torch.as_tensor(data['tra'][rows], device=gpu)
             total += float(loss(output, target))*len(rows)
             errors.append((output[..., 2]-target[..., 2]).abs().cpu().numpy())
     error = np.concatenate(errors)
-    return dict(count=len(indices), loss=total/len(indices), absorption_mae_pp=float(error.mean()*100),
+    result = dict(count=len(indices), loss=total/len(indices), **spectrum_errors(error))
+    if substrate is not None:
+        codes = substrate[indices]
+        result['by_substrate'] = {SUBSTRATES[code]: dict(count=int((codes == code).sum()), **spectrum_errors(error[codes == code]))
+                                  for code in np.unique(codes)}
+    return result
+
+
+def spectrum_errors(error):
+    """Summarize absolute absorption errors in percentage points.
+
+    Args:
+        error: Absolute absorption errors with shape (spectra, wavelengths).
+
+    Returns:
+        Mean, mean-worst and p95-worst spectrum errors.
+    """
+    return dict(absorption_mae_pp=float(error.mean()*100),
                 mean_worst_spectrum_error_pp=float(error.max(-1).mean()*100),
                 p95_worst_spectrum_error_pp=float(np.quantile(error.max(-1), .95)*100))
 
@@ -120,7 +162,8 @@ def train(directory, config, architecture=None, report=None, evaluate_test=False
     architecture = architecture or dict(width=config.width, depth=config.depth, dropout=config.dropout, trunk=config.trunk)
     architecture = dict(points=len(data['wavelengths']), **architecture)
     settings = {key: value for key, value in asdict(config).items() if key not in ('data', 'raw', 'output')}
-    parts = {key: subset(data[key], data['family'], config.max_train if key == 'train' else config.max_eval)
+    labels = data['family']+12*data['substrate'] if 'substrate' in data else data['family']
+    parts = {key: subset(data[key], labels, config.max_train if key == 'train' else config.max_eval)
              for key in ('train', 'validation', 'test')}
     with storage.ownership(directory) as directory:
         fingerprint = storage.manifest(directory, dict(schema='flat-spectrum-v1', settings=settings,
@@ -145,8 +188,10 @@ def train(directory, config, architecture=None, report=None, evaluate_test=False
             torch.set_rng_state(state['torch_rng'])
             torch.cuda.set_rng_state_all(state['cuda_rng'])
         rows = parts['train']
+        substrates = data['substrate'] if 'substrate' in data else np.zeros(len(data['family']), dtype=np.int64)
         loader = DataLoader(TensorDataset(torch.from_numpy(data['family'][rows]),
-                            torch.from_numpy(data['parameters'][rows]), torch.from_numpy(data['tra'][rows])),
+                            torch.from_numpy(data['parameters'][rows]), torch.from_numpy(data['tra'][rows]),
+                            torch.from_numpy(substrates[rows])),
                             batch_size=config.batch_size, shuffle=True)
         print(f'Training {len(rows)} geometries, validation {len(parts["validation"])}. Architecture: {architecture}', flush=True)
         while epoch < config.epochs and wait < config.patience:
@@ -154,9 +199,9 @@ def train(directory, config, architecture=None, report=None, evaluate_test=False
             model.train()
             total = 0.
             progress = tqdm(loader, desc=f'{directory.name} epoch {epoch+1}/{config.epochs}', unit='batch')
-            for families, parameters, target in progress:
+            for families, parameters, target, substrate in progress:
                 optimizer.zero_grad(set_to_none=True)
-                output = model(families.to(gpu), parameters.to(gpu))
+                output = predict(model, families.to(gpu), parameters.to(gpu), substrate.to(gpu))
                 value = loss(output, target.to(gpu))
                 if not torch.isfinite(value):
                     raise ValueError('nonfinite spectrum training loss')

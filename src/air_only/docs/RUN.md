@@ -7,7 +7,7 @@ uv sync
 source .venv/bin/activate
 ```
 
-All active scripts, data, results, validation and documentation live under `src/air_only/`. The inverse-design workflow is archived under `archive/inverse_design/` and is not installed or tested by the active environment. All received spectra use air.
+All active scripts, data, results, validation and documentation live under `src/air_only/`. The inverse-design workflow is archived under `archive/inverse_design/` and is not installed or tested by the active environment. Air spectra are in `data/raw/treinar/`. Silica (Case B) spectra are in `data/raw/silica/` and are used only by the joint workflow below.
 
 ## Flat absorption matching: four independent cases
 
@@ -241,3 +241,22 @@ pdflatex -no-shell-escape -interaction=nonstopmode -halt-on-error presentation.t
 The PDF and editable source are in `docs/presentation/`, with vector plot and
 TikZ sources in `assets/`. The two model populations and the dataset-supported
 nature of the five physical requests are stated in the slides.
+
+## Joint air + silica workflow
+
+The joint workflow retrains the four presentation topologies (baseline residual 256x3, Optuna/Ray plain 256x3, AutoKeras plain 128x3) with the substrate as a model input. Inverse design then searches 12 families x 2 substrates and reports the selected substrate. Air-only models and data are unchanged.
+
+```bash
+source .venv/bin/activate
+export CUDA_VISIBLE_DEVICES=1                 # RTX 4070 on this PC; configs stay on cuda:0
+python3 src/air_only/joint/import_silica.py   # once; asks for the Case B folder (default ~/Downloads/Dataset_CasoB)
+python3 src/air_only/joint/prepare.py         # builds data/processed/joint/dataset.npz
+python3 src/air_only/joint/train_all.py       # resumable; models in runs/joint/<case>/final/
+python3 src/air_only/joint/infer_baseline.py  # or infer_optuna / infer_ray / infer_autokeras
+python3 src/air_only/joint/compare.py         # docs/reports/2026-11-25-joint-vs-air.md
+python3 src/air_only/joint/prepare_comparison.py  # 70/15/15 split of the air comparison, silica added
+python3 src/air_only/joint/train_comparison.py    # test metrics in runs/joint_comparison/<case>/final/
+python3 src/air_only/joint/smoke.py           # short verification
+```
+
+Configuration: `src/air_only/configs/joint.toml`. The dataset has 1,926 air and 1,839 silica unique geometries. Each geometry inherits its air final partition for both substrates: 1,541 air and 1,473 silica training rows, 385 air and 366 silica validation rows. 90 sorted geometries have no silica spectrum. Joint designs are surrogate predictions. `final/hfss.py` does not yet simulate silica.

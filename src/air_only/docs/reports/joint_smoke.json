@@ -1,0 +1,64 @@
+{
+  "timestamp": "2026-11-25T14:26:38-03:00",
+  "gpu": "NVIDIA GeForce RTX 4070",
+  "unique_geometries": {
+    "air": 1926,
+    "silica": 1839
+  },
+  "received_spectra": {
+    "air": 2000,
+    "silica": 1910
+  },
+  "splits": {
+    "train": 3014,
+    "validation": 751,
+    "test": 0
+  },
+  "cases": {
+    "baseline": {
+      "epoch": 2,
+      "train_count": 120,
+      "validation_count": 36,
+      "validation_by_substrate": {
+        "air": 9.50690433382988,
+        "silica": 7.359758019447327
+      },
+      "inferred_family": "F07",
+      "inferred_substrate": "air"
+    },
+    "optuna": {
+      "epoch": 2,
+      "train_count": 120,
+      "validation_count": 36,
+      "validation_by_substrate": {
+        "air": 10.75034961104393,
+        "silica": 10.102150589227676
+      },
+      "inferred_family": "F07",
+      "inferred_substrate": "air"
+    },
+    "ray": {
+      "epoch": 2,
+      "train_count": 120,
+      "validation_count": 36,
+      "validation_by_substrate": {
+        "air": 10.75034961104393,
+        "silica": 10.102150589227676
+      },
+      "inferred_family": "F07",
+      "inferred_substrate": "air"
+    },
+    "autokeras": {
+      "epoch": 2,
+      "train_count": 120,
+      "validation_count": 36,
+      "validation_by_substrate": {
+        "air": 13.459758460521698,
+        "silica": 14.024695754051208
+      },
+      "inferred_family": "F05",
+      "inferred_substrate": "silica"
+    }
+  },
+  "resume_verified": true
+}

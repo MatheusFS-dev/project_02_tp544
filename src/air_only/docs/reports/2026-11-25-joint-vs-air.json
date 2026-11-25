@@ -1,0 +1,575 @@
+{
+  "dataset_sha256": "14d0c11785a3da3f7309a5437d1bc92780a4b8fd02b546b8e5bb01e29dae6704",
+  "designs": {
+    "autokeras": [
+      {
+        "air_only": {
+          "family": "F09",
+          "hfss_worst_error_pp": 0.2963479940518543,
+          "predicted_worst_error_pp": 0.256839394569397
+        },
+        "example": "example_01",
+        "joint_best": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.2244502305984497,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.2244502305984497
+        },
+        "request": [
+          500.0,
+          510.0,
+          0.4
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F12",
+          "hfss_worst_error_pp": 2.4855311952180994,
+          "predicted_worst_error_pp": 0.35109221935272217
+        },
+        "example": "example_02",
+        "joint_best": {
+          "family": "F12",
+          "predicted_worst_error_pp": 0.3067612648010254,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.3350257873535156
+        },
+        "request": [
+          600.0,
+          620.0,
+          0.3
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F12",
+          "hfss_worst_error_pp": 11.439877721441711,
+          "predicted_worst_error_pp": 0.4585564136505127
+        },
+        "example": "example_03",
+        "joint_best": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.4020586609840393,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.5106121301651001
+        },
+        "request": [
+          750.0,
+          780.0,
+          0.25
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F09",
+          "hfss_worst_error_pp": 2.614575955084014,
+          "predicted_worst_error_pp": 0.42867958545684814
+        },
+        "example": "example_04",
+        "joint_best": {
+          "family": "F12",
+          "predicted_worst_error_pp": 0.3543838858604431,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F11",
+          "predicted_worst_error_pp": 0.3614187240600586
+        },
+        "request": [
+          1000.0,
+          1040.0,
+          0.2
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F09",
+          "hfss_worst_error_pp": 0.6307347337544733,
+          "predicted_worst_error_pp": 0.7085055112838745
+        },
+        "example": "example_05",
+        "joint_best": {
+          "family": "F08",
+          "predicted_worst_error_pp": 0.2796098589897156,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F10",
+          "predicted_worst_error_pp": 0.34552812576293945
+        },
+        "request": [
+          1250.0,
+          1300.0,
+          0.15
+        ]
+      }
+    ],
+    "baseline": [
+      {
+        "air_only": {
+          "family": "F11",
+          "hfss_worst_error_pp": 0.23178250473090412,
+          "predicted_worst_error_pp": 0.3026634454727173
+        },
+        "example": "example_01",
+        "joint_best": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.25517046451568604,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.25517046451568604
+        },
+        "request": [
+          500.0,
+          510.0,
+          0.4
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F12",
+          "hfss_worst_error_pp": 1.0480404820684186,
+          "predicted_worst_error_pp": 0.5649060010910034
+        },
+        "example": "example_02",
+        "joint_best": {
+          "family": "F08",
+          "predicted_worst_error_pp": 0.5423188209533691,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F07",
+          "predicted_worst_error_pp": 0.7199198007583618
+        },
+        "request": [
+          600.0,
+          620.0,
+          0.3
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F12",
+          "hfss_worst_error_pp": 12.98232772667,
+          "predicted_worst_error_pp": 0.8833199739456177
+        },
+        "example": "example_03",
+        "joint_best": {
+          "family": "F12",
+          "predicted_worst_error_pp": 0.31015872955322266,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F12",
+          "predicted_worst_error_pp": 0.31015872955322266
+        },
+        "request": [
+          750.0,
+          780.0,
+          0.25
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F10",
+          "hfss_worst_error_pp": 2.9857645694383983,
+          "predicted_worst_error_pp": 0.6319791078567505
+        },
+        "example": "example_04",
+        "joint_best": {
+          "family": "F08",
+          "predicted_worst_error_pp": 0.37161558866500854,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F08",
+          "predicted_worst_error_pp": 0.37161558866500854
+        },
+        "request": [
+          1000.0,
+          1040.0,
+          0.2
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F06",
+          "hfss_worst_error_pp": 1.8955228021181076,
+          "predicted_worst_error_pp": 0.6344929337501526
+        },
+        "example": "example_05",
+        "joint_best": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.49774348735809326,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.49774348735809326
+        },
+        "request": [
+          1250.0,
+          1300.0,
+          0.15
+        ]
+      }
+    ],
+    "optuna": [
+      {
+        "air_only": {
+          "family": "F07",
+          "hfss_worst_error_pp": 0.13684449873336835,
+          "predicted_worst_error_pp": 0.19835829734802246
+        },
+        "example": "example_01",
+        "joint_best": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.38327276706695557,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.38327276706695557
+        },
+        "request": [
+          500.0,
+          510.0,
+          0.4
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F06",
+          "hfss_worst_error_pp": 3.079633273337828,
+          "predicted_worst_error_pp": 0.3350973129272461
+        },
+        "example": "example_02",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.2288520336151123,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.2288520336151123
+        },
+        "request": [
+          600.0,
+          620.0,
+          0.3
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F06",
+          "hfss_worst_error_pp": 3.2224054171956897,
+          "predicted_worst_error_pp": 0.3771454095840454
+        },
+        "example": "example_03",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.35745203495025635,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.35745203495025635
+        },
+        "request": [
+          750.0,
+          780.0,
+          0.25
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F07",
+          "hfss_worst_error_pp": 0.6107881668851678,
+          "predicted_worst_error_pp": 0.3635019063949585
+        },
+        "example": "example_04",
+        "joint_best": {
+          "family": "F10",
+          "predicted_worst_error_pp": 0.2895444631576538,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.40035247802734375
+        },
+        "request": [
+          1000.0,
+          1040.0,
+          0.2
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F09",
+          "hfss_worst_error_pp": 2.9448600091528663,
+          "predicted_worst_error_pp": 0.5515560507774353
+        },
+        "example": "example_05",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.33446699380874634,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F07",
+          "predicted_worst_error_pp": 0.3404572606086731
+        },
+        "request": [
+          1250.0,
+          1300.0,
+          0.15
+        ]
+      }
+    ],
+    "ray": [
+      {
+        "air_only": {
+          "family": "F07",
+          "hfss_worst_error_pp": 0.13684449873336835,
+          "predicted_worst_error_pp": 0.19835829734802246
+        },
+        "example": "example_01",
+        "joint_best": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.38327276706695557,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F09",
+          "predicted_worst_error_pp": 0.38327276706695557
+        },
+        "request": [
+          500.0,
+          510.0,
+          0.4
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F06",
+          "hfss_worst_error_pp": 3.079633273337828,
+          "predicted_worst_error_pp": 0.3350973129272461
+        },
+        "example": "example_02",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.2288520336151123,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.2288520336151123
+        },
+        "request": [
+          600.0,
+          620.0,
+          0.3
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F06",
+          "hfss_worst_error_pp": 3.2224054171956897,
+          "predicted_worst_error_pp": 0.3771454095840454
+        },
+        "example": "example_03",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.35745203495025635,
+          "substrate": "air"
+        },
+        "joint_best_air": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.35745203495025635
+        },
+        "request": [
+          750.0,
+          780.0,
+          0.25
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F07",
+          "hfss_worst_error_pp": 0.6107881668851678,
+          "predicted_worst_error_pp": 0.3635019063949585
+        },
+        "example": "example_04",
+        "joint_best": {
+          "family": "F10",
+          "predicted_worst_error_pp": 0.2895444631576538,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F05",
+          "predicted_worst_error_pp": 0.40035247802734375
+        },
+        "request": [
+          1000.0,
+          1040.0,
+          0.2
+        ]
+      },
+      {
+        "air_only": {
+          "family": "F09",
+          "hfss_worst_error_pp": 2.9448600091528663,
+          "predicted_worst_error_pp": 0.5515560507774353
+        },
+        "example": "example_05",
+        "joint_best": {
+          "family": "F06",
+          "predicted_worst_error_pp": 0.33446699380874634,
+          "substrate": "silica"
+        },
+        "joint_best_air": {
+          "family": "F07",
+          "predicted_worst_error_pp": 0.3404572606086731
+        },
+        "request": [
+          1250.0,
+          1300.0,
+          0.15
+        ]
+      }
+    ]
+  },
+  "fit": {
+    "autokeras": {
+      "air": {
+        "air_only": {
+          "absorption_mae_pp": 1.5050319023430347,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.6360339522361755,
+          "p95_worst_spectrum_error_pp": 13.067473173141478
+        },
+        "joint": {
+          "absorption_mae_pp": 1.3887664303183556,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.110328063368797,
+          "p95_worst_spectrum_error_pp": 12.094168663024888
+        }
+      },
+      "silica": {
+        "air_only_zero_shot": {
+          "absorption_mae_pp": 8.18321630358696,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 20.659810304641724,
+          "p95_worst_spectrum_error_pp": 30.86583986878395
+        },
+        "joint": {
+          "absorption_mae_pp": 1.372961513698101,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 6.0541849583387375,
+          "p95_worst_spectrum_error_pp": 11.316398158669472
+        }
+      }
+    },
+    "baseline": {
+      "air": {
+        "air_only": {
+          "absorption_mae_pp": 2.007238008081913,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 8.300399035215378,
+          "p95_worst_spectrum_error_pp": 15.729251205921171
+        },
+        "joint": {
+          "absorption_mae_pp": 1.5585345216095448,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 7.157551497220993,
+          "p95_worst_spectrum_error_pp": 13.079547882080073
+        }
+      },
+      "silica": {
+        "air_only_zero_shot": {
+          "absorption_mae_pp": 8.06596428155899,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 20.299237966537476,
+          "p95_worst_spectrum_error_pp": 29.595106095075607
+        },
+        "joint": {
+          "absorption_mae_pp": 1.4749599620699883,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 6.996332108974457,
+          "p95_worst_spectrum_error_pp": 11.994346976280212
+        }
+      }
+    },
+    "optuna": {
+      "air": {
+        "air_only": {
+          "absorption_mae_pp": 1.4677292667329311,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.482560932636261,
+          "p95_worst_spectrum_error_pp": 13.040552139282225
+        },
+        "joint": {
+          "absorption_mae_pp": 1.4730006456375122,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.467574834823608,
+          "p95_worst_spectrum_error_pp": 12.049863934516905
+        }
+      },
+      "silica": {
+        "air_only_zero_shot": {
+          "absorption_mae_pp": 8.125542849302292,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 20.66321074962616,
+          "p95_worst_spectrum_error_pp": 31.256570667028427
+        },
+        "joint": {
+          "absorption_mae_pp": 1.3452846556901932,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 6.379504501819611,
+          "p95_worst_spectrum_error_pp": 11.633607000112534
+        }
+      }
+    },
+    "ray": {
+      "air": {
+        "air_only": {
+          "absorption_mae_pp": 1.4677292667329311,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.482560932636261,
+          "p95_worst_spectrum_error_pp": 13.040552139282225
+        },
+        "joint": {
+          "absorption_mae_pp": 1.4730006456375122,
+          "count": 385,
+          "mean_worst_spectrum_error_pp": 6.467574834823608,
+          "p95_worst_spectrum_error_pp": 12.049863934516905
+        }
+      },
+      "silica": {
+        "air_only_zero_shot": {
+          "absorption_mae_pp": 8.125542849302292,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 20.66321074962616,
+          "p95_worst_spectrum_error_pp": 31.256570667028427
+        },
+        "joint": {
+          "absorption_mae_pp": 1.3452846556901932,
+          "count": 366,
+          "mean_worst_spectrum_error_pp": 6.379504501819611,
+          "p95_worst_spectrum_error_pp": 11.633607000112534
+        }
+      }
+    }
+  }
+}

@@ -1,9 +1,9 @@
-\begin{tikzpicture}[font=\footnotesize,>=Latex,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=31mm,minimum height=10mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
-\node[box] (raw) at (0,0) {1,926 unique\\geometries};
-\node[box] (cmp) at (-1.75,-1.9) {Comparison\\1,348 / 289 / 289};
-\node[box] (final) at (1.75,-1.9) {Final retraining\\1,541 / 385 / 0};
-\node[box] (select) at (-1.75,-3.8) {Validation selects\\the winner};
-\node[box] (physical) at (1.75,-3.8) {Five HFSS\\demonstrations};
+\begin{tikzpicture}[font=\footnotesize,>=Latex,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=40mm,minimum height=10mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
+\node[box] (raw) at (0,0) {2.000 espectros (ar)\\1.910 espectros (sílica)};
+\node[box] (cmp) at (-2.3,-1.9) {Comparação (ar e ar + sílica)\\70\% / 15\% / 15\%};
+\node[box] (final) at (2.3,-1.9) {Retreino final (ar e ar + sílica)\\80\% / 20\% / 0\%};
+\node[box] (select) at (-2.3,-3.8) {Validação seleciona\\o vencedor};
+\node[box] (physical) at (2.3,-3.8) {Cinco verificações\\no HFSS};
 \draw[arr] (raw)--(cmp); \draw[arr] (raw)--(final); \draw[arr] (cmp)--(select); \draw[arr] (final)--(physical);
-\node[font=\scriptsize,inatelnavy,above=1pt of cmp.north west,anchor=south west] {train / val / test};
+\node[font=\scriptsize,inatelnavy,above=1pt of cmp.north west,anchor=south west] {treino / validação / teste};
 \end{tikzpicture}

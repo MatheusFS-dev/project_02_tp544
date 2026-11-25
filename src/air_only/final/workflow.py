@@ -128,7 +128,7 @@ def final_data(config):
     return data, metadata
 
 
-def train_case(case, config, source, stop_after=None):
+def train_case(case, config, source, stop_after=None, dataset=None, substrates=1, evaluate_test=False):
     """Train a selected topology from scratch, or resume its own epoch state.
 
     Args:
@@ -136,19 +136,24 @@ def train_case(case, config, source, stop_after=None):
         config: Complete training settings.
         source: Earlier selected model directory, used only for topology/provenance.
         stop_after: Optional interruption boundary for smoke checks.
+        dataset: Dataset loader, defaulting to the air final dataset.
+        substrates: Substrate classes added to the selected topology. One keeps air-only.
+        evaluate_test: Evaluate the held-out test split once after training.
 
     Returns:
         Validation-only metrics for the newly trained model.
     """
     if case not in CASES:
         raise ValueError('Unknown final case')
-    _, metadata = final_data(config)
+    _, metadata = (dataset or final_data)(config)
     source = Path(source)
     selected = json.loads((source/'metrics.json').read_text())
     checkpoint = storage.unpack(source/'best.ckpt')
     architecture = checkpoint['architecture']
     if architecture != selected['architecture']:
         raise ValueError('Source checkpoint and selected architecture disagree')
+    if substrates > 1:
+        architecture = dict(architecture, substrates=substrates)
     specification = dict(case=case, initialization='from scratch',
                          selected_identity=selected.get('identity', case), architecture=architecture,
                          source_checkpoint_sha256=hashlib.sha256((source/'best.ckpt').read_bytes()).hexdigest(),
@@ -158,11 +163,14 @@ def train_case(case, config, source, stop_after=None):
             storage.manifest(root, specification)
             print(f'Training {case} selected topology from scratch: {architecture}', flush=True)
             result = train(root/'training', config,
-                           {key: value for key, value in architecture.items() if key != 'points'}, stop_after=stop_after)
+                           {key: value for key, value in architecture.items() if key != 'points'},
+                           evaluate_test=evaluate_test, stop_after=stop_after)
             state = storage.load(root/'training')
             completed = state['epoch'] >= config.epochs or state['wait'] >= config.patience
             result.update(case=case, selected_source=specification, completed=completed,
-                          validation_count=result['validation']['count'], substrate='air', test_count=0)
+                          validation_count=result['validation']['count'],
+                          substrate='air' if substrates == 1 else 'air+silica',
+                          test_count=result['test']['count'] if 'test' in result else 0)
             if completed:
                 winner = root/'final'
                 winner.mkdir(exist_ok=True)
@@ -174,17 +182,18 @@ def train_case(case, config, source, stop_after=None):
             return result
 
 
-def validate_geometry(geometry):
+def validate_geometry(geometry, substrates=('air',)):
     """Reject unsupported substrates, invalid family parameters and ring holes.
 
     Args:
         geometry: Family, substrate, tracks and seven native parameters in nm.
+        substrates: Accepted substrate names. The final air workflow accepts air only.
 
     Raises:
         ValueError: Geometry cannot be represented by the received HFSS setup.
     """
-    if geometry.get('substrate') != 'air':
-        raise ValueError('This final version supports the received air substrate only')
+    if geometry.get('substrate') not in substrates:
+        raise ValueError(f'Unsupported substrate, expected one of {", ".join(substrates)}')
     if geometry.get('family') not in NAMES:
         raise ValueError('Unknown F01–F12 family')
     family = NAMES.index(geometry['family'])
@@ -206,16 +215,17 @@ def validate_geometry(geometry):
         raise ValueError('Track flag does not match geometry family')
 
 
-def geometry_text(geometry):
+def geometry_text(geometry, substrates=('air',)):
     """Format applicable native dimensions as ordinary text with full precision.
 
     Args:
         geometry: Validated geometry dictionary.
+        substrates: Accepted substrate names.
 
     Returns:
         Family, substrate, tracks and active dimensions in nm.
     """
-    validate_geometry(geometry)
+    validate_geometry(geometry, substrates)
     lines = [f'Family: {geometry["family"]}', f'Substrate: {geometry["substrate"]}',
              f'Tracks: {"yes" if geometry["tracks"] else "no"}']
     for name, value in geometry['parameters_nm'].items():
@@ -225,13 +235,15 @@ def geometry_text(geometry):
     return '\n'.join(lines)
 
 
-def infer(case, config, request):
+def infer(case, config, request, dataset=None, substrates=('air',)):
     """Optimize one absorption request and print/save the selected geometry.
 
     Args:
         case: Fixed independent model case.
         config: Complete inference settings.
         request: Band start/end in nm and target absorption fraction.
+        dataset: Dataset loader, defaulting to the air final dataset.
+        substrates: Substrate names the geometry may use.
 
     Returns:
         Portable geometry dictionary and its saved JSON path.
@@ -239,7 +251,7 @@ def infer(case, config, request):
     if case not in CASES:
         raise ValueError('Unknown final case')
     device(config)
-    data, metadata = final_data(config)
+    data, metadata = (dataset or final_data)(config)
     model_path = Path(config.output)/case/'final'
     metrics = json.loads((model_path/'metrics.json').read_text())
     if not metrics['completed'] or metrics['dataset_sha256'] != metadata['dataset_sha256']:
@@ -256,7 +268,7 @@ def infer(case, config, request):
                         parameters_nm=candidate['parameters_nm'], request=list(request),
                         case=case, checkpoint_sha256=digest, dataset_sha256=metadata['dataset_sha256'],
                         predicted_worst_error_pp=candidate['predicted_worst_error_pp'])
-        text = geometry_text(geometry)
+        text = geometry_text(geometry, substrates)
         path = directory/'geometry.json'
         storage.save_json(path, geometry)
         (directory/'geometry.txt').write_text(text+'\n')

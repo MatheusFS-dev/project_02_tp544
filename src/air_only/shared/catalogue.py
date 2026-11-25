@@ -12,25 +12,35 @@ def _digest(path):
         return hashlib.file_digest(stream, "sha256").hexdigest()
 
 
-def load_received(raw):
+def load_received(raw, spectra='Espectros_TRA', geometry_csv=None, partial=False, duplicate_tolerance=0.):
     """Load all original designs, validating spectra and duplicate identities.
 
     Args:
-        raw: Imported Treinar directory.
+        raw: Imported received-data directory.
+        spectra: Spectrum folder name inside raw.
+        geometry_csv: Geometry table, defaulting to raw/geometrias_sorteadas.csv.
+        partial: Whether spectra may cover only a subset of the geometry IDs.
+        duplicate_tolerance: Largest accepted T/R/A difference between duplicate
+            geometries. The lowest source ID spectrum is kept.
 
     Returns:
-        Sorted unique designs, original IDs, parameters, spectra and source hashes.
+        Sorted unique designs, original IDs, parameters, spectra, source hashes,
+        duplicate conflicts and geometry IDs without spectra.
 
     Raises:
         ValueError: Metadata, spectra or repeated designs are inconsistent.
     """
     raw = Path(raw)
     print('Loading and validating all twelve received families', flush=True)
-    path = raw / 'geometrias_sorteadas.csv'
+    path = Path(geometry_csv) if geometry_csv else raw / 'geometrias_sorteadas.csv'
     rows = sorted(csv.DictReader(path.open(encoding='utf-8-sig')), key=lambda r: r['id'])
-    files = {p.stem: p for p in (raw / 'Espectros_TRA').glob('*.csv')}
-    if len({r['id'] for r in rows}) != len(rows) or set(files) != {r['id'] for r in rows}:
+    files = {p.stem: p for p in (raw / spectra).glob('*.csv')}
+    ids = {r['id'] for r in rows}
+    if len(ids) != len(rows) or not files or not set(files) <= ids or (not partial and set(files) != ids):
         raise ValueError('geometry IDs and spectra must match exactly')
+    missing = sorted(ids-set(files))
+    rows = [r for r in rows if r['id'] in files]
+    conflicts = []
     designs, identities, grid = [], {}, None
     hashes = {path.name: _digest(path)}
     for row in tqdm(rows, desc='Loading catalogue', unit='spectrum'):
@@ -59,13 +69,21 @@ def load_received(raw):
         identity = (family, *values)
         if identity in identities:
             original = designs[identities[identity]]
-            if not np.array_equal(original['tra'], tra):
+            difference = float(np.max(np.abs(original['tra']-tra)))
+            if difference > duplicate_tolerance:
                 raise ValueError('duplicate design has conflicting spectra')
+            if difference > 0:
+                known = next((c for c in conflicts if c['ids'][0] == original['ids'][0]), None)
+                if known is None:
+                    conflicts.append(dict(ids=list(original['ids'])+[row['id']], max_abs_difference=difference))
+                else:
+                    known['ids'].append(row['id'])
+                    known['max_abs_difference'] = max(known['max_abs_difference'], difference)
             original['ids'].append(row['id'])
         else:
             identities[identity] = len(designs)
             designs.append(dict(family=family, parameters=values, tra=tra, ids=[row['id']]))
-    return dict(designs=designs, wavelengths=grid, source_hashes=hashes)
+    return dict(designs=designs, wavelengths=grid, source_hashes=hashes, conflicts=conflicts, missing_ids=missing)
 
 
 def stratified_split(labels, seed=42):

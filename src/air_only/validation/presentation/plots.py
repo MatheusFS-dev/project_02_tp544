@@ -194,6 +194,53 @@ def learning_curve():
     save(fig,'learning_curve')
 
 
+def silica_families():
+    """Plot per-family silica test MAE of the four joint air + silica comparison models."""
+    from air_only.joint.workflow import configuration, joint_data
+    from air_only.flat.training import predict
+    print('Plotting per-family silica test error of the joint comparison models', flush=True)
+    config, _, _ = configuration('joint_comparison')
+    data, _ = joint_data(config)
+    rows = data['test'][data['substrate'][data['test']] == 1]
+    fig, ax = plt.subplots(figsize=(6.4, 2.4))
+    for case, color in zip(CASES, COLORS):
+        model = load_model(Path(config.output)/case/'final', 'cuda:0')
+        with torch.no_grad():
+            output = predict(model, torch.as_tensor(data['family'][rows], device='cuda:0'),
+                             torch.as_tensor(data['parameters'][rows], device='cuda:0'),
+                             torch.as_tensor(data['substrate'][rows], device='cuda:0')).cpu().numpy()
+        error = np.abs(output[..., 2]-data['tra'][rows, :, 2]).mean(-1)*100
+        families = data['family'][rows]
+        ax.plot(range(1, 13), [error[families == i].mean() for i in range(12)], marker='o', markersize=3, color=color, label=case)
+    ax.set(xticks=range(1, 13), xticklabels=[f'F{i:02d}' for i in range(1, 13)], ylabel='Absorption MAE (pp)')
+    ax.legend(ncol=4, fontsize=9, loc='upper center', bbox_to_anchor=(.5, 1.22))
+    save(fig, 'silica_families_error')
+
+
+def joint_hfss_spectra():
+    """Plot HFSS and predicted spectra of the joint-model designs for the two air-figure examples."""
+    print('Plotting joint-model HFSS verification for the two shown examples', flush=True)
+    fig, axes = plt.subplots(2, 2, figsize=(7.0, 4.4))
+    for column, (case, example) in enumerate((('optuna', 1), ('baseline', 3))):
+        summary = read(ROOT/f'validation/joint/{case}/example_{example:02d}/summary.json')
+        actual = np.genfromtxt(summary['solver']['spectrum'], delimiter=',', names=True)
+        predicted = np.genfromtxt(summary['predicted_spectrum'], delimiter=',', names=True)
+        low, high = summary['band_start_nm'], summary['band_end_nm']
+        target = summary['target_absorption_percent']
+        for ax in axes[:, column]:
+            for name, color in zip(('T', 'R', 'A'), COLORS):
+                ax.plot(actual['lambda_nm'], 100*actual[name], color=color, label=f'{name} HFSS')
+                ax.plot(predicted['lambda_nm'], 100*predicted[name], '--', color=color, label=f'{name} predicted')
+            ax.fill_between([low, high], target-5, target+5, color='gray', alpha=.18)
+            ax.plot([low, high], [target, target], color='black', linewidth=.8)
+            ax.set(xlabel='Wavelength (nm)', ylabel='Power (%)')
+        axes[0, column].set_title(f'joint {case}, example {example}: {summary["worst_error_pp"]:.2f} pp')
+        axes[1, column].set_xlim(low, high)
+        axes[1, column].set_ylim(max(0, target-10), min(100, max(target+10, summary['band_max_absorption_percent']+3)))
+    fig.legend(*axes[0, 0].get_legend_handles_labels(), loc='upper center', bbox_to_anchor=(.5, 1.10), ncol=3, fontsize=9)
+    save(fig, 'joint_hfss_spectra')
+
+
 def main():
     """Regenerate all source-backed figures, including the completed learning curve."""
     training_plots()
@@ -201,6 +248,8 @@ def main():
     physical()
     all_physical_spectra()
     learning_curve()
+    silica_families()
+    joint_hfss_spectra()
     sources = list((ROOT/'results/flat').glob('*/final/metrics.json')) + list((ROOT/'validation/flat').glob('*/spectrum_metrics.json')) + list((ROOT/'validation/final').glob('*/example_*/summary.json'))
     for summary_path in (ROOT/'validation/final').glob('*/example_*/summary.json'):
         summary = read(summary_path)

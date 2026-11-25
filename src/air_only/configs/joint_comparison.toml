@@ -1,0 +1,41 @@
+# Joint air + silica comparison split (70/15/15, same geometry partitions as the air comparison). All input and output paths are relative to this TOML.
+data = "../data/processed/joint_comparison/dataset.npz"
+raw = "../data/raw/treinar"
+silica_raw = "../data/raw/silica"
+air_data = "../data/processed/flat_spectra/dataset.npz"
+output = "../runs/joint_comparison"
+split = "comparison"
+device = "cuda:0"
+epochs = 300
+candidates = 1
+seed = 42
+patience = 30
+min_delta = 0.00001
+batch_size = 64
+learning_rate = 0.001
+weight_decay = 0.0001
+threads = 2
+width = 256
+depth = 3
+dropout = 0.1
+trunk = "residual"
+max_train = 0
+max_eval = 0
+optimization_steps = 500
+multistarts = 8
+trust_fraction = 0.1
+tolerance = 0.05
+
+# Topology sources: the four presentation-selected models.
+[selected_models]
+baseline = "../results/flat/baseline/final"
+optuna = "../results/flat/optuna/final"
+ray = "../results/flat/ray/final"
+autokeras = "../results/flat/autokeras/final"
+
+# Air-only comparison models (70/15/15) used as the comparison reference.
+[reference_models]
+baseline = "../results/flat/baseline/final"
+optuna = "../results/flat/optuna/final"
+ray = "../results/flat/ray/final"
+autokeras = "../results/flat/autokeras/final"

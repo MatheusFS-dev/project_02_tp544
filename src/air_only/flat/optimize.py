@@ -6,8 +6,8 @@ import numpy as np
 import torch
 from tqdm import tqdm
 from air_only.shared import storage
-from air_only.shared.families import MASK, SCALES, PARAMETERS, NAMES
-from air_only.flat.training import load_model, subset
+from air_only.shared.families import MASK, SCALES, PARAMETERS, NAMES, SUBSTRATES
+from air_only.flat.training import load_model, predict, subset
 
 
 def band_values(absorption, grid, low, high):
@@ -86,7 +86,7 @@ def project(values, families, low, high):
 
 
 def optimize(model, data, config, request, output):
-    """Search all families near training geometries for flat target absorption.
+    """Search all families (and substrates, for joint data) near training geometries for flat target absorption.
 
     Args:
         model: Trained, inference-mode forward surrogate.
@@ -97,24 +97,32 @@ def optimize(model, data, config, request, output):
 
     Returns:
         Family-ranked geometry candidates, explicitly not HFSS-verified results.
+
+    Raises:
+        ValueError: Joint data were given to a single-substrate model.
     """
+    joint = 'substrate' in data
+    if joint and model.architecture.get('substrates', 1) == 1:
+        raise ValueError('joint substrate data require a multi-substrate model')
+    substrate_codes = data['substrate'] if joint else np.zeros(len(data['family']), dtype=np.int64)
+    groups = [(family, code) for code in (range(len(SUBSTRATES)) if joint else (0,)) for family in range(12)]
     low_nm, high_nm, target = map(float, request)
     gpu = next(model.parameters()).device
     grid = data['wavelengths']
     band_values(torch.zeros(1, len(grid)), grid, low_nm, high_nm)
     objective(torch.zeros(1, 2), np.array([low_nm, high_nm]), target)
-    rows = subset(data['train'], data['family'], config.max_train)
-    print('Selecting training-only multistarts and empirical parameter bounds for all twelve families', flush=True)
-    starts, family_values, lowers, uppers, source_ids = [], [], [], [], []
+    rows = subset(data['train'], data['family']+12*substrate_codes, config.max_train)
+    print(f'Selecting training-only multistarts and empirical parameter bounds for {len(groups)} groups', flush=True)
+    starts, family_values, substrate_values, lowers, uppers, source_ids = [], [], [], [], [], []
     references = []
-    for family in range(12):
-        candidates = rows[data['family'][rows] == family]
+    for family, code in groups:
+        candidates = rows[(data['family'][rows] == family) & (substrate_codes[rows] == code)]
         parameters = data['parameters'][candidates]
         _, absorption = band_values(torch.as_tensor(data['tra'][candidates, :, 2]), grid, low_nm, high_nm)
         worst, mean = objective(absorption, np.r_[low_nm, grid[(grid > low_nm) & (grid < high_nm)], high_nm], target)
         order = np.lexsort((mean.numpy(), worst.numpy()))[:config.multistarts]
         first = int(order[0])
-        references.append(dict(family=NAMES[family], source_id=str(data['source_ids'][candidates[first]]),
+        references.append(dict(family=NAMES[family], substrate=SUBSTRATES[code], source_id=str(data['source_ids'][candidates[first]]),
                                worst_error_pp=float(worst[first])*100, average_error_pp=float(mean[first])*100))
         lower, upper = parameters.min(0), parameters.max(0)
         radius = (upper-lower)*config.trust_fraction
@@ -122,10 +130,12 @@ def optimize(model, data, config, request, output):
             seed = parameters[position]
             starts.append(seed)
             family_values.append(family)
+            substrate_values.append(code)
             lowers.append(np.maximum(lower, seed-radius))
             uppers.append(np.minimum(upper, seed+radius))
             source_ids.append(str(data['source_ids'][candidates[position]]))
     families = torch.tensor(family_values, device=gpu)
+    substrates = torch.tensor(substrate_values, device=gpu)
     lower = torch.as_tensor(np.array(lowers), device=gpu)
     upper = torch.as_tensor(np.array(uppers), device=gpu)
     parameters = torch.nn.Parameter(torch.as_tensor(np.array(starts), device=gpu))
@@ -137,23 +147,24 @@ def optimize(model, data, config, request, output):
     progress = tqdm(range(config.optimization_steps+1), desc='Minimax flat absorption', unit='step')
     for step in progress:
         optimizer.zero_grad(set_to_none=True)
-        spectra = model(families, parameters)
+        spectra = predict(model, families, parameters, substrates)
         points, absorption = band_values(spectra[..., 2], grid, low_nm, high_nm)
         worst, mean = objective(absorption, points, target)
         with torch.no_grad():
-            for index, family in enumerate(family_values):
+            for index, group in enumerate(zip(family_values, substrate_values)):
+                family = group[0]
                 key = (float(worst[index]), float(mean[index]))
-                if family not in best or key < best[family]['score']:
+                if group not in best or key < best[group]['score']:
                     values = (parameters[index].detach().cpu().numpy()*SCALES).tolist()
-                    best[family] = dict(family=NAMES[family], score=key, parameters_nm={
+                    best[group] = dict(family=NAMES[family], score=key, parameters_nm={
                         name: values[j] if MASK[family, j] else None for j, name in enumerate(PARAMETERS)},
                         trust_lower_nm=(lower[index].cpu().numpy()*SCALES).tolist(),
                         trust_upper_nm=(upper[index].cpu().numpy()*SCALES).tolist(),
-                        tracks=family in (5, 7, 9, 11), substrate='air', seed_source_id=source_ids[index],
+                        tracks=family in (5, 7, 9, 11), substrate=SUBSTRATES[group[1]], seed_source_id=source_ids[index],
                         step=step, normalized_parameters=parameters[index].detach().cpu().tolist(),
                         spectrum=spectra[index].detach().cpu().numpy().tolist())
         if step == 0:
-            initial_errors = {family: row['score'][0]*100 for family, row in best.items()}
+            initial_errors = {group: row['score'][0]*100 for group, row in best.items()}
         if step == config.optimization_steps:
             break
         (worst.mean()+.001*mean.mean()).backward()
@@ -168,12 +179,14 @@ def optimize(model, data, config, request, output):
     output = Path(output)
     output.mkdir(parents=True, exist_ok=True)
     for candidate in ranked:
-        candidate['initial_best_predicted_worst_error_pp'] = initial_errors[NAMES.index(candidate['family'])]
+        group = (NAMES.index(candidate['family']), SUBSTRATES.index(candidate['substrate']))
+        candidate['initial_best_predicted_worst_error_pp'] = initial_errors[group]
         candidate['predicted_worst_error_pp'] = candidate['score'][0]*100
         candidate['predicted_average_error_pp'] = candidate['score'][1]*100
         candidate['predicted_within_tolerance'] = candidate['score'][0] <= config.tolerance
         spectrum = np.array(candidate.pop('spectrum'))
-        np.savetxt(output/f'{candidate["family"]}_predicted.csv', np.column_stack((grid, spectrum)), delimiter=',',
+        name = f'{candidate["family"]}_{candidate["substrate"]}' if joint else candidate['family']
+        np.savetxt(output/f'{name}_predicted.csv', np.column_stack((grid, spectrum)), delimiter=',',
                    header='lambda_nm,T,R,A', comments='')
         del candidate['score']
     result = dict(request=list(request), tolerance_pp=config.tolerance*100,
@@ -183,7 +196,7 @@ def optimize(model, data, config, request, output):
                   trust_fraction=config.trust_fraction, ranking='worst absolute target error, then mean absolute error',
                   candidates=ranked)
     storage.save_json(output/'candidates.json', result)
-    print(f'Best family {ranked[0]["family"]}: predicted worst error {ranked[0]["predicted_worst_error_pp"]:.3f} pp. '
+    print(f'Best family {ranked[0]["family"]} on {ranked[0]["substrate"]}: predicted worst error {ranked[0]["predicted_worst_error_pp"]:.3f} pp. '
           'HFSS verification is required.', flush=True)
     return result
 
