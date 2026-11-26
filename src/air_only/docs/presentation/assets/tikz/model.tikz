@@ -1,3 +1,9 @@
-\begin{tikzpicture}[font=\scriptsize,>=Latex,node distance=5mm,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=22mm,minimum height=11mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
-\node[box] (x) {Family ID\\7 parameters\\mask}; \node[box,right=of x] (e) {Family embedding\\+ normalized inputs}; \node[box,right=of e] (m) {MLP trunk\\2--5 layers}; \node[box,right=of m] (y) {401 $\times$ 3 logits\\softmax per $\lambda$}; \draw[arr] (x)--(e); \draw[arr] (e)--(m); \draw[arr] (m)--(y); \node[align=center,below=6mm of m] {Loss: absorption MSE + maximum spectral error\\+ auxiliary $T/R/A$ MSE};
+\begin{tikzpicture}[font=\normalsize,>=Latex,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=46mm,minimum height=14mm,align=center,fill=inatelblue!7},arr/.style={->,very thick,inatelnavy}]
+\node[box] (x) {Family ID\\7 parameters\\mask};
+\node[box,right=8mm of x] (e) {Family embedding\\+ normalized inputs};
+\node[box,below=9mm of x] (m) {MLP trunk\\2--5 layers};
+\node[box,below=9mm of e] (y) {401 $\times$ 3 logits\\softmax per $\lambda$};
+\draw[arr] (x)--(e);
+\draw[arr] (e.south) -- ++(0,-4.5mm) -| (m.north);
+\draw[arr] (m)--(y);
 \end{tikzpicture}

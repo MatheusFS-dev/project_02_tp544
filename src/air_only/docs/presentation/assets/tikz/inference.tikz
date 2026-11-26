@@ -1,10 +1,14 @@
-\begin{tikzpicture}[font=\footnotesize,>=Latex,node distance=5mm,box/.style={draw=inatelblue,rounded corners=2pt,minimum width=27mm,minimum height=11mm,align=center,fill=inatelblue!7},arr/.style={->,thick,inatelnavy}]
-\node[box] (request) {Request\\$\lambda_1,\lambda_2,A_\star$};
-\node[box,right=of request] (starts) {12 families $\times$\\8 training starts};
-\node[box,right=of starts] (gd) {500 gradient steps\\frozen surrogate};
-\node[box,right=of gd] (rank) {Rank candidates\\worst, then mean error};
-\node[box,below=9mm of rank] (out) {\texttt{geometry.json}\\HFSS verification};
-\node[draw=inatelblue,dashed,rounded corners=2pt,align=center,text width=58mm,anchor=north] (note) at ($(starts.south)!.5!(gd.south)-(0,9mm)$) {Training bounds, local trust region, positive ring holes.\\Band endpoints are linearly interpolated.};
-\draw[arr] (request)--(starts); \draw[arr] (starts)--(gd); \draw[arr] (gd)--(rank); \draw[arr] (rank)--(out);
-\draw[inatelblue,dashed] (note.north) -- ($(starts.south)!.5!(gd.south)$);
+\begin{tikzpicture}[font=\small,>=Latex,
+  ttl/.style={draw=inatelblue,fill=inatelblue,text=white,rounded corners=2pt,minimum width=26mm,minimum height=17mm,align=center,font=\small\bfseries},
+  dsc/.style={draw=inatelblue,fill=inatelblue!7,rounded corners=2pt,minimum width=78mm,minimum height=17mm,text width=74mm,align=left,inner xsep=3mm},
+  arr/.style={->,very thick,inatelnavy}]
+\node[ttl] (t1) {1. Pedido};
+\node[dsc,right=2mm of t1] (d1) {Banda de comprimentos de onda $[\lambda_1,\lambda_2]$ e a absorção desejada $A_\star$.};
+\node[ttl,below=3mm of t1] (t2) {2. Inícios};
+\node[dsc,right=2mm of t2] (d2) {Em cada família, pegamos as 8 geometrias do treino (já simuladas no HFSS) cujo espectro mais se aproxima do pedido. Cada uma tem dimensões diferentes: 12 $\times$ 8 = 96 inícios.};
+\node[ttl,below=3mm of t2] (t3) {3. Ajuste};
+\node[dsc,right=2mm of t3] (d3) {500 passos: o modelo único recebe a família e as dimensões de cada um dos 96 inícios, prevê a absorção e mede o erro. Só as dimensões mudam, perto do início.};
+\node[ttl,below=3mm of t3] (t4) {4. Escolha};
+\node[dsc,right=2mm of t4] (d4) {Em cada família, fica a melhor geometria. Entre as 12, vence a de menor pior erro na banda (desempate: erro médio), salva em \texttt{geometry.json}.};
+\foreach \a/\b in {t1/t2,t2/t3,t3/t4} \draw[arr] (\a)--(\b);
 \end{tikzpicture}

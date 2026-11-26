@@ -76,11 +76,14 @@
   \begin{beamercolorbox}[wd=.18\paperwidth,ht=2.3ex,dp=.9ex,center]{palette secondary}\textbf{Inatel}\end{beamercolorbox}}}
 
 \usepackage{tikz}
-\setbeameroption{hide notes}
+\providecommand{\notesmode}{\setbeameroption{hide notes}}\notesmode
+\setbeamertemplate{note page}{\vskip1.2em\noindent\hskip1.2em\begin{minipage}{\dimexpr\paperwidth-4em\relax}\textbf{\insertframetitle}\par\vskip.6em\small\insertnote\end{minipage}}
 \newcommand{\lado}[3]{\begin{columns}[c]\column{.60\linewidth}\centering\includegraphics[width=\linewidth,height=#2\textheight,keepaspectratio]{assets/#1}\column{.38\linewidth}\resumo{#3}\end{columns}}
 \newcommand{\fig}[2]{\begin{center}\includegraphics[width=.92\linewidth,height=#2\textheight,keepaspectratio]{assets/#1}\end{center}}
 \newcommand{\resumo}[1]{\begin{beamercolorbox}[rounded=true,sep=.5ex]{block body}\small\begin{itemize}\setlength\itemsep{0pt}#1\end{itemize}\end{beamercolorbox}}
 \usepackage[brazil]{babel}
+\newcommand{\ac}[1]{\cellcolor{inatelblue!15}\textbf{#1}}
+\newcommand{\za}{\textcolor{gray}{0}}
 
 \title[Inverse design de nanoestruturas de ouro]{Treinamento de surrogates para inverse design de nanoestruturas de ouro em ar e sílica}
 \author[M. F. Silva]{Matheus Ferreira Silva}
@@ -100,7 +103,12 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
     \item Entrada: absorção alvo em uma banda de comprimentos de onda.
     \item Um surrogate treinado guia a busca de geometria por gradiente.
     \item O HFSS faz a verificação física.}
-  \note{0:40. Explicar cada etapa da esquerda para a direita.}
+  \note{\begin{itemize}
+    \item Objetivo: dado um pedido de absorção constante em uma banda (início, fim, \% alvo), encontrar uma geometria de ouro que o atinja.
+    \item Simular cada candidato no HFSS é caro (cerca de 3 min por geometria), por isso um surrogate aprende geometria $\to$ espectro.
+    \item O surrogate é diferenciável: a busca de geometria usa gradiente sobre ele.
+    \item A geometria final é verificada no HFSS com o mesmo setup dos dados recebidos.
+  \end{itemize}}
 \end{frame}
 
 \section{Dataset}
@@ -109,17 +117,57 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
     \item Ar: 2.000 espectros, 12 famílias.
     \item Sílica: 1.910 espectros.
     \item Input: família, sete parâmetros e máscara. Output: $T,R,A$ em 401 comprimentos de onda.}
-  \note{0:45. Geometrias duplicadas ficam na mesma partição. Comparação: 70\%/15\%/15\%. Modelos finais: 80\%/20\%, sem teste.}
+  \note{\begin{itemize}
+    \item Célula periódica de 320 nm, ouro (Johnson \& Christy) com 30 nm de espessura, portas Floquet, 401 pontos entre 450 e 1600 nm.
+    \item Ar: 2.000 espectros. Sílica: 1.910 espectros das mesmas geometrias, sobre SiO$_2$ ($n=1,45$) com 1 \textmu m.
+    \item 12 famílias F01--F12: disco, quadrado, anéis, combinações e versões com trilhas.
+    \item Geometrias repetidas ficam sempre na mesma partição, evitando vazamento para o teste.
+    \item Splits: comparação 70\%/15\%/15\% e retreino final 80\%/20\%. Na sílica, cada geometria fica na mesma partição do ar.
+  \end{itemize}}
 \end{frame}
 
 \section{Treinamento}
 \begin{frame}{Surrogate e função de loss}
-  \fig{model.pdf}{.48}
-  \resumo{
-    \item Loss focada em absorção, incluindo o erro máximo por espectro.
-    \item Softmax por comprimento de onda garante $T+R+A=1$.
-    \item Até 300 epochs, patience 30, batch size 64, com checkpoints recuperáveis.}
-  \note{0:45. Explicar entradas, MLP e softmax por comprimento de onda.}
+  \begin{columns}[T]
+  \column{.54\linewidth}
+    \centering\includegraphics[width=\linewidth,height=.30\textheight,keepaspectratio]{assets/model.pdf}\par\vspace{4pt}
+    {\footnotesize\setlength{\tabcolsep}{2.5pt}\renewcommand{\arraystretch}{1.25}
+    \resizebox{\linewidth}{!}{\begin{tabular}{@{}c c ccccccc c@{}}
+      \toprule
+      \textbf{Família} & \textbf{Embedding} & \multicolumn{7}{c}{\textbf{Dimensões $\times$ máscara}} & \textbf{Máscara}\\
+      \cmidrule(lr){3-9}
+       & (16 valores) & $L_{out,q}$ & $w_q$ & $R_{out,c}$ & $w_c$ & $R_d$ & $L_s$ & $w_t$ & \\\midrule
+      F01 & $e_{1}$ & \za & \za & \za & \za & \ac{$p$} & \za & \za & 0\,0\,0\,0\,1\,0\,0\\
+      F03 & $e_{3}$ & \za & \za & \ac{$p$} & \ac{$p$} & \za & \za & \za & 0\,0\,1\,1\,0\,0\,0\\
+      F06 & $e_{6}$ & \ac{$p$} & \ac{$p$} & \ac{$p$} & \ac{$p$} & \za & \za & \ac{$p$} & 1\,1\,1\,1\,0\,0\,1\\\bottomrule
+    \end{tabular}}\par}
+    \vspace{3pt}
+    \begin{beamercolorbox}[rounded=true,sep=.5ex]{block body}\scriptsize Trocar a família muda só o vetor de entrada. $p$ é o valor de uma dimensão ativa. A MLP é a mesma, com os mesmos pesos, para as 12 famílias.\end{beamercolorbox}
+  \column{.44\linewidth}
+    \begin{beamercolorbox}[rounded=true,sep=.5ex,center]{block body}\footnotesize
+      $\displaystyle\mathcal{L}=\underbrace{\tfrac{1}{401}\sum_{\lambda}\big(A_{\text{pred}}-A_{\text{ref}}\big)^2}_{\text{MSE da absorção}}$\par\vspace{2pt}
+      $\displaystyle+\,0{,}25\,\underbrace{\max_{\lambda}\big|A_{\text{pred}}-A_{\text{ref}}\big|}_{\text{pior erro do espectro}}
+      +\,0{,}1\,\underbrace{\text{MSE}(T,R,A)}_{\text{auxiliar}}$
+    \end{beamercolorbox}
+    \vspace{2pt}
+    \begin{beamercolorbox}[rounded=true,sep=.5ex]{block body}\footnotesize\begin{itemize}\setlength\itemsep{0pt}
+      \item MSE de $A$ ajusta o formato geral. O erro máximo impede um pico isolado de passar despercebido. O termo auxiliar de $T/R/A$ pesa menos.
+      \item Softmax por comprimento de onda garante $T+R+A=1$.
+      \item Até 300 epochs, patience 30, batch size 64, com checkpoints recuperáveis.
+    \end{itemize}\end{beamercolorbox}
+  \end{columns}
+  \note{\footnotesize\begin{itemize}\setlength\itemsep{1pt}
+    \item Tabela: cada linha é o vetor de entrada de uma família. Dimensões fora da máscara viram 0 e a máscara indica quais estão ativas. Os pesos da MLP são os mesmos para todas as famílias, só o vetor de entrada muda.
+    \item Input: embedding da família, sete parâmetros normalizados multiplicados pela máscara da família e a própria máscara. MLP com trunk plain ou residual, LayerNorm, SiLU e dropout. Output: 401 $\times$ 3 logits, softmax por comprimento de onda $\Rightarrow$ $T+R+A=1$.
+    \item \textbf{A loss tem três parcelas.} Todas comparam o espectro previsto com o do HFSS nos 401 pontos, com foco na absorção $A$.
+    \begin{itemize}\setlength\itemsep{0pt}
+      \item \textbf{MSE da absorção (peso 1).} Erro quadrático médio de $A$. Ajusta o formato geral da curva, mas um erro grande em um único ponto quase não aparece na média.
+      \item \textbf{Erro máximo (peso 0,25).} Maior $|A_{\text{pred}}-A_{\text{ref}}|$ de cada espectro, com média no batch. O critério de projeto é o pior erro na banda, então essa parcela impede que o modelo erre muito em algum ponto.
+      \item \textbf{MSE de $T/R/A$ (peso 0,1).} Erro dos três canais. Dá sinal menor para $T$ e $R$ e regulariza. Como $T+R+A=1$, errar $T$ ou $R$ também desloca $A$.
+    \end{itemize}
+    \item Exemplo ilustrativo: $A$ erra 0,02 em quase todos os pontos e 0,10 em um. O MSE fica perto de $4\times10^{-4}$ e quase ignora o pico, mas a parcela do máximo vale $0{,}25\times0{,}10=0{,}025$. Pesos fixos no código.
+    \item AdamW (lr $10^{-3}$, weight decay $10^{-4}$). Early stopping: sem melhora na loss de validação por 30 epochs, para e fica com a melhor. No joint, o substrato entra como one-hot (ar ou sílica).
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Quatro casos de comparação}
@@ -135,9 +183,20 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
   {\centering\small Espaço de busca: trunk plain ou residual, largura 128/256/512, profundidade 2--5, dropout 0/0,1/0,2.\par}
   \vfill
   \resumo{
+    \item Não há um modelo por família: cada caso treina um único modelo para as 12 famílias. Os inputs são o ID da família e as dimensões da geometria. Na inferência, o modelo fica fixo e o que muda são esses inputs: família e dimensões.
     \item Seleção apenas pela loss de validação.
     \item Optuna e Ray selecionaram a mesma topologia.}
-  \note{0:40. Optuna: 54 concluídos e 46 podados. AutoKeras: 57 concluídos.}
+  \note{\begin{itemize}
+    \item Baseline: topologia fixa, sem busca.
+    \item Optuna: 100 candidatos (54 concluídos, 46 podados). Ray: 100 candidatos com early stopping. AutoKeras: 57 candidatos concluídos, exportado para PyTorch.
+    \item Todos selecionam pela loss de validação. O teste só é usado no vencedor.
+    \item Optuna e Ray chegaram à mesma topologia (plain $256\times3$, dropout 0).
+    \item No joint, as mesmas quatro topologias são retreinadas do zero, sem nova busca.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Seleção: entre os candidatos de cada busca, vence o que tem a menor loss nos dados de validação.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Erro em ar: conjunto de teste (15\%)}
@@ -153,7 +212,19 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
   \resumo{
     \item MAE de absorção entre 1,45 e 1,95 pp.
     \item Os casos com busca superam o baseline fixo.}
-  \note{0:45. Máx.: maior erro de absorção em cada espectro. Métrica de teste somente na divisão 70\%/15\%/15\%.}
+  \note{\begin{itemize}
+    \item MAE: erro absoluto médio de absorção sobre todos os comprimentos de onda.
+    \item Máx. médio: média, sobre os espectros, do maior erro de cada espectro. Máx. P95: percentil 95 desse maior erro.
+    \item AutoKeras tem o menor MAE (1,45 pp). Baseline, o maior (1,95 pp).
+    \item O gráfico mostra o MAE por família. As tendências são parecidas entre os modelos.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item MAE: em cada um dos 401 comprimentos de onda, comparamos a absorção prevista com a do HFSS e tiramos a média dessas diferenças. Ex.: previsto 42\% e HFSS 40\% dá 2 pp naquele ponto.
+      \item Máx. médio: em cada espectro pegamos o pior ponto e fazemos a média desses piores pontos. Ex.: piores pontos de 4, 6 e 8 pp dão 6 pp.
+      \item Máx. P95: ordenamos os piores pontos de todos os espectros e pegamos o valor que 95\% deles não ultrapassam. Ex.: com 100 espectros, é o 95º pior ponto em ordem crescente.
+      \item Gráfico: o mesmo MAE, calculado só com as geometrias de cada família.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Efeito do tamanho do conjunto de treino}
@@ -162,17 +233,39 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
     \item O erro cai fortemente até 674--1.011 geometrias.
     \item O último passo não melhora todos os modelos.
     \item Três seeds por ponto. Barras: desvio padrão.}
-  \note{0:45. 45 treinos. Topologias fixas, selecionadas com 100\% do treino da comparação.}
+  \note{\begin{itemize}
+    \item Subconjuntos aninhados de 10\%, 25\%, 50\%, 75\% e 100\% do treino da comparação, estratificados por família.
+    \item Três seeds por ponto, 45 treinos. Validação e teste fixos.
+    \item O erro cai fortemente até 50--75\% do treino. O último passo não melhora todos os modelos.
+    \item Desvio padrão entre seeds com 100\% do treino: 0,05--0,15 pp de MAE.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Cada ponto é a média de 3 treinos iguais com seeds diferentes. A barra mostra o quanto esses 3 resultados variam entre si.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \section{Inferência}
 \begin{frame}{Inferência com restrições de geometria}
-  \fig{inference.pdf}{.44}
-  \begin{center}$\displaystyle\min_{\theta}\;\max_{\lambda\in[\lambda_1,\lambda_2]}\bigl|\hat A(\lambda;\theta)-A_\star\bigr|$\end{center}
-  \resumo{
-    \item 12 famílias $\times$ 8 inícios, 500 passos de otimização.
-    \item Geometrias dentro dos limites de treino, com furos positivos nos anéis.}
-  \note{0:45. Depois do erro máximo, desempata pelo erro médio ponderado.}
+  \vfill
+  \begin{minipage}[c]{.60\linewidth}\centering\includegraphics[width=\linewidth,height=.72\textheight,keepaspectratio]{assets/inference.pdf}\end{minipage}\hfill
+  \begin{minipage}[c]{.36\linewidth}\centering
+    {\small\textbf{O que é otimizado}}\par\vspace{.6em}
+    $\displaystyle\min_{\theta}\;\max_{\lambda\in[\lambda_1,\lambda_2]}\bigl|\hat A(\lambda;\theta)-A_\star\bigr|$\par\vspace{.8em}
+    \small Em palavras: procuramos as dimensões $\theta$ da estrutura que deixam o \emph{pior} desvio entre a absorção prevista $\hat A$ e a desejada $A_\star$, em qualquer comprimento de onda $\lambda$ da banda, o menor possível.
+  \end{minipage}
+  \vfill
+  \note{\begin{itemize}
+    \item Objetivo: minimizar o maior erro de absorção na banda, com os extremos interpolados. Desempate: erro médio ponderado pelo comprimento de onda.
+    \item 8 pontos de partida por família, tirados das melhores geometrias de treino para o pedido.
+    \item 500 passos de Adam, com regiões de confiança de 10\% em torno de cada início e limites do treino.
+    \item Projeção mantém a máscara da família e furos positivos nos anéis.
+    \item No joint, a busca cobre 12 famílias $\times$ 2 substratos.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item A busca ajusta a geometria para reduzir o pior ponto da banda. Se dois candidatos empatam, vence o que erra menos em média ao longo da banda.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Ar: cinco verificações no HFSS}
@@ -190,13 +283,35 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
   \resumo{
     \item 13 de 15 projetos ficam dentro de $\pm5$ pp no HFSS.
     \item Optuna = Ray tem o menor erro médio (2,00 pp).}
-  \note{0:50. Cinco pedidos suportados pelo dataset, não é um teste cego.}
+  \note{\begin{itemize}
+    \item Cinco pedidos de banda estreita, suportados por geometrias do dataset. Não é um teste cego.
+    \item Erro: maior diferença entre a absorção no HFSS e o alvo, dentro da banda.
+    \item 13 de 15 projetos ficam dentro de $\pm5$ pp. As exceções são o exemplo 3 do Baseline (12,98 pp) e do AutoKeras (11,44 pp).
+    \item Optuna = Ray: mesmo modelo, menor erro médio (2,00 pp).
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Erro máximo na banda: olhamos só a banda pedida e pegamos o ponto em que a absorção mais se afasta do alvo. Ex.: alvo de 25\% com pior ponto em 37,98\% dá 12,98 pp.
+      \item Média: média dos 5 erros de cada caso. Ex.: Optuna = Ray, (0,14 + 3,08 + 3,22 + 0,61 + 2,94) / 5 = 2,00 pp.
+      \item $\le5$ pp: quantos dos 5 pedidos ficaram com erro de até 5 pp.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Ar: o HFSS revela um caso difícil}
   \lado{hfss_spectra.pdf}{.80}{
     \item Baseline, exemplo 3: erro previsto 0,88 pp, erro no HFSS 12,98 pp.}
-  \note{0:45. Contrastar com um caso bom, sem esconder a falha.}
+  \note{\begin{itemize}
+    \item Esquerda: Optuna, exemplo 1, erro no HFSS de 0,14 pp.
+    \item Direita: Baseline, exemplo 3. O surrogate previu 0,88 pp, o HFSS deu 12,98 pp.
+    \item Linhas cheias: HFSS. Tracejadas: previsão. Faixa cinza: tolerância de $\pm5$ pp.
+    \item Linha de baixo: zoom na banda pedida.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Absorção no HFSS: é o que sobra da luz. Ex.: 50\% transmitido e 30\% refletido dão 20\% absorvido.
+      \item Erro previsto: o mesmo erro máximo na banda, mas usando a absorção prevista pelo modelo.
+      \item Erro máximo na banda: olhamos só a banda pedida e pegamos o ponto em que a absorção mais se afasta do alvo. Ex.: alvo de 25\% com pior ponto em 37,98\% dá 12,98 pp.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \section{Sílica}
@@ -212,16 +327,37 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
   \vspace{1ex}
   \resumo{
     \item Modelos joint ar + sílica, com o substrato como input adicional.
-    \item Mesmo split 70\%/15\%/15\% do ar, com a sílica somada a cada partição.
     \item MAE em sílica entre 1,26 e 1,52 pp.}
-  \note{0:50. Mesmas topologias, treinadas do zero, sem nova busca. Cada geometria fica na mesma partição nos dois substratos. Seed única.}
+  \note{\begin{itemize}
+    \item Modelos joint: mesmas topologias, substrato como input, treinadas do zero no mesmo split 70/15/15 do ar com a sílica somada.
+    \item MAE em sílica: 1,26 pp (Optuna = Ray) a 1,52 pp (Baseline), na mesma faixa do ar.
+    \item Um modelo só de ar aplicado à sílica erra cerca de 8 pp (validação 80/20). Por isso o substrato precisa ser input.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Mesmas métricas do slide de ar, calculadas só com as geometrias de sílica do teste.
+      \item MAE: em cada um dos 401 comprimentos de onda, comparamos a absorção prevista com a do HFSS e tiramos a média dessas diferenças. Ex.: previsto 42\% e HFSS 40\% dá 2 pp naquele ponto.
+      \item Máx. médio: em cada espectro pegamos o pior ponto e fazemos a média desses piores pontos. Ex.: piores pontos de 4, 6 e 8 pp dão 6 pp.
+      \item Máx. P95: ordenamos os piores pontos de todos os espectros e pegamos o valor que 95\% deles não ultrapassam. Ex.: com 100 espectros, é o 95º pior ponto em ordem crescente.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Joint: verificação no HFSS}
   \lado{joint_hfss_spectra.pdf}{.80}{
     \item Adicionar sílica e o substrato como input não piorou o ar: no mesmo teste, o MAE caiu em 3 de 4 casos (Optuna 1,55$\to$1,35 pp) e só o AutoKeras piorou (1,45$\to$1,56 pp).
     \item No HFSS, o joint corrige o caso difícil (12,98$\to$2,03 pp) e perde no fácil (0,14$\to$1,01 pp).}
-  \note{0:45. Teste em ar, só ar vs joint: Baseline 1,95 vs 1,63; Optuna 1,55 vs 1,35; Ray 1,50 vs 1,35; AutoKeras 1,45 vs 1,56 pp. Desvio entre seeds: 0,05--0,15 pp. HFSS: mesmos pedidos do ar (Optuna ex.\,1, Baseline ex.\,3), modelos do retreino final 80/20; o joint escolheu ar nos dois. Projetos em sílica ainda sem HFSS.}
+  \note{\begin{itemize}
+    \item Pergunta: adicionar sílica e o substrato como input piorou o ar? Não.
+    \item Teste em ar, só ar vs joint: Baseline 1,95 vs 1,63; Optuna 1,55 vs 1,35; Ray 1,50 vs 1,35; AutoKeras 1,45 vs 1,56 pp.
+    \item HFSS: mesmos pedidos do slide do ar, com os modelos joint do retreino final 80/20. O joint escolheu substrato ar nos dois.
+    \item Caso difícil: 12,98 $\to$ 2,03 pp. Caso fácil: 0,14 $\to$ 1,01 pp. Os dois dentro de $\pm5$ pp.
+    \item Apenas dois projetos simulados: não generaliza.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Comparação: o mesmo MAE, nas mesmas 289 geometrias de ar, para os dois modelos. Ex.: Optuna 1,55 pp (só ar) contra 1,35 pp (joint).
+      \item Variação entre seeds: 3 treinos idênticos com seeds diferentes chegam a diferir até 0,15 pp de MAE.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \section{Conclusões}
@@ -242,7 +378,18 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
       \item Reavaliar as learning curves com sílica.
     \end{itemize}
   \end{columns}
-  \note{0:40. Limites: cinco pedidos, otimismo do surrogate e sílica sem HFSS.}
+  \note{\begin{itemize}
+    \item O workflow completo funciona: dados, treinamento, inferência e verificação no HFSS.
+    \item Ar: MAE de teste de 1,45--1,95 pp, 13 de 15 projetos dentro de $\pm5$ pp.
+    \item Sílica: MAE de teste de 1,26--1,52 pp. O modelo joint não piorou o ar.
+    \item Limites: cinco pedidos, otimismo do surrogate em casos difíceis, nenhum projeto em sílica simulado.
+    \item Próximo: gerador HFSS com substrato SiO$_2$ de 1 \textmu m para verificar projetos em sílica.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item MAE: diferença média entre a absorção prevista e a do HFSS, em todos os pontos do espectro.
+      \item Dentro de $\pm5$ pp: o pior ponto da banda ficou a no máximo 5 pp do alvo.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \appendix
@@ -250,6 +397,11 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
 \begin{frame}{Backup: divisões do dataset}
   \fig{splits.pdf}{.74}
   {\centering\scriptsize Proporções de treino / validação / teste.\par}
+  \note{\begin{itemize}
+    \item Comparação 70/15/15: seleção de modelos e métricas de teste.
+    \item Retreino final 80/20: modelos usados na inferência e no HFSS, sem teste.
+    \item Ar e ar + sílica usam as mesmas partições por geometria.
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Backup: treinamento e busca}
@@ -257,11 +409,27 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
     \column{.5\linewidth}\centering\includegraphics[width=\linewidth]{assets/training.pdf}\par{\scriptsize Histórico de loss de treino e validação.}
     \column{.5\linewidth}\centering\includegraphics[width=\linewidth]{assets/search.pdf}\par{\scriptsize Melhor loss de validação por candidato.}
   \end{columns}
+  \note{\begin{itemize}
+    \item Esquerda: loss de treino e validação por epoch dos quatro casos.
+    \item Direita: melhor loss de validação acumulada por candidato de busca.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Curva de busca: a melhor loss de validação encontrada até cada candidato.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Backup: espectros de teste}
   \fig{held_out.pdf}{.80}
   {\centering\scriptsize Melhor, mediana e P95 do erro máximo do baseline (G1138 F08, G1257 F09, G0234 F03).\par}
+  \note{\begin{itemize}
+    \item Espectros escolhidos por regra fixa: melhor, mediana e P95 do erro máximo do Baseline.
+    \item G1138 (F08), G1257 (F09) e G0234 (F03).
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Seleção: ordenamos os espectros de teste pelo pior ponto e pegamos o melhor, o do meio e o que fica na posição de 95\%.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Backup: substrato escolhido pela inferência joint}
@@ -280,31 +448,65 @@ Coorientador: Prof. Dr. Rausley Adriano Amaral de Souza}
     \item A inferência busca 12 famílias $\times$ 2 substratos.
     \item Sílica foi escolhida em 7 de 15 projetos.
     \item Previsões do surrogate, ainda sem verificação no HFSS.}
-  \note{0:40. Em ar, erro previsto de 0,88 pp virou 12,98 pp no HFSS. Próximo passo: gerador HFSS com substrato de 1 µm.}
+  \note{\begin{itemize}
+    \item Cinco pedidos, modelos joint do retreino final 80/20.
+    \item Sílica foi escolhida em 7 de 15 projetos, principalmente no AutoKeras.
+    \item Erros previstos de 0,22 a 0,54 pp, sem verificação no HFSS.
+    \item Em ar, um erro previsto de 0,88 pp virou 12,98 pp no HFSS.
+    \item \textbf{Como as métricas são calculadas}
+    \begin{itemize}
+      \item Erro previsto: o pior ponto da banda, usando a absorção prevista pelo modelo joint, sem HFSS.
+      \item Média: média dos 5 erros previstos de cada caso.
+    \end{itemize}
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Backup: geometrias retornadas pela inferência}
   \fig{winners.pdf}{.74}
   {\centering\scriptsize Cada geometria também é salva em nanômetros como \texttt{geometry.json}.\par}
+  \note{\begin{itemize}
+    \item Geometrias vencedoras de cada caso para os cinco pedidos em ar.
+    \item Cada uma é salva em nanômetros como geometry.json, pronta para o HFSS.
+  \end{itemize}}
 \end{frame}
 
 \begin{frame}{Backup: geometria no HFSS, exemplo 1}\centering
 \includegraphics[width=.94\linewidth,height=.78\textheight,keepaspectratio]{assets/hfss/example_01.jpg}\par
-{\small Optuna = Ray, F07. Alvo: 40\% em 500--510 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}\end{frame}
+{\small Optuna = Ray, F07. Alvo: 40\% em 500--510 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}
+  \note{\begin{itemize}
+    \item Vista superior exportada do projeto HFSS verificado (Optuna = Ray).
+  \end{itemize}}
+\end{frame}
 
 \begin{frame}{Backup: geometria no HFSS, exemplo 2}\centering
 \includegraphics[width=.94\linewidth,height=.78\textheight,keepaspectratio]{assets/hfss/example_02.jpg}\par
-{\small Optuna = Ray, F06. Alvo: 30\% em 600--620 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}\end{frame}
+{\small Optuna = Ray, F06. Alvo: 30\% em 600--620 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}
+  \note{\begin{itemize}
+    \item Vista superior exportada do projeto HFSS verificado (Optuna = Ray).
+  \end{itemize}}
+\end{frame}
 
 \begin{frame}{Backup: geometria no HFSS, exemplo 3}\centering
 \includegraphics[width=.94\linewidth,height=.78\textheight,keepaspectratio]{assets/hfss/example_03.jpg}\par
-{\small Optuna = Ray, F06. Alvo: 25\% em 750--780 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}\end{frame}
+{\small Optuna = Ray, F06. Alvo: 25\% em 750--780 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}
+  \note{\begin{itemize}
+    \item Vista superior exportada do projeto HFSS verificado (Optuna = Ray).
+  \end{itemize}}
+\end{frame}
 
 \begin{frame}{Backup: geometria no HFSS, exemplo 4}\centering
 \includegraphics[width=.94\linewidth,height=.78\textheight,keepaspectratio]{assets/hfss/example_04.jpg}\par
-{\small Optuna = Ray, F07. Alvo: 20\% em 1000--1040 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}\end{frame}
+{\small Optuna = Ray, F07. Alvo: 20\% em 1000--1040 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}
+  \note{\begin{itemize}
+    \item Vista superior exportada do projeto HFSS verificado (Optuna = Ray).
+  \end{itemize}}
+\end{frame}
 
 \begin{frame}{Backup: geometria no HFSS, exemplo 5}\centering
 \includegraphics[width=.94\linewidth,height=.78\textheight,keepaspectratio]{assets/hfss/example_05.jpg}\par
-{\small Optuna = Ray, F09. Alvo: 15\% em 1250--1300 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}\end{frame}
+{\small Optuna = Ray, F09. Alvo: 15\% em 1250--1300 nm.}\par{\scriptsize Vista superior exportada do projeto HFSS verificado.}
+  \note{\begin{itemize}
+    \item Vista superior exportada do projeto HFSS verificado (Optuna = Ray).
+  \end{itemize}}
+\end{frame}
 \end{document}
